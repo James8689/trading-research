@@ -14,6 +14,8 @@ The system should optimize **reliable new evidence per unit of research cost**. 
 - `EXTERNAL_CLAIM_REVIEW.md`: evidence review of the ten-agent memecoin story and reusable lessons.
 - `SHADOW_STAGE_NETWORK.md`: future no-order signal/risk/liquidity/execution/accounting roles.
 - `PERFORMANCE_CLAIM_STANDARD.md`: required proof before calling any result profitable or validated.
+- `POST_INTEGRATION.md`: September 9 source review and proposed intake, budget-controller and attempt-lineage requirements.
+- `POST_INTEGRATION_REVIEW.md`: independent gap review and concrete future acceptance scenarios for those requirements.
 - `templates/`: copyable task, result, gate, candidate and resume documents. Samples describe fields; they are not live queue entries or evidence.
 
 Original role prompts remain under `agents/prompts/`. The design extends these roles with later data extraction, offline engineering and independent validation functions. Model names live in configuration; portable role contracts do not depend on a provider or this conversation.

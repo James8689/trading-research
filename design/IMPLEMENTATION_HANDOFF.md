@@ -15,6 +15,8 @@ The existing `research_loop/` is an unverified draft, not the baseline that must
 
 ## Acceptance scenarios
 
+Also apply the queue, budget-admission and holdout-access scenarios in `POST_INTEGRATION_REVIEW.md`. The source rationale and integration order are in `POST_INTEGRATION.md`.
+
 - Two controllers target one queue: at most one dispatch obtains a lease.
 - Process dies after provider start: resume reconciles run ID; no blind duplicate call.
 - Process dies after saving result: resume validates stored artifact and completes without paying again.

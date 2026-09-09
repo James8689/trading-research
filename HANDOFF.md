@@ -1,5 +1,9 @@
 # Trading research handoff
 
+## September 9: two additional external architecture posts
+
+Read both user-supplied X articles through FxTwitter after direct X retrieval returned 403. Added design/POST_INTEGRATION.md: source provenance, bounded summaries, and project-specific requirements for deterministic document intake, controller-owned budget reservations, persistent attempt ancestry and downstream status delivery. Preserve existing frozen candidates and scientific gates. External performance/model/pricing claims remain unverified. The service-agent article explicitly excludes trading. No runtime, model configuration or experiment was changed. Next implementation work can use the documented synthetic acceptance cases; current work remains design. A read-only Robinhood connection succeeded in this conversation, which does not validate repo execution code. Save/checkpoint, verify and push this documentation batch.
+
 ## September 9: external ten-agent trading claim review
 
 James supplied a viral-style claim that ten ASTRA agents changed roughly $45–$50 into $10,847 trading memecoins in 13 hours. Exact repost found at https://zamantika.com/en/Sevenup27/status/2097294732275618073, but no independent broker statement, full order/fill ledger, token/transaction identifiers, cost record, failed-run denominator, code or replication was found in a bounded exact-phrase search. Starting capital is internally inconsistent ($45 vs $50). Preserve as unverified architecture anecdote, not alpha evidence.
