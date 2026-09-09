@@ -1,0 +1,5402 @@
+[
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2011,
+    "total_return": 0.025157681353754624,
+    "drawdown": -0.1609926501224006,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2012,
+    "total_return": 0.1811255604683888,
+    "drawdown": -0.11637942596750939,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2013,
+    "total_return": 0.3663417124559665,
+    "drawdown": -0.05853810675941351,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2014,
+    "total_return": 0.1918136000470123,
+    "drawdown": -0.08248519354119632,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2015,
+    "total_return": 0.09435953834577826,
+    "drawdown": -0.13941077590662077,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2016,
+    "total_return": 0.0709789259377227,
+    "drawdown": -0.13892382374720014,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2017,
+    "total_return": 0.3266359338963585,
+    "drawdown": -0.04881942386139049,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2018,
+    "total_return": -0.0012626279609763147,
+    "drawdown": -0.22796678129742542,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2019,
+    "total_return": 0.3896155009655471,
+    "drawdown": -0.10983217156444847,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2020,
+    "total_return": 0.4840606151469875,
+    "drawdown": -0.2855936712522552,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2021,
+    "total_return": 0.274197713076616,
+    "drawdown": -0.10851545692269515,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2022,
+    "total_return": -0.32577015241010465,
+    "drawdown": -0.34827991646569334,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2023,
+    "total_return": 0.5485560427649636,
+    "drawdown": -0.10779937202029799,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2024,
+    "total_return": 0.2557826472739051,
+    "drawdown": -0.13557734253549003,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2025,
+    "total_return": 0.2077254825855661,
+    "drawdown": -0.2276831414558228,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2011,
+    "total_return": 0.025055175836173005,
+    "drawdown": -0.1609926501224006,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2012,
+    "total_return": 0.18112556046839168,
+    "drawdown": -0.11637942596750939,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2013,
+    "total_return": 0.3663417124559665,
+    "drawdown": -0.05853810675941351,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2014,
+    "total_return": 0.19181360004701142,
+    "drawdown": -0.08248519354119699,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2015,
+    "total_return": 0.09435953834577782,
+    "drawdown": -0.1394107759066211,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2016,
+    "total_return": 0.0709789259377247,
+    "drawdown": -0.13892382374720014,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2017,
+    "total_return": 0.3266359338963589,
+    "drawdown": -0.048819423861390265,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2018,
+    "total_return": -0.0012626279609754265,
+    "drawdown": -0.22796678129742554,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2019,
+    "total_return": 0.38961550096554953,
+    "drawdown": -0.10983217156444847,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2020,
+    "total_return": 0.4840606151469884,
+    "drawdown": -0.285593671252255,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2021,
+    "total_return": 0.2741977130766169,
+    "drawdown": -0.10851545692269493,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2022,
+    "total_return": -0.32577015241010476,
+    "drawdown": -0.3482799164656927,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2023,
+    "total_return": 0.5485560427649647,
+    "drawdown": -0.10779937202029766,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2024,
+    "total_return": 0.25578264727390443,
+    "drawdown": -0.1355773425354898,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2025,
+    "total_return": 0.20760471003730951,
+    "drawdown": -0.22768314145582236,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "total_return": 0.02490145598975757,
+    "drawdown": -0.16099265012240094,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "total_return": 0.181125560468391,
+    "drawdown": -0.11637942596750861,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "total_return": 0.366341712455968,
+    "drawdown": -0.05853810675941351,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "total_return": 0.1918136000470112,
+    "drawdown": -0.08248519354119666,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "total_return": 0.09435953834577959,
+    "drawdown": -0.13941077590662143,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "total_return": 0.07097892593772337,
+    "drawdown": -0.13892382374720036,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "total_return": 0.3266359338963585,
+    "drawdown": -0.04881942386139071,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "total_return": -0.0012626279609738722,
+    "drawdown": -0.22796678129742542,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "total_return": 0.38961550096554753,
+    "drawdown": -0.10983217156444813,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "total_return": 0.48406061514698906,
+    "drawdown": -0.2855936712522553,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "total_return": 0.2741977130766149,
+    "drawdown": -0.10851545692269549,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "total_return": -0.32577015241010365,
+    "drawdown": -0.34827991646569256,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "total_return": 0.5485560427649647,
+    "drawdown": -0.10779937202029766,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "total_return": 0.2557826472739062,
+    "drawdown": -0.13557734253548992,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "total_return": 0.20742355121492184,
+    "drawdown": -0.22768314145582247,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "total_return": 0.024645358674417084,
+    "drawdown": -0.1609926501224006,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "total_return": 0.18112556046839035,
+    "drawdown": -0.11637942596750939,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "total_return": 0.3663417124559649,
+    "drawdown": -0.058538106759413844,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "total_return": 0.19181360004701364,
+    "drawdown": -0.08248519354119621,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "total_return": 0.09435953834577937,
+    "drawdown": -0.13941077590662065,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "total_return": 0.07097892593772426,
+    "drawdown": -0.13892382374720058,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "total_return": 0.3266359338963569,
+    "drawdown": -0.0488194238613906,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "total_return": -0.0012626279609754265,
+    "drawdown": -0.2279667812974263,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "total_return": 0.389615500965548,
+    "drawdown": -0.1098321715644478,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "total_return": 0.48406061514698595,
+    "drawdown": -0.28559367125225565,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "total_return": 0.27419771307661556,
+    "drawdown": -0.10851545692269537,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "total_return": -0.32577015241010454,
+    "drawdown": -0.34827991646569245,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "total_return": 0.5485560427649634,
+    "drawdown": -0.10779937202029821,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "total_return": 0.25578264727390354,
+    "drawdown": -0.13557734253549025,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "total_return": 0.20712161984427557,
+    "drawdown": -0.22768314145582247,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2011,
+    "total_return": 0.018818649291993728,
+    "drawdown": -0.11119346282904474,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2012,
+    "total_return": 0.1374830999197756,
+    "drawdown": -0.05518330519709702,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2013,
+    "total_return": 0.19390014556782265,
+    "drawdown": -0.03051215087919834,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2014,
+    "total_return": 0.15889537204035387,
+    "drawdown": -0.050276189452199915,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2015,
+    "total_return": 0.09883940051562079,
+    "drawdown": -0.11776666740581843,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2016,
+    "total_return": -0.027127642525474505,
+    "drawdown": -0.11006790819765377,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2017,
+    "total_return": 0.16849436923198446,
+    "drawdown": -0.025131525988969172,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2018,
+    "total_return": 0.1412695799416155,
+    "drawdown": -0.04904913183983606,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2019,
+    "total_return": 0.14196084759485994,
+    "drawdown": -0.1097315058045033,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2020,
+    "total_return": 0.22108598469732454,
+    "drawdown": -0.2865645757390578,
+    "orders": 506
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2021,
+    "total_return": 0.1585075972623433,
+    "drawdown": -0.061707429056262364,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2022,
+    "total_return": -0.23647205380647485,
+    "drawdown": -0.2693415798938241,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2023,
+    "total_return": 0.07633775293148304,
+    "drawdown": -0.08004781228251845,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2024,
+    "total_return": 0.26584336696606603,
+    "drawdown": -0.07156669025259033,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2025,
+    "total_return": 0.12883529888688527,
+    "drawdown": -0.18286088349248564,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2011,
+    "total_return": -0.010450806340637886,
+    "drawdown": -0.11929832361801374,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2012,
+    "total_return": 0.11434315069694434,
+    "drawdown": -0.05862194450596936,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2013,
+    "total_return": 0.1696496798111531,
+    "drawdown": -0.030809554118706006,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2014,
+    "total_return": 0.12720389716661828,
+    "drawdown": -0.054023627986098055,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2015,
+    "total_return": 0.07194261270948399,
+    "drawdown": -0.1174746140869588,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2016,
+    "total_return": -0.052864459099362215,
+    "drawdown": -0.12250123413959935,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2017,
+    "total_return": 0.13900662895355298,
+    "drawdown": -0.026240948120165974,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2018,
+    "total_return": 0.11254657692344328,
+    "drawdown": -0.050223226350607164,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2019,
+    "total_return": 0.1120371399086133,
+    "drawdown": -0.11087535279243532,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2020,
+    "total_return": 0.1927228703483963,
+    "drawdown": -0.2854566913862666,
+    "orders": 506
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2021,
+    "total_return": 0.12870112874789208,
+    "drawdown": -0.06277821315009546,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2022,
+    "total_return": -0.2555869199614733,
+    "drawdown": -0.28372403278357017,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2023,
+    "total_return": 0.05029811077368063,
+    "drawdown": -0.08273285575321021,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2024,
+    "total_return": 0.23434319229223566,
+    "drawdown": -0.07092084294319223,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2025,
+    "total_return": 0.10039973036016847,
+    "drawdown": -0.18694152645655882,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "total_return": -0.03464939707946735,
+    "drawdown": -0.1262997114587996,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "total_return": 0.07309758187685245,
+    "drawdown": -0.06617847174507718,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "total_return": 0.12117882057114748,
+    "drawdown": -0.03213947979644827,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "total_return": 0.08515951091182616,
+    "drawdown": -0.05735244672070383,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "total_return": 0.03242421501927173,
+    "drawdown": -0.12142005594088146,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "total_return": -0.08657165348902063,
+    "drawdown": -0.13757180198870023,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "total_return": 0.09772513784545023,
+    "drawdown": -0.02788550364679665,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "total_return": 0.07002696462893376,
+    "drawdown": -0.05797805435183123,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "total_return": 0.07078841678977565,
+    "drawdown": -0.11274586330183278,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "total_return": 0.1477970948510554,
+    "drawdown": -0.28772911308207294,
+    "orders": 506
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "total_return": 0.08685475216606431,
+    "drawdown": -0.06317918323486271,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "total_return": -0.2818073867587879,
+    "drawdown": -0.3035726972525139,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "total_return": 0.011141112513156415,
+    "drawdown": -0.0915061511627423,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "total_return": 0.18609270625637087,
+    "drawdown": -0.07033767919147338,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "total_return": 0.0633131561682263,
+    "drawdown": -0.19105595587908486,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "total_return": -0.09501880632934478,
+    "drawdown": -0.16877522656719646,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "total_return": 0.010849953868138584,
+    "drawdown": -0.07845614608730689,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "total_return": 0.055037251861942416,
+    "drawdown": -0.04828212020322897,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "total_return": 0.025431366814102185,
+    "drawdown": -0.06384804140301381,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "total_return": -0.029678555810221274,
+    "drawdown": -0.12591657538830137,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "total_return": -0.1416674220162829,
+    "drawdown": -0.1618182939301196,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "total_return": 0.03332958632996785,
+    "drawdown": -0.030118698185707782,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "total_return": 0.007032697209667482,
+    "drawdown": -0.08953861541650898,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "total_return": 0.009174758266279781,
+    "drawdown": -0.11230172003726091,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "total_return": 0.07688112273919234,
+    "drawdown": -0.2847348213040757,
+    "orders": 506
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "total_return": 0.020337722844654182,
+    "drawdown": -0.07031805305631911,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "total_return": -0.32058956620956314,
+    "drawdown": -0.332055360378507,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "total_return": -0.04548822662021834,
+    "drawdown": -0.1133924851136372,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "total_return": 0.11144055055020874,
+    "drawdown": -0.07007372910617693,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "total_return": 0.0009829732199921892,
+    "drawdown": -0.19679573719362642,
+    "orders": 500
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2011,
+    "total_return": -0.004941308593750193,
+    "drawdown": -0.07074499139069523,
+    "orders": 372
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2012,
+    "total_return": 0.10632776655860621,
+    "drawdown": -0.055597122218217554,
+    "orders": 452
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2013,
+    "total_return": 0.16696789335325324,
+    "drawdown": -0.030423789246503685,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2014,
+    "total_return": 0.15829386689819192,
+    "drawdown": -0.05117883176402904,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2015,
+    "total_return": 0.014541650745015344,
+    "drawdown": -0.132607310095462,
+    "orders": 436
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2016,
+    "total_return": -0.06784808238571272,
+    "drawdown": -0.1388602975226102,
+    "orders": 362
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2017,
+    "total_return": 0.16850044179524581,
+    "drawdown": -0.02526548937663442,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2018,
+    "total_return": 0.1142113197322514,
+    "drawdown": -0.04195089091414139,
+    "orders": 420
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2019,
+    "total_return": 0.11898040332820314,
+    "drawdown": -0.10968182756341749,
+    "orders": 436
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2020,
+    "total_return": 0.2207934269820191,
+    "drawdown": -0.20021585288968768,
+    "orders": 464
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2021,
+    "total_return": 0.154873391695022,
+    "drawdown": -0.0611734003626645,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2022,
+    "total_return": -0.06612305375859584,
+    "drawdown": -0.07041845502750843,
+    "orders": 38
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2023,
+    "total_return": 0.05611629946697727,
+    "drawdown": -0.08017743787329079,
+    "orders": 460
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2024,
+    "total_return": 0.2647052122453495,
+    "drawdown": -0.07160052383317539,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2025,
+    "total_return": 0.19599616295454414,
+    "drawdown": -0.09250650793357929,
+    "orders": 410
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2011,
+    "total_return": -0.023322280804748408,
+    "drawdown": -0.07532195126528962,
+    "orders": 372
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2012,
+    "total_return": 0.0831336575318875,
+    "drawdown": -0.05877444109828556,
+    "orders": 452
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2013,
+    "total_return": 0.1391305309169648,
+    "drawdown": -0.030635495679312563,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2014,
+    "total_return": 0.12659537249329134,
+    "drawdown": -0.05437507806563768,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2015,
+    "total_return": -0.008693885189129391,
+    "drawdown": -0.1333727055130558,
+    "orders": 436
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2016,
+    "total_return": -0.08398917502171255,
+    "drawdown": -0.14390952998023732,
+    "orders": 362
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2017,
+    "total_return": 0.13837240821301888,
+    "drawdown": -0.026704802478259126,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2018,
+    "total_return": 0.0883940076914711,
+    "drawdown": -0.042908693352995075,
+    "orders": 420
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2019,
+    "total_return": 0.09729022273673893,
+    "drawdown": -0.10942024618660351,
+    "orders": 436
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2020,
+    "total_return": 0.19913320706587245,
+    "drawdown": -0.19874775293812807,
+    "orders": 464
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2021,
+    "total_return": 0.12640559442065324,
+    "drawdown": -0.06217706476520424,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2022,
+    "total_return": -0.06788338577803121,
+    "drawdown": -0.07197006876614254,
+    "orders": 38
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2023,
+    "total_return": 0.030965781390127622,
+    "drawdown": -0.08544320891432466,
+    "orders": 460
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2024,
+    "total_return": 0.23243393736634932,
+    "drawdown": -0.07145867365990921,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2025,
+    "total_return": 0.17174556122661078,
+    "drawdown": -0.09568042289190037,
+    "orders": 410
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "total_return": -0.047902122456359275,
+    "drawdown": -0.08516631303985633,
+    "orders": 372
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "total_return": 0.0462119904010303,
+    "drawdown": -0.06629790020327608,
+    "orders": 452
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "total_return": 0.09716456235199833,
+    "drawdown": -0.03206409306102875,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "total_return": 0.09007426841457344,
+    "drawdown": -0.05677821956974516,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "total_return": -0.03815923859023174,
+    "drawdown": -0.13686204143004144,
+    "orders": 436
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "total_return": -0.1078862147542804,
+    "drawdown": -0.1499943308116053,
+    "orders": 362
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "total_return": 0.0959501485621359,
+    "drawdown": -0.0284603210073483,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "total_return": 0.05605022459897291,
+    "drawdown": -0.04502698349123868,
+    "orders": 420
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "total_return": 0.06181395048558769,
+    "drawdown": -0.11227585412542784,
+    "orders": 436
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "total_return": 0.15423575355433083,
+    "drawdown": -0.20057000371736977,
+    "orders": 464
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "total_return": 0.08820021967325586,
+    "drawdown": -0.06235983586390248,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "total_return": -0.07026554407019625,
+    "drawdown": -0.07409898361704748,
+    "orders": 38
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "total_return": -0.005105948407418404,
+    "drawdown": -0.09306064268326097,
+    "orders": 460
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "total_return": 0.1861773993072593,
+    "drawdown": -0.07143044430582257,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "total_return": 0.13537726621929558,
+    "drawdown": -0.10078458403451529,
+    "orders": 410
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "total_return": -0.08496022898712141,
+    "drawdown": -0.10978130467362313,
+    "orders": 372
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "total_return": -0.007179192397442802,
+    "drawdown": -0.07805935985325407,
+    "orders": 452
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "total_return": 0.03148927163631843,
+    "drawdown": -0.04761314687924656,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "total_return": 0.025344624567427587,
+    "drawdown": -0.06197286035507954,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "total_return": -0.0862898541306345,
+    "drawdown": -0.14583954820569545,
+    "orders": 436
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "total_return": -0.1455699435969795,
+    "drawdown": -0.16079956986750987,
+    "orders": 362
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "total_return": 0.032664979816075634,
+    "drawdown": -0.031215164975016085,
+    "orders": 502
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "total_return": 0.0025071880495481924,
+    "drawdown": -0.07173008738244491,
+    "orders": 420
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "total_return": 0.010664319411063161,
+    "drawdown": -0.11119132090596473,
+    "orders": 436
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "total_return": 0.09404058744590515,
+    "drawdown": -0.1978575147932451,
+    "orders": 464
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "total_return": 0.019932949261134425,
+    "drawdown": -0.07256882975226087,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "total_return": -0.07290388431406813,
+    "drawdown": -0.07624392488825205,
+    "orders": 38
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "total_return": -0.059286473261777384,
+    "drawdown": -0.11474067860320025,
+    "orders": 460
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "total_return": 0.11312610324559924,
+    "drawdown": -0.06912420702123034,
+    "orders": 504
+  },
+  {
+    "base": "QQQ",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "total_return": 0.07983629468324227,
+    "drawdown": -0.10466209377169411,
+    "orders": 410
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2011,
+    "total_return": -0.12293886718750147,
+    "drawdown": -0.18488606884205883,
+    "orders": 19
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2012,
+    "total_return": 0.10042768369853317,
+    "drawdown": -0.13698749094613172,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2013,
+    "total_return": 0.3496354040743066,
+    "drawdown": -0.06145867273569394,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2014,
+    "total_return": 0.2296962131641982,
+    "drawdown": -0.10818038825570941,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2015,
+    "total_return": -0.1062441195804873,
+    "drawdown": -0.24754176245778292,
+    "orders": 6
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2016,
+    "total_return": -0.030790961308840847,
+    "drawdown": -0.12427963979707857,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2017,
+    "total_return": 0.38412241160795957,
+    "drawdown": -0.06302480485152673,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2018,
+    "total_return": -0.0001936684355338114,
+    "drawdown": -0.20655386249722074,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2019,
+    "total_return": 0.14433068025406737,
+    "drawdown": -0.11397589440073874,
+    "orders": 7
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2020,
+    "total_return": 0.3915417395557752,
+    "drawdown": -0.25859412880433186,
+    "orders": 4
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2021,
+    "total_return": 0.3786999976596588,
+    "drawdown": -0.15144238935505572,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2022,
+    "total_return": -0.2146426772622687,
+    "drawdown": -0.22712457164675048,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2023,
+    "total_return": 0.35804116669957975,
+    "drawdown": -0.13956078747774336,
+    "orders": 5
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2024,
+    "total_return": 0.27479599761410767,
+    "drawdown": -0.18889376493850418,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2025,
+    "total_return": 0.07860816117370617,
+    "drawdown": -0.15837138530449701,
+    "orders": 5
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2011,
+    "total_return": -0.12377828687164538,
+    "drawdown": -0.1855503843742895,
+    "orders": 19
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2012,
+    "total_return": 0.10003839244025481,
+    "drawdown": -0.1373622152972359,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2013,
+    "total_return": 0.3500464396747407,
+    "drawdown": -0.061533876348645045,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2014,
+    "total_return": 0.22992760158068748,
+    "drawdown": -0.10827261643830277,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2015,
+    "total_return": -0.1065998271209827,
+    "drawdown": -0.24795409110048794,
+    "orders": 6
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2016,
+    "total_return": -0.03136128270620109,
+    "drawdown": -0.12496378574319689,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2017,
+    "total_return": 0.3848165306528588,
+    "drawdown": -0.06311587236738536,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2018,
+    "total_return": -0.0002844757777910045,
+    "drawdown": -0.2068395478088506,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2019,
+    "total_return": 0.1441985856034116,
+    "drawdown": -0.11415202296946847,
+    "orders": 7
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2020,
+    "total_return": 0.39195793833743076,
+    "drawdown": -0.2590931357451156,
+    "orders": 4
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2021,
+    "total_return": 0.379158978396531,
+    "drawdown": -0.151609366390291,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2022,
+    "total_return": -0.21455459254725728,
+    "drawdown": -0.2270486825699487,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2023,
+    "total_return": 0.3580729877255371,
+    "drawdown": -0.1396703258494506,
+    "orders": 5
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2024,
+    "total_return": 0.27500019734053716,
+    "drawdown": -0.18900278706978646,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2025,
+    "total_return": 0.07839350495273156,
+    "drawdown": -0.15864262971644805,
+    "orders": 5
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "total_return": -0.12503741639785737,
+    "drawdown": -0.1865469729416379,
+    "orders": 19
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "total_return": 0.09945305501260782,
+    "drawdown": -0.1379254695822456,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "total_return": 0.35066501970954445,
+    "drawdown": -0.06164702748716633,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "total_return": 0.23027555962730895,
+    "drawdown": -0.10841125394578266,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "total_return": -0.10713448230360223,
+    "drawdown": -0.2485736929072605,
+    "orders": 6
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "total_return": -0.036429189447725,
+    "drawdown": -0.12594050628928788,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "total_return": 0.3699324190768549,
+    "drawdown": -0.061148555157864215,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "total_return": -0.003098013495658636,
+    "drawdown": -0.20443081383952888,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "total_return": 0.14092781770774376,
+    "drawdown": -0.1123732406893595,
+    "orders": 7
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "total_return": 0.38306607560378625,
+    "drawdown": -0.2555153705082087,
+    "orders": 4
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "total_return": 0.3737074357797774,
+    "drawdown": -0.14962373648772398,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "total_return": -0.2142005059421308,
+    "drawdown": -0.22657145903491616,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "total_return": 0.3582552932965237,
+    "drawdown": -0.13985586265976313,
+    "orders": 5
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "total_return": 0.2753460332751929,
+    "drawdown": -0.1891873462576803,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "total_return": 0.07801565200184957,
+    "drawdown": -0.15909787611901782,
+    "orders": 5
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "total_return": -0.1271359656082145,
+    "drawdown": -0.1882082613423628,
+    "orders": 19
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "total_return": 0.09847373990089991,
+    "drawdown": -0.13886735371216286,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "total_return": 0.3517014264377847,
+    "drawdown": -0.06183654030386654,
+    "orders": 1
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "total_return": 0.2308578359692135,
+    "drawdown": -0.10864310711529201,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "total_return": -0.10802850325133861,
+    "drawdown": -0.24960933012055875,
+    "orders": 6
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "total_return": -0.037874216741565325,
+    "drawdown": -0.12765932201304753,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "total_return": 0.3716212370493279,
+    "drawdown": -0.06137332008293861,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "total_return": -0.00434211384322436,
+    "drawdown": -0.20595740050008815,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "total_return": 0.14074919977170608,
+    "drawdown": -0.11292346701263167,
+    "orders": 7
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "total_return": 0.3844485591701219,
+    "drawdown": -0.2569654776756899,
+    "orders": 4
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "total_return": 0.375103605810136,
+    "drawdown": -0.15013275870920484,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "total_return": -0.21504748791848405,
+    "drawdown": -0.2274381510979676,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "total_return": 0.3546859129938076,
+    "drawdown": -0.13919184768235515,
+    "orders": 5
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "total_return": 0.2741081003399861,
+    "drawdown": -0.18852623069223517,
+    "orders": 0
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "total_return": 0.07909337972887664,
+    "drawdown": -0.15896784708179956,
+    "orders": 5
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2011,
+    "total_return": -0.08059100646972717,
+    "drawdown": -0.16028426628981018,
+    "orders": 26
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2012,
+    "total_return": 0.011433902673556595,
+    "drawdown": -0.1587053594910549,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2013,
+    "total_return": 0.4742400130679467,
+    "drawdown": -0.08432529548124168,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2014,
+    "total_return": 0.2402899348204739,
+    "drawdown": -0.1314479490789725,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2015,
+    "total_return": -0.10412625926319186,
+    "drawdown": -0.23154499105399073,
+    "orders": 16
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2016,
+    "total_return": -0.04302706573651405,
+    "drawdown": -0.14084446008908602,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2017,
+    "total_return": 0.5404097592322861,
+    "drawdown": -0.09007941744188863,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2018,
+    "total_return": 0.015467145574686869,
+    "drawdown": -0.1900200666792241,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2019,
+    "total_return": 0.09005250464378523,
+    "drawdown": -0.16417372156950483,
+    "orders": 16
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2020,
+    "total_return": 0.09203842245395366,
+    "drawdown": -0.2650891553719398,
+    "orders": 14
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2021,
+    "total_return": 0.2345222497008661,
+    "drawdown": -0.126888471211411,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2022,
+    "total_return": -0.14017673479122483,
+    "drawdown": -0.14926657081789496,
+    "orders": 10
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2023,
+    "total_return": 0.2952923773554206,
+    "drawdown": -0.12531895826813166,
+    "orders": 15
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2024,
+    "total_return": 0.22275195854757412,
+    "drawdown": -0.15371068059631487,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2025,
+    "total_return": 0.11695659861394692,
+    "drawdown": -0.10848285213610498,
+    "orders": 14
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2011,
+    "total_return": -0.08135103932800336,
+    "drawdown": -0.16086648334569587,
+    "orders": 26
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2012,
+    "total_return": 0.010810060562867152,
+    "drawdown": -0.15920797422330357,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2013,
+    "total_return": 0.4711495389419924,
+    "drawdown": -0.08444496782758859,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2014,
+    "total_return": 0.2409911745045914,
+    "drawdown": -0.1320619370896482,
+    "orders": 10
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2015,
+    "total_return": -0.10525489740927318,
+    "drawdown": -0.23240907413775636,
+    "orders": 15
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2016,
+    "total_return": -0.04384502993355155,
+    "drawdown": -0.1420396731875967,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2017,
+    "total_return": 0.5361271362586031,
+    "drawdown": -0.09075125064320255,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2018,
+    "total_return": 0.013548356386275273,
+    "drawdown": -0.19159310938554774,
+    "orders": 17
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2019,
+    "total_return": 0.08985603072477888,
+    "drawdown": -0.16574607332796376,
+    "orders": 15
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2020,
+    "total_return": 0.09793389474648384,
+    "drawdown": -0.26105843315980715,
+    "orders": 14
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2021,
+    "total_return": 0.23500947863395094,
+    "drawdown": -0.12628853766554293,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2022,
+    "total_return": -0.14098091946734226,
+    "drawdown": -0.15009347377852544,
+    "orders": 10
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2023,
+    "total_return": 0.29633433141070853,
+    "drawdown": -0.12574701934176746,
+    "orders": 14
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2024,
+    "total_return": 0.2220157651269643,
+    "drawdown": -0.1531914067581902,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2025,
+    "total_return": 0.11822136038817166,
+    "drawdown": -0.10814423420676855,
+    "orders": 13
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "total_return": -0.08249108861541632,
+    "drawdown": -0.1617399618047496,
+    "orders": 26
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "total_return": 0.00987235951169052,
+    "drawdown": -0.15996338351278405,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "total_return": 0.46972772623212466,
+    "drawdown": -0.08462507311241019,
+    "orders": 11
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "total_return": 0.2428667430261282,
+    "drawdown": -0.1322994783389112,
+    "orders": 10
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "total_return": -0.10506689358159738,
+    "drawdown": -0.23287596976106217,
+    "orders": 15
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "total_return": -0.044009498098973254,
+    "drawdown": -0.14228599833007094,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "total_return": 0.532691512440838,
+    "drawdown": -0.08947469416891385,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "total_return": 0.011920077829873366,
+    "drawdown": -0.19214299639693,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "total_return": 0.09303458297354572,
+    "drawdown": -0.16359266058829924,
+    "orders": 15
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "total_return": 0.09788563466317735,
+    "drawdown": -0.261785973718619,
+    "orders": 14
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "total_return": 0.23543399106973095,
+    "drawdown": -0.12659012424241534,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "total_return": -0.14169878641833655,
+    "drawdown": -0.15081427585112506,
+    "orders": 10
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "total_return": 0.2948640507775193,
+    "drawdown": -0.12558969404790266,
+    "orders": 15
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "total_return": 0.2211732286408603,
+    "drawdown": -0.1527606390444659,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "total_return": 0.11552800635056415,
+    "drawdown": -0.10884999837498521,
+    "orders": 13
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "total_return": -0.0843911707611098,
+    "drawdown": -0.16319616704652706,
+    "orders": 26
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "total_return": 0.008304335284577968,
+    "drawdown": -0.16122638051520755,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "total_return": 0.47223523197225137,
+    "drawdown": -0.08252556536257039,
+    "orders": 11
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "total_return": 0.2427012573774161,
+    "drawdown": -0.13260617909929973,
+    "orders": 10
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "total_return": -0.10489965331434625,
+    "drawdown": -0.2335848899046098,
+    "orders": 15
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "total_return": -0.043980656635614346,
+    "drawdown": -0.14234523239791974,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "total_return": 0.5333340981825405,
+    "drawdown": -0.08966306271770708,
+    "orders": 9
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "total_return": 0.010246014014673399,
+    "drawdown": -0.19279321542310457,
+    "orders": 18
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "total_return": 0.0912169765062969,
+    "drawdown": -0.16399575078697315,
+    "orders": 15
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "total_return": 0.09285792232574996,
+    "drawdown": -0.2633363527704725,
+    "orders": 14
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "total_return": 0.23606007903305093,
+    "drawdown": -0.12620235570757876,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "total_return": -0.14101864742952974,
+    "drawdown": -0.15001680742784196,
+    "orders": 10
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "total_return": 0.29416696876881043,
+    "drawdown": -0.1255920497578359,
+    "orders": 14
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "total_return": 0.22290503606858114,
+    "drawdown": -0.15258929977665658,
+    "orders": 12
+  },
+  {
+    "base": "QQQ",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "total_return": 0.11551920111015002,
+    "drawdown": -0.10994340461636742,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2011,
+    "total_return": 0.011230397947961768,
+    "drawdown": -0.1860550215975485,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2012,
+    "total_return": 0.15990334539155393,
+    "drawdown": -0.09686981700291508,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2013,
+    "total_return": 0.3230775416376188,
+    "drawdown": -0.05550607792880691,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2014,
+    "total_return": 0.13463771716106088,
+    "drawdown": -0.07273483985393625,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2015,
+    "total_return": 0.012343105936251986,
+    "drawdown": -0.1191027612247394,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2016,
+    "total_return": 0.11997874991133206,
+    "drawdown": -0.1030557389577178,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2017,
+    "total_return": 0.21705412469279617,
+    "drawdown": -0.026100953748805944,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2018,
+    "total_return": -0.04568997128362817,
+    "drawdown": -0.19348926498855856,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2019,
+    "total_return": 0.3122385699692001,
+    "drawdown": -0.06618388040253964,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2020,
+    "total_return": 0.1833163641901272,
+    "drawdown": -0.3371726446753842,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2021,
+    "total_return": 0.2872876696192692,
+    "drawdown": -0.05114151638807696,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2022,
+    "total_return": -0.18175360053974376,
+    "drawdown": -0.24496393860941013,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2023,
+    "total_return": 0.2617577564672433,
+    "drawdown": -0.09974327094761626,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2024,
+    "total_return": 0.248864548153098,
+    "drawdown": -0.08405614335796086,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 0,
+    "year": 2025,
+    "total_return": 0.17719067981214942,
+    "drawdown": -0.1875522942522172,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2011,
+    "total_return": 0.011129285019459534,
+    "drawdown": -0.18605502159754927,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2012,
+    "total_return": 0.1599033453915566,
+    "drawdown": -0.09686981700291475,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2013,
+    "total_return": 0.32307754163762015,
+    "drawdown": -0.05550607792880735,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2014,
+    "total_return": 0.1346377171610611,
+    "drawdown": -0.07273483985393592,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2015,
+    "total_return": 0.012343105936253318,
+    "drawdown": -0.11910276122473873,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2016,
+    "total_return": 0.11997874991133406,
+    "drawdown": -0.10305573895771769,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2017,
+    "total_return": 0.21705412469279728,
+    "drawdown": -0.026100953748806277,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2018,
+    "total_return": -0.045689971283627395,
+    "drawdown": -0.19348926498855812,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2019,
+    "total_return": 0.31223856996920385,
+    "drawdown": -0.06618388040253909,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2020,
+    "total_return": 0.1833163641901263,
+    "drawdown": -0.3371726446753842,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2021,
+    "total_return": 0.2872876696192683,
+    "drawdown": -0.05114151638807718,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2022,
+    "total_return": -0.181753600539743,
+    "drawdown": -0.24496393860940913,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2023,
+    "total_return": 0.2617577564672404,
+    "drawdown": -0.0997432709476157,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2024,
+    "total_return": 0.2488645481531011,
+    "drawdown": -0.0840561433579603,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 2,
+    "year": 2025,
+    "total_return": 0.17707296074416368,
+    "drawdown": -0.18755229425221798,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "total_return": 0.010977653534577358,
+    "drawdown": -0.1860550215975496,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "total_return": 0.1599033453915526,
+    "drawdown": -0.09686981700291497,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "total_return": 0.3230775416376188,
+    "drawdown": -0.05550607792880713,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "total_return": 0.13463771716106243,
+    "drawdown": -0.07273483985393614,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "total_return": 0.012343105936253984,
+    "drawdown": -0.11910276122473962,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "total_return": 0.11997874991133028,
+    "drawdown": -0.10305573895771791,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "total_return": 0.2170541246927955,
+    "drawdown": -0.026100953748807276,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "total_return": -0.04568997128362828,
+    "drawdown": -0.19348926498855834,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "total_return": 0.3122385699691994,
+    "drawdown": -0.06618388040253997,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "total_return": 0.18331636419012853,
+    "drawdown": -0.3371726446753841,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "total_return": 0.2872876696192692,
+    "drawdown": -0.05114151638807751,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "total_return": -0.18175360053974443,
+    "drawdown": -0.2449639386094109,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "total_return": 0.2617577564672411,
+    "drawdown": -0.09974327094761548,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "total_return": 0.24886454815310177,
+    "drawdown": -0.08405614335796052,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "total_return": 0.17689638214219094,
+    "drawdown": -0.1875522942522181,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "total_return": 0.010725035430245278,
+    "drawdown": -0.18605502159754894,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "total_return": 0.1599033453915557,
+    "drawdown": -0.09686981700291519,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "total_return": 0.32307754163761837,
+    "drawdown": -0.05550607792880746,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "total_return": 0.13463771716106088,
+    "drawdown": -0.07273483985393658,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "total_return": 0.012343105936253318,
+    "drawdown": -0.11910276122473917,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "total_return": 0.11997874991133362,
+    "drawdown": -0.10305573895771736,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "total_return": 0.21705412469279595,
+    "drawdown": -0.02610095374880672,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "total_return": -0.04568997128362784,
+    "drawdown": -0.193489264988558,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "total_return": 0.3122385699692023,
+    "drawdown": -0.06618388040253964,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "total_return": 0.18331636419012654,
+    "drawdown": -0.3371726446753843,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "total_return": 0.2872876696192668,
+    "drawdown": -0.051141516388077624,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "total_return": -0.1817536005397441,
+    "drawdown": -0.24496393860941024,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "total_return": 0.261757756467242,
+    "drawdown": -0.09974327094761526,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "total_return": 0.24886454815310244,
+    "drawdown": -0.08405614335796063,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "buy_hold",
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "total_return": 0.17660208447224002,
+    "drawdown": -0.18755229425221775,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2011,
+    "total_return": 0.04738113840791103,
+    "drawdown": -0.12085093978279393,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2012,
+    "total_return": 0.07379501542721956,
+    "drawdown": -0.058677018265267056,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2013,
+    "total_return": 0.15459054439776732,
+    "drawdown": -0.028544256670945733,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2014,
+    "total_return": 0.11009491863404186,
+    "drawdown": -0.03754924118497294,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2015,
+    "total_return": 0.03773764515522027,
+    "drawdown": -0.09108564526301766,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2016,
+    "total_return": -0.019731673331629618,
+    "drawdown": -0.10141559097997643,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2017,
+    "total_return": 0.10817839527685069,
+    "drawdown": -0.020692659879586572,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2018,
+    "total_return": 0.12318659539052734,
+    "drawdown": -0.04094711261737449,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2019,
+    "total_return": 0.12434034311290265,
+    "drawdown": -0.07959770056435422,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2020,
+    "total_return": 0.12756695595641165,
+    "drawdown": -0.2999357074306156,
+    "orders": 506
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2021,
+    "total_return": 0.1542991199459094,
+    "drawdown": -0.029808230641093725,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2022,
+    "total_return": -0.15342347097680398,
+    "drawdown": -0.20641114972809782,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2023,
+    "total_return": 0.015428325531701814,
+    "drawdown": -0.0936709787333655,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2024,
+    "total_return": 0.21015966703548017,
+    "drawdown": -0.05257636952368572,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 0,
+    "year": 2025,
+    "total_return": 0.06770531531099011,
+    "drawdown": -0.16015390746583902,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2011,
+    "total_return": 0.02538511130249721,
+    "drawdown": -0.12851982577606913,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2012,
+    "total_return": 0.04814220907698963,
+    "drawdown": -0.06291945322362102,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2013,
+    "total_return": 0.12457454622672381,
+    "drawdown": -0.029521342113124738,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2014,
+    "total_return": 0.08243579324232453,
+    "drawdown": -0.04138159073351211,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2015,
+    "total_return": 0.013236309038688443,
+    "drawdown": -0.09222642863695074,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2016,
+    "total_return": -0.043134948800274464,
+    "drawdown": -0.11165921273347124,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2017,
+    "total_return": 0.08023811004324011,
+    "drawdown": -0.02501543056930633,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2018,
+    "total_return": 0.09953634013804957,
+    "drawdown": -0.04178410508556529,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2019,
+    "total_return": 0.09667400642892465,
+    "drawdown": -0.08135717042789925,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2020,
+    "total_return": 0.09636280766144822,
+    "drawdown": -0.2981595484621783,
+    "orders": 506
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2021,
+    "total_return": 0.12237021511867963,
+    "drawdown": -0.030076714696987583,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2022,
+    "total_return": -0.17472517809079258,
+    "drawdown": -0.22180638215129644,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2023,
+    "total_return": -0.007930826145409076,
+    "drawdown": -0.09708956983677997,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2024,
+    "total_return": 0.1776149714532158,
+    "drawdown": -0.05215888731341578,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 2,
+    "year": 2025,
+    "total_return": 0.04242996643860253,
+    "drawdown": -0.16334722976899863,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "total_return": -0.010618699100032325,
+    "drawdown": -0.14009775275883507,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "total_return": 0.012043957721387333,
+    "drawdown": -0.07135660237809605,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "total_return": 0.08716139184444893,
+    "drawdown": -0.031759919434352635,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "total_return": 0.043838189663144345,
+    "drawdown": -0.045774260905544595,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "total_return": -0.023945441615450758,
+    "drawdown": -0.0934326572582963,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "total_return": -0.07715475469154687,
+    "drawdown": -0.12669369971895938,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "total_return": 0.042965709751764836,
+    "drawdown": -0.033515851252522655,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "total_return": 0.05731450311570696,
+    "drawdown": -0.041531723197964165,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "total_return": 0.056463091354931993,
+    "drawdown": -0.083819734778388,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "total_return": 0.06305761079226002,
+    "drawdown": -0.29719522709914903,
+    "orders": 506
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "total_return": 0.08151374167516678,
+    "drawdown": -0.030960681509375587,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "total_return": -0.20269453891271816,
+    "drawdown": -0.24262985456726605,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "total_return": -0.04396691761465166,
+    "drawdown": -0.1129858331796646,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "total_return": 0.1348293739862767,
+    "drawdown": -0.051865481820046244,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "total_return": 0.004177023197643681,
+    "drawdown": -0.16822682944654233,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "total_return": -0.06985108573669963,
+    "drawdown": -0.16992070836083506,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "total_return": -0.048662986906753525,
+    "drawdown": -0.0902174272298436,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "total_return": 0.020574600994783365,
+    "drawdown": -0.04240826851684243,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "total_return": -0.0189820912705968,
+    "drawdown": -0.07249123463411766,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "total_return": -0.08204308088350143,
+    "drawdown": -0.12843451566713415,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "total_return": -0.13164693938210392,
+    "drawdown": -0.15714345210776626,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "total_return": -0.02175947047764748,
+    "drawdown": -0.057827703376623574,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "total_return": -1.252417892527724e-05,
+    "drawdown": -0.04848831997237191,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "total_return": -0.008166755956939165,
+    "drawdown": -0.08460997133954418,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "total_return": -0.0019344203343342192,
+    "drawdown": -0.29327003912104466,
+    "orders": 506
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "total_return": 0.020977093916386913,
+    "drawdown": -0.05009748620018151,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "total_return": -0.24588141893192983,
+    "drawdown": -0.2732818683122389,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "total_return": -0.09891967311477234,
+    "drawdown": -0.1522054581216673,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "total_return": 0.06366542705132949,
+    "drawdown": -0.049285248642751744,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_always",
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "total_return": -0.060755202453127266,
+    "drawdown": -0.17485773191057097,
+    "orders": 500
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2011,
+    "total_return": -0.02512031474052756,
+    "drawdown": -0.07108008286955636,
+    "orders": 318
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2012,
+    "total_return": 0.062344749177621894,
+    "drawdown": -0.05784528717464266,
+    "orders": 494
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2013,
+    "total_return": 0.15509299287671618,
+    "drawdown": -0.02830107492298195,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2014,
+    "total_return": 0.12375266995235057,
+    "drawdown": -0.022724936402118923,
+    "orders": 494
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2015,
+    "total_return": -0.01939858625135127,
+    "drawdown": -0.07665158430810637,
+    "orders": 398
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2016,
+    "total_return": -0.019258245141263064,
+    "drawdown": -0.09355448768730124,
+    "orders": 406
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2017,
+    "total_return": 0.10909884086914001,
+    "drawdown": -0.021035019806329713,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2018,
+    "total_return": 0.06833183358670958,
+    "drawdown": -0.042227535296690766,
+    "orders": 424
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2019,
+    "total_return": 0.09526557797911117,
+    "drawdown": -0.07966381570099745,
+    "orders": 446
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2020,
+    "total_return": 0.18757832628719662,
+    "drawdown": -0.08877540738102696,
+    "orders": 388
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2021,
+    "total_return": 0.15113086045661395,
+    "drawdown": -0.029370109899098384,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2022,
+    "total_return": -0.06917791746503354,
+    "drawdown": -0.07497082377513797,
+    "orders": 98
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2023,
+    "total_return": -0.031311608765980825,
+    "drawdown": -0.09390659027341064,
+    "orders": 464
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2024,
+    "total_return": 0.20834415698398256,
+    "drawdown": -0.05254396392344496,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 0,
+    "year": 2025,
+    "total_return": 0.10126772647423543,
+    "drawdown": -0.09812037490504666,
+    "orders": 416
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2011,
+    "total_return": -0.03888572681602753,
+    "drawdown": -0.0757836844132167,
+    "orders": 318
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2012,
+    "total_return": 0.03615811877010411,
+    "drawdown": -0.0626900697658086,
+    "orders": 494
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2013,
+    "total_return": 0.12739058457393138,
+    "drawdown": -0.029283249231951913,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2014,
+    "total_return": 0.09865469186751885,
+    "drawdown": -0.024067318034080354,
+    "orders": 494
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2015,
+    "total_return": -0.038633236681500316,
+    "drawdown": -0.0802581684919188,
+    "orders": 398
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2016,
+    "total_return": -0.03612376984780852,
+    "drawdown": -0.09748473766950627,
+    "orders": 406
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2017,
+    "total_return": 0.08215875141043583,
+    "drawdown": -0.024565926977369812,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2018,
+    "total_return": 0.0432075870370896,
+    "drawdown": -0.04392146636174932,
+    "orders": 424
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2019,
+    "total_return": 0.06716947753461566,
+    "drawdown": -0.08183441875968545,
+    "orders": 446
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2020,
+    "total_return": 0.1630490206278783,
+    "drawdown": -0.0925792330362949,
+    "orders": 388
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2021,
+    "total_return": 0.12500313754162407,
+    "drawdown": -0.029740942277942328,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2022,
+    "total_return": -0.07322485277668711,
+    "drawdown": -0.07884128230804188,
+    "orders": 98
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2023,
+    "total_return": -0.05255030827247642,
+    "drawdown": -0.09696887459555947,
+    "orders": 464
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2024,
+    "total_return": 0.18047793890146013,
+    "drawdown": -0.0523319915459074,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 2,
+    "year": 2025,
+    "total_return": 0.07859773761843214,
+    "drawdown": -0.10098653517428546,
+    "orders": 416
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "total_return": -0.060206865714800495,
+    "drawdown": -0.08459245520179692,
+    "orders": 318
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "total_return": 0.0002848490280051852,
+    "drawdown": -0.0713026685511059,
+    "orders": 494
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "total_return": 0.08691924229494208,
+    "drawdown": -0.03164417199631475,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "total_return": 0.0588873632646949,
+    "drawdown": -0.03042466817335343,
+    "orders": 494
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "total_return": -0.06912823110960387,
+    "drawdown": -0.09024230064493288,
+    "orders": 398
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "total_return": -0.06460914403511397,
+    "drawdown": -0.1086691198388311,
+    "orders": 406
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "total_return": 0.043609046030703924,
+    "drawdown": -0.033593216594593134,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "total_return": 0.01418621807064313,
+    "drawdown": -0.043801748433218934,
+    "orders": 424
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "total_return": 0.03413189426480878,
+    "drawdown": -0.08311435595593131,
+    "orders": 446
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "total_return": 0.13698497184547787,
+    "drawdown": -0.08944187755765731,
+    "orders": 388
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "total_return": 0.08210741179703618,
+    "drawdown": -0.03136207203043706,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "total_return": -0.07959467015907074,
+    "drawdown": -0.08462316806064785,
+    "orders": 98
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "total_return": -0.08411233027595078,
+    "drawdown": -0.11220781903706001,
+    "orders": 464
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "total_return": 0.1337456332517808,
+    "drawdown": -0.05275338596238921,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "total_return": 0.047355279132245354,
+    "drawdown": -0.10478071868341321,
+    "orders": 416
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "total_return": -0.09598688675995459,
+    "drawdown": -0.10790054251941161,
+    "orders": 318
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "total_return": -0.05928558176119314,
+    "drawdown": -0.0900883883438669,
+    "orders": 494
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "total_return": 0.022682779968870914,
+    "drawdown": -0.04111480150651725,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "total_return": -0.0019002961212625236,
+    "drawdown": -0.04910278925556977,
+    "orders": 494
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "total_return": -0.10980956494121974,
+    "drawdown": -0.1272216331410133,
+    "orders": 398
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "total_return": -0.10852817107317858,
+    "drawdown": -0.13515125776594683,
+    "orders": 406
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "total_return": -0.020137292235647863,
+    "drawdown": -0.05683543305464578,
+    "orders": 502
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "total_return": -0.031717668707394564,
+    "drawdown": -0.06750256307840463,
+    "orders": 424
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "total_return": -0.0182367535991117,
+    "drawdown": -0.09793862778316598,
+    "orders": 446
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "total_return": 0.07837663074192092,
+    "drawdown": -0.09592945989682233,
+    "orders": 388
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "total_return": 0.021413088932108693,
+    "drawdown": -0.04914918858411588,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "total_return": -0.0865951262319048,
+    "drawdown": -0.09109405423218031,
+    "orders": 98
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "total_return": -0.1320328720816345,
+    "drawdown": -0.15019743787807216,
+    "orders": 464
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "total_return": 0.06361383293233325,
+    "drawdown": -0.05204512907370784,
+    "orders": 504
+  },
+  {
+    "base": "SPY",
+    "method": "overnight_trend",
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "total_return": -0.004649289498701914,
+    "drawdown": -0.11014983522173893,
+    "orders": 416
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2011,
+    "total_return": -0.07538587245361406,
+    "drawdown": -0.14594826251419768,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2012,
+    "total_return": 0.1222374150947172,
+    "drawdown": -0.10194838061817146,
+    "orders": 2
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2013,
+    "total_return": 0.3602225227074667,
+    "drawdown": -0.06620431093057055,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2014,
+    "total_return": 0.11053012264820383,
+    "drawdown": -0.08969450351096542,
+    "orders": 2
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2015,
+    "total_return": -0.07901333208480377,
+    "drawdown": -0.11457361584643222,
+    "orders": 8
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2016,
+    "total_return": 0.08489377509263085,
+    "drawdown": -0.05608656136742873,
+    "orders": 4
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2017,
+    "total_return": 0.2410884575585719,
+    "drawdown": -0.0304918732934234,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2018,
+    "total_return": -0.03966419990202796,
+    "drawdown": -0.13894091593842472,
+    "orders": 9
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2019,
+    "total_return": 0.12621750386497865,
+    "drawdown": -0.06604771121731756,
+    "orders": 5
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2020,
+    "total_return": 0.059675359988012655,
+    "drawdown": -0.20521744980893264,
+    "orders": 6
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2021,
+    "total_return": 0.35731559791200107,
+    "drawdown": -0.06912404665729932,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2022,
+    "total_return": -0.16155041221391675,
+    "drawdown": -0.16840208800117729,
+    "orders": 15
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2023,
+    "total_return": 0.0950401015287361,
+    "drawdown": -0.10443322434098956,
+    "orders": 9
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2024,
+    "total_return": 0.2359112207579206,
+    "drawdown": -0.10313264926395604,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 0,
+    "year": 2025,
+    "total_return": 0.0732407155296797,
+    "drawdown": -0.13114289646051802,
+    "orders": 5
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2011,
+    "total_return": -0.07598557245498694,
+    "drawdown": -0.14646626735745694,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2012,
+    "total_return": 0.12220619153320644,
+    "drawdown": -0.10200669647545624,
+    "orders": 2
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2013,
+    "total_return": 0.36046634194168337,
+    "drawdown": -0.06624188041153078,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2014,
+    "total_return": 0.11046766545962927,
+    "drawdown": -0.08973415836228626,
+    "orders": 2
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2015,
+    "total_return": -0.07943243757036211,
+    "drawdown": -0.11499546278400175,
+    "orders": 8
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2016,
+    "total_return": 0.08121833045825344,
+    "drawdown": -0.0561464687447234,
+    "orders": 4
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2017,
+    "total_return": 0.2335038716810085,
+    "drawdown": -0.02960086317272148,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2018,
+    "total_return": -0.038997249752387164,
+    "drawdown": -0.1360650887276259,
+    "orders": 9
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2019,
+    "total_return": 0.12722326351850333,
+    "drawdown": -0.06672215150655281,
+    "orders": 5
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2020,
+    "total_return": 0.059959316175802746,
+    "drawdown": -0.20720579305429043,
+    "orders": 6
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2021,
+    "total_return": 0.36042971404903756,
+    "drawdown": -0.06959712821799735,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2022,
+    "total_return": -0.16319829973192657,
+    "drawdown": -0.17007995654930053,
+    "orders": 15
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2023,
+    "total_return": 0.09568853676727151,
+    "drawdown": -0.10380943085845284,
+    "orders": 9
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2024,
+    "total_return": 0.2377493008770657,
+    "drawdown": -0.10380090274908982,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 2,
+    "year": 2025,
+    "total_return": 0.07006834696853126,
+    "drawdown": -0.13194136324207673,
+    "orders": 5
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "total_return": -0.07688512245704715,
+    "drawdown": -0.14724336245077707,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "total_return": 0.12215928012468869,
+    "drawdown": -0.10209429545928661,
+    "orders": 2
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "total_return": 0.36083269028754517,
+    "drawdown": -0.0662983146505175,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "total_return": 0.11037386306370367,
+    "drawdown": -0.08979370642719275,
+    "orders": 2
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "total_return": -0.08006196688483458,
+    "drawdown": -0.11562907607577078,
+    "orders": 8
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "total_return": 0.08105605832570162,
+    "drawdown": -0.05623657015254091,
+    "orders": 4
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "total_return": 0.23389302813928525,
+    "drawdown": -0.029646680115747448,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "total_return": -0.03972926865788717,
+    "drawdown": -0.13684092775484835,
+    "orders": 9
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "total_return": 0.12712827956968642,
+    "drawdown": -0.0669383269509416,
+    "orders": 5
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "total_return": 0.05971190764562406,
+    "drawdown": -0.20799748796600104,
+    "orders": 6
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "total_return": 0.3613064394306078,
+    "drawdown": -0.0697299996381665,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "total_return": -0.16448499961222673,
+    "drawdown": -0.17136825132385292,
+    "orders": 15
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "total_return": 0.09536179756140739,
+    "drawdown": -0.10424177708647664,
+    "orders": 9
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "total_return": 0.2386120674973633,
+    "drawdown": -0.1041139710964567,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "total_return": 0.06989317137458717,
+    "drawdown": -0.13258462875802057,
+    "orders": 5
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "total_return": -0.07838437246047969,
+    "drawdown": -0.14853875520174997,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "total_return": 0.12208089094053487,
+    "drawdown": -0.10224062858380523,
+    "orders": 2
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "total_return": 0.36144492845541,
+    "drawdown": -0.06639258570243511,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "total_return": 0.11021721399387041,
+    "drawdown": -0.08989312902499957,
+    "orders": 2
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "total_return": -0.08111351175158543,
+    "drawdown": -0.11668735191924673,
+    "orders": 8
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "total_return": 0.08078450845805207,
+    "drawdown": -0.05638738351478767,
+    "orders": 4
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "total_return": 0.23454451278238686,
+    "drawdown": -0.029723357687489238,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "total_return": -0.0409537044091397,
+    "drawdown": -0.13813818767086528,
+    "orders": 9
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "total_return": 0.12766289253559826,
+    "drawdown": -0.06725645222428223,
+    "orders": 5
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "total_return": 0.059260650146940375,
+    "drawdown": -0.20920221473436407,
+    "orders": 6
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "total_return": 0.3625664471669128,
+    "drawdown": -0.06992071634301811,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "total_return": -0.1661939891158135,
+    "drawdown": -0.17308059742194326,
+    "orders": 15
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "total_return": 0.09269947645046517,
+    "drawdown": -0.1048797789607071,
+    "orders": 9
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "total_return": 0.23615408822045136,
+    "drawdown": -0.10322104616418659,
+    "orders": 0
+  },
+  {
+    "base": "SPY",
+    "method": "trend_fixed50",
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "total_return": 0.07133677414999373,
+    "drawdown": -0.1320594573361633,
+    "orders": 5
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2011,
+    "total_return": -0.03278541032822113,
+    "drawdown": -0.1378907453929621,
+    "orders": 20
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2012,
+    "total_return": 0.06487046020724785,
+    "drawdown": -0.1445696823569429,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2013,
+    "total_return": 0.5251165188583031,
+    "drawdown": -0.0896671901928473,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2014,
+    "total_return": 0.14408986529834134,
+    "drawdown": -0.1257556024935772,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2015,
+    "total_return": -0.09792909538039818,
+    "drawdown": -0.15078833678679182,
+    "orders": 17
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2016,
+    "total_return": 0.10302803530764915,
+    "drawdown": -0.09711737938180931,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2017,
+    "total_return": 0.43516906815710366,
+    "drawdown": -0.05230435038584935,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2018,
+    "total_return": -0.0444544506383876,
+    "drawdown": -0.1936203493557791,
+    "orders": 15
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2019,
+    "total_return": 0.10971479664377926,
+    "drawdown": -0.1266464709283044,
+    "orders": 14
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2020,
+    "total_return": -0.1154493698907132,
+    "drawdown": -0.31022123495874376,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2021,
+    "total_return": 0.3720425629989743,
+    "drawdown": -0.09464985818905791,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2022,
+    "total_return": -0.1386632343313574,
+    "drawdown": -0.1455728342040572,
+    "orders": 18
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2023,
+    "total_return": 0.10514927920349404,
+    "drawdown": -0.15661792784651574,
+    "orders": 18
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2024,
+    "total_return": 0.32472535818256465,
+    "drawdown": -0.14238390340428242,
+    "orders": 11
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 0,
+    "year": 2025,
+    "total_return": 0.09788190531911223,
+    "drawdown": -0.13501412502937193,
+    "orders": 14
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2011,
+    "total_return": -0.03331209152771508,
+    "drawdown": -0.13825878217682108,
+    "orders": 20
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2012,
+    "total_return": 0.06324794074299667,
+    "drawdown": -0.14467210225554938,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2013,
+    "total_return": 0.5260716840696615,
+    "drawdown": -0.08981773615297983,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2014,
+    "total_return": 0.14407513919663528,
+    "drawdown": -0.12592062140611981,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2015,
+    "total_return": -0.0988965545302527,
+    "drawdown": -0.15120094556166885,
+    "orders": 17
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2016,
+    "total_return": 0.10242716563196752,
+    "drawdown": -0.09736607874988057,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2017,
+    "total_return": 0.4362677744558976,
+    "drawdown": -0.052456486083214404,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2018,
+    "total_return": -0.04525833088955922,
+    "drawdown": -0.1940103961531453,
+    "orders": 15
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2019,
+    "total_return": 0.10830420433002441,
+    "drawdown": -0.12715715301279906,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2020,
+    "total_return": -0.1114121038649295,
+    "drawdown": -0.3060554135244161,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2021,
+    "total_return": 0.37187822786922853,
+    "drawdown": -0.09465877160337954,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2022,
+    "total_return": -0.1392667890599406,
+    "drawdown": -0.14616693595391872,
+    "orders": 18
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2023,
+    "total_return": 0.10509103609948078,
+    "drawdown": -0.1567890787175189,
+    "orders": 18
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2024,
+    "total_return": 0.3248650421716168,
+    "drawdown": -0.14247037527769024,
+    "orders": 11
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 2,
+    "year": 2025,
+    "total_return": 0.09751259716067429,
+    "drawdown": -0.13483366949172093,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "total_return": -0.03410211332695601,
+    "drawdown": -0.13881100225793952,
+    "orders": 20
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "total_return": 0.06282969078888745,
+    "drawdown": -0.1448259388902604,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "total_return": 0.5265098656761387,
+    "drawdown": -0.08991049202674506,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "total_return": 0.14284786959325557,
+    "drawdown": -0.12614532322483862,
+    "orders": 11
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "total_return": -0.0980105255109236,
+    "drawdown": -0.1518461463641545,
+    "orders": 17
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "total_return": 0.10202267663392539,
+    "drawdown": -0.09748053980428262,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "total_return": 0.4368422642651104,
+    "drawdown": -0.05252131777256508,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "total_return": -0.046355482130100434,
+    "drawdown": -0.19417640092468602,
+    "orders": 15
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "total_return": 0.10795075167745694,
+    "drawdown": -0.12761398818392555,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "total_return": -0.11208698331254474,
+    "drawdown": -0.3070538659330929,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "total_return": 0.37290008846922196,
+    "drawdown": -0.09492165048829493,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "total_return": -0.14012361759374348,
+    "drawdown": -0.14702696631895262,
+    "orders": 18
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "total_return": 0.10516820466105026,
+    "drawdown": -0.1566342591316,
+    "orders": 19
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "total_return": 0.3247409752302044,
+    "drawdown": -0.14255818445175328,
+    "orders": 11
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "total_return": 0.09562997374531212,
+    "drawdown": -0.13541216527278743,
+    "orders": 14
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "total_return": -0.035418816325691105,
+    "drawdown": -0.13973180907015093,
+    "orders": 20
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "total_return": 0.061914625398705514,
+    "drawdown": -0.1450828861993837,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "total_return": 0.5248561005884786,
+    "drawdown": -0.08931850840006772,
+    "orders": 11
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "total_return": 0.14276213807954585,
+    "drawdown": -0.1265273493168818,
+    "orders": 11
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "total_return": -0.09901039183768423,
+    "drawdown": -0.15283773716422944,
+    "orders": 18
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "total_return": 0.10090514955694285,
+    "drawdown": -0.09793430994725916,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "total_return": 0.4318229453237059,
+    "drawdown": -0.05197061086808363,
+    "orders": 1
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "total_return": -0.04865771671432184,
+    "drawdown": -0.19276226179698752,
+    "orders": 15
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "total_return": 0.10952986667291498,
+    "drawdown": -0.1269331938252095,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "total_return": -0.11067643591770371,
+    "drawdown": -0.3085642672869048,
+    "orders": 13
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "total_return": 0.373102116092326,
+    "drawdown": -0.09396453749594436,
+    "orders": 12
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "total_return": -0.13880461823895862,
+    "drawdown": -0.14567234834629095,
+    "orders": 18
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "total_return": 0.10243864972907968,
+    "drawdown": -0.1575118739329725,
+    "orders": 18
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "total_return": 0.32436383760621945,
+    "drawdown": -0.14245573768317576,
+    "orders": 11
+  },
+  {
+    "base": "SPY",
+    "method": "trend_vol18",
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "total_return": 0.09443060547571225,
+    "drawdown": -0.1353413809221129,
+    "orders": 12
+  }
+]

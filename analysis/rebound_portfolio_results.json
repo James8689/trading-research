@@ -1,0 +1,98 @@
+[
+  {
+    "sessions": 39,
+    "total_return": 0.0027001905517574087,
+    "cagr": 0.017576552919372546,
+    "annual_vol": 0.019675991671063122,
+    "sharpe_zero_cash": 0.8951449794838546,
+    "close_to_close_max_drawdown": -0.005114127075195651,
+    "worst_day": -0.0034480428245441397,
+    "positive_days": 0.2564102564102564,
+    "mean_daily": 6.989232206634243e-05,
+    "cost_bps": 0,
+    "trades": 41,
+    "active_days": 22,
+    "stops": 19,
+    "net_win_fraction": 0.43902439024390244,
+    "mean_daily_ci95": [
+      -0.00023880450860263973,
+      0.0004283910168482628
+    ],
+    "start": "2026-07-14",
+    "end": "2026-09-04",
+    "ending_equity": 2506.750476379394,
+    "mean_notional": 496.84880438083553
+  },
+  {
+    "sessions": 39,
+    "total_return": -0.0013739696441642524,
+    "cagr": -0.008844715639331313,
+    "annual_vol": 0.019886398231913415,
+    "sharpe_zero_cash": -0.4370518379878979,
+    "close_to_close_max_drawdown": -0.007208468682861291,
+    "worst_day": -0.0038136928866085995,
+    "positive_days": 0.20512820512820512,
+    "mean_daily": -3.448963054848032e-05,
+    "cost_bps": 5,
+    "trades": 41,
+    "active_days": 22,
+    "stops": 19,
+    "net_win_fraction": 0.43902439024390244,
+    "mean_daily_ci95": [
+      -0.0003675698220768138,
+      0.00033156110415692757
+    ],
+    "start": "2026-07-14",
+    "end": "2026-09-04",
+    "ending_equity": 2496.565075889588,
+    "mean_notional": 496.84880438083553
+  },
+  {
+    "sessions": 39,
+    "total_return": -0.005448129840087801,
+    "cagr": -0.03468378396851601,
+    "annual_vol": 0.020283751098340783,
+    "sharpe_zero_cash": -1.7302865326989896,
+    "close_to_close_max_drawdown": -0.009819387768554733,
+    "worst_day": -0.004180006436738548,
+    "positive_days": 0.1794871794871795,
+    "mean_daily": -0.00013927262443681504,
+    "cost_bps": 10,
+    "trades": 41,
+    "active_days": 22,
+    "stops": 19,
+    "net_win_fraction": 0.4146341463414634,
+    "mean_daily_ci95": [
+      -0.0004972194880785363,
+      0.00023362515923728785
+    ],
+    "start": "2026-07-14",
+    "end": "2026-09-04",
+    "ending_equity": 2486.3796753997804,
+    "mean_notional": 496.84880438083553
+  },
+  {
+    "sessions": 39,
+    "total_return": -0.013596450231933566,
+    "cagr": -0.08465726197372903,
+    "annual_vol": 0.021600350321564345,
+    "sharpe_zero_cash": -4.08390438113281,
+    "close_to_close_max_drawdown": -0.016767242089843815,
+    "worst_day": -0.004914631237896483,
+    "positive_days": 0.15384615384615385,
+    "mean_daily": -0.00035005462425492117,
+    "cost_bps": 20,
+    "trades": 41,
+    "active_days": 22,
+    "stops": 19,
+    "net_win_fraction": 0.4146341463414634,
+    "mean_daily_ci95": [
+      -0.0007772027107813391,
+      5.341696391895052e-05
+    ],
+    "start": "2026-07-14",
+    "end": "2026-09-04",
+    "ending_equity": 2466.0088744201666,
+    "mean_notional": 496.84880438083553
+  }
+]

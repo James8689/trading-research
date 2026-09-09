@@ -1,0 +1,24 @@
+# Trading research project instructions
+
+## Mission
+
+Develop and test a low-cost, deterministic trading strategy for a modeled $2,500 account. The target is frequent opportunities and attractive risk-adjusted returns with an approximately 25% drawdown ceiling. No live trading or broker order submission is authorized by this repository.
+
+## Research standards
+
+- Generate original hypotheses from first principles. Do not merely copy or threshold-tune published moving-average, RSI, breakout, volume, momentum, or overnight rules.
+- Explain the economic mechanism before inspecting results: forced flows, delayed information, participant constraints, or another reason the opportunity might persist.
+- Use AI for hypothesis generation, feature construction, and falsification only when it adds measurable value. The eventual live rule should be deterministic and inexpensive.
+- Freeze rules before viewing new results. Separate development data from an untouched validation period.
+- Enforce point-in-time inputs, no lookahead, realistic spread/slippage/latency assumptions, cash and whole-share constraints, and concentration analysis.
+- Preserve failed ideas. Never select a historical winner and call it validated.
+- Run data-heavy work in Python and save compact JSON summaries. Do not paste raw data into the agent conversation.
+- Update `HANDOFF.md` after each material batch and run `checkpoint.py --save` after updating it.
+
+## Agent roles
+
+When delegation is available, use bounded roles: hypothesis generator, data-availability auditor, adversarial falsifier, and result synthesizer. Agents must write their findings to files. The synthesizer reads summaries, not raw datasets. Parallel agents should work on independent hypotheses and must not silently change shared rules.
+
+## Deployment gate
+
+No bot is built and no order is placed until a candidate passes reserved validation, cost stress tests, concentration checks, and 30–60 sessions of live quote or shadow-order testing. Alpaca is the preferred API-native execution path. Robinhood integration remains untested in this project.

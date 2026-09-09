@@ -1,0 +1,4214 @@
+[
+  {
+    "date": "2026-07-14",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0032029659031459178,
+    "equity": 2508.007414757865,
+    "trades": 2,
+    "gross_weight": 0.5816159848632813
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0018570140659592833,
+    "equity": 2512.6648198046005,
+    "trades": 3,
+    "gross_weight": 0.8846225957075462
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0,
+    "equity": 2512.6648198046005,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0018780662004198093,
+    "equity": 2507.9458689335415,
+    "trades": 2,
+    "gross_weight": 0.5988542669790478
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0016202786580558027,
+    "equity": 2503.8822977665495,
+    "trades": 1,
+    "gross_weight": 0.2066671351297429
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0,
+    "equity": 2503.8822977665495,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0,
+    "equity": 2503.8822977665495,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0013735160623571576,
+    "equity": 2500.4431752123155,
+    "trades": 2,
+    "gross_weight": 0.5452972048759804
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.005235860761509227,
+    "equity": 2513.535147519793,
+    "trades": 2,
+    "gross_weight": 0.6498368092330141
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.002087864086171957,
+    "equity": 2508.2872277559554,
+    "trades": 3,
+    "gross_weight": 0.9441841261168061
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0013548615907289804,
+    "equity": 2504.888845732553,
+    "trades": 2,
+    "gross_weight": 0.5777926672887298
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0029049284320719904,
+    "equity": 2497.6123229054047,
+    "trades": 2,
+    "gross_weight": 0.6213090103447219
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0028844529857662876,
+    "equity": 2490.4080775833136,
+    "trades": 3,
+    "gross_weight": 0.6967894549682407
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.002601738031200155,
+    "equity": 2483.928688174657,
+    "trades": 2,
+    "gross_weight": 0.642328468865442
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.002392801310818859,
+    "equity": 2477.985140353612,
+    "trades": 3,
+    "gross_weight": 0.8205026162326405
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0068803471759870385,
+    "equity": 2495.034538416182,
+    "trades": 2,
+    "gross_weight": 0.5557014681178625
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0025905095665804084,
+    "equity": 2488.571127575466,
+    "trades": 2,
+    "gross_weight": 0.462294211424525
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0,
+    "equity": 2488.571127575466,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0,
+    "equity": 2488.571127575466,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.001265788812808804,
+    "equity": 2491.72113306863,
+    "trades": 1,
+    "gross_weight": 0.31539784571031027
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.002383777255781889,
+    "equity": 2485.78142490387,
+    "trades": 1,
+    "gross_weight": 0.31361454336954453
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.000852195259342938,
+    "equity": 2483.6630537578044,
+    "trades": 1,
+    "gross_weight": 0.3066440213006696
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0,
+    "equity": 2483.6630537578044,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0006483771903560176,
+    "equity": 2482.052703285218,
+    "trades": 1,
+    "gross_weight": 0.3204420109709928
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0,
+    "equity": 2482.052703285218,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.001163236425989763,
+    "equity": 2479.1654891695302,
+    "trades": 2,
+    "gross_weight": 0.5453526755697005
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0010418403215802273,
+    "equity": 2481.7483837400173,
+    "trades": 3,
+    "gross_weight": 0.8680904936310063
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0019216773666126386,
+    "equity": 2476.9792640413566,
+    "trades": 2,
+    "gross_weight": 0.5917441089449933
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0014295340713976706,
+    "equity": 2473.438337789264,
+    "trades": 2,
+    "gross_weight": 0.5850230461192258
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0,
+    "equity": 2473.438337789264,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.001348127814734892,
+    "equity": 2470.1038267680588,
+    "trades": 2,
+    "gross_weight": 0.654129914797626
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0010879603350266145,
+    "equity": 2467.4164517811378,
+    "trades": 2,
+    "gross_weight": 0.5221604269313618
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0204603401011817,
+    "equity": 2517.900631555831,
+    "trades": 2,
+    "gross_weight": 0.5838670274289983
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.002139570024162487,
+    "equity": 2512.513406840734,
+    "trades": 2,
+    "gross_weight": 0.639449377621141
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0019988718526408812,
+    "equity": 2507.4912145124176,
+    "trades": 3,
+    "gross_weight": 0.9781161780033171
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0012971904756439007,
+    "equity": 2504.238520791191,
+    "trades": 2,
+    "gross_weight": 0.6165006645100428
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0006413149223076446,
+    "equity": 2502.63251525879,
+    "trades": 1,
+    "gross_weight": 0.2952394498021566
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": -0.0005392776747751036,
+    "equity": 2501.282901415145,
+    "trades": 1,
+    "gross_weight": 0.2502125261476341
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 0,
+    "account_return": 0.0,
+    "equity": 2501.282901415145,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0029121579107142773,
+    "equity": 2507.2803947767857,
+    "trades": 2,
+    "gross_weight": 0.5816159848632813
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.001415112980374486,
+    "equity": 2510.8284798088725,
+    "trades": 3,
+    "gross_weight": 0.8848791040359061
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0,
+    "equity": 2510.8284798088725,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.002179085883194019,
+    "equity": 2505.3571689133996,
+    "trades": 2,
+    "gross_weight": 0.5992922499201006
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0017253931752826807,
+    "equity": 2501.034442752511,
+    "trades": 1,
+    "gross_weight": 0.20688067722406436
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0,
+    "equity": 2501.034442752511,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0,
+    "equity": 2501.034442752511,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0016480391045127435,
+    "equity": 2496.9126401891217,
+    "trades": 2,
+    "gross_weight": 0.5459181189075915
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.005235943011659923,
+    "equity": 2509.9863324782455,
+    "trades": 2,
+    "gross_weight": 0.610181544629964
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.002563575615508139,
+    "equity": 2503.5517927210453,
+    "trades": 3,
+    "gross_weight": 0.9455190875010164
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.001646867070701622,
+    "equity": 2499.4287757138172,
+    "trades": 2,
+    "gross_weight": 0.5788855544610856
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0032226074654721627,
+    "equity": 2491.374097881786,
+    "trades": 2,
+    "gross_weight": 0.6226662767460357
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0032409425359105196,
+    "equity": 2483.299697595095,
+    "trades": 3,
+    "gross_weight": 0.6985341666186798
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0029312689963954435,
+    "equity": 2476.0204781827765,
+    "trades": 2,
+    "gross_weight": 0.6441671171922501
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0028120053432458838,
+    "equity": 2469.05789536814,
+    "trades": 3,
+    "gross_weight": 0.8231232355066853
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.006626368746973433,
+    "equity": 2485.4187834404756,
+    "trades": 2,
+    "gross_weight": 0.5577106891871542
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0028325732869763243,
+    "equity": 2478.378652587553,
+    "trades": 2,
+    "gross_weight": 0.4640827662923659
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0,
+    "equity": 2478.378652587553,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0,
+    "equity": 2478.378652587553,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0011126469734630314,
+    "equity": 2481.13621309445,
+    "trades": 1,
+    "gross_weight": 0.31669493752083233
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0022324951804431692,
+    "equity": 2475.5970884566937,
+    "trades": 1,
+    "gross_weight": 0.2755834135885019
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0010096538583859512,
+    "equity": 2473.0975923045244,
+    "trades": 1,
+    "gross_weight": 0.30790552136342336
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0,
+    "equity": 2473.0975923045244,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0008120526543699356,
+    "equity": 2471.0893068401774,
+    "trades": 1,
+    "gross_weight": 0.32181098958528626
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0,
+    "equity": 2471.0893068401774,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.001442283428260991,
+    "equity": 2467.5252956831687,
+    "trades": 2,
+    "gross_weight": 0.5477722229199657
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0006106622600708674,
+    "equity": 2469.0321202570126,
+    "trades": 3,
+    "gross_weight": 0.8721855849061448
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0022289704724735506,
+    "equity": 2463.528720565371,
+    "trades": 2,
+    "gross_weight": 0.5947917703918104
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0017314477373844268,
+    "equity": 2459.263249336166,
+    "trades": 2,
+    "gross_weight": 0.5882171951667249
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0,
+    "equity": 2459.263249336166,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0016848485118058996,
+    "equity": 2455.119763310383,
+    "trades": 2,
+    "gross_weight": 0.6579002917202987
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0013572739998650833,
+    "equity": 2451.7874930890866,
+    "trades": 2,
+    "gross_weight": 0.5253472714548553
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.020296970418683613,
+    "equity": 2501.551351309214,
+    "trades": 2,
+    "gross_weight": 0.5875888971583529
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0024035737895576033,
+    "equity": 2495.538688047975,
+    "trades": 2,
+    "gross_weight": 0.6212984564449258
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0025048529055451763,
+    "equity": 2489.2877307143176,
+    "trades": 3,
+    "gross_weight": 0.9847693495801689
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0016171809596599283,
+    "equity": 2485.262101993091,
+    "trades": 2,
+    "gross_weight": 0.6210089661095153
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0007949586212023542,
+    "equity": 2483.286421459164,
+    "trades": 1,
+    "gross_weight": 0.29749377438251906
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": -0.0006695598345435265,
+    "equity": 2481.6237126136875,
+    "trades": 1,
+    "gross_weight": 0.25216181196455134
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 5,
+    "account_return": 0.0,
+    "equity": 2481.6237126136875,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.002621349918282636,
+    "equity": 2506.5533747957065,
+    "trades": 2,
+    "gross_weight": 0.5816159848632813
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.000972955550023916,
+    "equity": 2508.992139813145,
+    "trades": 3,
+    "gross_weight": 0.8851357611635549
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0,
+    "equity": 2508.992139813145,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.002480546200655127,
+    "equity": 2502.768468893258,
+    "trades": 2,
+    "gross_weight": 0.599730873983602
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0018307251396735638,
+    "equity": 2498.186587738473,
+    "trades": 1,
+    "gross_weight": 0.2070946610663387
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0,
+    "equity": 2498.186587738473,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0,
+    "equity": 2498.186587738473,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0019231880421285872,
+    "equity": 2493.3821051659284,
+    "trades": 2,
+    "gross_weight": 0.5465404485845722
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.004937834140149127,
+    "equity": 2505.6940124492535,
+    "trades": 2,
+    "gross_weight": 0.6110455386842082
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.003041536481588535,
+    "equity": 2498.072852698691,
+    "trades": 3,
+    "gross_weight": 0.9471387866729468
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.001940556691858295,
+    "equity": 2493.2252007076368,
+    "trades": 2,
+    "gross_weight": 0.5801552048755134
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0035427336585588574,
+    "equity": 2484.392367870723,
+    "trades": 2,
+    "gross_weight": 0.6242155780087202
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.003600298957187838,
+    "equity": 2475.4478126194326,
+    "trades": 3,
+    "gross_weight": 0.7004972128016845
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.003263671879809021,
+    "equity": 2467.3687632034516,
+    "trades": 2,
+    "gross_weight": 0.6462103540092465
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0032348702501464573,
+    "equity": 2459.3871453952243,
+    "trades": 3,
+    "gross_weight": 0.8260094792383348
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.006372472959958696,
+    "equity": 2475.0595234773255,
+    "trades": 2,
+    "gross_weight": 0.5599037073309019
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.003077441488933749,
+    "equity": 2467.4426726121956,
+    "trades": 2,
+    "gross_weight": 0.46602516564674024
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0,
+    "equity": 2467.4426726121956,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0,
+    "equity": 2467.4426726121956,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0009585290660982091,
+    "equity": 2469.8077881328254,
+    "trades": 1,
+    "gross_weight": 0.3180985646581382
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0023811588333332305,
+    "equity": 2463.9267835014775,
+    "trades": 1,
+    "gross_weight": 0.27684744961450614
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0011691180020289413,
+    "equity": 2461.0461623432047,
+    "trades": 1,
+    "gross_weight": 0.30936390533642416
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0,
+    "equity": 2461.0461623432047,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0009777226014387457,
+    "equity": 2458.639941887098,
+    "trades": 1,
+    "gross_weight": 0.32338685706031056
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0,
+    "equity": 2458.639941887098,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.001724859393227928,
+    "equity": 2454.3991336887684,
+    "trades": 2,
+    "gross_weight": 0.5505458768406193
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0001755030676503958,
+    "equity": 2454.829888265969,
+    "trades": 3,
+    "gross_weight": 0.8768500460035756
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.002540982458474442,
+    "equity": 2448.5922085813468,
+    "trades": 2,
+    "gross_weight": 0.5982328930332799
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0020379123109304387,
+    "equity": 2443.6021923750304,
+    "trades": 2,
+    "gross_weight": 0.5918053439626026
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0,
+    "equity": 2443.6021923750304,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.002026705101924602,
+    "equity": 2438.64973134467,
+    "trades": 2,
+    "gross_weight": 0.6621167775196363
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0016308883578282864,
+    "equity": 2434.6725658889986,
+    "trades": 2,
+    "gross_weight": 0.5288953358786833
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.020143791552378384,
+    "equity": 2483.716102554561,
+    "trades": 2,
+    "gross_weight": 0.5917194489784796
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.002733713507312232,
+    "equity": 2476.9263342966788,
+    "trades": 2,
+    "gross_weight": 0.6257599214691207
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.002712039530259829,
+    "equity": 2470.2088121645247,
+    "trades": 3,
+    "gross_weight": 0.8848910763188181
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0019425741247443434,
+    "equity": 2465.4102484432983,
+    "trades": 2,
+    "gross_weight": 0.6258053944214654
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0009513043668629465,
+    "equity": 2463.0648929078457,
+    "trades": 1,
+    "gross_weight": 0.29988923892832675
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": -0.0008021728753459045,
+    "equity": 2461.0890890605383,
+    "trades": 1,
+    "gross_weight": 0.25423203646203646
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 10,
+    "account_return": 0.0,
+    "equity": 2461.0890890605383,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.002039733933419355,
+    "equity": 2505.0993348335483,
+    "trades": 2,
+    "gross_weight": 0.5816159848632813
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 8.787076228113342e-05,
+    "equity": 2505.31945982169,
+    "trades": 3,
+    "gross_weight": 0.8856495223349268
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0,
+    "equity": 2505.31945982169,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.00308479261533587,
+    "equity": 2497.591068852975,
+    "trades": 2,
+    "gross_weight": 0.6006100511170818
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.002042044114499675,
+    "equity": 2492.4908777103965,
+    "trades": 1,
+    "gross_weight": 0.2075239594890944
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0,
+    "equity": 2492.4908777103965,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0,
+    "equity": 2492.4908777103965,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.002475372185322828,
+    "equity": 2486.321035119541,
+    "trades": 2,
+    "gross_weight": 0.5477893742843976
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.004719608650502395,
+    "equity": 2498.0554973848175,
+    "trades": 2,
+    "gross_weight": 0.572033936267824
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.004000871777168372,
+    "equity": 2488.0610976475305,
+    "trades": 3,
+    "gross_weight": 0.9500349328545215
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.002530855035939074,
+    "equity": 2481.764175688825,
+    "trades": 2,
+    "gross_weight": 0.5824897021305693
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0041861926078436435,
+    "equity": 2471.3750328421456,
+    "trades": 2,
+    "gross_weight": 0.627098265423895
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.004323449512315309,
+    "equity": 2460.6901676616562,
+    "trades": 3,
+    "gross_weight": 0.7041869024620746
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0039333312054083145,
+    "equity": 2451.011458238351,
+    "trades": 2,
+    "gross_weight": 0.6500859101836226
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.00408798080552904,
+    "equity": 2440.9917704429413,
+    "trades": 3,
+    "gross_weight": 0.8315220152611881
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0022664483472378868,
+    "equity": 2446.524152206683,
+    "trades": 2,
+    "gross_weight": 0.3967690478092044
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.003584796365747409,
+    "equity": 2437.753861317139,
+    "trades": 2,
+    "gross_weight": 0.4714607143255455
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0,
+    "equity": 2437.753861317139,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0,
+    "equity": 2437.753861317139,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0006482301487328371,
+    "equity": 2439.334086865235,
+    "trades": 1,
+    "gross_weight": 0.3219726096998558
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.002306752950281005,
+    "equity": 2433.7071457636375,
+    "trades": 1,
+    "gross_weight": 0.24026228804388078
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0014968403970958596,
+    "equity": 2430.0642745931577,
+    "trades": 1,
+    "gross_weight": 0.31320531458926043
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0,
+    "equity": 2430.0642745931577,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0013176978375041718,
+    "equity": 2426.86218415353,
+    "trades": 1,
+    "gross_weight": 0.3275098489539964
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0,
+    "equity": 2426.86218415353,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0023051998244895027,
+    "equity": 2421.267781872559,
+    "trades": 2,
+    "gross_weight": 0.5577548208052547
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0007109438406494614,
+    "equity": 2419.5463964564738,
+    "trades": 3,
+    "gross_weight": 0.8888483997510228
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.003184993551630431,
+    "equity": 2411.840156785889,
+    "trades": 2,
+    "gross_weight": 0.60695673706141
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0024078448477616774,
+    "equity": 2406.0328198907473,
+    "trades": 2,
+    "gross_weight": 0.5444846564195528
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0,
+    "equity": 2406.0328198907473,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0021182791430020827,
+    "equity": 2400.9361707509943,
+    "trades": 2,
+    "gross_weight": 0.5211711985715395
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.002193709265820939,
+    "equity": 2395.6692148265734,
+    "trades": 2,
+    "gross_weight": 0.5372031478648445
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.019870394986846052,
+    "equity": 2443.2721083830047,
+    "trades": 2,
+    "gross_weight": 0.6013531000919716
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.003415083495014644,
+    "equity": 2434.9281301318365,
+    "trades": 2,
+    "gross_weight": 0.6361182563143706
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0036589712985039893,
+    "equity": 2426.018797989764,
+    "trades": 3,
+    "gross_weight": 0.9001538824883262
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.002615162638675083,
+    "equity": 2419.674364268538,
+    "trades": 2,
+    "gross_weight": 0.6372044607737299
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0012748432533139758,
+    "equity": 2416.589658730033,
+    "trades": 1,
+    "gross_weight": 0.305557646090639
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": -0.0010767214208542747,
+    "equity": 2413.9876648790637,
+    "trades": 1,
+    "gross_weight": 0.2591213619573233
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "rvol1.5_top3",
+    "cost_bps": 20,
+    "account_return": 0.0,
+    "equity": 2413.9876648790637,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.0032029659031459178,
+    "equity": 2508.007414757865,
+    "trades": 2,
+    "gross_weight": 0.5816159848632813
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.0018570140659592833,
+    "equity": 2512.6648198046005,
+    "trades": 3,
+    "gross_weight": 0.8846225957075462
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0016481658175105532,
+    "equity": 2508.523531537737,
+    "trades": 2,
+    "gross_weight": 0.6132652575450268
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0018811666750306348,
+    "equity": 2503.8045806666782,
+    "trades": 2,
+    "gross_weight": 0.5998429075551563
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0038302619871361655,
+    "equity": 2494.2143531581332,
+    "trades": 2,
+    "gross_weight": 0.44604518403677385
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0025937704258188446,
+    "equity": 2487.7449337332587,
+    "trades": 2,
+    "gross_weight": 0.5423469818269788
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.0027531315263973942,
+    "equity": 2494.594022739955,
+    "trades": 2,
+    "gross_weight": 0.5511175891239422
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0013786301590094883,
+    "equity": 2491.154900185721,
+    "trades": 2,
+    "gross_weight": 0.5473275434256408
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.004307461195973289,
+    "equity": 2501.8854532514297,
+    "trades": 3,
+    "gross_weight": 0.9095460091179685
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.002097585945438611,
+    "equity": 2496.637533487592,
+    "trades": 3,
+    "gross_weight": 0.9485805929446571
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0013611835830471416,
+    "equity": 2493.2391514641895,
+    "trades": 2,
+    "gross_weight": 0.5804887366356539
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0029185017501731606,
+    "equity": 2485.9626286370412,
+    "trades": 2,
+    "gross_weight": 0.6242120852512926
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0028979700817308674,
+    "equity": 2478.75838331495,
+    "trades": 3,
+    "gross_weight": 0.7000547430406725
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.002613965706488668,
+    "equity": 2472.2789939062936,
+    "trades": 2,
+    "gross_weight": 0.6453472908420079
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0024040764960971735,
+    "equity": 2466.335446085249,
+    "trades": 3,
+    "gross_weight": 0.8243689293182845
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.006210170422076549,
+    "equity": 2481.6518095234464,
+    "trades": 3,
+    "gross_weight": 0.756397506036682
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.003531941925531264,
+    "equity": 2472.88675945282,
+    "trades": 3,
+    "gross_weight": 0.7724210140875156
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.0,
+    "equity": 2472.88675945282,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.0019248827596525168,
+    "equity": 2477.6467765426637,
+    "trades": 1,
+    "gross_weight": 0.3148021136276975
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.0012713698833049841,
+    "equity": 2480.7967820358276,
+    "trades": 1,
+    "gross_weight": 0.31678848654505304
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0023942743749795366,
+    "equity": 2474.8570738710678,
+    "trades": 1,
+    "gross_weight": 0.3149955655417635
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0008559569635075307,
+    "equity": 2472.738702725002,
+    "trades": 1,
+    "gross_weight": 0.3079975891354209
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.005335924203045755,
+    "equity": 2485.9330490166803,
+    "trades": 3,
+    "gross_weight": 0.9004145807424672
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0006477851337241411,
+    "equity": 2484.322698544094,
+    "trades": 1,
+    "gross_weight": 0.32014940379642043
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0012226102160658786,
+    "equity": 2481.285340232849,
+    "trades": 2,
+    "gross_weight": 0.541592277030325
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0011635961688375525,
+    "equity": 2478.3981261171616,
+    "trades": 2,
+    "gross_weight": 0.545521331502558
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.0010421628967794353,
+    "equity": 2480.9810206876487,
+    "trades": 3,
+    "gross_weight": 0.8683592723086146
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0019222717380316117,
+    "equity": 2476.211900988988,
+    "trades": 2,
+    "gross_weight": 0.5919271343538437
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0014299770753377027,
+    "equity": 2472.6709747368955,
+    "trades": 2,
+    "gross_weight": 0.5852043412136387
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.0009757471320893438,
+    "equity": 2475.0836763490956,
+    "trades": 2,
+    "gross_weight": 0.5985875218011185
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.002180040073122448,
+    "equity": 2469.6878947503233,
+    "trades": 3,
+    "gross_weight": 0.9742418163560255
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0023271351702709017,
+    "equity": 2463.9405971908573,
+    "trades": 3,
+    "gross_weight": 0.8532537555335282
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": 0.01892798964267487,
+    "equity": 2510.5780392946517,
+    "trades": 3,
+    "gross_weight": 0.8817433092596757
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.002085399530566713,
+    "equity": 2505.3424810300558,
+    "trades": 2,
+    "gross_weight": 0.6190646014424586
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.002004593131016542,
+    "equity": 2500.320288701739,
+    "trades": 3,
+    "gross_weight": 0.9809157946624344
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0016937093576165118,
+    "equity": 2496.0854728317267,
+    "trades": 3,
+    "gross_weight": 0.8184471442506904
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0002750569601963972,
+    "equity": 2495.398907149179,
+    "trades": 3,
+    "gross_weight": 0.9497391216033402
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.001286206162129387,
+    "equity": 2492.189309697833,
+    "trades": 2,
+    "gross_weight": 0.4989502900629782
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 0,
+    "account_return": -0.0008863025097520283,
+    "equity": 2489.9804760578704,
+    "trades": 1,
+    "gross_weight": 0.279970714607252
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.0029121579107142773,
+    "equity": 2507.2803947767857,
+    "trades": 2,
+    "gross_weight": 0.5816159848632813
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.001415112980374486,
+    "equity": 2510.8284798088725,
+    "trades": 3,
+    "gross_weight": 0.8848791040359061
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0019562281236184015,
+    "equity": 2505.9167265230885,
+    "trades": 2,
+    "gross_weight": 0.6137137802256785
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0021833570276153396,
+    "equity": 2500.4454156276156,
+    "trades": 2,
+    "gross_weight": 0.6004669001574906
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.004058729869728213,
+    "equity": 2490.2967831315827,
+    "trades": 2,
+    "gross_weight": 0.4466444130296141
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0028694508568255644,
+    "equity": 2483.150998893476,
+    "trades": 2,
+    "gross_weight": 0.5432001661921465
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.0027751219640542914,
+    "equity": 2490.0420457705686,
+    "trades": 2,
+    "gross_weight": 0.46877132754032347
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0016553144435413915,
+    "equity": 2485.9202432071793,
+    "trades": 2,
+    "gross_weight": 0.548328097764318
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.00418026406289392,
+    "equity": 2496.3120462630786,
+    "trades": 3,
+    "gross_weight": 0.8707077390843079
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0025776183577819497,
+    "equity": 2489.8775065058785,
+    "trades": 3,
+    "gross_weight": 0.9506984474467199
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.001655911584588054,
+    "equity": 2485.7544894986504,
+    "trades": 2,
+    "gross_weight": 0.5820647657824629
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.003240335224600494,
+    "equity": 2477.699811666619,
+    "trades": 2,
+    "gross_weight": 0.6260916017009852
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0032588291158885596,
+    "equity": 2469.625411379928,
+    "trades": 3,
+    "gross_weight": 0.7023893374833827
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.002947499397591372,
+    "equity": 2462.3461919676097,
+    "trades": 2,
+    "gross_weight": 0.6477338627765384
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.002827621411379421,
+    "equity": 2455.3836091529733,
+    "trades": 3,
+    "gross_weight": 0.8276943322717907
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.005857984224682953,
+    "equity": 2469.7672076009367,
+    "trades": 3,
+    "gross_weight": 0.7597712933794066
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.003937006712358784,
+    "equity": 2460.0437175266484,
+    "trades": 3,
+    "gross_weight": 0.776137929690233
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.0,
+    "equity": 2460.0437175266484,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.0017767091167466293,
+    "equity": 2464.4144996271734,
+    "trades": 1,
+    "gross_weight": 0.31644558716231946
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.0011189515835562977,
+    "equity": 2467.1720601340703,
+    "trades": 1,
+    "gross_weight": 0.318489431324528
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.002245131066154896,
+    "equity": 2461.632935496314,
+    "trades": 1,
+    "gross_weight": 0.2771432111408803
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0010153813414368294,
+    "equity": 2459.133439344145,
+    "trades": 1,
+    "gross_weight": 0.30965218299427183
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.004912747355324667,
+    "equity": 2471.214540644673,
+    "trades": 3,
+    "gross_weight": 0.9053961638184276
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0008126714339512094,
+    "equity": 2469.206255180326,
+    "trades": 1,
+    "gross_weight": 0.3220562077596415
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0015025489657058725,
+    "equity": 2465.4961518754903,
+    "trades": 2,
+    "gross_weight": 0.5449078967622962
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0014455553517280495,
+    "equity": 2461.9321407184816,
+    "trades": 2,
+    "gross_weight": 0.5490148835202722
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.000612049596705851,
+    "equity": 2463.4389652923255,
+    "trades": 3,
+    "gross_weight": 0.8741670648395937
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0022340312746447853,
+    "equity": 2457.9355656006837,
+    "trades": 2,
+    "gross_weight": 0.5961422250165822
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.00173538773306372,
+    "equity": 2453.670094371479,
+    "trades": 2,
+    "gross_weight": 0.5895557127306127
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.0006816917321274557,
+    "equity": 2455.3427409881806,
+    "trades": 2,
+    "gross_weight": 0.6032229004186695
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.002688604933564256,
+    "equity": 2448.7412943811687,
+    "trades": 3,
+    "gross_weight": 0.9820747125140765
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0024231907083184477,
+    "equity": 2442.8075272295487,
+    "trades": 3,
+    "gross_weight": 0.7770933070583694
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": 0.01864705263433598,
+    "equity": 2488.35868776535,
+    "trades": 3,
+    "gross_weight": 0.8893713940902616
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0024163169444992084,
+    "equity": 2482.346024504111,
+    "trades": 2,
+    "gross_weight": 0.6245924275016308
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0024450192273111596,
+    "equity": 2476.276640745359,
+    "trades": 3,
+    "gross_weight": 0.9661505633153283
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.002123351560764994,
+    "equity": 2471.0186348753464,
+    "trades": 3,
+    "gross_weight": 0.8263939360927137
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0010655527471921905,
+    "equity": 2468.3856341805918,
+    "trades": 3,
+    "gross_weight": 0.8752949062738132
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.0015524873433687741,
+    "equity": 2464.5534967249732,
+    "trades": 2,
+    "gross_weight": 0.5044106525754596
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 5,
+    "account_return": -0.001037795955473274,
+    "equity": 2461.9957930740247,
+    "trades": 1,
+    "gross_weight": 0.2831101142254974
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.002621349918282636,
+    "equity": 2506.5533747957065,
+    "trades": 2,
+    "gross_weight": 0.5816159848632813
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.000972955550023916,
+    "equity": 2508.992139813145,
+    "trades": 3,
+    "gross_weight": 0.8851357611635549
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.002264741373453737,
+    "equity": 2503.30992150844,
+    "trades": 2,
+    "gross_weight": 0.6141629594569221
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0024861767479980373,
+    "equity": 2497.086250588553,
+    "trades": 2,
+    "gross_weight": 0.6010921923408563
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.004287812437795036,
+    "equity": 2486.3792131050322,
+    "trades": 2,
+    "gross_weight": 0.44724525422874695
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.003146000018867137,
+    "equity": 2478.557064053693,
+    "trades": 2,
+    "gross_weight": 0.5440560391331185
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.002545445482565165,
+    "equity": 2484.8660959356685,
+    "trades": 2,
+    "gross_weight": 0.4696401818284538
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.001933497575745842,
+    "equity": 2480.061613363124,
+    "trades": 2,
+    "gross_weight": 0.54947025940101
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.0037537567649465445,
+    "equity": 2489.37116142177,
+    "trades": 3,
+    "gross_weight": 0.8727646050581865
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.003061479890451387,
+    "equity": 2481.7500016712074,
+    "trades": 3,
+    "gross_weight": 0.953349192560506
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.001953320031344649,
+    "equity": 2476.9023496801533,
+    "trades": 2,
+    "gross_weight": 0.5839709747861108
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.003566080365685271,
+    "equity": 2468.0695168432394,
+    "trades": 2,
+    "gross_weight": 0.6283291749335995
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.003624109932985532,
+    "equity": 2459.124961591949,
+    "trades": 3,
+    "gross_weight": 0.7051300286813418
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.003285335044848923,
+    "equity": 2451.045912175968,
+    "trades": 2,
+    "gross_weight": 0.6504996827361942
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.003256413014777701,
+    "equity": 2443.064294367741,
+    "trades": 3,
+    "gross_weight": 0.8315103266969313
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.0017516309864230098,
+    "equity": 2447.343641487579,
+    "trades": 3,
+    "gross_weight": 0.5963903544527154
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.004364703794297462,
+    "equity": 2436.6617114096284,
+    "trades": 3,
+    "gross_weight": 0.7832492237007932
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.0,
+    "equity": 2436.6617114096284,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.0016340171853000726,
+    "equity": 2440.6432585208345,
+    "trades": 1,
+    "gross_weight": 0.3194821730864496
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.0009690541673276857,
+    "equity": 2443.0083740414643,
+    "trades": 1,
+    "gross_weight": 0.32159143692711023
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0024072797677802266,
+    "equity": 2437.1273694101164,
+    "trades": 1,
+    "gross_weight": 0.27988442219355736
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0011819739888974576,
+    "equity": 2434.2467482518437,
+    "trades": 1,
+    "gross_weight": 0.31276576750747603
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.004505646897651223,
+    "equity": 2445.214604561222,
+    "trades": 3,
+    "gross_weight": 0.9146525445289226
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0009840528727493106,
+    "equity": 2442.8083841051152,
+    "trades": 1,
+    "gross_weight": 0.3254806273592176
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0017941842376771465,
+    "equity": 2438.4255358066885,
+    "trades": 2,
+    "gross_weight": 0.5507963686130528
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0017391583774266737,
+    "equity": 2434.184727608359,
+    "trades": 2,
+    "gross_weight": 0.5551098701867067
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.0001769605126165091,
+    "equity": 2434.61548218556,
+    "trades": 3,
+    "gross_weight": 0.8841317459914633
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0025620800205472375,
+    "equity": 2428.3778025009374,
+    "trades": 2,
+    "gross_weight": 0.6031999700599884
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0018506704069715851,
+    "equity": 2423.883675564902,
+    "trades": 2,
+    "gross_weight": 0.5407766278187838
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.00038475098066965914,
+    "equity": 2424.816267186105,
+    "trades": 2,
+    "gross_weight": 0.6106357355009476
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0030079467381522933,
+    "equity": 2417.522549004604,
+    "trades": 3,
+    "gross_weight": 0.9276414218285951
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0028480468112885224,
+    "equity": 2410.6373316176932,
+    "trades": 3,
+    "gross_weight": 0.7871283233178358
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": 0.018445279339455656,
+    "equity": 2455.102210585502,
+    "trades": 3,
+    "gross_weight": 0.9012401440445619
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0027655745771427774,
+    "equity": 2448.3124423276195,
+    "trades": 2,
+    "gross_weight": 0.6330530706969951
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0027437356507357337,
+    "equity": 2441.5949201954654,
+    "trades": 3,
+    "gross_weight": 0.8952329661954629
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0025725790212201556,
+    "equity": 2435.3137243254528,
+    "trades": 3,
+    "gross_weight": 0.8381324776987061
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0015252390974761984,
+    "equity": 2431.5992886184913,
+    "trades": 3,
+    "gross_weight": 0.8881278838163436
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0018319948853176594,
+    "equity": 2427.1446111586,
+    "trades": 2,
+    "gross_weight": 0.5120416075019958
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 10,
+    "account_return": -0.0011975280123698786,
+    "equity": 2424.238037496665,
+    "trades": 1,
+    "gross_weight": 0.28747360942765965
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": 0.002039733933419355,
+    "equity": 2505.0993348335483,
+    "trades": 2,
+    "gross_weight": 0.5816159848632813
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": 8.787076228113342e-05,
+    "equity": 2505.31945982169,
+    "trades": 3,
+    "gross_weight": 0.8856495223349268
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.002631333912430204,
+    "equity": 2498.72712776559,
+    "trades": 2,
+    "gross_weight": 0.5594895417931477
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0030929311499595705,
+    "equity": 2490.9987367968747,
+    "trades": 2,
+    "gross_weight": 0.6021946262590405
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.004296765756803596,
+    "equity": 2480.2954987243647,
+    "trades": 2,
+    "gross_weight": 0.408294055748753
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0036991070953129755,
+    "equity": 2471.120620046561,
+    "trades": 2,
+    "gross_weight": 0.5453905097842426
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": 0.002082052106240015,
+    "equity": 2476.265621938302,
+    "trades": 2,
+    "gross_weight": 0.4710534891706105
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0024915915870227763,
+    "equity": 2470.0957793474468,
+    "trades": 2,
+    "gross_weight": 0.551378659144736
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": 0.00327564749729036,
+    "equity": 2478.186942405134,
+    "trades": 3,
+    "gross_weight": 0.8352712508986746
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0040329482680541585,
+    "equity": 2468.1925426678467,
+    "trades": 3,
+    "gross_weight": 0.9576517195355622
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0025512280139616123,
+    "equity": 2461.8956207091414,
+    "trades": 2,
+    "gross_weight": 0.5871786510159636
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.004219976980050507,
+    "equity": 2451.506477862462,
+    "trades": 2,
+    "gross_weight": 0.6321592177483686
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0043584894745234545,
+    "equity": 2440.8216126819725,
+    "trades": 3,
+    "gross_weight": 0.709894077341637
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.003965348951769586,
+    "equity": 2431.1429032586675,
+    "trades": 2,
+    "gross_weight": 0.6553776806189919
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.004121389895254566,
+    "equity": 2421.1232154632576,
+    "trades": 3,
+    "gross_weight": 0.8383176424762275
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": 0.0011657098330823392,
+    "equity": 2423.945542602627,
+    "trades": 3,
+    "gross_weight": 0.6017950557671076
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.005197645682974912,
+    "equity": 2411.3467325173524,
+    "trades": 3,
+    "gross_weight": 0.790809848502634
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": 0.0,
+    "equity": 2411.3467325173524,
+    "trades": 0,
+    "gross_weight": 0
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": 0.0013283353610554528,
+    "equity": 2414.549809649921,
+    "trades": 1,
+    "gross_weight": 0.3228361845021777
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": 0.000654459701671994,
+    "equity": 2416.1300351980167,
+    "trades": 1,
+    "gross_weight": 0.32506679688168405
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0023289065653025747,
+    "equity": 2410.5030940964193,
+    "trades": 1,
+    "gross_weight": 0.24256972119699638
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.001511249323596247,
+    "equity": 2406.8602229259395,
+    "trades": 1,
+    "gross_weight": 0.31622030026589193
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": 0.003631854581256947,
+    "equity": 2415.601589253018,
+    "trades": 3,
+    "gross_weight": 0.925059943694252
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0013255871555448585,
+    "equity": 2412.3994988133904,
+    "trades": 1,
+    "gross_weight": 0.32947071531221195
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.002374539659963968,
+    "equity": 2406.671160527781,
+    "trades": 2,
+    "gross_weight": 0.5577392914583326
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.002324539543551135,
+    "equity": 2401.07675824681,
+    "trades": 2,
+    "gross_weight": 0.5624341641858372
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0007169222767131279,
+    "equity": 2399.3553728307247,
+    "trades": 3,
+    "gross_weight": 0.8963228626050076
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0032117958672761367,
+    "equity": 2391.64913316014,
+    "trades": 2,
+    "gross_weight": 0.6120643913741415
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.002428172600496902,
+    "equity": 2385.8417962649983,
+    "trades": 2,
+    "gross_weight": 0.5490813601789788
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.00031786507145655955,
+    "equity": 2385.0834204919443,
+    "trades": 2,
+    "gross_weight": 0.5943562527255348
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0036664041420256667,
+    "equity": 2376.3387407599757,
+    "trades": 3,
+    "gross_weight": 0.8583913662218405
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.003417231109234088,
+    "equity": 2368.2182420889726,
+    "trades": 3,
+    "gross_weight": 0.7338191928507993
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": 0.01785828479832862,
+    "equity": 2410.510557920795,
+    "trades": 3,
+    "gross_weight": 0.9173829917254334
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0034614983219013965,
+    "equity": 2402.1665796696266,
+    "trades": 2,
+    "gross_weight": 0.6447638190918065
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.003448967719574632,
+    "equity": 2393.881584679305,
+    "trades": 3,
+    "gross_weight": 0.8456116353919054
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0034786916459479565,
+    "equity": 2385.5540088092926,
+    "trades": 3,
+    "gross_weight": 0.8548376047907742
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0023397152718233586,
+    "equity": 2379.972491663122,
+    "trades": 3,
+    "gross_weight": 0.8826922446996753
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.0023948837595400407,
+    "equity": 2374.272734194686,
+    "trades": 2,
+    "gross_weight": 0.5231489073534885
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "rvol1.0_top3",
+    "cost_bps": 20,
+    "account_return": -0.001518070620951725,
+    "equity": 2370.6684205107786,
+    "trades": 1,
+    "gross_weight": 0.2938752620639086
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -4.247190856933969e-05,
+    "equity": 2499.8938202285767,
+    "trades": 4,
+    "gross_weight": 0.1342199581298828
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.00021957886459487842,
+    "equity": 2499.3448963819233,
+    "trades": 3,
+    "gross_weight": 0.09829217715880278
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0003869420843866687,
+    "equity": 2498.3777946581163,
+    "trades": 4,
+    "gross_weight": 0.1653306033778072
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0011246999820537357,
+    "equity": 2495.5678691973008,
+    "trades": 6,
+    "gross_weight": 0.3263637706442921
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0008067409669358703,
+    "equity": 2493.5545923614504,
+    "trades": 3,
+    "gross_weight": 0.14262485341276804
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.0020523784984656855,
+    "equity": 2498.6723101915636,
+    "trades": 7,
+    "gross_weight": 0.3594306337937284
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0002686147879380544,
+    "equity": 2498.0011298588347,
+    "trades": 2,
+    "gross_weight": 0.07955020972549867
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0001340609256839668,
+    "equity": 2497.6662455150063,
+    "trades": 2,
+    "gross_weight": 0.0538230357515775
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.0006482860713347796,
+    "equity": 2499.2854477528167,
+    "trades": 6,
+    "gross_weight": 0.2454868438055797
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0004999328758307692,
+    "equity": 2498.0359727913997,
+    "trades": 4,
+    "gross_weight": 0.11888997910446421
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0005944424556105879,
+    "equity": 2496.55103415353,
+    "trades": 5,
+    "gross_weight": 0.1956617114064769
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0009704163575525237,
+    "equity": 2494.128340192523,
+    "trades": 5,
+    "gross_weight": 0.22499251427475925
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.0024632908789076775,
+    "equity": 2500.2721037837446,
+    "trades": 6,
+    "gross_weight": 0.28759542752946965
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -9.475548605564376e-05,
+    "equity": 2500.035189285279,
+    "trades": 1,
+    "gross_weight": 0.03852380688848225
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0004744673074782981,
+    "equity": 2498.849004320418,
+    "trades": 3,
+    "gross_weight": 0.12218028144599141
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.0025681571959530317,
+    "equity": 2505.2664413724633,
+    "trades": 5,
+    "gross_weight": 0.1676731980985865
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.00046128164926738054,
+    "equity": 2504.1108079365326,
+    "trades": 2,
+    "gross_weight": 0.09537504780741492
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.00014561884065215108,
+    "equity": 2503.7461622238166,
+    "trades": 1,
+    "gross_weight": 0.040717048989307524
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.00034448285413345533,
+    "equity": 2504.608659847805,
+    "trades": 3,
+    "gross_weight": 0.12023982350338387
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.003869253044518211,
+    "equity": 2514.299624530248,
+    "trades": 7,
+    "gross_weight": 0.30427508071561954
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.0004461589621651265,
+    "equity": 2515.4214018413004,
+    "trades": 6,
+    "gross_weight": 0.23478502609425175
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.0015028683031349842,
+    "equity": 2519.201748935155,
+    "trades": 4,
+    "gross_weight": 0.3875851593570572
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.00029415216970166906,
+    "equity": 2519.9427775955205,
+    "trades": 4,
+    "gross_weight": 0.16330657044433727
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.0006196156590122658,
+    "equity": 2521.5041736003336,
+    "trades": 7,
+    "gross_weight": 0.3213188042200722
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.00040372523039486374,
+    "equity": 2520.4861787469054,
+    "trades": 4,
+    "gross_weight": 0.1936145495318687
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0006447529066010889,
+    "equity": 2518.8610879571106,
+    "trades": 3,
+    "gross_weight": 0.17248815255664107
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.002224261678049362,
+    "equity": 2524.463694147383,
+    "trades": 5,
+    "gross_weight": 0.2789579785718881
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0003045781726444539,
+    "equity": 2523.6947976085125,
+    "trades": 3,
+    "gross_weight": 0.11786265844346878
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0010837279086250698,
+    "equity": 2520.9597991234923,
+    "trades": 5,
+    "gross_weight": 0.3193254538290162
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.0002777231314112651,
+    "equity": 2521.6599279730667,
+    "trades": 4,
+    "gross_weight": 0.14343612524109922
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.00041161985109918554,
+    "equity": 2520.6219626889915,
+    "trades": 3,
+    "gross_weight": 0.11084365293001354
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.00033802378718299675,
+    "equity": 2519.7699325071067,
+    "trades": 2,
+    "gross_weight": 0.0866512343007027
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.006158881548595527,
+    "equity": 2535.2888970511303,
+    "trades": 5,
+    "gross_weight": 0.4602196815476901
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.00032023331578995637,
+    "equity": 2534.477013081142,
+    "trades": 6,
+    "gross_weight": 0.23690183789421074
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0004941973421780501,
+    "equity": 2533.224481277466,
+    "trades": 5,
+    "gross_weight": 0.2065336930495881
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0001308760754353601,
+    "equity": 2532.8929427991598,
+    "trades": 5,
+    "gross_weight": 0.1993704108048392
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": 0.0006840066120021842,
+    "equity": 2534.625458319528,
+    "trades": 4,
+    "gross_weight": 0.15457029395060032
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.0003229682154585683,
+    "equity": 2533.8068548583988,
+    "trades": 3,
+    "gross_weight": 0.1241248509879669
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "all_positive",
+    "cost_bps": 0,
+    "account_return": -0.00025532475327180065,
+    "equity": 2533.1599112483436,
+    "trades": 2,
+    "gross_weight": 0.06962054025467102
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.00010958188763428107,
+    "equity": 2499.726045280914,
+    "trades": 4,
+    "gross_weight": 0.1342199581298828
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.00026874298927669174,
+    "equity": 2499.0542614311325,
+    "trades": 3,
+    "gross_weight": 0.0982987742676778
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0004696620004637629,
+    "equity": 2497.8805506074414,
+    "trades": 4,
+    "gross_weight": 0.1653498309922366
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0012881382413631685,
+    "equity": 2494.662935147847,
+    "trades": 6,
+    "gross_weight": 0.3264287387002182
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0008783719057754769,
+    "equity": 2492.4716933112336,
+    "trades": 3,
+    "gross_weight": 0.1426765902964701
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.0018734767936897292,
+    "equity": 2497.1412811875807,
+    "trades": 7,
+    "gross_weight": 0.35958679488193596
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.00030857897055702445,
+    "equity": 2496.3707159016963,
+    "trades": 2,
+    "gross_weight": 0.07959898296843859
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0001610775768706948,
+    "equity": 2495.968606555808,
+    "trades": 2,
+    "gross_weight": 0.05385818831451454
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.0005259000985096957,
+    "equity": 2497.281236691873,
+    "trades": 6,
+    "gross_weight": 0.2456538122638048
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0005598267981217636,
+    "equity": 2495.8831917331263,
+    "trades": 4,
+    "gross_weight": 0.11898539511434549
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0006928704197348777,
+    "equity": 2494.153868098461,
+    "trades": 5,
+    "gross_weight": 0.19583047604559958
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0010839534171013922,
+    "equity": 2491.450321490359,
+    "trades": 5,
+    "gross_weight": 0.22520875771697935
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.0023219863499446686,
+    "equity": 2497.235435128425,
+    "trades": 6,
+    "gross_weight": 0.2879045590930964
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.00011415603603196,
+    "equity": 2496.950360630112,
+    "trades": 1,
+    "gross_weight": 0.03857065230610537
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0005362190965018562,
+    "equity": 2495.6114481637246,
+    "trades": 3,
+    "gross_weight": 0.12233122767193316
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.0024875435054416938,
+    "equity": 2501.8193902137104,
+    "trades": 5,
+    "gross_weight": 0.16789072049984652
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0005096704399311953,
+    "equity": 2500.544286824472,
+    "trades": 2,
+    "gross_weight": 0.09550645724102419
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.00016621409831727474,
+    "equity": 2500.1286611105347,
+    "trades": 1,
+    "gross_weight": 0.040775123631538956
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.00028477439451086506,
+    "equity": 2500.8406337362017,
+    "trades": 3,
+    "gross_weight": 0.12041380162785012
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.003722716096253548,
+    "equity": 2510.1505534175762,
+    "trades": 7,
+    "gross_weight": 0.3047335331390887
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.0003293098728481007,
+    "equity": 2510.977170777152,
+    "trades": 6,
+    "gross_weight": 0.23517310631044802
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.0013113926839860915,
+    "equity": 2514.270047868565,
+    "trades": 4,
+    "gross_weight": 0.3882711544450509
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.0002129156976917984,
+    "equity": 2514.8053754299926,
+    "trades": 4,
+    "gross_weight": 0.16362689370807112
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.00045989384153248715,
+    "equity": 2515.961918934806,
+    "trades": 7,
+    "gross_weight": 0.32197521442849353
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0005016350968141528,
+    "equity": 2514.69982413402,
+    "trades": 4,
+    "gross_weight": 0.1940410508760987
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.000732679015750011,
+    "equity": 2512.857356341967,
+    "trades": 3,
+    "gross_weight": 0.17288504987521383
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.0020897636621989546,
+    "equity": 2518.1086343335396,
+    "trades": 5,
+    "gross_weight": 0.27962446639739946
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.00036442690653879157,
+    "equity": 2517.190967793601,
+    "trades": 3,
+    "gross_weight": 0.11816011353893772
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.001246603264692658,
+    "equity": 2514.0530293152947,
+    "trades": 5,
+    "gross_weight": 0.3201505157467832
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.00020657101929886642,
+    "equity": 2514.5723598121317,
+    "trades": 4,
+    "gross_weight": 0.1438301822827241
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.00046835808021644323,
+    "equity": 2513.3946395291246,
+    "trades": 3,
+    "gross_weight": 0.11115607660805285
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.00038244598317480543,
+    "equity": 2512.4334018451036,
+    "trades": 2,
+    "gross_weight": 0.08690040188570633
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.005946084252460878,
+    "equity": 2527.3725425311713,
+    "trades": 5,
+    "gross_weight": 0.46156356425616407
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0004400583020207941,
+    "equity": 2526.260351261531,
+    "trades": 6,
+    "gross_weight": 0.2376438729142329
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0005994074409830173,
+    "equity": 2524.7460920091244,
+    "trades": 5,
+    "gross_weight": 0.20720544388845014
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0002313355322745231,
+    "equity": 2524.1620285280715,
+    "trades": 5,
+    "gross_weight": 0.20003991969396773
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": 0.0006088200755905917,
+    "equity": 2525.698789045083,
+    "trades": 4,
+    "gross_weight": 0.15510494266573316
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.00038639146877858505,
+    "equity": 2524.7228805802915,
+    "trades": 3,
+    "gross_weight": 0.12456354997230949
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "all_positive",
+    "cost_bps": 5,
+    "account_return": -0.0002911789316672507,
+    "equity": 2523.987734469168,
+    "trades": 2,
+    "gross_weight": 0.06987103554734883
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0001766918666992225,
+    "equity": 2499.558270333252,
+    "trades": 4,
+    "gross_weight": 0.1342199581298828
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.00031791371393142284,
+    "equity": 2498.7636264803423,
+    "trades": 3,
+    "gross_weight": 0.09830537226217297
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.000552401159096242,
+    "equity": 2497.383306556767,
+    "trades": 4,
+    "gross_weight": 0.16536906307945137
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0014516415837552662,
+    "equity": 2493.758001098393,
+    "trades": 6,
+    "gross_weight": 0.32649373262720643
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.000950054831436196,
+    "equity": 2491.3887942610168,
+    "trades": 3,
+    "gross_weight": 0.14272836472869743
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.0016944195672331495,
+    "equity": 2495.610252183598,
+    "trades": 7,
+    "gross_weight": 0.3597430917230975
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0003485921883349555,
+    "equity": 2494.740301944558,
+    "trades": 2,
+    "gross_weight": 0.07964781605505762
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.00018812954101174966,
+    "equity": 2494.2709675966094,
+    "trades": 2,
+    "gross_weight": 0.053893386824702454
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.0004033475301557165,
+    "equity": 2495.2770256309286,
+    "trades": 6,
+    "gross_weight": 0.24582100800460138
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0006198169342281428,
+    "equity": 2493.730410674852,
+    "trades": 4,
+    "gross_weight": 0.11908096440085336
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0007914683251293743,
+    "equity": 2491.756702043391,
+    "trades": 5,
+    "gross_weight": 0.19599953206611373
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0011977089307111403,
+    "equity": 2488.7723027881943,
+    "trades": 5,
+    "gross_weight": 0.22542541722826342
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.0021803777223135413,
+    "equity": 2494.1987664731046,
+    "trades": 6,
+    "gross_weight": 0.28821435593261685
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0001336038260621172,
+    "equity": 2493.865531974944,
+    "trades": 1,
+    "gross_weight": 0.03861761179163139
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0005981236553406633,
+    "equity": 2492.3738920070314,
+    "trades": 3,
+    "gross_weight": 0.12248254732878947
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.002406720382990095,
+    "equity": 2498.372339054957,
+    "trades": 5,
+    "gross_weight": 0.16810880801775427
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0005581927564384732,
+    "equity": 2496.9777657124105,
+    "trades": 2,
+    "gross_weight": 0.09563822929075222
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.00018686818984329988,
+    "equity": 2496.511159997253,
+    "trades": 1,
+    "gross_weight": 0.04083336417387606
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.00022489289707244768,
+    "equity": 2497.0726076245983,
+    "trades": 3,
+    "gross_weight": 0.12058828394878783
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.0035757369061047758,
+    "equity": 2506.001482304905,
+    "trades": 7,
+    "gross_weight": 0.3051933691512428
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.00021207386023158728,
+    "equity": 2506.5329397130035,
+    "trades": 6,
+    "gross_weight": 0.23556247157968654
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.0011192380696553156,
+    "equity": 2509.3383468019756,
+    "trades": 4,
+    "gross_weight": 0.38895958215272547
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.00013135991123302719,
+    "equity": 2509.667973264465,
+    "trades": 4,
+    "gross_weight": 0.16394847605955082
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.00029951810869837146,
+    "equity": 2510.419664269278,
+    "trades": 7,
+    "gross_weight": 0.3226343120388039
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0005999772745491049,
+    "equity": 2508.9134695211355,
+    "trades": 4,
+    "gross_weight": 0.19446943539476239
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0008210106961977821,
+    "equity": 2506.853624726824,
+    "trades": 3,
+    "gross_weight": 0.1732837779373798
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.0019546214204695647,
+    "equity": 2511.753574519697,
+    "trades": 5,
+    "gross_weight": 0.2802941466023857
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.00042457849043206177,
+    "equity": 2510.68713797869,
+    "trades": 3,
+    "gross_weight": 0.11845907383375645
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0014103224643287123,
+    "equity": 2507.1462595070975,
+    "trades": 5,
+    "gross_weight": 0.3209798522411938
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.000135026882781937,
+    "equity": 2507.484791651197,
+    "trades": 4,
+    "gross_weight": 0.14422641044720824
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0005254170578922071,
+    "equity": 2506.1673163692585,
+    "trades": 3,
+    "gross_weight": 0.11147026645761235
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.00042712438996611384,
+    "equity": 2505.0968711831015,
+    "trades": 2,
+    "gross_weight": 0.08715100657720001
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.00573204054234053,
+    "equity": 2519.4561880112133,
+    "trades": 5,
+    "gross_weight": 0.4629153184659839
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0005606362896936621,
+    "equity": 2518.043689441921,
+    "trades": 6,
+    "gross_weight": 0.23839057101378183
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0007053041647306035,
+    "equity": 2516.267702740784,
+    "trades": 5,
+    "gross_weight": 0.2078815787254874
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0003324719714394065,
+    "equity": 2515.4311142569845,
+    "trades": 5,
+    "gross_weight": 0.20071394031050452
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": 0.0005331116030384867,
+    "equity": 2516.772119770639,
+    "trades": 4,
+    "gross_weight": 0.1556433028497036
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0004502646304572087,
+    "equity": 2515.6389063021857,
+    "trades": 3,
+    "gross_weight": 0.12500536097518836
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "all_positive",
+    "cost_bps": 10,
+    "account_return": -0.0003272920490014258,
+    "equity": 2514.8155576899944,
+    "trades": 2,
+    "gross_weight": 0.07012333991746597
+  },
+  {
+    "date": "2026-07-14",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0003109118248291054,
+    "equity": 2499.2227204379274,
+    "trades": 4,
+    "gross_weight": 0.1342199581298828
+  },
+  {
+    "date": "2026-07-15",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0004162749684763801,
+    "equity": 2498.1823565787618,
+    "trades": 3,
+    "gross_weight": 0.09831857090873722
+  },
+  {
+    "date": "2026-07-16",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0007179372308911713,
+    "equity": 2496.3888184554185,
+    "trades": 4,
+    "gross_weight": 0.16540754067848157
+  },
+  {
+    "date": "2026-07-17",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0017788436733506083,
+    "equity": 2491.948132999486,
+    "trades": 6,
+    "gross_weight": 0.3266237981562066
+  },
+  {
+    "date": "2026-07-20",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0010935768697649052,
+    "equity": 2489.222996160584,
+    "trades": 3,
+    "gross_weight": 0.14283202640235382
+  },
+  {
+    "date": "2026-07-21",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": 0.001335837737389687,
+    "equity": 2492.5481941756334,
+    "trades": 7,
+    "gross_weight": 0.36005609337296957
+  },
+  {
+    "date": "2026-07-22",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.00042876609080143627,
+    "equity": 2491.4794740302827,
+    "trades": 2,
+    "gross_weight": 0.07974566220043533
+  },
+  {
+    "date": "2026-07-23",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0002423396854606709,
+    "equity": 2490.8756896782147,
+    "trades": 2,
+    "gross_weight": 0.053963922047643116
+  },
+  {
+    "date": "2026-07-24",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": 0.00015774124435681883,
+    "equity": 2491.268603509043,
+    "trades": 6,
+    "gross_weight": 0.24615608319274268
+  },
+  {
+    "date": "2026-07-27",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0007400867767284944,
+    "equity": 2489.424848558307,
+    "trades": 4,
+    "gross_weight": 0.1192725642834704
+  },
+  {
+    "date": "2026-07-28",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0009891757232512596,
+    "equity": 2486.9623699332546,
+    "trades": 5,
+    "gross_weight": 0.19633852127505214
+  },
+  {
+    "date": "2026-07-29",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0014258778469098154,
+    "equity": 2483.4162653838684,
+    "trades": 5,
+    "gross_weight": 0.2258599892705768
+  },
+  {
+    "date": "2026-07-30",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": 0.001896244235910007,
+    "equity": 2488.1254291624678,
+    "trades": 6,
+    "gross_weight": 0.28883595404822726
+  },
+  {
+    "date": "2026-07-31",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.00017264181814163494,
+    "equity": 2487.695874664613,
+    "trades": 1,
+    "gross_weight": 0.03871187463698189
+  },
+  {
+    "date": "2026-08-03",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0007223933557420803,
+    "equity": 2485.898779693648,
+    "trades": 3,
+    "gross_weight": 0.12278631249205202
+  },
+  {
+    "date": "2026-08-04",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": 0.0022444425691754803,
+    "equity": 2491.4782367374537,
+    "trades": 5,
+    "gross_weight": 0.16854668723539407
+  },
+  {
+    "date": "2026-08-05",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0006556401838380052,
+    "equity": 2489.8447234882906,
+    "trades": 2,
+    "gross_weight": 0.0959028672588762
+  },
+  {
+    "date": "2026-08-06",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0002283538857806711,
+    "equity": 2489.2761577706915,
+    "trades": 1,
+    "gross_weight": 0.04095034581054498
+  },
+  {
+    "date": "2026-08-07",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": 0.00010460777117457946,
+    "equity": 2489.536555401394,
+    "trades": 3,
+    "gross_weight": 0.12093876997266395
+  },
+  {
+    "date": "2026-08-10",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": 0.0018653197183777824,
+    "equity": 2494.180337027806,
+    "trades": 6,
+    "gross_weight": 0.25048437259668505
+  },
+  {
+    "date": "2026-08-11",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -2.3599935410349756e-05,
+    "equity": 2494.1214745329507,
+    "trades": 6,
+    "gross_weight": 0.23667891779531755
+  },
+  {
+    "date": "2026-08-12",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": 0.0007339125631127514,
+    "equity": 2495.9519416170397,
+    "trades": 4,
+    "gross_weight": 0.3908951568068191
+  },
+  {
+    "date": "2026-08-13",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -3.2763345328459395e-05,
+    "equity": 2495.870165881653,
+    "trades": 4,
+    "gross_weight": 0.16482777212827404
+  },
+  {
+    "date": "2026-08-14",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -2.3243995613232914e-05,
+    "equity": 2495.812151886466,
+    "trades": 7,
+    "gross_weight": 0.32441791687268157
+  },
+  {
+    "date": "2026-08-17",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0007990964549754468,
+    "equity": 2493.817757243609,
+    "trades": 4,
+    "gross_weight": 0.19560762789993966
+  },
+  {
+    "date": "2026-08-18",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0010003131911232345,
+    "equity": 2491.323158444781,
+    "trades": 3,
+    "gross_weight": 0.17433270865675873
+  },
+  {
+    "date": "2026-08-19",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": 0.0016847647328470615,
+    "equity": 2495.520451840254,
+    "trades": 5,
+    "gross_weight": 0.2820414505513362
+  },
+  {
+    "date": "2026-08-20",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0005465699718619061,
+    "equity": 2494.156475297111,
+    "trades": 3,
+    "gross_weight": 0.11922963881815421
+  },
+  {
+    "date": "2026-08-21",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0012556309124878155,
+    "equity": 2491.024735326146,
+    "trades": 4,
+    "gross_weight": 0.23975640165808718
+  },
+  {
+    "date": "2026-08-24",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -9.259065575756775e-06,
+    "equity": 2491.001670764771,
+    "trades": 4,
+    "gross_weight": 0.14515982131647126
+  },
+  {
+    "date": "2026-08-25",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0006411016494068828,
+    "equity": 2489.4046854849685,
+    "trades": 3,
+    "gross_weight": 0.11220787249731398
+  },
+  {
+    "date": "2026-08-26",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0005177383162909113,
+    "equity": 2488.115825294539,
+    "trades": 2,
+    "gross_weight": 0.08773784573716702
+  },
+  {
+    "date": "2026-08-27",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": 0.005305086273721816,
+    "equity": 2501.3154944067387,
+    "trades": 5,
+    "gross_weight": 0.4660746513979461
+  },
+  {
+    "date": "2026-08-28",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0008048217720228104,
+    "equity": 2499.302381238142,
+    "trades": 6,
+    "gross_weight": 0.2401194893835865
+  },
+  {
+    "date": "2026-08-31",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.00092003337245604,
+    "equity": 2497.002939639544,
+    "trades": 5,
+    "gross_weight": 0.20944040280617043
+  },
+  {
+    "date": "2026-09-01",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0005372995233583392,
+    "equity": 2495.6613011502513,
+    "trades": 5,
+    "gross_weight": 0.2022624793409618
+  },
+  {
+    "date": "2026-09-02",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": 0.00038045848068523486,
+    "equity": 2496.6107966571917,
+    "trades": 4,
+    "gross_weight": 0.1568762582219871
+  },
+  {
+    "date": "2026-09-03",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0005799155710278503,
+    "equity": 2495.162973181414,
+    "trades": 3,
+    "gross_weight": 0.12601483889497803
+  },
+  {
+    "date": "2026-09-04",
+    "variant": "all_positive",
+    "cost_bps": 20,
+    "account_return": -0.0004006766792683126,
+    "equity": 2494.1632195670863,
+    "trades": 2,
+    "gross_weight": 0.07069878963108704
+  }
+]

@@ -1,0 +1,142 @@
+{
+  "rebound": {
+    "uncertainty_method": "20000 circular five-session block resamples of all 39 screened sessions, preserve all events per day; ratio of total return sum to total event count; no multiple-test correction",
+    "gross_mean_bps": 10.236986741135594,
+    "gross_sd_bps": 64.77669666800776,
+    "peer_mean_bps": 2.9878898533580207,
+    "spy_mean_bps": 2.8167849816668293,
+    "max_events_day": 7,
+    "unique_symbols": 19,
+    "by_half": [
+      {
+        "split": "first_half",
+        "events": 38,
+        "gross_mean_bps": 5.353301159109739,
+        "net10_mean_bps": -4.646698840890261,
+        "peer_excess_gross_bps": 7.142636215356769
+      },
+      {
+        "split": "second_half",
+        "events": 21,
+        "gross_mean_bps": 19.07413208003953,
+        "net10_mean_bps": 9.07413208003953,
+        "peer_excess_gross_bps": 7.441740009300933
+      }
+    ],
+    "cost_results": [
+      {
+        "cost_bps": 0,
+        "event_weighted_mean_net_bps": 10.236986741135594,
+        "event_weighted_net_ci95_bps": [
+          -1.9418715141037017,
+          21.674660792413
+        ],
+        "peer_excess_net_mean_bps": 7.249096887777573,
+        "peer_excess_net_ci95_bps": [
+          -1.1364661282361117,
+          15.619137222614537
+        ]
+      },
+      {
+        "cost_bps": 5,
+        "event_weighted_mean_net_bps": 5.236986741135593,
+        "event_weighted_net_ci95_bps": [
+          -6.941871514103702,
+          16.674660792413
+        ],
+        "peer_excess_net_mean_bps": 2.249096887777573,
+        "peer_excess_net_ci95_bps": [
+          -6.136466128236112,
+          10.619137222614537
+        ]
+      },
+      {
+        "cost_bps": 10,
+        "event_weighted_mean_net_bps": 0.23698674113559381,
+        "event_weighted_net_ci95_bps": [
+          -11.941871514103703,
+          11.674660792413
+        ],
+        "peer_excess_net_mean_bps": -2.750903112222427,
+        "peer_excess_net_ci95_bps": [
+          -11.136466128236112,
+          5.619137222614537
+        ]
+      },
+      {
+        "cost_bps": 20,
+        "event_weighted_mean_net_bps": -9.763013258864406,
+        "event_weighted_net_ci95_bps": [
+          -21.941871514103703,
+          1.6746607924130004
+        ],
+        "peer_excess_net_mean_bps": -12.750903112222428,
+        "peer_excess_net_ci95_bps": [
+          -21.136466128236112,
+          -4.380862777385463
+        ]
+      }
+    ],
+    "by_group": [
+      {
+        "group": "communication",
+        "events": 5,
+        "gross_mean": 0.00028567854367880004,
+        "peer_excess": -0.001952260823864144
+      },
+      {
+        "group": "energy",
+        "events": 2,
+        "gross_mean": 0.0050202310066545,
+        "peer_excess": 0.00395165046702595
+      },
+      {
+        "group": "finance",
+        "events": 1,
+        "gross_mean": -0.0013259435703480002,
+        "peer_excess": 0.0011746201974460616
+      },
+      {
+        "group": "industrial",
+        "events": 2,
+        "gross_mean": 0.0022382866128235,
+        "peer_excess": 0.0034624941792191187
+      },
+      {
+        "group": "retail",
+        "events": 3,
+        "gross_mean": -0.00018761944104866675,
+        "peer_excess": 0.0008960518983048756
+      },
+      {
+        "group": "semiconductors",
+        "events": 40,
+        "gross_mean": 0.0011683359705821502,
+        "peer_excess": 0.0008480877058747256
+      },
+      {
+        "group": "software",
+        "events": 6,
+        "gross_mean": -6.530718574033325e-05,
+        "peer_excess": -1.3932943771907406e-05
+      }
+    ]
+  },
+  "math": {
+    "crypto_taker_roundtrip_breakeven": 0.019182231196365418,
+    "fixed_data_cost_annual_by_capital": {
+      "1000": 1.188,
+      "2500": 0.4752,
+      "5000": 0.2376
+    },
+    "n_independent_events_for_95pc_interval_at_5bps_net": 644.7772835428499,
+    "n_for_80pc_power_at_5bps_net": 1317.376290625347,
+    "consecutive_losses_to_25pc": {
+      "0.0025": 115,
+      "0.005": 58,
+      "0.01": 29,
+      "0.02": 15,
+      "0.04": 8
+    }
+  }
+}

@@ -1,0 +1,419 @@
+[
+  {
+    "symbol": "MSFT",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 460387,
+    "sha256": "ce4356086cb1de097f71edfa8e0147407d6aef7a3a1ea7be65845fb56eb02a8d",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "AAPL",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 467297,
+    "sha256": "bb5fd73c7b9e92f1d01e538615b5815ee142c018fcf29f1b6317433cdee26fb0",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 57,
+      "splits": 2
+    }
+  },
+  {
+    "symbol": "ORCL",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 458997,
+    "sha256": "ed7f81c3ee72190c5615774f08ae6dcc7f3718f1a5f0038200629f1c3eababe4",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 66
+    }
+  },
+  {
+    "symbol": "CRM",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRM?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 449167,
+    "sha256": "f6b471b7edd1ae2d8f89d7de3768b4e3dfa4ce2e37909063f6a0c3bdd1492cff",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 10,
+      "splits": 1
+    }
+  },
+  {
+    "symbol": "NVDA",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 480883,
+    "sha256": "7aadc4a89283f4ca089fe6bf2311f0f0bbe143a0e3646665efc8b5fad3fd4dda",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 55,
+      "splits": 2
+    }
+  },
+  {
+    "symbol": "QCOM",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/QCOM?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 456142,
+    "sha256": "536da14afe1fe462dce3fd6ef4daf19abb63af9918390ae7a45577d3d9fa0b8b",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "AVGO",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 467647,
+    "sha256": "91a622ca3cae51f98f90bc24eb651c8c0153329f7880c61b550ee6f190c593af",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 63,
+      "splits": 1
+    }
+  },
+  {
+    "symbol": "AMD",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 455536,
+    "sha256": "8316576923d642d653b54112eaf40413cc381b5b20cb40807f839f554ad0c12d",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {}
+  },
+  {
+    "symbol": "MU",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 455484,
+    "sha256": "ee52f113896ee635f4001576dde7024dd0692ce9f367bb8f27e0fb6a443d3453",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 20
+    }
+  },
+  {
+    "symbol": "BAC",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/BAC?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 466232,
+    "sha256": "b1583da3a0e43c1786a0f8398bf5068d5053bba2e30a9b2beed3d959d6a7d5cd",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "INTC",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTC?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 462803,
+    "sha256": "4c81998899a7a65c31338334ae52829a4a0f4e98cf873b1c24cbfa1f68d1bb4c",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 59
+    }
+  },
+  {
+    "symbol": "JPM",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 459551,
+    "sha256": "6acc01bcbcc23f9df7e4f3054e65cdc476878ce2cf550946806783f211841024",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "MS",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MS?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 460043,
+    "sha256": "a10524d03f130f1bc6c8634e46c888454b01f3bd26925f57785ae36dae11cd6c",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "C",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/C?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 455246,
+    "sha256": "2a9cc725b482bb881d879ccd353d5bce181e5309b579e1f5a9d4a69bf3ef081d",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 62,
+      "splits": 1
+    }
+  },
+  {
+    "symbol": "WFC",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/WFC?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 460937,
+    "sha256": "c04ab4978e4a629b86fb8e608be4c0c46300403948a6afb344237a04d95e7068",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 69
+    }
+  },
+  {
+    "symbol": "GS",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GS?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 449092,
+    "sha256": "01c7d9d4c84265e7ee168993d3fc35d31e412a223c944e06ff4970df360b16e7",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "XOM",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 456722,
+    "sha256": "a033dee4820b74e5421c76c795f9af360211c17d243197a1495ec0f4cdab947c",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "EOG",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/EOG?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 454387,
+    "sha256": "21a917d62f3cc38870e63a0251ab23836c93d95a5c441b7a4d921abffd7f330a",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 74,
+      "splits": 1
+    }
+  },
+  {
+    "symbol": "COP",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/COP?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 458053,
+    "sha256": "a1ac464aece2a17f434a9a606831f0fdae46726fc7365e2b20351de9acc7a6e3",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 75,
+      "splits": 1
+    }
+  },
+  {
+    "symbol": "CVX",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CVX?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 459176,
+    "sha256": "35eb7344684175ee860a9f1aba4bd7745e86fc62b2fdb015dd399b4a94d866bf",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "AMZN",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 460576,
+    "sha256": "eda08dee1b601ec7c27d0ec36637f4527dd9d25b381791d8f931abbb9f360c3e",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "splits": 1
+    }
+  },
+  {
+    "symbol": "SLB",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SLB?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 453850,
+    "sha256": "b421240061bde192b93ee5128ddcf5b48525e473ec842f39a5d8205fa8b5d61d",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "TGT",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/TGT?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 453691,
+    "sha256": "44c6b96fb88c36251923b550b5efd981af4e2786aa396a721a2db16358deaf3d",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "WMT",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/WMT?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 470256,
+    "sha256": "d21fdf8e88fa38686a6cc33f20c64d39359a36c80e1600646ae99129d9a7aec6",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67,
+      "splits": 1
+    }
+  },
+  {
+    "symbol": "CAT",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CAT?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 449157,
+    "sha256": "935d614743832228af4cdcc49253cd29eee5e327851c83e7f48c3d79076f3ad2",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "LOW",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/LOW?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 456605,
+    "sha256": "47383008a3a56439f7d7d7baa5dce8a09c62874ea1c5d4a59ca1212ec76aa0a4",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "COST",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/COST?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 446683,
+    "sha256": "d8705c3e43cfd77237c4bf4b754122e1c123d34a00a5d5756fbda23cab0efd0c",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 72
+    }
+  },
+  {
+    "symbol": "HD",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/HD?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 453266,
+    "sha256": "76ae48313ef42c13cb7f181a0ebc830a6b3a3f9df7749673a008927fc6aeb0c4",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67
+    }
+  },
+  {
+    "symbol": "DE",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/DE?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 446878,
+    "sha256": "633581a5eb4ff4267a77d8357289a058274d5170a9dfcd205544bcc2b15b6dd3",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 66
+    }
+  },
+  {
+    "symbol": "GE",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GE?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 465877,
+    "sha256": "fc6e468cc6218787813afadab28ff09e00fc7a4eca02431c449e165ba104bb99",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67,
+      "splits": 4
+    }
+  },
+  {
+    "symbol": "HON",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/HON?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 468929,
+    "sha256": "40a1e60e2481466adf5b3ce9ff7763a8a4379a117316e2f47472924d88e13af8",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67,
+      "splits": 5
+    }
+  },
+  {
+    "symbol": "RTX",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/RTX?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 457813,
+    "sha256": "2916442b08c79e4a3cc500775e70d0f20704e46591d7e4dcd3de6b40ca89a6c4",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 67,
+      "splits": 1
+    }
+  },
+  {
+    "symbol": "BA",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/BA?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 449489,
+    "sha256": "a6a834764e5d54754cfe9cf47cf439868fe438f0307ed5f5261762836f8d6de6",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 41
+    }
+  },
+  {
+    "symbol": "GOOGL",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 466232,
+    "sha256": "0f9f17ca4c8fceed100c0c1d35813d9977c6808b9a1b2dfa67581ecdec400598",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 10,
+      "splits": 2
+    }
+  },
+  {
+    "symbol": "NFLX",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/NFLX?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 467001,
+    "sha256": "851ca5108204dff08561937187ff5974fc7400a3103d056827e4b0695d72ba8d",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "splits": 2
+    }
+  },
+  {
+    "symbol": "META",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 387595,
+    "sha256": "d9cfde662ec3a46827ae119f8ad952d36a4f9728c45e79dc1baf6da4a8a35332",
+    "granularity": "1d",
+    "rows": 3595,
+    "events": {
+      "dividends": 10
+    }
+  },
+  {
+    "symbol": "DIS",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/DIS?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 455523,
+    "sha256": "6b0b44f59cc2a13e12f4e82f22dd8feb20b252f703c7ca1e856781dc8e270ecc",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 21
+    }
+  }
+]

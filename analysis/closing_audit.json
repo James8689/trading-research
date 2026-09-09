@@ -1,0 +1,80 @@
+[
+  {
+    "base": "QQQ",
+    "variant": "all",
+    "trades": 701,
+    "stop_fraction": 0.14265335235378032,
+    "underlying_signed_mean_bps": -1.8573205691868762,
+    "actual_etf_no_stop_mean_bps": -5.91720946907654,
+    "actual_etf_stopped_mean_bps": -3.6824524079885874,
+    "underlying_mean_ci95_bps": [
+      -3.793417094115549,
+      -0.03701482257489329
+    ]
+  },
+  {
+    "base": "QQQ",
+    "variant": "strong",
+    "trades": 305,
+    "stop_fraction": 0.13442622950819672,
+    "underlying_signed_mean_bps": -2.849191396721311,
+    "actual_etf_no_stop_mean_bps": -9.028801869377775,
+    "actual_etf_stopped_mean_bps": -6.8448389770491795,
+    "underlying_mean_ci95_bps": [
+      -5.579785017868852,
+      -0.14361871057377143
+    ]
+  },
+  {
+    "base": "QQQ",
+    "variant": "strong_agree",
+    "trades": 281,
+    "stop_fraction": 0.1423487544483986,
+    "underlying_signed_mean_bps": -3.1317352811387895,
+    "actual_etf_no_stop_mean_bps": -9.8418202966673,
+    "actual_etf_stopped_mean_bps": -7.462872946619216,
+    "underlying_mean_ci95_bps": [
+      -6.306948756672599,
+      -0.12795439056939556
+    ]
+  },
+  {
+    "base": "SPY",
+    "variant": "all",
+    "trades": 701,
+    "stop_fraction": 0.08701854493580599,
+    "underlying_signed_mean_bps": -1.887601122681883,
+    "actual_etf_no_stop_mean_bps": -5.622041417151956,
+    "actual_etf_stopped_mean_bps": -3.980933179743223,
+    "underlying_mean_ci95_bps": [
+      -3.3496369662268193,
+      -0.4539575548145528
+    ]
+  },
+  {
+    "base": "SPY",
+    "variant": "strong",
+    "trades": 302,
+    "stop_fraction": 0.10264900662251655,
+    "underlying_signed_mean_bps": -1.6103297781456956,
+    "actual_etf_no_stop_mean_bps": -4.744119031064941,
+    "actual_etf_stopped_mean_bps": -4.816821605960265,
+    "underlying_mean_ci95_bps": [
+      -3.9809971681291394,
+      0.7605899275662223
+    ]
+  },
+  {
+    "base": "SPY",
+    "variant": "strong_agree",
+    "trades": 284,
+    "stop_fraction": 0.1056338028169014,
+    "underlying_signed_mean_bps": -1.715840690140845,
+    "actual_etf_no_stop_mean_bps": -5.127229836046319,
+    "actual_etf_stopped_mean_bps": -5.18243141197183,
+    "underlying_mean_ci95_bps": [
+      -4.052107322359156,
+      0.5941582400528164
+    ]
+  }
+]

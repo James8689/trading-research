@@ -1,0 +1,62 @@
+[
+  {
+    "cost_bps": 0,
+    "events": 59,
+    "event_days": 24,
+    "sessions_screened": 39,
+    "start": "2026-07-14",
+    "end": "2026-09-04",
+    "gross_avg_trade_bps": 10.236986741136148,
+    "net_avg_trade_bps": 10.236986741136148,
+    "net_positive_fraction": 0.559322033898305,
+    "event_day_mean_ci95": [
+      -0.00043281708282050523,
+      0.0019292460516254538
+    ]
+  },
+  {
+    "cost_bps": 5,
+    "events": 59,
+    "event_days": 24,
+    "sessions_screened": 39,
+    "start": "2026-07-14",
+    "end": "2026-09-04",
+    "gross_avg_trade_bps": 10.236986741136148,
+    "net_avg_trade_bps": 5.236986741136142,
+    "net_positive_fraction": 0.5084745762711864,
+    "event_day_mean_ci95": [
+      -0.0009328170828205054,
+      0.0014292460516254534
+    ]
+  },
+  {
+    "cost_bps": 10,
+    "events": 59,
+    "event_days": 24,
+    "sessions_screened": 39,
+    "start": "2026-07-14",
+    "end": "2026-09-04",
+    "gross_avg_trade_bps": 10.236986741136148,
+    "net_avg_trade_bps": 0.23698674113614396,
+    "net_positive_fraction": 0.4745762711864407,
+    "event_day_mean_ci95": [
+      -0.0014328170828205053,
+      0.0009292460516254536
+    ]
+  },
+  {
+    "cost_bps": 20,
+    "events": 59,
+    "event_days": 24,
+    "sessions_screened": 39,
+    "start": "2026-07-14",
+    "end": "2026-09-04",
+    "gross_avg_trade_bps": 10.236986741136148,
+    "net_avg_trade_bps": -9.763013258863857,
+    "net_positive_fraction": 0.4576271186440678,
+    "event_day_mean_ci95": [
+      -0.002432817082820505,
+      -7.075394837454614e-05
+    ]
+  }
+]

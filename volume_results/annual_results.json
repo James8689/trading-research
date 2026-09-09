@@ -1,0 +1,1217 @@
+[
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "return": -0.07363764034625853,
+    "drawdown": -0.2755543676469102,
+    "orders": 432
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "return": 0.22296512411835767,
+    "drawdown": -0.16341100457310676,
+    "orders": 438
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "return": 0.4766645021134128,
+    "drawdown": -0.04859649699022339,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "return": 0.14493482679348513,
+    "drawdown": -0.09314670999341601,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "return": 0.0573122384226723,
+    "drawdown": -0.1480578562267597,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "return": 0.2725102306822156,
+    "drawdown": -0.15538319929720656,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "return": 0.29715026683112344,
+    "drawdown": -0.035149442857471125,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "return": -0.04468408560641224,
+    "drawdown": -0.2533728175564317,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "return": 0.4034863807581752,
+    "drawdown": -0.11274357051450734,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "return": 0.1985649856064433,
+    "drawdown": -0.3725079588517668,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "return": 0.375105346945938,
+    "drawdown": -0.05931983615821901,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "return": -0.1340598590271176,
+    "drawdown": -0.2649249461299481,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "return": 0.3973412079991583,
+    "drawdown": -0.10908393681166106,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "return": 0.27127392674418127,
+    "drawdown": -0.11737941416742237,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "return": 0.2951586368368493,
+    "drawdown": -0.22993287773923943,
+    "orders": 481
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "return": -0.07400497293085817,
+    "drawdown": -0.2756270747360333,
+    "orders": 432
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "return": 0.2227557467174246,
+    "drawdown": -0.1634463391241332,
+    "orders": 438
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "return": 0.47646779481680035,
+    "drawdown": -0.04860924615553597,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "return": 0.1447973698172098,
+    "drawdown": -0.09315572535648553,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "return": 0.057174648997828426,
+    "drawdown": -0.1480822267393126,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "return": 0.27231569815154644,
+    "drawdown": -0.15540641939530309,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "return": 0.2969804936566891,
+    "drawdown": -0.03515840482480648,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "return": -0.04483254195860342,
+    "drawdown": -0.25339911553414396,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "return": 0.40328661789958176,
+    "drawdown": -0.11276976258330729,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "return": 0.19832610763982172,
+    "drawdown": -0.3725165284136771,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "return": 0.374880539350281,
+    "drawdown": -0.05934045233251106,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "return": -0.1342263311728087,
+    "drawdown": -0.2650245221121037,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "return": 0.3971164933241198,
+    "drawdown": -0.10911329596748309,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "return": 0.2710711330291955,
+    "drawdown": -0.1173907605563067,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "return": 0.29460070211847666,
+    "drawdown": -0.22995293815747386,
+    "orders": 481
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2011,
+    "return": -0.0747393808416833,
+    "drawdown": -0.27577247014335327,
+    "orders": 432
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2012,
+    "return": 0.2223370900767423,
+    "drawdown": -0.16351700528253565,
+    "orders": 438
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2013,
+    "return": 0.4760744520289468,
+    "drawdown": -0.04863474448616012,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2014,
+    "return": 0.14452250106714848,
+    "drawdown": -0.09317375608262313,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2015,
+    "return": 0.056899519057127534,
+    "drawdown": -0.1481309667398245,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2016,
+    "return": 0.2719267145040398,
+    "drawdown": -0.15545285864997582,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2017,
+    "return": 0.2966410082782964,
+    "drawdown": -0.03517632875947663,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2018,
+    "return": -0.045129391480445036,
+    "drawdown": -0.25345171010301315,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2019,
+    "return": 0.4028871699963157,
+    "drawdown": -0.11282214556311487,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2020,
+    "return": 0.19784848069081984,
+    "drawdown": -0.3725336675374976,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2021,
+    "return": 0.3744310243648161,
+    "drawdown": -0.0593816846810955,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2022,
+    "return": -0.13455918789620935,
+    "drawdown": -0.2652236388657191,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2023,
+    "return": 0.3966671625070173,
+    "drawdown": -0.10917201234691376,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2024,
+    "return": 0.27066563442971847,
+    "drawdown": -0.11741345333407827,
+    "orders": 444
+  },
+  {
+    "method": "same_universe_equal_weight",
+    "horizon": 0,
+    "roundtrip_cost_bps": 20,
+    "year": 2025,
+    "return": 0.29348529986706784,
+    "drawdown": -0.22999305821150196,
+    "orders": 481
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "return": 0.011196403282803136,
+    "drawdown": -0.031112932559603013,
+    "orders": 65
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "return": 0.05700971367741525,
+    "drawdown": -0.012005000327701465,
+    "orders": 67
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "return": 0.06182945846148713,
+    "drawdown": -0.017925825847129984,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "return": 0.06507366989956065,
+    "drawdown": -0.012291000071292246,
+    "orders": 46
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "return": -0.009524394448935491,
+    "drawdown": -0.028300989230171214,
+    "orders": 44
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "return": 0.02347538794339643,
+    "drawdown": -0.012041832909666206,
+    "orders": 60
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "return": 0.009018568846901998,
+    "drawdown": -0.013560194246145407,
+    "orders": 40
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "return": -0.018984949179429167,
+    "drawdown": -0.022233583725671857,
+    "orders": 40
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "return": -0.015859397327999236,
+    "drawdown": -0.031272484871812,
+    "orders": 46
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "return": -0.010666473332892834,
+    "drawdown": -0.03676634682970159,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "return": 0.011953361225464754,
+    "drawdown": -0.015841737580275406,
+    "orders": 48
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "return": 0.007991991212427996,
+    "drawdown": -0.013304022891441503,
+    "orders": 44
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "return": -0.007783255899838415,
+    "drawdown": -0.03275233235105457,
+    "orders": 63
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "return": 0.005545872747164893,
+    "drawdown": -0.010729505930344274,
+    "orders": 45
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "return": 0.0046064589289998015,
+    "drawdown": -0.012754929329792941,
+    "orders": 42
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "return": 0.00968049220107714,
+    "drawdown": -0.031115802045664664,
+    "orders": 65
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "return": 0.055193715386667286,
+    "drawdown": -0.012345111005807818,
+    "orders": 67
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "return": 0.059023117367661415,
+    "drawdown": -0.01839804258621447,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "return": 0.0633150474226547,
+    "drawdown": -0.012683639251547807,
+    "orders": 46
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "return": -0.010709366933885023,
+    "drawdown": -0.029048105247279077,
+    "orders": 44
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "return": 0.02018916745928423,
+    "drawdown": -0.012273386837490685,
+    "orders": 60
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "return": 0.005748058978533033,
+    "drawdown": -0.013775406862406525,
+    "orders": 40
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "return": -0.01683206938964643,
+    "drawdown": -0.022177847651174365,
+    "orders": 40
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "return": -0.01719651579795023,
+    "drawdown": -0.03221705003339437,
+    "orders": 46
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "return": -0.011227164187951999,
+    "drawdown": -0.03567267350736969,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "return": 0.01133800350688463,
+    "drawdown": -0.01657688766924048,
+    "orders": 46
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "return": 0.0039035983850599365,
+    "drawdown": -0.013644502011567972,
+    "orders": 42
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "return": -0.008445371121617473,
+    "drawdown": -0.033047608684690255,
+    "orders": 63
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "return": 0.004769770329672074,
+    "drawdown": -0.011170830437026269,
+    "orders": 45
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "return": 0.0005745328036637076,
+    "drawdown": -0.01308929586418317,
+    "orders": 42
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2011,
+    "return": 0.006655447609200893,
+    "drawdown": -0.03120469529345804,
+    "orders": 65
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2012,
+    "return": 0.051831809766772485,
+    "drawdown": -0.013023859643010671,
+    "orders": 65
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2013,
+    "return": 0.04450671112209825,
+    "drawdown": -0.01868563460390349,
+    "orders": 48
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2014,
+    "return": 0.055661301524061235,
+    "drawdown": -0.01288807135904968,
+    "orders": 46
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2015,
+    "return": -0.0152173869361234,
+    "drawdown": -0.030319700469047972,
+    "orders": 44
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2016,
+    "return": 0.019006967821180165,
+    "drawdown": -0.0130899197023997,
+    "orders": 60
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2017,
+    "return": 0.005107809242729688,
+    "drawdown": -0.014180834320142943,
+    "orders": 40
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2018,
+    "return": -0.014358024774580258,
+    "drawdown": -0.022297868819736166,
+    "orders": 38
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2019,
+    "return": -0.017055300158114295,
+    "drawdown": -0.03091834425744755,
+    "orders": 46
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2020,
+    "return": -0.01743300690397276,
+    "drawdown": -0.03771926964095773,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2021,
+    "return": 0.00497180100515715,
+    "drawdown": -0.02009939904170377,
+    "orders": 44
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2022,
+    "return": -0.0013307042914399991,
+    "drawdown": -0.01801233024180726,
+    "orders": 38
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2023,
+    "return": -0.008851358744438431,
+    "drawdown": -0.03254022981644622,
+    "orders": 63
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2024,
+    "return": 0.009587066008277079,
+    "drawdown": -0.010431881837437373,
+    "orders": 43
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 5,
+    "roundtrip_cost_bps": 20,
+    "year": 2025,
+    "return": 0.0016091224649805724,
+    "drawdown": -0.01403936288796237,
+    "orders": 42
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2011,
+    "return": -0.0035210203701110387,
+    "drawdown": -0.041121349146899355,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2012,
+    "return": 0.04735838776973167,
+    "drawdown": -0.03373502616542945,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2013,
+    "return": 0.137541835977798,
+    "drawdown": -0.02293574540444898,
+    "orders": 42
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2014,
+    "return": 0.061708073606877356,
+    "drawdown": -0.026208734133177924,
+    "orders": 39
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2015,
+    "return": -7.523235147210983e-05,
+    "drawdown": -0.027492695160359237,
+    "orders": 40
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2016,
+    "return": 0.03372236572754539,
+    "drawdown": -0.022783688321486695,
+    "orders": 53
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2017,
+    "return": 0.04297124737700431,
+    "drawdown": -0.014937642416066321,
+    "orders": 34
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2018,
+    "return": 0.020877005109193325,
+    "drawdown": -0.021555882237818458,
+    "orders": 32
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2019,
+    "return": -0.0007133590366886766,
+    "drawdown": -0.032184340752175356,
+    "orders": 42
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2020,
+    "return": 0.04088120540169893,
+    "drawdown": -0.03876169002183172,
+    "orders": 43
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2021,
+    "return": -0.019355586774388422,
+    "drawdown": -0.03383952612421581,
+    "orders": 46
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2022,
+    "return": 0.03924371484053624,
+    "drawdown": -0.018441405512950815,
+    "orders": 43
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2023,
+    "return": 0.03449700823354429,
+    "drawdown": -0.04284967938737494,
+    "orders": 53
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2024,
+    "return": -0.0030314182237825005,
+    "drawdown": -0.02970356163696486,
+    "orders": 41
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 5,
+    "year": 2025,
+    "return": 0.03811622934873604,
+    "drawdown": -0.01977786074076815,
+    "orders": 44
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2011,
+    "return": -0.005248842860530734,
+    "drawdown": -0.042689994187356084,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2012,
+    "return": 0.04701555547555869,
+    "drawdown": -0.03334069429636499,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2013,
+    "return": 0.13619266020636234,
+    "drawdown": -0.023282237920305704,
+    "orders": 42
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2014,
+    "return": 0.06119085998278684,
+    "drawdown": -0.02563306919942332,
+    "orders": 39
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2015,
+    "return": 0.0009897067145898664,
+    "drawdown": -0.027951622381205077,
+    "orders": 40
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2016,
+    "return": 0.03543709989518473,
+    "drawdown": -0.018679604135320882,
+    "orders": 53
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2017,
+    "return": 0.03902282160846848,
+    "drawdown": -0.015076012423003271,
+    "orders": 34
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2018,
+    "return": 0.019076536223359142,
+    "drawdown": -0.02193761093378155,
+    "orders": 32
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2019,
+    "return": 0.0016986624507500103,
+    "drawdown": -0.030358493299113554,
+    "orders": 42
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2020,
+    "return": 0.0404109128132244,
+    "drawdown": -0.03919799399268287,
+    "orders": 43
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2021,
+    "return": -0.021484266535764074,
+    "drawdown": -0.03562984854222917,
+    "orders": 46
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2022,
+    "return": 0.03642587443038292,
+    "drawdown": -0.018705691213170672,
+    "orders": 43
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2023,
+    "return": 0.03525268257609815,
+    "drawdown": -0.04287612242276695,
+    "orders": 53
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2024,
+    "return": -0.0031402307595588264,
+    "drawdown": -0.02992554010995996,
+    "orders": 41
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 10,
+    "year": 2025,
+    "return": 0.03774268613174159,
+    "drawdown": -0.020027848034793516,
+    "orders": 44
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2011,
+    "return": -0.0064620122917771194,
+    "drawdown": -0.04327872930336163,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2012,
+    "return": 0.05017861838446147,
+    "drawdown": -0.03252895087339991,
+    "orders": 50
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2013,
+    "return": 0.12881739346100218,
+    "drawdown": -0.023859163148851725,
+    "orders": 42
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2014,
+    "return": 0.057966738516272986,
+    "drawdown": -0.025579491507522367,
+    "orders": 39
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2015,
+    "return": -0.004953121695192797,
+    "drawdown": -0.02786573061755626,
+    "orders": 40
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2016,
+    "return": 0.03257716313072123,
+    "drawdown": -0.017851126115640548,
+    "orders": 53
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2017,
+    "return": 0.03760204827175295,
+    "drawdown": -0.015602136450310833,
+    "orders": 34
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2018,
+    "return": 0.01833631677461267,
+    "drawdown": -0.02289835497257442,
+    "orders": 32
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2019,
+    "return": -0.0009671739473657848,
+    "drawdown": -0.030654337558928435,
+    "orders": 42
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2020,
+    "return": 0.03118877451942903,
+    "drawdown": -0.03968597261782947,
+    "orders": 43
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2021,
+    "return": -0.02801614571507116,
+    "drawdown": -0.041900766877327356,
+    "orders": 46
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2022,
+    "return": 0.030874233822962394,
+    "drawdown": -0.02349315034759547,
+    "orders": 43
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2023,
+    "return": 0.02060803513873255,
+    "drawdown": -0.047265433030885484,
+    "orders": 53
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2024,
+    "return": -0.00034114518868066934,
+    "drawdown": -0.02893678055672988,
+    "orders": 41
+  },
+  {
+    "method": "volume_shock",
+    "horizon": 20,
+    "roundtrip_cost_bps": 20,
+    "year": 2025,
+    "return": 0.026306880652407383,
+    "drawdown": -0.023820696018207355,
+    "orders": 42
+  }
+]

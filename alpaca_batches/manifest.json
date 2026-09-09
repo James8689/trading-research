@@ -1,0 +1,64 @@
+{
+  "updated_utc": "2026-09-08T23:04:40.666660+00:00",
+  "files": [
+    {
+      "file": "2020-01_semiconductors.json",
+      "bytes": 1081822,
+      "sha256": "d7e8ab72c764039292a0a3f978c28c2b5651fe74cea1bc80923bd3d776787856",
+      "request": {
+        "asof": null,
+        "currency": null,
+        "days": 5,
+        "end": "2020-02-01T00:00:00Z",
+        "feed": "sip",
+        "hours": 0,
+        "limit": 100000,
+        "minutes": 30,
+        "sort": "asc",
+        "start": "2020-01-01T00:00:00Z",
+        "symbols": [
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "QCOM",
+          "MU",
+          "INTC"
+        ],
+        "timeframe": "5Min",
+        "tz": "UTC"
+      },
+      "counts": {
+        "per_symbol": {
+          "AMD": 3759,
+          "AVGO": 2128,
+          "INTC": 2825,
+          "MU": 3317,
+          "NVDA": 3067,
+          "QCOM": 2547
+        },
+        "records": 17643,
+        "symbols": 6
+      },
+      "saved_bars": {
+        "AMD": 3759,
+        "AVGO": 2128,
+        "INTC": 2825,
+        "MU": 3317,
+        "NVDA": 3067,
+        "QCOM": 2547
+      }
+    },
+    {
+      "file": "calendar_2020.json",
+      "bytes": 20570,
+      "sha256": "58f45b138524f05ae61c25ea01e5a9585fbd40a11c54d51ff10f557fcf8cce07",
+      "request": {
+        "start_date": "2020-01-01",
+        "end_date": "2020-12-31"
+      },
+      "counts": null,
+      "saved_bars": {}
+    }
+  ],
+  "note": "Only listed files are completed. Preserve all files when resuming; do not refetch completed batches."
+}

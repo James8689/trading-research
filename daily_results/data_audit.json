@@ -1,0 +1,46 @@
+[
+  {
+    "symbol": "SPY",
+    "rows": 4194,
+    "start": "2010-01-04",
+    "end": "2026-09-04",
+    "split_events": 0,
+    "max_dividend_return_difference_bps": 2.519629148279856,
+    "mean_dividend_return_difference_bps": 0.005821189746085505,
+    "largest_abs_return": 0.10942373540494488,
+    "nominal_first_close": 113.33000183105469
+  },
+  {
+    "symbol": "QQQ",
+    "rows": 4194,
+    "start": "2010-01-04",
+    "end": "2026-09-04",
+    "split_events": 0,
+    "max_dividend_return_difference_bps": 0.7080507771850542,
+    "mean_dividend_return_difference_bps": 0.003764602904561332,
+    "largest_abs_return": 0.12003077136578888,
+    "nominal_first_close": 46.41999816894531
+  },
+  {
+    "symbol": "SSO",
+    "rows": 4194,
+    "start": "2010-01-04",
+    "end": "2026-09-04",
+    "split_events": 4,
+    "max_dividend_return_difference_bps": 2.815640117401763,
+    "mean_dividend_return_difference_bps": 0.00461221360414471,
+    "largest_abs_return": 0.2335824012101425,
+    "nominal_first_close": 39.470001220703125
+  },
+  {
+    "symbol": "QLD",
+    "rows": 4194,
+    "start": "2010-01-04",
+    "end": "2026-09-04",
+    "split_events": 6,
+    "max_dividend_return_difference_bps": 1.4536986629531956,
+    "mean_dividend_return_difference_bps": 0.002404321618042899,
+    "largest_abs_return": 0.24280985238471853,
+    "nominal_first_close": 61.07001495361328
+  }
+]

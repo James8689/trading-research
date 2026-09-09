@@ -1,0 +1,48 @@
+[
+  {
+    "symbol": "QLD",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/QLD?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 465404,
+    "sha256": "8a86ee087362d4daeeb230181063980744bff9001ebd5791782f57e1beba6399",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 28,
+      "splits": 6
+    }
+  },
+  {
+    "symbol": "SPY",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 465092,
+    "sha256": "3dcf9072bf905832642c2b848ce1d94fe87371d2f04b9529901677ea670bd366",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 66
+    }
+  },
+  {
+    "symbol": "SSO",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SSO?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 464506,
+    "sha256": "52ab9bab7a53070ffe25fadd45a431c483d7efe67c8f53dc765e4edf16aea2f0",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 56,
+      "splits": 4
+    }
+  },
+  {
+    "symbol": "QQQ",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=1262304000&period2=1788825600&interval=1d&includePrePost=false&events=div%2Csplits",
+    "bytes": 462249,
+    "sha256": "c03c751f790dce2ad71da9b51330a3cab0527a1550ac3ba0df43689387b766df",
+    "granularity": "1d",
+    "rows": 4194,
+    "events": {
+      "dividends": 69
+    }
+  }
+]

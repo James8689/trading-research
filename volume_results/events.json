@@ -1,0 +1,5564 @@
+[
+  {
+    "symbol": "MSFT",
+    "group": "software",
+    "event_date": "2010-09-13",
+    "event_index": 174,
+    "score": 7.30295599971975,
+    "residual": 0.04170714552542809,
+    "stop": 24.08000015258789
+  },
+  {
+    "symbol": "MSFT",
+    "group": "software",
+    "event_date": "2012-01-20",
+    "event_index": 516,
+    "score": 4.864204881665409,
+    "residual": 0.052816026334844945,
+    "stop": 28.74
+  },
+  {
+    "symbol": "MSFT",
+    "group": "software",
+    "event_date": "2013-11-06",
+    "event_index": 968,
+    "score": 2.3833451976407605,
+    "residual": 0.03692482452578427,
+    "stop": 37.05000137329102
+  },
+  {
+    "symbol": "MSFT",
+    "group": "software",
+    "event_date": "2014-01-31",
+    "event_index": 1026,
+    "score": 2.076985117657188,
+    "residual": 0.0324454848218898,
+    "stop": 36.55000137329102
+  },
+  {
+    "symbol": "MSFT",
+    "group": "software",
+    "event_date": "2014-03-18",
+    "event_index": 1057,
+    "score": 5.070619484515234,
+    "residual": 0.03228393077205771,
+    "stop": 38.21000122070313
+  },
+  {
+    "symbol": "MSFT",
+    "group": "software",
+    "event_date": "2014-07-16",
+    "event_index": 1140,
+    "score": 5.226570053493545,
+    "residual": 0.03469682163279475,
+    "stop": 42.46999954223633
+  },
+  {
+    "symbol": "MSFT",
+    "group": "software",
+    "event_date": "2015-04-24",
+    "event_index": 1335,
+    "score": 10.497385557065362,
+    "residual": 0.10220188367705174,
+    "stop": 45.64000152587891
+  },
+  {
+    "symbol": "MSFT",
+    "group": "software",
+    "event_date": "2020-08-03",
+    "event_index": 2663,
+    "score": 3.3785760317363924,
+    "residual": 0.049288993526861224,
+    "stop": 210.43000244140626
+  },
+  {
+    "symbol": "MSFT",
+    "group": "software",
+    "event_date": "2026-05-29",
+    "event_index": 4125,
+    "score": 2.7223506562413124,
+    "residual": 0.05195953243837348,
+    "stop": 432.3499853515625
+  },
+  {
+    "symbol": "MSFT",
+    "group": "software",
+    "event_date": "2026-06-26",
+    "event_index": 4144,
+    "score": 2.5826436151983674,
+    "residual": 0.06431273125343906,
+    "stop": 355.41999267578126
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2012-02-09",
+    "event_index": 530,
+    "score": 2.118519387563015,
+    "residual": 0.03333594043727328,
+    "stop": 480.54999755859376
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2013-08-13",
+    "event_index": 908,
+    "score": 2.6753562539885074,
+    "residual": 0.044565626308848305,
+    "stop": 468.03996490478517
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2014-04-24",
+    "event_index": 1083,
+    "score": 12.656187696391376,
+    "residual": 0.07995465521498568,
+    "stop": 560.7200033569336
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2014-04-28",
+    "event_index": 1085,
+    "score": 1.8116620617001584,
+    "residual": 0.035560644925519025,
+    "stop": 572.5399801635742
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2018-08-01",
+    "event_index": 2159,
+    "score": 10.320902572696918,
+    "residual": 0.060580762295270096,
+    "stop": 197.29999755859376
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2020-03-02",
+    "event_index": 2556,
+    "score": 3.943612716473997,
+    "residual": 0.04979421444820464,
+    "stop": 277.71000122070313
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2020-07-31",
+    "event_index": 2662,
+    "score": 7.711147527379873,
+    "residual": 0.09678642842101626,
+    "stop": 403.28998779296876
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2021-11-30",
+    "event_index": 2998,
+    "score": 5.271431455196338,
+    "residual": 0.05103523330131865,
+    "stop": 159.90999816894532
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2024-06-11",
+    "event_index": 3633,
+    "score": 7.45124544746502,
+    "residual": 0.07024080851026282,
+    "stop": 193.6200048828125
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2025-04-09",
+    "event_index": 3840,
+    "score": 2.827592672714424,
+    "residual": 0.04826922742228357,
+    "stop": 171.87999938964845
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2025-08-06",
+    "event_index": 3921,
+    "score": 6.5030487055664254,
+    "residual": 0.043247075530843615,
+    "stop": 205.57999633789063
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2025-08-08",
+    "event_index": 3923,
+    "score": 2.4325731180875105,
+    "residual": 0.03456035696039317,
+    "stop": 219.24
+  },
+  {
+    "symbol": "AAPL",
+    "group": "software",
+    "event_date": "2026-06-26",
+    "event_index": 4144,
+    "score": 1.9323879582011754,
+    "residual": 0.03859610221671561,
+    "stop": 274.19999145507813
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2010-09-17",
+    "event_index": 178,
+    "score": 4.460910141871465,
+    "residual": 0.08322469925424136,
+    "stop": 26.389999618530272
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2013-12-19",
+    "event_index": 998,
+    "score": 6.638405465687041,
+    "residual": 0.058959174987334606,
+    "stop": 35.49
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2014-12-18",
+    "event_index": 1249,
+    "score": 6.938190610595266,
+    "residual": 0.07706912264072807,
+    "stop": 43.55999969482422
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2019-06-20",
+    "event_index": 2381,
+    "score": 10.104027514165923,
+    "residual": 0.07226044014721866,
+    "stop": 55.51999877929688
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2021-02-22",
+    "event_index": 2802,
+    "score": 4.506205722141641,
+    "residual": 0.06200213355151507,
+    "stop": 62.26999877929688
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2022-10-20",
+    "event_index": 3222,
+    "score": 4.855618654304372,
+    "residual": 0.05288000894711542,
+    "stop": 67.18000244140624
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2023-05-25",
+    "event_index": 3371,
+    "score": 5.415476339289648,
+    "residual": 0.05206021194891641,
+    "stop": 98.7599966430664
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2023-06-14",
+    "event_index": 3384,
+    "score": 2.3684112537166997,
+    "residual": 0.04671794620464764,
+    "stop": 115.72999786376953
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2024-06-12",
+    "event_index": 3634,
+    "score": 7.562638227777433,
+    "residual": 0.12498047250261446,
+    "stop": 133.9500067138672
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2024-11-06",
+    "event_index": 3736,
+    "score": 3.577601616695895,
+    "residual": 0.030204923498650782,
+    "stop": 177.40999816894532
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2025-01-21",
+    "event_index": 3785,
+    "score": 5.466656221837945,
+    "residual": 0.06251018191988789,
+    "stop": 162.74
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2025-06-12",
+    "event_index": 3884,
+    "score": 10.897397912538425,
+    "residual": 0.12914729189586427,
+    "stop": 188.8700048828125
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2025-06-13",
+    "event_index": 3885,
+    "score": 2.877878351154111,
+    "residual": 0.08803392470115545,
+    "stop": 201.1899969482422
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2026-04-13",
+    "event_index": 4092,
+    "score": 6.15173805520741,
+    "residual": 0.11717379125314342,
+    "stop": 139.71000122070313
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2026-05-29",
+    "event_index": 4125,
+    "score": 3.7070146617279183,
+    "residual": 0.10590331598213565,
+    "stop": 207.99999450683595
+  },
+  {
+    "symbol": "ORCL",
+    "group": "software",
+    "event_date": "2026-06-01",
+    "event_index": 4126,
+    "score": 2.766771218292075,
+    "residual": 0.09635559254330328,
+    "stop": 224.59000610351563
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2010-05-21",
+    "event_index": 96,
+    "score": 2.11262826004211,
+    "residual": 0.038671683086149766,
+    "stop": 73.90000366210937
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2010-06-03",
+    "event_index": 104,
+    "score": 3.63641805472566,
+    "residual": 0.07299174972265265,
+    "stop": 89.2599966430664
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2010-08-20",
+    "event_index": 159,
+    "score": 14.226436815993845,
+    "residual": 0.1727287803947788,
+    "stop": 104.12999938964843
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2010-11-18",
+    "event_index": 222,
+    "score": 1.97458127053249,
+    "residual": 0.03630298595723236,
+    "stop": 112.72000335693359
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2010-11-19",
+    "event_index": 223,
+    "score": 8.980403002858482,
+    "residual": 0.17838415851032674,
+    "stop": 126.3900015258789
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2011-04-20",
+    "event_index": 327,
+    "score": 3.9992367741440225,
+    "residual": 0.07485350100419597,
+    "stop": 134.09000610351563
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2011-10-27",
+    "event_index": 459,
+    "score": 2.3153689633236167,
+    "residual": 0.04447862971409111,
+    "stop": 127.04000305175781
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2012-11-21",
+    "event_index": 727,
+    "score": 7.06588629602869,
+    "residual": 0.08641176996559685,
+    "stop": 149.79000305175782
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2012-12-11",
+    "event_index": 740,
+    "score": 1.6499502120785297,
+    "residual": 0.034726712328610354,
+    "stop": 158.34000610351563
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2013-03-01",
+    "event_index": 794,
+    "score": 7.730772013368001,
+    "residual": 0.0722250445888879,
+    "stop": 170.77999328613282
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2014-01-15",
+    "event_index": 1015,
+    "score": 2.791828968116876,
+    "residual": 0.03303801921953187,
+    "stop": 57.46000122070313
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2015-10-01",
+    "event_index": 1446,
+    "score": 4.796616862807053,
+    "residual": 0.047513278858086094,
+    "stop": 68.67000030517578
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2016-02-09",
+    "event_index": 1535,
+    "score": 1.9801062942400791,
+    "residual": 0.06063069820070721,
+    "stop": 52.780000915527346
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2018-11-28",
+    "event_index": 2242,
+    "score": 3.311657802181881,
+    "residual": 0.0796875531355381,
+    "stop": 131.96000122070313
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2019-06-05",
+    "event_index": 2370,
+    "score": 2.3931948910777,
+    "residual": 0.041931346070683606,
+    "stop": 154.54000305175782
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2020-08-26",
+    "event_index": 2680,
+    "score": 12.847423753922724,
+    "residual": 0.25042337815207394,
+    "stop": 249.46000122070313
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2021-09-23",
+    "event_index": 2951,
+    "score": 4.906394958046791,
+    "residual": 0.05996469662008419,
+    "stop": 266.3899938964844
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2021-11-29",
+    "event_index": 2997,
+    "score": 3.0237826941173753,
+    "residual": 0.03182050815893689,
+    "stop": 284.69001220703126
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2023-11-30",
+    "event_index": 3501,
+    "score": 10.215147873982735,
+    "residual": 0.08961577319537573,
+    "stop": 243.63999389648438
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2024-05-31",
+    "event_index": 3626,
+    "score": 1.509880792630912,
+    "residual": 0.06625540444211975,
+    "stop": 216.04999755859376
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2024-11-08",
+    "event_index": 3738,
+    "score": 3.7543492979900908,
+    "residual": 0.03161014478850954,
+    "stop": 309.43000244140626
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2024-11-11",
+    "event_index": 3739,
+    "score": 6.029535343861839,
+    "residual": 0.06048521864208922,
+    "stop": 325.24
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2024-12-04",
+    "event_index": 3755,
+    "score": 5.071087363324262,
+    "residual": 0.10373827693570381,
+    "stop": 356.6399938964844
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2025-12-04",
+    "event_index": 4005,
+    "score": 2.111293941261424,
+    "residual": 0.03588084140576364,
+    "stop": 237.59000610351563
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2026-05-29",
+    "event_index": 4125,
+    "score": 2.9619611496478986,
+    "residual": 0.08225634009727378,
+    "stop": 180.01000427246095
+  },
+  {
+    "symbol": "CRM",
+    "group": "software",
+    "event_date": "2026-08-27",
+    "event_index": 4187,
+    "score": 8.470239642812341,
+    "residual": 0.21925214063290488,
+    "stop": 230.04000305175782
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2010-09-21",
+    "event_index": 180,
+    "score": 2.784063649714321,
+    "residual": 0.056168763731674454,
+    "stop": 10.64000057220459
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2011-01-05",
+    "event_index": 254,
+    "score": 4.554977857199058,
+    "residual": 0.07153028294237207,
+    "stop": 15.890000333786011
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2011-01-06",
+    "event_index": 255,
+    "score": 6.626524916182103,
+    "residual": 0.14035676125220287,
+    "stop": 17.35999988555908
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2011-01-12",
+    "event_index": 259,
+    "score": 3.860756337378875,
+    "residual": 0.1406554621586682,
+    "stop": 20.240000953674315
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2011-02-17",
+    "event_index": 284,
+    "score": 2.7493172591264123,
+    "residual": 0.09538631074609616,
+    "stop": 22.599999179840086
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2012-08-09",
+    "event_index": 656,
+    "score": 1.902127981408341,
+    "residual": 0.0328774196310595,
+    "stop": 14.219999780654907
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2013-05-10",
+    "event_index": 843,
+    "score": 3.3614474384318282,
+    "residual": 0.04203720865095706,
+    "stop": 14.189999570846558
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2013-08-14",
+    "event_index": 909,
+    "score": 5.62747988766386,
+    "residual": 0.04743173537050116,
+    "stop": 14.36999963760376
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2013-11-08",
+    "event_index": 970,
+    "score": 5.720422217519576,
+    "residual": 0.05592465730096352,
+    "stop": 14.929999580383301
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2014-02-12",
+    "event_index": 1034,
+    "score": 5.905341507759571,
+    "residual": 0.035197664747006696,
+    "stop": 16.289999952316283
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2014-08-08",
+    "event_index": 1157,
+    "score": 4.8141415685741435,
+    "residual": 0.07663265916496442,
+    "stop": 18.210000267028807
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2015-11-06",
+    "event_index": 1472,
+    "score": 8.573170119842736,
+    "residual": 0.13910159649282394,
+    "stop": 29.810001125335692
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2016-05-13",
+    "event_index": 1601,
+    "score": 13.913427822828318,
+    "residual": 0.16080869083108174,
+    "stop": 38.99000095367432
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2016-08-12",
+    "event_index": 1664,
+    "score": 5.101953515971682,
+    "residual": 0.05681532923159016,
+    "stop": 60.62000202178955
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2016-11-11",
+    "event_index": 1728,
+    "score": 15.838343069783027,
+    "residual": 0.3003719879142206,
+    "stop": 78.48999904632568
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2017-05-10",
+    "event_index": 1850,
+    "score": 13.542019050738203,
+    "residual": 0.17646336309928068,
+    "stop": 114.01000427246093
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2017-09-15",
+    "event_index": 1939,
+    "score": 5.249669743773881,
+    "residual": 0.061883545861898925,
+    "stop": 172.63999389648438
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2018-09-28",
+    "event_index": 2200,
+    "score": 3.9894906704515316,
+    "residual": 0.05083171259669261,
+    "stop": 271.5899984741211
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2019-08-19",
+    "event_index": 2422,
+    "score": 2.834112848535153,
+    "residual": 0.05827059027049253,
+    "stop": 163.46000122070313
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2020-05-15",
+    "event_index": 2609,
+    "score": 2.690136355991967,
+    "residual": 0.05271576333484029,
+    "stop": 314.95000289916993
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2020-08-21",
+    "event_index": 2677,
+    "score": 2.029965188926765,
+    "residual": 0.041135952792217934,
+    "stop": 487.7999822998047
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2021-04-12",
+    "event_index": 2836,
+    "score": 3.3664043371789827,
+    "residual": 0.0558159698567986,
+    "stop": 565.5599920654297
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2021-05-24",
+    "event_index": 2866,
+    "score": 1.861671753041318,
+    "residual": 0.031178531119325337,
+    "stop": 607.0299856567383
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2021-08-20",
+    "event_index": 2928,
+    "score": 2.6924577602519073,
+    "residual": 0.04346223917104064,
+    "stop": 199.32000564575196
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2021-08-23",
+    "event_index": 2929,
+    "score": 2.4860981495752172,
+    "residual": 0.046065135730916085,
+    "stop": 209.49000762939454
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2023-05-18",
+    "event_index": 3366,
+    "score": 2.271602624033521,
+    "residual": 0.040071868930969146,
+    "stop": 303.1899969482422
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2025-01-28",
+    "event_index": 3790,
+    "score": 1.9151453161149485,
+    "residual": 0.08066623830768083,
+    "stop": 116.24
+  },
+  {
+    "symbol": "NVDA",
+    "group": "semiconductors",
+    "event_date": "2025-04-09",
+    "event_index": 3840,
+    "score": 3.3116917715372307,
+    "residual": 0.08220809388180306,
+    "stop": 97.51999877929687
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2011-01-10",
+    "event_index": 257,
+    "score": 2.751679595504591,
+    "residual": 0.04202848744428056,
+    "stop": 8.910000076293946
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2011-07-22",
+    "event_index": 391,
+    "score": 10.637215479490841,
+    "residual": 0.19163852482895938,
+    "stop": 7.060000171661377
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2012-01-19",
+    "event_index": 515,
+    "score": 1.5371448291046852,
+    "residual": 0.03659959032542237,
+    "stop": 5.9700000190734865
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2016-06-17",
+    "event_index": 1625,
+    "score": 3.2899293822107487,
+    "residual": 0.11107337331668465,
+    "stop": 4.669999828338623
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2016-07-22",
+    "event_index": 1649,
+    "score": 4.198553647635748,
+    "residual": 0.11428888068004461,
+    "stop": 5.439999809265137
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2016-07-25",
+    "event_index": 1650,
+    "score": 4.05178913959782,
+    "residual": 0.14997615490966099,
+    "stop": 5.9100000762939455
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2016-10-25",
+    "event_index": 1715,
+    "score": 2.405231684640993,
+    "residual": 0.0732506648553366,
+    "stop": 6.859999885559082
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2017-02-01",
+    "event_index": 1782,
+    "score": 6.716269417140738,
+    "residual": 0.16257462323203975,
+    "stop": 10.8000004196167
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2017-02-06",
+    "event_index": 1785,
+    "score": 2.586459198293102,
+    "residual": 0.11534987640117544,
+    "stop": 12.370000114440918
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2017-05-16",
+    "event_index": 1854,
+    "score": 1.9843652486307357,
+    "residual": 0.11737786663340877,
+    "stop": 11.620000114440918
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2017-06-21",
+    "event_index": 1879,
+    "score": 3.407415982835276,
+    "residual": 0.10625948534995211,
+    "stop": 13.120000114440918
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2017-09-20",
+    "event_index": 1942,
+    "score": 2.3582621390503533,
+    "residual": 0.046896060697311004,
+    "stop": 12.790000190734863
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2018-01-31",
+    "event_index": 2033,
+    "score": 2.385597748583664,
+    "residual": 0.06710223887223599,
+    "stop": 13.139999618530274
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2018-07-26",
+    "event_index": 2155,
+    "score": 7.464944400768946,
+    "residual": 0.1456613778616469,
+    "stop": 16.819999923706053
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2018-08-24",
+    "event_index": 2176,
+    "score": 2.39584251751397,
+    "residual": 0.06980027886560247,
+    "stop": 22.660000076293944
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2019-01-30",
+    "event_index": 2283,
+    "score": 4.260139738088538,
+    "residual": 0.18364975844553588,
+    "stop": 21.360000839233397
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2019-03-19",
+    "event_index": 2316,
+    "score": 6.887876758105883,
+    "residual": 0.11803160712709793,
+    "stop": 23.58000015258789
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2019-03-21",
+    "event_index": 2318,
+    "score": 2.3168603666959844,
+    "residual": 0.0739192498768646,
+    "stop": 25.699999084472655
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2019-05-28",
+    "event_index": 2364,
+    "score": 4.795936851645739,
+    "residual": 0.10801455215301825,
+    "stop": 27.04999946594238
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2019-08-08",
+    "event_index": 2415,
+    "score": 5.684476986618894,
+    "residual": 0.14242163310811362,
+    "stop": 31.469999542236327
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2020-07-22",
+    "event_index": 2655,
+    "score": 3.117121073350153,
+    "residual": 0.07834304652032498,
+    "stop": 56.96000122070313
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2020-07-24",
+    "event_index": 2657,
+    "score": 5.563461423556272,
+    "residual": 0.17145636386015606,
+    "stop": 64.04000305175781
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2020-08-04",
+    "event_index": 2664,
+    "score": 1.7146789228138828,
+    "residual": 0.09102605461244906,
+    "stop": 77.97999786376953
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2021-06-17",
+    "event_index": 2883,
+    "score": 4.877255192035538,
+    "residual": 0.055880211646500255,
+    "stop": 80.55999969482421
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2021-06-30",
+    "event_index": 2892,
+    "score": 2.507541393977121,
+    "residual": 0.048421100133390516,
+    "stop": 90.58999847412109
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2021-07-28",
+    "event_index": 2911,
+    "score": 3.886946143309274,
+    "residual": 0.07620927112127363,
+    "stop": 89.6400015258789
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2021-11-08",
+    "event_index": 2983,
+    "score": 5.356126034411458,
+    "residual": 0.10051057191611767,
+    "stop": 137.6899969482422
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2022-05-04",
+    "event_index": 3105,
+    "score": 2.631347746551096,
+    "residual": 0.06051602456726379,
+    "stop": 91.68999694824218
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2023-02-01",
+    "event_index": 3292,
+    "score": 4.4108349191719425,
+    "residual": 0.11565296897827548,
+    "stop": 77.86999725341796
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2023-11-01",
+    "event_index": 3481,
+    "score": 4.24637243609734,
+    "residual": 0.08618806821042413,
+    "stop": 98.49
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2023-12-07",
+    "event_index": 3506,
+    "score": 6.294297219619806,
+    "residual": 0.09123961659772029,
+    "stop": 119.54999755859374
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2024-01-19",
+    "event_index": 3534,
+    "score": 2.1122487124015894,
+    "residual": 0.058597939164806156,
+    "stop": 162.1899969482422
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2024-10-29",
+    "event_index": 3730,
+    "score": 1.784487709890693,
+    "residual": 0.03796392518631908,
+    "stop": 158.93000244140626
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2025-04-09",
+    "event_index": 3840,
+    "score": 5.229629440914587,
+    "residual": 0.13318549897281606,
+    "stop": 78.86000274658203
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2025-06-16",
+    "event_index": 3886,
+    "score": 4.232692687054486,
+    "residual": 0.07855391667330736,
+    "stop": 117.76999877929687
+  },
+  {
+    "symbol": "AMD",
+    "group": "semiconductors",
+    "event_date": "2025-10-08",
+    "event_index": 3965,
+    "score": 1.9701696715749197,
+    "residual": 0.10774318372295744,
+    "stop": 210.6899969482422
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2011-01-27",
+    "event_index": 269,
+    "score": 1.6315697782022345,
+    "residual": 0.03186838201842712,
+    "stop": 28.410000076293944
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2011-05-25",
+    "event_index": 351,
+    "score": 3.711813262780035,
+    "residual": 0.08465026153021893,
+    "stop": 32.59999917984009
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2011-07-28",
+    "event_index": 395,
+    "score": 1.616219695119048,
+    "residual": 0.032942415656175394,
+    "stop": 32.39999937057495
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2011-09-14",
+    "event_index": 428,
+    "score": 1.8969939356554821,
+    "residual": 0.05142395517380116,
+    "stop": 34.39000057220459
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2012-02-23",
+    "event_index": 539,
+    "score": 2.761947387841547,
+    "residual": 0.0315223639127189,
+    "stop": 35.70000099182129
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2012-05-23",
+    "event_index": 602,
+    "score": 3.676810273780899,
+    "residual": 0.07142436065249602,
+    "stop": 31.490000953674315
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2013-05-30",
+    "event_index": 856,
+    "score": 7.2528393283578145,
+    "residual": 0.09476858803774757,
+    "stop": 36.089998950958254
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2013-12-05",
+    "event_index": 988,
+    "score": 3.818636412677079,
+    "residual": 0.07383365351362503,
+    "stop": 45.0500004196167
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2013-12-16",
+    "event_index": 995,
+    "score": 4.300759359888014,
+    "residual": 0.09124876164094098,
+    "stop": 48.34999965667725
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2013-12-17",
+    "event_index": 996,
+    "score": 2.559714996138278,
+    "residual": 0.07224230620376482,
+    "stop": 50.2900020980835
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2014-07-18",
+    "event_index": 1142,
+    "score": 3.697813748118053,
+    "residual": 0.03289622827725602,
+    "stop": 72.60000156402587
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2014-09-02",
+    "event_index": 1173,
+    "score": 2.1141842658934036,
+    "residual": 0.03619082280280295,
+    "stop": 82.38999771118164
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2014-10-14",
+    "event_index": 1203,
+    "score": 1.6805577133232537,
+    "residual": 0.0416160598166424,
+    "stop": 69.05000137329101
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2014-12-04",
+    "event_index": 1239,
+    "score": 5.488834112162361,
+    "residual": 0.08457113609203115,
+    "stop": 99.50000213623046
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2015-02-26",
+    "event_index": 1295,
+    "score": 10.838959853518913,
+    "residual": 0.14823496274785786,
+    "stop": 123.04000305175781
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2015-05-29",
+    "event_index": 1359,
+    "score": 2.1434672810528532,
+    "residual": 0.04617646387569396,
+    "stop": 144.1000025177002
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2015-08-27",
+    "event_index": 1422,
+    "score": 3.3673222290782188,
+    "residual": 0.06183976577670092,
+    "stop": 120.37000106811523
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2016-01-20",
+    "event_index": 1521,
+    "score": 3.0295900244869123,
+    "residual": 0.04413017863098878,
+    "stop": 117.16000007629394
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2016-01-29",
+    "event_index": 1528,
+    "score": 1.857082412501245,
+    "residual": 0.033706072120028185,
+    "stop": 128.09999870300294
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2017-06-02",
+    "event_index": 1866,
+    "score": 5.703983061987701,
+    "residual": 0.08167094747188375,
+    "stop": 244.14000915527345
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2017-10-30",
+    "event_index": 1970,
+    "score": 3.3827718358869174,
+    "residual": 0.03666293510168395,
+    "stop": 253.25999664306642
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2017-11-03",
+    "event_index": 1974,
+    "score": 3.7189064999690444,
+    "residual": 0.0511121689912164,
+    "stop": 257.10000442504884
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2018-09-07",
+    "event_index": 2185,
+    "score": 6.5302410659143355,
+    "residual": 0.07885215329553596,
+    "stop": 223.98999618530274
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2019-11-05",
+    "event_index": 2477,
+    "score": 2.5441881036716376,
+    "residual": 0.0307454690540917,
+    "stop": 304.4600050354004
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2020-12-18",
+    "event_index": 2760,
+    "score": 2.835932019974626,
+    "residual": 0.0322791536122945,
+    "stop": 421.99000762939454
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2021-12-17",
+    "event_index": 3011,
+    "score": 1.5688840898655034,
+    "residual": 0.033612660109537784,
+    "stop": 615.089983215332
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2023-03-03",
+    "event_index": 3313,
+    "score": 5.056590669615381,
+    "residual": 0.04094036826388203,
+    "stop": 615.7400076293945
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2023-05-25",
+    "event_index": 3371,
+    "score": 4.947660282709734,
+    "residual": 0.063846011838109,
+    "stop": 690.7600347900391
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2023-05-26",
+    "event_index": 3372,
+    "score": 5.759350337838691,
+    "residual": 0.10221131831446817,
+    "stop": 747.0100347900391
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2023-08-31",
+    "event_index": 3438,
+    "score": 2.3029437921320235,
+    "residual": 0.03576881847612268,
+    "stop": 893.7599890136719
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2023-12-11",
+    "event_index": 3508,
+    "score": 5.648077776169631,
+    "residual": 0.08606069693167928,
+    "stop": 956.0800115966797
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2023-12-12",
+    "event_index": 3509,
+    "score": 1.5796828458950896,
+    "residual": 0.03724996306565753,
+    "stop": 1024.5700018310547
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2024-01-19",
+    "event_index": 3534,
+    "score": 3.9194950888847258,
+    "residual": 0.04635842845528759,
+    "stop": 1155.989984741211
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2024-03-07",
+    "event_index": 3567,
+    "score": 1.5333738936089767,
+    "residual": 0.03230322973172939,
+    "stop": 1372.8800146484375
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2024-12-11",
+    "event_index": 3760,
+    "score": 3.1198042941466673,
+    "residual": 0.0585635121100303,
+    "stop": 176.41999267578126
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2024-12-13",
+    "event_index": 3762,
+    "score": 10.737466549178047,
+    "residual": 0.2445249094978702,
+    "stop": 211.10000061035157
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2024-12-16",
+    "event_index": 3763,
+    "score": 1.8388260644417067,
+    "residual": 0.10782966335525979,
+    "stop": 230.79999755859376
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2025-03-07",
+    "event_index": 3817,
+    "score": 3.0244349246978954,
+    "residual": 0.08082595402627413,
+    "stop": 181.54999755859376
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2025-04-09",
+    "event_index": 3840,
+    "score": 3.166119714061475,
+    "residual": 0.08161144445972845,
+    "stop": 157.49999450683595
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2025-09-10",
+    "event_index": 3945,
+    "score": 3.4482644368241107,
+    "residual": 0.09483093524070108,
+    "stop": 350.53998779296876
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2025-11-24",
+    "event_index": 3998,
+    "score": 4.770471835674908,
+    "residual": 0.09627494139791404,
+    "stop": 347.6500036621094
+  },
+  {
+    "symbol": "AVGO",
+    "group": "semiconductors",
+    "event_date": "2026-05-29",
+    "event_index": 4125,
+    "score": 2.3375702473865134,
+    "residual": 0.04483854088815087,
+    "stop": 431.46000122070313
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2011-01-27",
+    "event_index": 269,
+    "score": 5.956427489490974,
+    "residual": 0.0561515173761884,
+    "stop": 53.760000457763674
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2016-09-29",
+    "event_index": 1697,
+    "score": 9.862672153818949,
+    "residual": 0.07208900266244767,
+    "stop": 62.69999908447266
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2018-01-16",
+    "event_index": 2022,
+    "score": 7.413579731870213,
+    "residual": 0.047315553741449023,
+    "stop": 66.01999877929687
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2018-07-26",
+    "event_index": 2155,
+    "score": 7.184826174262814,
+    "residual": 0.07236928046018853,
+    "stop": 61.249998321533205
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2019-04-16",
+    "event_index": 2336,
+    "score": 26.321288968477056,
+    "residual": 0.23141884324053064,
+    "stop": 57.280000915527346
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2019-11-08",
+    "event_index": 2480,
+    "score": 2.2709235077004184,
+    "residual": 0.04254382667752776,
+    "stop": 89.58999847412109
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2020-01-17",
+    "event_index": 2527,
+    "score": 4.104115502596987,
+    "residual": 0.04177256227070769,
+    "stop": 92.93999694824218
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2020-07-30",
+    "event_index": 2661,
+    "score": 11.75120642169346,
+    "residual": 0.1557769309153786,
+    "stop": 100.68999694824218
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2021-07-29",
+    "event_index": 2912,
+    "score": 5.397665362893344,
+    "residual": 0.05587788544975636,
+    "stop": 146.40000366210938
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2021-11-16",
+    "event_index": 2989,
+    "score": 2.4494161351547272,
+    "residual": 0.07496926234157963,
+    "stop": 167.04999755859376
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2022-02-02",
+    "event_index": 3042,
+    "score": 2.578996797781305,
+    "residual": 0.05278234225830736,
+    "stop": 180.24999450683595
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2022-04-28",
+    "event_index": 3101,
+    "score": 3.088446564501122,
+    "residual": 0.07163171472910812,
+    "stop": 139.1200048828125
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2024-01-19",
+    "event_index": 3534,
+    "score": 2.8950897099386674,
+    "residual": 0.033442114009038404,
+    "stop": 146.73000549316407
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2024-05-02",
+    "event_index": 3606,
+    "score": 7.546846065975353,
+    "residual": 0.08808124277170881,
+    "stop": 175.27999328613282
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2024-07-31",
+    "event_index": 3667,
+    "score": 2.4688821777033576,
+    "residual": 0.06766772514357489,
+    "stop": 173.40000366210938
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2025-04-09",
+    "event_index": 3840,
+    "score": 3.277502183279547,
+    "residual": 0.046833675215908865,
+    "stop": 124.18000244140624
+  },
+  {
+    "symbol": "QCOM",
+    "group": "semiconductors",
+    "event_date": "2026-04-29",
+    "event_index": 4104,
+    "score": 1.5738140214202152,
+    "residual": 0.040154541093994855,
+    "stop": 150.99
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2010-10-08",
+    "event_index": 193,
+    "score": 1.8459042001693835,
+    "residual": 0.06190176980777973,
+    "stop": 7.189999809265137
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2010-10-29",
+    "event_index": 208,
+    "score": 1.5676517411829989,
+    "residual": 0.03954218413653532,
+    "stop": 8.109999885559082
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2011-01-12",
+    "event_index": 259,
+    "score": 3.7982001183930434,
+    "residual": 0.0620763276723979,
+    "stop": 8.83000015258789
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2011-01-27",
+    "event_index": 269,
+    "score": 3.339351103779683,
+    "residual": 0.061853784375385024,
+    "stop": 10.319999923706055
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2011-03-24",
+    "event_index": 308,
+    "score": 2.884794986230949,
+    "residual": 0.07431976608304325,
+    "stop": 11.179999580383301
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2011-11-16",
+    "event_index": 473,
+    "score": 8.71206173102907,
+    "residual": 0.25029512782002916,
+    "stop": 5.439999809265137
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2011-12-22",
+    "event_index": 498,
+    "score": 5.351202332426163,
+    "residual": 0.14818088119151263,
+    "stop": 5.680000057220459
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2012-09-06",
+    "event_index": 675,
+    "score": 5.445356966551751,
+    "residual": 0.05886325062035258,
+    "stop": 6.379999866485596
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2012-10-25",
+    "event_index": 710,
+    "score": 7.0642065396886204,
+    "residual": 0.09767295891904593,
+    "stop": 5.169999828338623
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2013-05-23",
+    "event_index": 852,
+    "score": 2.651323115320731,
+    "residual": 0.045933077686514,
+    "stop": 10.559999694824219
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2013-08-13",
+    "event_index": 908,
+    "score": 3.2618743672987995,
+    "residual": 0.07947287094311495,
+    "stop": 14.069999923706055
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2013-11-21",
+    "event_index": 979,
+    "score": 3.626517818292449,
+    "residual": 0.05522930673691828,
+    "stop": 18.949999084472655
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2015-10-05",
+    "event_index": 1448,
+    "score": 3.114144617446466,
+    "residual": 0.08654200838965376,
+    "stop": 16.19000076293945
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2016-06-23",
+    "event_index": 1629,
+    "score": 4.668023890256488,
+    "residual": 0.09153719638274693,
+    "stop": 13.39999984741211
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2017-09-27",
+    "event_index": 1947,
+    "score": 5.867951595278052,
+    "residual": 0.08124316607901538,
+    "stop": 35.909998168945314
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2019-03-21",
+    "event_index": 2318,
+    "score": 4.5113556815380855,
+    "residual": 0.08489270168841911,
+    "stop": 41.64000152587891
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2020-01-07",
+    "event_index": 2519,
+    "score": 5.084959772106921,
+    "residual": 0.09054746504104949,
+    "stop": 55.350000610351564
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2020-05-27",
+    "event_index": 2616,
+    "score": 2.3768447759846207,
+    "residual": 0.06481535415390627,
+    "stop": 43.89000152587891
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2020-11-16",
+    "event_index": 2737,
+    "score": 3.570620944307022,
+    "residual": 0.05535795209163741,
+    "stop": 59.600000610351564
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2021-11-19",
+    "event_index": 2992,
+    "score": 5.6829166846361465,
+    "residual": 0.0798199647237694,
+    "stop": 78.92000030517578
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2021-12-21",
+    "event_index": 3013,
+    "score": 5.403080831754048,
+    "residual": 0.08769025363066407,
+    "stop": 87.33999847412109
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2023-03-29",
+    "event_index": 3331,
+    "score": 3.1956546822246166,
+    "residual": 0.05732750219753702,
+    "stop": 60.85999893188477
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2023-04-10",
+    "event_index": 3338,
+    "score": 2.9566762407964107,
+    "residual": 0.07940393407444968,
+    "stop": 60.99
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2023-12-21",
+    "event_index": 3516,
+    "score": 5.246775916345128,
+    "residual": 0.07680605761699022,
+    "stop": 83.10000061035156
+  },
+  {
+    "symbol": "MU",
+    "group": "semiconductors",
+    "event_date": "2025-04-09",
+    "event_index": 3840,
+    "score": 1.9146775814930777,
+    "residual": 0.08311011010499847,
+    "stop": 63.690000762939455
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2010-03-16",
+    "event_index": 49,
+    "score": 5.600329074603181,
+    "residual": 0.03171268978525599,
+    "stop": 21.19000076293945
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2011-04-20",
+    "event_index": 327,
+    "score": 6.6291617398206455,
+    "residual": 0.06441435459850586,
+    "stop": 20.930000534057616
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2014-07-16",
+    "event_index": 1140,
+    "score": 14.546429714879311,
+    "residual": 0.08901399318789593,
+    "stop": 33.19999908447266
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2014-11-20",
+    "event_index": 1230,
+    "score": 2.9045034866038755,
+    "residual": 0.04482518117102807,
+    "stop": 33.99
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2018-01-26",
+    "event_index": 2030,
+    "score": 6.237153206386517,
+    "residual": 0.09394099396041278,
+    "stop": 48.10999893188477
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2018-09-28",
+    "event_index": 2200,
+    "score": 2.7784517525091617,
+    "residual": 0.030629142682846444,
+    "stop": 45.44999908447266
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2019-01-24",
+    "event_index": 2279,
+    "score": 3.3201669460410765,
+    "residual": 0.03743268596130078,
+    "stop": 48.589998474121096
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2019-10-25",
+    "event_index": 2470,
+    "score": 10.73268096436795,
+    "residual": 0.07689294370735489,
+    "stop": 53.909998168945314
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2022-10-28",
+    "event_index": 3228,
+    "score": 5.604919667834748,
+    "residual": 0.08279476048461998,
+    "stop": 27.85000061035156
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2023-07-28",
+    "event_index": 3414,
+    "score": 3.2018252840326142,
+    "residual": 0.05620107039195976,
+    "stop": 35.499998321533205
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2023-09-07",
+    "event_index": 3442,
+    "score": 2.063488419099974,
+    "residual": 0.03552021745368783,
+    "stop": 36.74
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2023-11-16",
+    "event_index": 3492,
+    "score": 2.4139617918052156,
+    "residual": 0.06624787990672476,
+    "stop": 40.80999969482422
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2024-07-08",
+    "event_index": 3650,
+    "score": 5.740273559425687,
+    "residual": 0.060370156703795086,
+    "stop": 32.80999969482422
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2024-09-16",
+    "event_index": 3699,
+    "score": 1.9304368464202775,
+    "residual": 0.06210400293446594,
+    "stop": 19.750000228881834
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2024-11-01",
+    "event_index": 3733,
+    "score": 4.90684550903499,
+    "residual": 0.073846395017509,
+    "stop": 21.899999847412108
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2025-01-17",
+    "event_index": 3784,
+    "score": 5.088412616120854,
+    "residual": 0.08248678151810185,
+    "stop": 20.780000915527342
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2025-02-12",
+    "event_index": 3801,
+    "score": 2.6781738386278744,
+    "residual": 0.07522915321481038,
+    "stop": 20.92000030517578
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2025-02-18",
+    "event_index": 3804,
+    "score": 4.455811410919227,
+    "residual": 0.15765734171403567,
+    "stop": 24.479999771118162
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2025-06-10",
+    "event_index": 3882,
+    "score": 4.567516545682148,
+    "residual": 0.0724552890900163,
+    "stop": 20.270000686645506
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2025-09-25",
+    "event_index": 3956,
+    "score": 1.6981718253889129,
+    "residual": 0.09333875849884343,
+    "stop": 31.199999084472655
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2025-12-02",
+    "event_index": 4003,
+    "score": 2.720480507392736,
+    "residual": 0.084626236449733,
+    "stop": 40.03999923706055
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2026-01-09",
+    "event_index": 4029,
+    "score": 3.715776740799273,
+    "residual": 0.10138949550444543,
+    "stop": 41.55999969482422
+  },
+  {
+    "symbol": "INTC",
+    "group": "semiconductors",
+    "event_date": "2026-01-21",
+    "event_index": 4036,
+    "score": 2.701475069295632,
+    "residual": 0.1056335145713625,
+    "stop": 50.14000152587891
+  },
+  {
+    "symbol": "JPM",
+    "group": "finance",
+    "event_date": "2012-03-13",
+    "event_index": 552,
+    "score": 5.198767024978953,
+    "residual": 0.05227505355958906,
+    "stop": 40.80999969482422
+  },
+  {
+    "symbol": "JPM",
+    "group": "finance",
+    "event_date": "2016-04-13",
+    "event_index": 1579,
+    "score": 3.4246609531446137,
+    "residual": 0.032240448324606596,
+    "stop": 60.370001068115236
+  },
+  {
+    "symbol": "JPM",
+    "group": "finance",
+    "event_date": "2016-11-10",
+    "event_index": 1727,
+    "score": 5.136449434313769,
+    "residual": 0.04392082459237168,
+    "stop": 74.21000122070312
+  },
+  {
+    "symbol": "JPM",
+    "group": "finance",
+    "event_date": "2020-11-09",
+    "event_index": 2732,
+    "score": 7.021983656466974,
+    "residual": 0.12282674361192569,
+    "stop": 110.33999847412109
+  },
+  {
+    "symbol": "JPM",
+    "group": "finance",
+    "event_date": "2023-03-10",
+    "event_index": 3318,
+    "score": 3.4402597915101625,
+    "residual": 0.039824548579549646,
+    "stop": 127.80999969482421
+  },
+  {
+    "symbol": "JPM",
+    "group": "finance",
+    "event_date": "2023-04-14",
+    "event_index": 3342,
+    "score": 6.6914741394754715,
+    "residual": 0.07795241483054316,
+    "stop": 134.88999389648438
+  },
+  {
+    "symbol": "JPM",
+    "group": "finance",
+    "event_date": "2024-10-11",
+    "event_index": 3718,
+    "score": 4.019035466467237,
+    "residual": 0.038411282422718296,
+    "stop": 215.15000366210938
+  },
+  {
+    "symbol": "JPM",
+    "group": "finance",
+    "event_date": "2024-11-06",
+    "event_index": 3736,
+    "score": 7.689750493839613,
+    "residual": 0.0905797989714392,
+    "stop": 234.76000427246095
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2011-01-03",
+    "event_index": 252,
+    "score": 2.8931209650090426,
+    "residual": 0.053380100871356806,
+    "stop": 13.790000190734863
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2011-08-09",
+    "event_index": 403,
+    "score": 3.3070332791262325,
+    "residual": 0.12093545184845711,
+    "stop": 6.669999828338623
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2012-01-05",
+    "event_index": 506,
+    "score": 4.08610133016531,
+    "residual": 0.08339605904339908,
+    "stop": 5.700000038146973
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2012-03-16",
+    "event_index": 555,
+    "score": 2.7638660032899596,
+    "residual": 0.059227470301993046,
+    "stop": 9.319999923706055
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2012-09-06",
+    "event_index": 675,
+    "score": 4.091743790334715,
+    "residual": 0.030017891539889208,
+    "stop": 8.019999732971192
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2012-09-07",
+    "event_index": 676,
+    "score": 5.181844771503722,
+    "residual": 0.04999709711585276,
+    "stop": 8.439999809265137
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2012-09-13",
+    "event_index": 680,
+    "score": 1.7591172908715436,
+    "residual": 0.03270100480053961,
+    "stop": 8.8000004196167
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2012-12-05",
+    "event_index": 736,
+    "score": 3.2984040149003757,
+    "residual": 0.05473868580711816,
+    "stop": 9.939999809265137
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2013-05-06",
+    "event_index": 839,
+    "score": 4.002558989698168,
+    "residual": 0.049746843083562586,
+    "stop": 12.349999656677246
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2014-08-21",
+    "event_index": 1166,
+    "score": 5.358070655457434,
+    "residual": 0.0383213186040503,
+    "stop": 15.609999885559082
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2016-11-09",
+    "event_index": 1726,
+    "score": 6.192367272310521,
+    "residual": 0.04645673621873869,
+    "stop": 17.389999618530272
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2016-11-14",
+    "event_index": 1729,
+    "score": 3.8741597622637096,
+    "residual": 0.054945279050848006,
+    "stop": 19.389999618530272
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2018-07-16",
+    "event_index": 2147,
+    "score": 4.428131837496743,
+    "residual": 0.04397653012838054,
+    "stop": 28.719999542236327
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2022-10-17",
+    "event_index": 3219,
+    "score": 2.5980329861260447,
+    "residual": 0.034870808287306376,
+    "stop": 32.85999893188477
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2023-07-18",
+    "event_index": 3406,
+    "score": 3.1100667759378418,
+    "residual": 0.03678713893601926,
+    "stop": 29.910000076293944
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2023-12-14",
+    "event_index": 3511,
+    "score": 5.057118774281564,
+    "residual": 0.056091428267547094,
+    "stop": 32.55999969482422
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2024-07-16",
+    "event_index": 3656,
+    "score": 4.103550504442493,
+    "residual": 0.047543275739931,
+    "stop": 42.21000122070313
+  },
+  {
+    "symbol": "BAC",
+    "group": "finance",
+    "event_date": "2024-11-06",
+    "event_index": 3736,
+    "score": 4.395233059860702,
+    "residual": 0.05942285696330485,
+    "stop": 43.99
+  },
+  {
+    "symbol": "C",
+    "group": "finance",
+    "event_date": "2011-08-09",
+    "event_index": 403,
+    "score": 3.5483143778092376,
+    "residual": 0.09196228818806995,
+    "stop": 28.479999771118162
+  },
+  {
+    "symbol": "C",
+    "group": "finance",
+    "event_date": "2012-03-13",
+    "event_index": 552,
+    "score": 2.7703762908181893,
+    "residual": 0.04496627529270003,
+    "stop": 34.85999893188477
+  },
+  {
+    "symbol": "C",
+    "group": "finance",
+    "event_date": "2012-10-15",
+    "event_index": 702,
+    "score": 4.005887102785511,
+    "residual": 0.046635922723917034,
+    "stop": 35.190000762939455
+  },
+  {
+    "symbol": "C",
+    "group": "finance",
+    "event_date": "2013-03-08",
+    "event_index": 799,
+    "score": 2.706444861979315,
+    "residual": 0.03306919961033561,
+    "stop": 45.35999893188477
+  },
+  {
+    "symbol": "C",
+    "group": "finance",
+    "event_date": "2016-05-18",
+    "event_index": 1604,
+    "score": 4.496287313552608,
+    "residual": 0.04936382248944393,
+    "stop": 43.74
+  },
+  {
+    "symbol": "C",
+    "group": "finance",
+    "event_date": "2016-11-10",
+    "event_index": 1727,
+    "score": 5.328074985894944,
+    "residual": 0.03665930524177119,
+    "stop": 51.7300016784668
+  },
+  {
+    "symbol": "C",
+    "group": "finance",
+    "event_date": "2016-11-14",
+    "event_index": 1729,
+    "score": 3.151564268705877,
+    "residual": 0.03423245090742788,
+    "stop": 52.99
+  },
+  {
+    "symbol": "C",
+    "group": "finance",
+    "event_date": "2022-07-15",
+    "event_index": 3154,
+    "score": 8.658104278932365,
+    "residual": 0.11320122245505115,
+    "stop": 46.179998626708986
+  },
+  {
+    "symbol": "C",
+    "group": "finance",
+    "event_date": "2024-01-30",
+    "event_index": 3541,
+    "score": 3.9317513076473065,
+    "residual": 0.05584644360554036,
+    "stop": 54.999998321533205
+  },
+  {
+    "symbol": "C",
+    "group": "finance",
+    "event_date": "2025-10-14",
+    "event_index": 3969,
+    "score": 3.5311366071441395,
+    "residual": 0.04013941446455238,
+    "stop": 95.03000091552734
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2010-10-20",
+    "event_index": 201,
+    "score": 1.6215339435756149,
+    "residual": 0.03300378392836345,
+    "stop": 24.160000076293944
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2011-08-09",
+    "event_index": 403,
+    "score": 2.5768711305617416,
+    "residual": 0.03418113872729123,
+    "stop": 22.639999618530272
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2012-03-13",
+    "event_index": 552,
+    "score": 3.471348510521313,
+    "residual": 0.03973364731432838,
+    "stop": 31.67000030517578
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2013-03-15",
+    "event_index": 804,
+    "score": 4.475028391706574,
+    "residual": 0.034584528988033436,
+    "stop": 37.28999923706055
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2016-11-09",
+    "event_index": 1726,
+    "score": 6.517944920219438,
+    "residual": 0.043196826898533436,
+    "stop": 45.99
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2016-11-10",
+    "event_index": 1727,
+    "score": 6.349852946571437,
+    "residual": 0.07335354137405181,
+    "stop": 48.780000915527346
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2020-03-13",
+    "event_index": 2565,
+    "score": 2.2009427362184484,
+    "residual": 0.050175407313849396,
+    "stop": 27.76000045776367
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2021-04-14",
+    "event_index": 2838,
+    "score": 3.0775997113895204,
+    "residual": 0.058705428192808995,
+    "stop": 39.05000137329102
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2021-10-15",
+    "event_index": 2967,
+    "score": 4.618333523512736,
+    "residual": 0.06013964540703176,
+    "stop": 45.69999908447266
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2023-12-14",
+    "event_index": 3511,
+    "score": 6.254207258784809,
+    "residual": 0.05437019400337717,
+    "stop": 48.429998626708986
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2024-02-15",
+    "event_index": 3553,
+    "score": 4.964867674379751,
+    "residual": 0.06542670384919891,
+    "stop": 48.60999893188477
+  },
+  {
+    "symbol": "WFC",
+    "group": "finance",
+    "event_date": "2026-03-20",
+    "event_index": 4077,
+    "score": 1.7125602237227147,
+    "residual": 0.030136485000638036,
+    "stop": 76.19999908447265
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2010-07-15",
+    "event_index": 133,
+    "score": 4.055297434654386,
+    "residual": 0.044023866009460066,
+    "stop": 137.81000732421876
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2010-09-03",
+    "event_index": 169,
+    "score": 4.812647212424425,
+    "residual": 0.04075567338641495,
+    "stop": 141.3200018310547
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2011-10-18",
+    "event_index": 452,
+    "score": 1.683040374245577,
+    "residual": 0.035665684513209284,
+    "stop": 96.54000305175781
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2011-10-27",
+    "event_index": 459,
+    "score": 2.4464002690446267,
+    "residual": 0.05987006836663644,
+    "stop": 109.99
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2012-01-18",
+    "event_index": 514,
+    "score": 3.3526381347376892,
+    "residual": 0.05681847175756172,
+    "stop": 97.79000305175781
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2012-03-13",
+    "event_index": 552,
+    "score": 3.112659639860931,
+    "residual": 0.04650961308294099,
+    "stop": 118.3900015258789
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2012-09-05",
+    "event_index": 674,
+    "score": 5.538362794476258,
+    "residual": 0.034024409474610495,
+    "stop": 106.78000091552734
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2013-01-16",
+    "event_index": 764,
+    "score": 4.110625855182612,
+    "residual": 0.04069948318635985,
+    "stop": 137.88999389648438
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2016-11-09",
+    "event_index": 1726,
+    "score": 7.249533109124148,
+    "residual": 0.04827002224066779,
+    "stop": 183.4399969482422
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2019-01-16",
+    "event_index": 2274,
+    "score": 6.885643323500337,
+    "residual": 0.09301675690037947,
+    "stop": 185.59000610351563
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2020-05-26",
+    "event_index": 2615,
+    "score": 5.279874292176404,
+    "residual": 0.07732545148298353,
+    "stop": 185.21000122070313
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2020-05-27",
+    "event_index": 2616,
+    "score": 2.4341331256504564,
+    "residual": 0.05448754881366891,
+    "stop": 199.99999450683595
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2021-01-06",
+    "event_index": 2771,
+    "score": 2.56437098775155,
+    "residual": 0.04798374833060404,
+    "stop": 273.09000610351563
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2021-10-15",
+    "event_index": 2967,
+    "score": 2.765130194623877,
+    "residual": 0.03039542560159547,
+    "stop": 396.32999633789063
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2023-12-14",
+    "event_index": 3511,
+    "score": 5.677785102161522,
+    "residual": 0.05396811379237043,
+    "stop": 364.99
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2024-03-21",
+    "event_index": 3577,
+    "score": 4.185545705370711,
+    "residual": 0.04017901630392262,
+    "stop": 399.07999633789063
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2024-11-06",
+    "event_index": 3736,
+    "score": 9.343581212028418,
+    "residual": 0.10611204418291553,
+    "stop": 566.0899755859375
+  },
+  {
+    "symbol": "GS",
+    "group": "finance",
+    "event_date": "2025-01-15",
+    "event_index": 3782,
+    "score": 4.722119037243482,
+    "residual": 0.04198175121042769,
+    "stop": 592.99
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2011-01-20",
+    "event_index": 264,
+    "score": 3.440453891331244,
+    "residual": 0.04709130404690254,
+    "stop": 27.58000015258789
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2011-07-21",
+    "event_index": 390,
+    "score": 5.529126516053429,
+    "residual": 0.10030937177643517,
+    "stop": 22.74
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2011-10-04",
+    "event_index": 442,
+    "score": 2.48682112228694,
+    "residual": 0.10157337984987769,
+    "stop": 11.569999923706055
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2011-12-05",
+    "event_index": 485,
+    "score": 1.7122848852455264,
+    "residual": 0.056762383923092186,
+    "stop": 15.979999771118164
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2012-09-07",
+    "event_index": 676,
+    "score": 3.9595780595264407,
+    "residual": 0.047181825233464814,
+    "stop": 16.389999618530272
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2012-12-11",
+    "event_index": 740,
+    "score": 3.272613971761721,
+    "residual": 0.03669534782875172,
+    "stop": 17.20999931335449
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2013-01-18",
+    "event_index": 766,
+    "score": 6.800910184983938,
+    "residual": 0.07632443432076608,
+    "stop": 21.780000915527342
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2014-01-17",
+    "event_index": 1017,
+    "score": 4.120935773072548,
+    "residual": 0.04797951730220229,
+    "stop": 32.589998474121096
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2015-03-12",
+    "event_index": 1305,
+    "score": 5.375833928226076,
+    "residual": 0.048516343964939423,
+    "stop": 36.08000015258789
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2016-11-09",
+    "event_index": 1726,
+    "score": 7.144796713649011,
+    "residual": 0.06036575636266894,
+    "stop": 34.46000122070313
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2018-10-16",
+    "event_index": 2212,
+    "score": 3.0656735635758534,
+    "residual": 0.03495484498322177,
+    "stop": 44.46999954223633
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2020-05-27",
+    "event_index": 2616,
+    "score": 2.2202152328893208,
+    "residual": 0.0576776931682208,
+    "stop": 45.30000137329102
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2023-07-18",
+    "event_index": 3406,
+    "score": 5.923029520289431,
+    "residual": 0.05705939172630514,
+    "stop": 87.08999847412109
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2023-12-14",
+    "event_index": 3511,
+    "score": 5.320647547248953,
+    "residual": 0.05996946476309706,
+    "stop": 87.19999908447265
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2025-01-16",
+    "event_index": 3783,
+    "score": 3.7082957108834145,
+    "residual": 0.042214199619848514,
+    "stop": 131.88999389648438
+  },
+  {
+    "symbol": "MS",
+    "group": "finance",
+    "event_date": "2026-01-15",
+    "event_index": 4033,
+    "score": 5.089828503146205,
+    "residual": 0.05508182643845916,
+    "stop": 180.99
+  },
+  {
+    "symbol": "XOM",
+    "group": "energy",
+    "event_date": "2016-09-28",
+    "event_index": 1696,
+    "score": 6.066613406222536,
+    "residual": 0.03900574273963886,
+    "stop": 83.32999633789062
+  },
+  {
+    "symbol": "XOM",
+    "group": "energy",
+    "event_date": "2020-02-28",
+    "event_index": 2555,
+    "score": 2.482215480924408,
+    "residual": 0.03671857948695334,
+    "stop": 47.999998321533205
+  },
+  {
+    "symbol": "XOM",
+    "group": "energy",
+    "event_date": "2022-01-04",
+    "event_index": 3022,
+    "score": 3.410839556665197,
+    "residual": 0.03794903011211381,
+    "stop": 64.08999847412109
+  },
+  {
+    "symbol": "XOM",
+    "group": "energy",
+    "event_date": "2022-02-01",
+    "event_index": 3041,
+    "score": 3.1661794790725053,
+    "residual": 0.05735580194648726,
+    "stop": 76.2599966430664
+  },
+  {
+    "symbol": "CVX",
+    "group": "energy",
+    "event_date": "2019-11-04",
+    "event_index": 2476,
+    "score": 5.836996020196803,
+    "residual": 0.042105697256302754,
+    "stop": 117.0099966430664
+  },
+  {
+    "symbol": "CVX",
+    "group": "energy",
+    "event_date": "2020-07-21",
+    "event_index": 2654,
+    "score": 4.5765483595686725,
+    "residual": 0.06964451748401723,
+    "stop": 86.35000061035156
+  },
+  {
+    "symbol": "CVX",
+    "group": "energy",
+    "event_date": "2022-03-01",
+    "event_index": 3060,
+    "score": 2.837687394002103,
+    "residual": 0.05495250306292532,
+    "stop": 144.6899969482422
+  },
+  {
+    "symbol": "CVX",
+    "group": "energy",
+    "event_date": "2022-07-29",
+    "event_index": 3164,
+    "score": 5.626124382241561,
+    "residual": 0.07445644665528972,
+    "stop": 155.88999389648438
+  },
+  {
+    "symbol": "CVX",
+    "group": "energy",
+    "event_date": "2023-01-26",
+    "event_index": 3288,
+    "score": 2.6117149114573386,
+    "residual": 0.03764706424117659,
+    "stop": 183.46999572753907
+  },
+  {
+    "symbol": "COP",
+    "group": "energy",
+    "event_date": "2017-03-30",
+    "event_index": 1822,
+    "score": 6.391501627508159,
+    "residual": 0.08495509113049127,
+    "stop": 48.600000610351564
+  },
+  {
+    "symbol": "COP",
+    "group": "energy",
+    "event_date": "2019-09-16",
+    "event_index": 2441,
+    "score": 6.41064688783904,
+    "residual": 0.09360146004080194,
+    "stop": 60.499998321533205
+  },
+  {
+    "symbol": "COP",
+    "group": "energy",
+    "event_date": "2020-02-28",
+    "event_index": 2555,
+    "score": 1.5495750163648603,
+    "residual": 0.03157257838092464,
+    "stop": 45.10999893188477
+  },
+  {
+    "symbol": "COP",
+    "group": "energy",
+    "event_date": "2024-10-31",
+    "event_index": 3732,
+    "score": 5.370786739751881,
+    "residual": 0.08330476540700449,
+    "stop": 105.99
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2010-06-25",
+    "event_index": 120,
+    "score": 2.470260378188896,
+    "residual": 0.04543315319652308,
+    "stop": 104.60000061035156
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2011-10-04",
+    "event_index": 442,
+    "score": 3.0479257896318077,
+    "residual": 0.05482015630985049,
+    "stop": 66.79999755859374
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2011-11-02",
+    "event_index": 463,
+    "score": 4.445073921881734,
+    "residual": 0.10199319961122799,
+    "stop": 90.11999725341796
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2016-08-05",
+    "event_index": 1659,
+    "score": 3.59632114298706,
+    "residual": 0.06209660548343976,
+    "stop": 86.74
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2016-09-06",
+    "event_index": 1680,
+    "score": 8.787059785858055,
+    "residual": 0.06356175289509602,
+    "stop": 90.04999755859374
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2016-11-30",
+    "event_index": 1740,
+    "score": 7.442570964257569,
+    "residual": 0.11144279993492123,
+    "stop": 97.07999633789062
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2020-01-06",
+    "event_index": 2518,
+    "score": 2.5006284088944524,
+    "residual": 0.036778013646751706,
+    "stop": 85.76999877929687
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2020-02-28",
+    "event_index": 2555,
+    "score": 2.8378082046419455,
+    "residual": 0.058534844665025565,
+    "stop": 56.33000015258789
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2021-05-07",
+    "event_index": 2855,
+    "score": 2.9093987927797014,
+    "residual": 0.0722231111159446,
+    "stop": 76.79000305175781
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2021-09-15",
+    "event_index": 2945,
+    "score": 3.922191320154536,
+    "residual": 0.07493276441576113,
+    "stop": 71.0099966430664
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2024-11-08",
+    "event_index": 3738,
+    "score": 4.066212232520351,
+    "residual": 0.0562407597568606,
+    "stop": 128.1899969482422
+  },
+  {
+    "symbol": "EOG",
+    "group": "energy",
+    "event_date": "2025-06-13",
+    "event_index": 3885,
+    "score": 4.028766972949041,
+    "residual": 0.050072259424145615,
+    "stop": 122.49
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2010-04-23",
+    "event_index": 76,
+    "score": 4.780426274808269,
+    "residual": 0.059473905368423896,
+    "stop": 69.8900015258789
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2013-01-18",
+    "event_index": 766,
+    "score": 6.097573933370639,
+    "residual": 0.04043070680447447,
+    "stop": 73.49
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2014-06-25",
+    "event_index": 1126,
+    "score": 7.344050262493654,
+    "residual": 0.05969776395019699,
+    "stop": 106.83999847412109
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2016-11-30",
+    "event_index": 1740,
+    "score": 5.221800783344257,
+    "residual": 0.05407590047295119,
+    "stop": 82.04000305175781
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2022-01-03",
+    "event_index": 3021,
+    "score": 3.8965892685211063,
+    "residual": 0.053308486226138596,
+    "stop": 29.969999542236327
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2022-10-05",
+    "event_index": 3211,
+    "score": 2.442425837046942,
+    "residual": 0.06495607309241658,
+    "stop": 39.120001068115236
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2022-10-21",
+    "event_index": 3223,
+    "score": 2.607003004245557,
+    "residual": 0.07900342783883696,
+    "stop": 46.780000915527346
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2023-07-07",
+    "event_index": 3399,
+    "score": 6.559906309301767,
+    "residual": 0.08864034196593285,
+    "stop": 48.80000137329102
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2023-12-14",
+    "event_index": 3511,
+    "score": 5.639574323871318,
+    "residual": 0.062454372813160575,
+    "stop": 49.87999938964844
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2024-11-06",
+    "event_index": 3736,
+    "score": 2.983576366445337,
+    "residual": 0.054542614788496424,
+    "stop": 41.74
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2026-07-24",
+    "event_index": 4163,
+    "score": 7.450665044829246,
+    "residual": 0.10910674946949506,
+    "stop": 49.7300016784668
+  },
+  {
+    "symbol": "SLB",
+    "group": "energy",
+    "event_date": "2026-08-31",
+    "event_index": 4189,
+    "score": 2.264094867333031,
+    "residual": 0.05130622335473478,
+    "stop": 57.96000122070313
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2010-03-25",
+    "event_index": 56,
+    "score": 3.7609564658326313,
+    "residual": 0.05387538295208938,
+    "stop": 128.02999900817872
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2010-10-21",
+    "event_index": 202,
+    "score": 1.7753091885755268,
+    "residual": 0.03749928304509442,
+    "stop": 161.2799971008301
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2011-01-27",
+    "event_index": 269,
+    "score": 4.119445429110884,
+    "residual": 0.049188458528123036,
+    "stop": 177.30000900268556
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2011-04-27",
+    "event_index": 331,
+    "score": 5.567008902572064,
+    "residual": 0.07207801442439421,
+    "stop": 182.73999618530274
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2011-09-16",
+    "event_index": 430,
+    "score": 2.6712265623035956,
+    "residual": 0.049319591310561295,
+    "stop": 226.72999786376954
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2012-04-27",
+    "event_index": 584,
+    "score": 12.980410838016635,
+    "residual": 0.15581597968476268,
+    "stop": 220.2099935913086
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2012-07-19",
+    "event_index": 641,
+    "score": 4.287282986979968,
+    "residual": 0.03738489300151637,
+    "stop": 220.68000244140626
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2012-07-27",
+    "event_index": 647,
+    "score": 4.6002018019266515,
+    "residual": 0.06024548357326598,
+    "stop": 224.49000762939454
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2012-10-26",
+    "event_index": 711,
+    "score": 5.272136369316333,
+    "residual": 0.06928974401496424,
+    "stop": 226.68000625610352
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2013-10-18",
+    "event_index": 955,
+    "score": 4.621344912296003,
+    "residual": 0.0516811547063174,
+    "stop": 316.7399923706055
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2014-01-30",
+    "event_index": 1025,
+    "score": 4.141986035763386,
+    "residual": 0.038358442821672556,
+    "stop": 387.6900045776367
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2014-06-05",
+    "event_index": 1112,
+    "score": 3.704416821084884,
+    "residual": 0.04820769216235621,
+    "stop": 306.8900053405762
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2014-07-11",
+    "event_index": 1137,
+    "score": 4.436651755338095,
+    "residual": 0.054370089739946836,
+    "stop": 334.7000067138672
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2016-01-28",
+    "event_index": 1527,
+    "score": 4.9928725456450875,
+    "residual": 0.08393118372374264,
+    "stop": 597.5400106811524
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2017-10-27",
+    "event_index": 1969,
+    "score": 16.416615621802702,
+    "residual": 0.12398762645321248,
+    "stop": 1050.5400030517578
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2019-12-26",
+    "event_index": 2512,
+    "score": 6.143781278033968,
+    "residual": 0.03914325366860605,
+    "stop": 1799.4899694824219
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2021-07-06",
+    "event_index": 2895,
+    "score": 3.6871457450933462,
+    "residual": 0.04874857874617722,
+    "stop": 3528.9899389648435
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2023-02-02",
+    "event_index": 3293,
+    "score": 3.4810838537760644,
+    "residual": 0.05924236432782859,
+    "stop": 108.86999725341796
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2024-02-02",
+    "event_index": 3544,
+    "score": 6.967985038071938,
+    "residual": 0.06813911326498001,
+    "stop": 167.3200018310547
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2026-06-26",
+    "event_index": 4144,
+    "score": 1.7878496493500045,
+    "residual": 0.032252333363200325,
+    "stop": 226.1200048828125
+  },
+  {
+    "symbol": "AMZN",
+    "group": "retail",
+    "event_date": "2026-07-31",
+    "event_index": 4168,
+    "score": 10.307640222619053,
+    "residual": 0.14600607810526678,
+    "stop": 262.000009765625
+  },
+  {
+    "symbol": "WMT",
+    "group": "retail",
+    "event_date": "2014-11-13",
+    "event_index": 1225,
+    "score": 5.208473939927889,
+    "residual": 0.0460946170721086,
+    "stop": 80.84999870300292
+  },
+  {
+    "symbol": "WMT",
+    "group": "retail",
+    "event_date": "2016-01-07",
+    "event_index": 1513,
+    "score": 4.235959468624662,
+    "residual": 0.047280343556374005,
+    "stop": 62.91000007629395
+  },
+  {
+    "symbol": "WMT",
+    "group": "retail",
+    "event_date": "2016-05-19",
+    "event_index": 1605,
+    "score": 8.025504927570646,
+    "residual": 0.09926869265177374,
+    "stop": 67.49
+  },
+  {
+    "symbol": "WMT",
+    "group": "retail",
+    "event_date": "2017-11-16",
+    "event_index": 1983,
+    "score": 11.560664788110875,
+    "residual": 0.10048274804596424,
+    "stop": 94.71000122070312
+  },
+  {
+    "symbol": "WMT",
+    "group": "retail",
+    "event_date": "2020-03-02",
+    "event_index": 2556,
+    "score": 2.6682100528763537,
+    "residual": 0.03284505874640775,
+    "stop": 107.27999710083007
+  },
+  {
+    "symbol": "WMT",
+    "group": "retail",
+    "event_date": "2020-07-07",
+    "event_index": 2644,
+    "score": 4.469027753387492,
+    "residual": 0.07810750086016816,
+    "stop": 118.20999740600585
+  },
+  {
+    "symbol": "WMT",
+    "group": "retail",
+    "event_date": "2020-09-01",
+    "event_index": 2684,
+    "score": 3.4723961474135585,
+    "residual": 0.053527044992776496,
+    "stop": 140.04000305175782
+  },
+  {
+    "symbol": "WMT",
+    "group": "retail",
+    "event_date": "2022-02-17",
+    "event_index": 3053,
+    "score": 5.655770628425331,
+    "residual": 0.061427308941828684,
+    "stop": 133.77000259399415
+  },
+  {
+    "symbol": "WMT",
+    "group": "retail",
+    "event_date": "2025-11-20",
+    "event_index": 3996,
+    "score": 6.412103062059698,
+    "residual": 0.07984815871578754,
+    "stop": 102.67000030517578
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2010-11-17",
+    "event_index": 221,
+    "score": 4.320734004534001,
+    "residual": 0.038161094653703875,
+    "stop": 54.74
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2011-02-24",
+    "event_index": 288,
+    "score": 3.3781292982138775,
+    "residual": 0.03530701719213014,
+    "stop": 50.49
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2014-02-26",
+    "event_index": 1043,
+    "score": 7.784506504322497,
+    "residual": 0.07037592020544903,
+    "stop": 58.089998474121096
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2014-11-19",
+    "event_index": 1229,
+    "score": 5.6629616426168115,
+    "residual": 0.07552039925725418,
+    "stop": 69.85000061035156
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2016-02-24",
+    "event_index": 1545,
+    "score": 2.204700846560908,
+    "residual": 0.035294662727443527,
+    "stop": 73.3900015258789
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2017-07-13",
+    "event_index": 1894,
+    "score": 2.6337336408369136,
+    "residual": 0.04628517695365075,
+    "stop": 51.99
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2017-11-17",
+    "event_index": 1984,
+    "score": 2.178022369219028,
+    "residual": 0.0581111442558625,
+    "stop": 55.71000122070313
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2017-11-29",
+    "event_index": 1991,
+    "score": 3.07085341760269,
+    "residual": 0.08997642035193143,
+    "stop": 56.80999969482422
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2018-01-12",
+    "event_index": 2021,
+    "score": 1.9550973747303046,
+    "residual": 0.031318907824810394,
+    "stop": 74.43999694824218
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2019-03-05",
+    "event_index": 2306,
+    "score": 4.627512926838495,
+    "residual": 0.04718368719683308,
+    "stop": 74.11000274658203
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2019-08-21",
+    "event_index": 2424,
+    "score": 15.784071484428345,
+    "residual": 0.1961203727997871,
+    "stop": 98.11999725341796
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2019-11-20",
+    "event_index": 2488,
+    "score": 13.012719266086396,
+    "residual": 0.1442691065298003,
+    "stop": 118.35000061035156
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2020-08-19",
+    "event_index": 2675,
+    "score": 11.898039004280044,
+    "residual": 0.13067948834743304,
+    "stop": 146.52999328613282
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2021-05-19",
+    "event_index": 2863,
+    "score": 7.099119492766678,
+    "residual": 0.0635625482685176,
+    "stop": 209.79000305175782
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2022-04-07",
+    "event_index": 3087,
+    "score": 3.6678343308041934,
+    "residual": 0.05168975215630023,
+    "stop": 218.41999267578126
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2023-11-15",
+    "event_index": 3491,
+    "score": 11.100747301174426,
+    "residual": 0.17542610528571778,
+    "stop": 124.86999725341796
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2026-03-03",
+    "event_index": 4064,
+    "score": 4.537512045336705,
+    "residual": 0.07623508031241666,
+    "stop": 114.99
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2026-05-19",
+    "event_index": 4118,
+    "score": 2.0163835212758494,
+    "residual": 0.03777914374535418,
+    "stop": 120.24
+  },
+  {
+    "symbol": "TGT",
+    "group": "retail",
+    "event_date": "2026-08-19",
+    "event_index": 4181,
+    "score": 2.445496150661395,
+    "residual": 0.04066189799154607,
+    "stop": 146.2000067138672
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2012-11-28",
+    "event_index": 731,
+    "score": 5.238555175856025,
+    "residual": 0.05484254973771274,
+    "stop": 99.99
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2014-01-09",
+    "event_index": 1011,
+    "score": 8.780294574097464,
+    "residual": 0.03845179327599646,
+    "stop": 114.04000305175781
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2014-09-04",
+    "event_index": 1175,
+    "score": 6.611718588257904,
+    "residual": 0.032760755989299284,
+    "stop": 122.54999755859374
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2015-02-03",
+    "event_index": 1279,
+    "score": 3.726457025467026,
+    "residual": 0.038621027976223576,
+    "stop": 144.76000427246095
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2016-07-07",
+    "event_index": 1638,
+    "score": 4.754052112474334,
+    "residual": 0.04991180424468966,
+    "stop": 157.99
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2017-11-30",
+    "event_index": 1992,
+    "score": 3.51978468579586,
+    "residual": 0.03011166548425437,
+    "stop": 180.21000122070313
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2019-03-08",
+    "event_index": 2309,
+    "score": 12.19122563731165,
+    "residual": 0.052878790684484756,
+    "stop": 223.76000427246095
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2019-08-27",
+    "event_index": 2428,
+    "score": 7.082355662784248,
+    "residual": 0.05391290428053641,
+    "stop": 280.32999633789063
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2020-03-02",
+    "event_index": 2556,
+    "score": 4.664801850773683,
+    "residual": 0.05628799458370093,
+    "stop": 291.3700048828125
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2021-09-24",
+    "event_index": 2952,
+    "score": 4.4562911540995405,
+    "residual": 0.031415206140898544,
+    "stop": 454.99
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2021-12-10",
+    "event_index": 3006,
+    "score": 4.953735350612204,
+    "residual": 0.05636566763708695,
+    "stop": 534.5999853515625
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2022-04-07",
+    "event_index": 3087,
+    "score": 3.0413836583849316,
+    "residual": 0.03473601200268295,
+    "stop": 588.770029296875
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2023-01-06",
+    "event_index": 3275,
+    "score": 7.732970555737466,
+    "residual": 0.0496594518846174,
+    "stop": 462.21000122070313
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2023-12-15",
+    "event_index": 3512,
+    "score": 4.118775351736161,
+    "residual": 0.046092707556446455,
+    "stop": 640.49
+  },
+  {
+    "symbol": "COST",
+    "group": "retail",
+    "event_date": "2025-05-30",
+    "event_index": 3875,
+    "score": 3.0706801269898603,
+    "residual": 0.032286162230853455,
+    "stop": 1001.99
+  },
+  {
+    "symbol": "HD",
+    "group": "retail",
+    "event_date": "2011-11-29",
+    "event_index": 481,
+    "score": 5.332555596581266,
+    "residual": 0.049438587048207694,
+    "stop": 37.249998321533205
+  },
+  {
+    "symbol": "HD",
+    "group": "retail",
+    "event_date": "2012-08-14",
+    "event_index": 659,
+    "score": 3.71074094304551,
+    "residual": 0.035639891769052134,
+    "stop": 53.71000122070313
+  },
+  {
+    "symbol": "HD",
+    "group": "retail",
+    "event_date": "2013-02-26",
+    "event_index": 791,
+    "score": 6.196878913398102,
+    "residual": 0.050100508552886724,
+    "stop": 65.47999786376953
+  },
+  {
+    "symbol": "HD",
+    "group": "retail",
+    "event_date": "2015-11-17",
+    "event_index": 1479,
+    "score": 5.7591963374003585,
+    "residual": 0.04492017086786515,
+    "stop": 123.08999847412109
+  },
+  {
+    "symbol": "HD",
+    "group": "retail",
+    "event_date": "2019-08-20",
+    "event_index": 2423,
+    "score": 10.161165530986871,
+    "residual": 0.051615411062006844,
+    "stop": 212.15999816894532
+  },
+  {
+    "symbol": "HD",
+    "group": "retail",
+    "event_date": "2021-11-16",
+    "event_index": 2989,
+    "score": 6.436233968250519,
+    "residual": 0.053307456811727105,
+    "stop": 378.99
+  },
+  {
+    "symbol": "HD",
+    "group": "retail",
+    "event_date": "2022-01-24",
+    "event_index": 3035,
+    "score": 2.567477148687671,
+    "residual": 0.03789016259701361,
+    "stop": 343.5999853515625
+  },
+  {
+    "symbol": "HD",
+    "group": "retail",
+    "event_date": "2022-11-10",
+    "event_index": 3237,
+    "score": 3.0020866230687693,
+    "residual": 0.03205547972985179,
+    "stop": 297.06998657226563
+  },
+  {
+    "symbol": "LOW",
+    "group": "retail",
+    "event_date": "2010-12-02",
+    "event_index": 231,
+    "score": 2.8167922482168075,
+    "residual": 0.03645434038981166,
+    "stop": 23.51000045776367
+  },
+  {
+    "symbol": "LOW",
+    "group": "retail",
+    "event_date": "2011-01-20",
+    "event_index": 264,
+    "score": 3.902982375627986,
+    "residual": 0.03821075262944662,
+    "stop": 24.449999084472655
+  },
+  {
+    "symbol": "LOW",
+    "group": "retail",
+    "event_date": "2014-02-26",
+    "event_index": 1043,
+    "score": 4.35264342105083,
+    "residual": 0.05419653385565848,
+    "stop": 48.80000137329102
+  },
+  {
+    "symbol": "LOW",
+    "group": "retail",
+    "event_date": "2014-11-19",
+    "event_index": 1229,
+    "score": 12.107391662957605,
+    "residual": 0.06533345392189616,
+    "stop": 60.83000015258789
+  },
+  {
+    "symbol": "LOW",
+    "group": "retail",
+    "event_date": "2018-01-12",
+    "event_index": 2021,
+    "score": 5.126444012760621,
+    "residual": 0.04695922867204705,
+    "stop": 95.61999725341796
+  },
+  {
+    "symbol": "LOW",
+    "group": "retail",
+    "event_date": "2018-05-23",
+    "event_index": 2111,
+    "score": 8.688367586942023,
+    "residual": 0.1015054050814479,
+    "stop": 90.5099966430664
+  },
+  {
+    "symbol": "LOW",
+    "group": "retail",
+    "event_date": "2023-12-14",
+    "event_index": 3511,
+    "score": 3.3388285144221252,
+    "residual": 0.04362282280660379,
+    "stop": 220.02999328613282
+  },
+  {
+    "symbol": "LOW",
+    "group": "retail",
+    "event_date": "2025-08-13",
+    "event_index": 3926,
+    "score": 3.661103652521793,
+    "residual": 0.04337717786458106,
+    "stop": 246.71999572753907
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2014-11-21",
+    "event_index": 1231,
+    "score": 4.357193426695415,
+    "residual": 0.03735675206792255,
+    "stop": 104.18999694824218
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2016-07-26",
+    "event_index": 1651,
+    "score": 5.696105745264525,
+    "residual": 0.05113323115074064,
+    "stop": 78.72999786376953
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2016-09-28",
+    "event_index": 1696,
+    "score": 5.4944446070868596,
+    "residual": 0.03979995601214692,
+    "stop": 83.12999938964843
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2017-04-25",
+    "event_index": 1839,
+    "score": 7.2959699989681726,
+    "residual": 0.07278895839281718,
+    "stop": 101.99
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2017-07-25",
+    "event_index": 1902,
+    "score": 7.729676991987201,
+    "residual": 0.05636002537082896,
+    "stop": 111.79000305175781
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2019-10-25",
+    "event_index": 2470,
+    "score": 3.2233235816842747,
+    "residual": 0.03983470640561082,
+    "stop": 134.84000610351563
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2020-12-04",
+    "event_index": 2750,
+    "score": 2.240081886997398,
+    "residual": 0.03478842444251451,
+    "stop": 175.6099951171875
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2021-08-11",
+    "event_index": 2921,
+    "score": 3.062437007956726,
+    "residual": 0.03297079500072653,
+    "stop": 214.56000732421876
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2022-01-04",
+    "event_index": 3022,
+    "score": 4.964121931180159,
+    "residual": 0.05386151780037374,
+    "stop": 207.93000244140626
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2023-06-02",
+    "event_index": 3376,
+    "score": 8.999182304770322,
+    "residual": 0.06952983439415261,
+    "stop": 213.99999450683595
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2023-08-01",
+    "event_index": 3416,
+    "score": 9.202849712053423,
+    "residual": 0.09140846042669826,
+    "stop": 270.49
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2023-12-14",
+    "event_index": 3511,
+    "score": 6.180056885687011,
+    "residual": 0.06097696226205196,
+    "stop": 270.53998779296876
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2024-11-06",
+    "event_index": 3736,
+    "score": 6.04479348904641,
+    "residual": 0.06254350211665005,
+    "stop": 404.000009765625
+  },
+  {
+    "symbol": "CAT",
+    "group": "industrial",
+    "event_date": "2026-04-30",
+    "event_index": 4105,
+    "score": 4.878572475435668,
+    "residual": 0.088883776393617,
+    "stop": 850.7899877929688
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2010-05-19",
+    "event_index": 94,
+    "score": 3.12089302595699,
+    "residual": 0.03560995392584332,
+    "stop": 55.99
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2013-08-15",
+    "event_index": 910,
+    "score": 4.335533167308303,
+    "residual": 0.0385184966511235,
+    "stop": 80.99
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2015-02-18",
+    "event_index": 1289,
+    "score": 5.039232323404552,
+    "residual": 0.03137723236399803,
+    "stop": 91.36000274658203
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2015-05-22",
+    "event_index": 1355,
+    "score": 3.9602510713197,
+    "residual": 0.045871847623388695,
+    "stop": 91.75000213623046
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2015-06-26",
+    "event_index": 1379,
+    "score": 5.88278359121146,
+    "residual": 0.032531022770958984,
+    "stop": 93.54000305175781
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2015-11-25",
+    "event_index": 1485,
+    "score": 3.5213113655758606,
+    "residual": 0.04808675618426528,
+    "stop": 77.18999694824218
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2016-04-19",
+    "event_index": 1583,
+    "score": 4.460133465561999,
+    "residual": 0.04842904300307915,
+    "stop": 78.65999816894531
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2016-08-19",
+    "event_index": 1669,
+    "score": 12.297450352539194,
+    "residual": 0.1363724351167187,
+    "stop": 76.93000244140624
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2016-11-23",
+    "event_index": 1736,
+    "score": 17.329058471954518,
+    "residual": 0.10987873628155786,
+    "stop": 98.55999969482421
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2017-11-22",
+    "event_index": 1987,
+    "score": 5.55243822913388,
+    "residual": 0.044122414276591915,
+    "stop": 142.35000061035157
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2018-05-18",
+    "event_index": 2108,
+    "score": 4.420336360074335,
+    "residual": 0.059989282702125224,
+    "stop": 146.10000061035157
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2020-08-10",
+    "event_index": 2668,
+    "score": 2.1238646105562036,
+    "residual": 0.031942988991750854,
+    "stop": 184.38999389648438
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2022-01-04",
+    "event_index": 3022,
+    "score": 4.765873204870453,
+    "residual": 0.06083028059763407,
+    "stop": 352.69999145507813
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2023-02-17",
+    "event_index": 3304,
+    "score": 4.111922745906521,
+    "residual": 0.07781592472733556,
+    "stop": 415.49
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2024-11-21",
+    "event_index": 3747,
+    "score": 4.281472725377068,
+    "residual": 0.07508413127766445,
+    "stop": 410.94999145507813
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2026-02-04",
+    "event_index": 4046,
+    "score": 2.1491191940370142,
+    "residual": 0.04568797252158341,
+    "stop": 547.99
+  },
+  {
+    "symbol": "DE",
+    "group": "industrial",
+    "event_date": "2026-08-21",
+    "event_index": 4183,
+    "score": 1.570285897951828,
+    "residual": 0.03863423341271943,
+    "stop": 607.8900244140625
+  },
+  {
+    "symbol": "HON",
+    "group": "industrial",
+    "event_date": "2012-07-18",
+    "event_index": 640,
+    "score": 5.012885091417881,
+    "residual": 0.059333176909240226,
+    "stop": 55.890000379638884
+  },
+  {
+    "symbol": "HON",
+    "group": "industrial",
+    "event_date": "2015-12-16",
+    "event_index": 1499,
+    "score": 5.645587582647698,
+    "residual": 0.04233959894255146,
+    "stop": 101.28999679933142
+  },
+  {
+    "symbol": "HON",
+    "group": "industrial",
+    "event_date": "2018-07-20",
+    "event_index": 2151,
+    "score": 4.92739437984735,
+    "residual": 0.03903089383636338,
+    "stop": 149.1099983193571
+  },
+  {
+    "symbol": "HON",
+    "group": "industrial",
+    "event_date": "2019-04-18",
+    "event_index": 2338,
+    "score": 9.00337505701151,
+    "residual": 0.035909124272703874,
+    "stop": 165.8799984687958
+  },
+  {
+    "symbol": "HON",
+    "group": "industrial",
+    "event_date": "2021-05-27",
+    "event_index": 2869,
+    "score": 3.6795135639737904,
+    "residual": 0.03068740031273376,
+    "stop": 226.5799937099152
+  },
+  {
+    "symbol": "HON",
+    "group": "industrial",
+    "event_date": "2024-12-16",
+    "event_index": 3763,
+    "score": 3.562223427103005,
+    "residual": 0.03254577832780248,
+    "stop": 230.14000385253146
+  },
+  {
+    "symbol": "HON",
+    "group": "industrial",
+    "event_date": "2025-10-23",
+    "event_index": 3976,
+    "score": 4.714499139893762,
+    "residual": 0.062120974740346835,
+    "stop": 214.24000217449952
+  },
+  {
+    "symbol": "GE",
+    "group": "industrial",
+    "event_date": "2010-03-16",
+    "event_index": 49,
+    "score": 3.314226635266371,
+    "residual": 0.03714663655021577,
+    "stop": 17.4399992865171
+  },
+  {
+    "symbol": "GE",
+    "group": "industrial",
+    "event_date": "2013-01-18",
+    "event_index": 766,
+    "score": 4.6822316219502245,
+    "residual": 0.03251202467191394,
+    "stop": 21.57999925682586
+  },
+  {
+    "symbol": "GE",
+    "group": "industrial",
+    "event_date": "2015-04-10",
+    "event_index": 1325,
+    "score": 14.966427666407201,
+    "residual": 0.10258785832156159,
+    "stop": 26.990000775383905
+  },
+  {
+    "symbol": "GE",
+    "group": "industrial",
+    "event_date": "2019-08-16",
+    "event_index": 2421,
+    "score": 2.7584946796840746,
+    "residual": 0.082623308221345,
+    "stop": 8.3599999905529
+  },
+  {
+    "symbol": "GE",
+    "group": "industrial",
+    "event_date": "2020-01-29",
+    "event_index": 2534,
+    "score": 5.078035551711087,
+    "residual": 0.10398034006711598,
+    "stop": 12.480000344354627
+  },
+  {
+    "symbol": "GE",
+    "group": "industrial",
+    "event_date": "2020-02-28",
+    "event_index": 2555,
+    "score": 4.3587649422936146,
+    "residual": 0.05136227815218919,
+    "stop": 9.850000014474867
+  },
+  {
+    "symbol": "GE",
+    "group": "industrial",
+    "event_date": "2020-09-16",
+    "event_index": 2694,
+    "score": 5.318339320536171,
+    "residual": 0.11052597459996472,
+    "stop": 6.040000099701165
+  },
+  {
+    "symbol": "GE",
+    "group": "industrial",
+    "event_date": "2021-05-27",
+    "event_index": 2869,
+    "score": 6.157535399387878,
+    "residual": 0.07037049083185609,
+    "stop": 13.579999457956312
+  },
+  {
+    "symbol": "GE",
+    "group": "industrial",
+    "event_date": "2023-07-25",
+    "event_index": 3411,
+    "score": 5.50673043224225,
+    "residual": 0.0599456618382872,
+    "stop": 113.62000355529784
+  },
+  {
+    "symbol": "GE",
+    "group": "industrial",
+    "event_date": "2023-10-24",
+    "event_index": 3475,
+    "score": 5.777212197901014,
+    "residual": 0.0574152067458662,
+    "stop": 108.31000116729734
+  },
+  {
+    "symbol": "RTX",
+    "group": "industrial",
+    "event_date": "2010-04-21",
+    "event_index": 74,
+    "score": 9.432721541202318,
+    "residual": 0.03861242399629372,
+    "stop": 73.61999897003173
+  },
+  {
+    "symbol": "RTX",
+    "group": "industrial",
+    "event_date": "2016-02-25",
+    "event_index": 1546,
+    "score": 3.001596158559809,
+    "residual": 0.03553270392603047,
+    "stop": 93.67000101852416
+  },
+  {
+    "symbol": "RTX",
+    "group": "industrial",
+    "event_date": "2018-07-24",
+    "event_index": 2153,
+    "score": 4.50836187586641,
+    "residual": 0.032611926926942925,
+    "stop": 128.29000270843505
+  },
+  {
+    "symbol": "RTX",
+    "group": "industrial",
+    "event_date": "2018-11-23",
+    "event_index": 2239,
+    "score": 5.353478964052977,
+    "residual": 0.03316823618965836,
+    "stop": 124.77999927520752
+  },
+  {
+    "symbol": "RTX",
+    "group": "industrial",
+    "event_date": "2022-01-25",
+    "event_index": 3036,
+    "score": 3.7512710970049445,
+    "residual": 0.03706138833628225,
+    "stop": 84.99
+  },
+  {
+    "symbol": "RTX",
+    "group": "industrial",
+    "event_date": "2022-02-28",
+    "event_index": 3059,
+    "score": 3.817682946835772,
+    "residual": 0.04923600413191365,
+    "stop": 98.3900015258789
+  },
+  {
+    "symbol": "RTX",
+    "group": "industrial",
+    "event_date": "2023-10-24",
+    "event_index": 3475,
+    "score": 4.993760763516939,
+    "residual": 0.06425057203513651,
+    "stop": 76.94999908447265
+  },
+  {
+    "symbol": "RTX",
+    "group": "industrial",
+    "event_date": "2025-06-13",
+    "event_index": 3885,
+    "score": 3.4354941123966807,
+    "residual": 0.04458916704248472,
+    "stop": 142.31000732421876
+  },
+  {
+    "symbol": "RTX",
+    "group": "industrial",
+    "event_date": "2026-01-27",
+    "event_index": 4040,
+    "score": 2.59554176978266,
+    "residual": 0.032846706684182436,
+    "stop": 195.43000244140626
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2010-04-21",
+    "event_index": 74,
+    "score": 5.354066199535711,
+    "residual": 0.04032994441648685,
+    "stop": 71.50000213623046
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2011-12-01",
+    "event_index": 483,
+    "score": 3.230323062305372,
+    "residual": 0.0334981841428984,
+    "stop": 68.50000213623046
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2012-04-25",
+    "event_index": 582,
+    "score": 8.577405590742153,
+    "residual": 0.03916998665935023,
+    "stop": 74.8900015258789
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2012-11-09",
+    "event_index": 719,
+    "score": 3.0765499706624326,
+    "residual": 0.03111140241529675,
+    "stop": 70.58999847412109
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2013-09-16",
+    "event_index": 931,
+    "score": 4.705016080647299,
+    "residual": 0.033195679346445184,
+    "stop": 113.25000213623046
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2013-10-23",
+    "event_index": 958,
+    "score": 7.242268227632612,
+    "residual": 0.058185238498784875,
+    "stop": 125.8900015258789
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2015-01-29",
+    "event_index": 1276,
+    "score": 3.1860002332115416,
+    "residual": 0.04904918862304419,
+    "stop": 139.6200048828125
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2016-10-26",
+    "event_index": 1716,
+    "score": 8.567077772101385,
+    "residual": 0.04890736286085806,
+    "stop": 136.71000122070313
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2017-01-25",
+    "event_index": 1777,
+    "score": 7.670184844309695,
+    "residual": 0.03376113544696713,
+    "stop": 163.23000549316407
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2017-07-26",
+    "event_index": 1903,
+    "score": 16.62420668351666,
+    "residual": 0.09875462331723006,
+    "stop": 223.01000427246095
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2018-01-17",
+    "event_index": 2023,
+    "score": 3.333488024844032,
+    "residual": 0.037759202957956095,
+    "stop": 336.4000036621094
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2018-04-25",
+    "event_index": 2091,
+    "score": 2.8234126378483912,
+    "residual": 0.039465956229161714,
+    "stop": 330.5099890136719
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2018-08-16",
+    "event_index": 2170,
+    "score": 3.5885458132267796,
+    "residual": 0.034770897981149185,
+    "stop": 338.28998779296876
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2019-06-18",
+    "event_index": 2379,
+    "score": 4.981423567396009,
+    "residual": 0.04323424391873765,
+    "stop": 357.59000610351563
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2019-07-19",
+    "event_index": 2401,
+    "score": 3.2673624016106797,
+    "residual": 0.05055504849313586,
+    "stop": 368.49
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2019-11-11",
+    "event_index": 2481,
+    "score": 2.156150139098875,
+    "residual": 0.0473798051963632,
+    "stop": 345.54999755859376
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2020-06-03",
+    "event_index": 2621,
+    "score": 3.230108650798406,
+    "residual": 0.11616801449668301,
+    "stop": 155.48000549316407
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2020-06-08",
+    "event_index": 2624,
+    "score": 2.467297572499772,
+    "residual": 0.10994926334685795,
+    "stop": 218.91999267578126
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2020-11-16",
+    "event_index": 2737,
+    "score": 1.819574407597641,
+    "residual": 0.06923405115298542,
+    "stop": 191.34000610351563
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2021-02-24",
+    "event_index": 2804,
+    "score": 3.8143027082025984,
+    "residual": 0.07016114502494775,
+    "stop": 211.59000610351563
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2021-11-05",
+    "event_index": 2982,
+    "score": 3.909713178105854,
+    "residual": 0.050184843497048215,
+    "stop": 217.6899969482422
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2021-11-15",
+    "event_index": 2988,
+    "score": 3.4403855093606626,
+    "residual": 0.05455434298112616,
+    "stop": 226.90999816894532
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2022-06-15",
+    "event_index": 3134,
+    "score": 2.722280173629215,
+    "residual": 0.08037363243811879,
+    "stop": 123.82000183105468
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2023-07-26",
+    "event_index": 3412,
+    "score": 6.652081476900161,
+    "residual": 0.08708712499367066,
+    "stop": 221.76000427246095
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2023-11-20",
+    "event_index": 3494,
+    "score": 3.0049936041435448,
+    "residual": 0.038783911806872906,
+    "stop": 210.93000244140626
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2023-12-15",
+    "event_index": 3512,
+    "score": 2.6007379436735483,
+    "residual": 0.032977649605675174,
+    "stop": 255.6899969482422
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2025-12-02",
+    "event_index": 4003,
+    "score": 8.209661153058525,
+    "residual": 0.09961725055377268,
+    "stop": 195.49999450683595
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2026-04-22",
+    "event_index": 4099,
+    "score": 3.159127500940279,
+    "residual": 0.045175342378325434,
+    "stop": 221.21000122070313
+  },
+  {
+    "symbol": "BA",
+    "group": "industrial",
+    "event_date": "2026-07-28",
+    "event_index": 4165,
+    "score": 2.381421906968407,
+    "residual": 0.04517021962545287,
+    "stop": 209.34000610351563
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2012-11-14",
+    "event_index": 722,
+    "score": 2.7722955057234997,
+    "residual": 0.13937997192146645,
+    "stop": 19.92000030517578
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2013-05-02",
+    "event_index": 837,
+    "score": 2.700934367274923,
+    "residual": 0.04685552576355634,
+    "stop": 27.969999542236327
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2013-07-25",
+    "event_index": 895,
+    "score": 21.815343533899245,
+    "residual": 0.29368180877319916,
+    "stop": 32.74
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2015-06-23",
+    "event_index": 1376,
+    "score": 4.152376494782031,
+    "residual": 0.03634662775796249,
+    "stop": 84.75000213623046
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2016-01-28",
+    "event_index": 1527,
+    "score": 12.741100185853396,
+    "residual": 0.15000530191040284,
+    "stop": 104.79999755859374
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2017-10-27",
+    "event_index": 1969,
+    "score": 4.487608480819422,
+    "residual": 0.034313411283279915,
+    "stop": 173.88999389648438
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2020-05-20",
+    "event_index": 2612,
+    "score": 1.9423381165664606,
+    "residual": 0.04336792158743141,
+    "stop": 223.18000244140626
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2020-08-06",
+    "event_index": 2666,
+    "score": 2.9361190176856145,
+    "residual": 0.05818381631252367,
+    "stop": 248.65999816894532
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2020-08-26",
+    "event_index": 2680,
+    "score": 2.990282525514443,
+    "residual": 0.0721978650800883,
+    "stop": 283.99
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2021-04-29",
+    "event_index": 2849,
+    "score": 5.82940070230585,
+    "residual": 0.06660019068032486,
+    "stop": 321.5999853515625
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2021-06-28",
+    "event_index": 2890,
+    "score": 4.011008342233524,
+    "residual": 0.03978627796867151,
+    "stop": 341.7599890136719
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2022-04-28",
+    "event_index": 3101,
+    "score": 6.364431826516888,
+    "residual": 0.15067653230382283,
+    "stop": 192.88999389648438
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2022-06-24",
+    "event_index": 3140,
+    "score": 1.6770549280130331,
+    "residual": 0.0400801725219504,
+    "stop": 161.29000305175782
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2025-01-27",
+    "event_index": 3789,
+    "score": 2.0969640224635433,
+    "residual": 0.03328084890763472,
+    "stop": 625.0899755859375
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2026-01-29",
+    "event_index": 4042,
+    "score": 6.558463053700343,
+    "residual": 0.10603241949042463,
+    "stop": 712.5399877929688
+  },
+  {
+    "symbol": "META",
+    "group": "communication",
+    "event_date": "2026-03-31",
+    "event_index": 4084,
+    "score": 1.9866908931832505,
+    "residual": 0.037582582661870534,
+    "stop": 546.76001953125
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2010-10-15",
+    "event_index": 198,
+    "score": 13.05476286246168,
+    "residual": 0.10983811656114795,
+    "stop": 591.5899998855591
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2011-07-15",
+    "event_index": 386,
+    "score": 9.360214245306704,
+    "residual": 0.12403980006461546,
+    "stop": 588.1499924087525
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2012-05-16",
+    "event_index": 597,
+    "score": 3.5696201294342114,
+    "residual": 0.03298480702458584,
+    "stop": 615.9299925231934
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2012-07-20",
+    "event_index": 642,
+    "score": 4.844822509013931,
+    "residual": 0.039094688820125456,
+    "stop": 598.1699840545655
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2013-04-19",
+    "event_index": 828,
+    "score": 3.7174733460916087,
+    "residual": 0.03564603154181967,
+    "stop": 766.2500267791748
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2013-10-18",
+    "event_index": 955,
+    "score": 16.641622941625002,
+    "residual": 0.1312083785771112,
+    "stop": 973.9900006103516
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2014-01-31",
+    "event_index": 1026,
+    "score": 4.991267388727484,
+    "residual": 0.04600326247622166,
+    "stop": 1151.119974822998
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2014-07-18",
+    "event_index": 1142,
+    "score": 4.225567865903035,
+    "residual": 0.031600997910033124,
+    "stop": 590.9099905395508
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2015-01-30",
+    "event_index": 1277,
+    "score": 5.452490234714009,
+    "residual": 0.059961066876942026,
+    "stop": 518.1700079345703
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2015-07-17",
+    "event_index": 1393,
+    "score": 20.88271602528363,
+    "residual": 0.16173645025981842,
+    "stop": 677.9900305175781
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2021-01-20",
+    "event_index": 2780,
+    "score": 3.6650132021334003,
+    "residual": 0.03973462205368228,
+    "stop": 1819.5000402832031
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2023-01-20",
+    "event_index": 3284,
+    "score": 2.7113403454164233,
+    "residual": 0.034783033754021364,
+    "stop": 95.0099966430664
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2023-02-02",
+    "event_index": 3293,
+    "score": 3.535263864589489,
+    "residual": 0.05823000209959339,
+    "stop": 105.60000061035156
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2023-05-10",
+    "event_index": 3360,
+    "score": 2.9355525751224034,
+    "residual": 0.03631507772947251,
+    "stop": 107.92000030517578
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2024-12-10",
+    "event_index": 3759,
+    "score": 3.59618902979917,
+    "residual": 0.058990959363617534,
+    "stop": 181.04000305175782
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2024-12-11",
+    "event_index": 3760,
+    "score": 2.2484504866848303,
+    "residual": 0.04751586025320753,
+    "stop": 184.84000610351563
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2025-09-03",
+    "event_index": 3940,
+    "score": 9.831881329115804,
+    "residual": 0.08594547742463021,
+    "stop": 224.77999328613282
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2025-11-24",
+    "event_index": 3998,
+    "score": 2.6235635084586972,
+    "residual": 0.048419638681470145,
+    "stop": 309.59000610351563
+  },
+  {
+    "symbol": "GOOGL",
+    "group": "communication",
+    "event_date": "2026-04-30",
+    "event_index": 4105,
+    "score": 8.619868249481621,
+    "residual": 0.08966740723118538,
+    "stop": 365.81000732421876
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2010-04-05",
+    "event_index": 62,
+    "score": 4.3463183335333255,
+    "residual": 0.05838325014050816,
+    "stop": 75.55997060775756
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2010-04-06",
+    "event_index": 63,
+    "score": 2.292548917479165,
+    "residual": 0.039897821764498964,
+    "stop": 79.82996987342834
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2010-04-22",
+    "event_index": 75,
+    "score": 6.920628663040058,
+    "residual": 0.14958076995115732,
+    "stop": 90.6399969959259
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2010-04-26",
+    "event_index": 77,
+    "score": 2.286814007661309,
+    "residual": 0.08840534569873792,
+    "stop": 100.42999075889587
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2010-08-10",
+    "event_index": 151,
+    "score": 1.5961226917206461,
+    "residual": 0.07477416730419861,
+    "stop": 113.19001244544982
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2010-09-22",
+    "event_index": 181,
+    "score": 3.4075489880235863,
+    "residual": 0.07101370342409785,
+    "stop": 149.28999589920045
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2010-11-22",
+    "event_index": 224,
+    "score": 3.7337370937088212,
+    "residual": 0.08913472897034225,
+    "stop": 180.98998712539674
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2011-01-27",
+    "event_index": 269,
+    "score": 8.12779621371122,
+    "residual": 0.14963868296279825,
+    "stop": 204.56996606826783
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2011-02-14",
+    "event_index": 281,
+    "score": 1.7318847526364665,
+    "residual": 0.0689164817349619,
+    "stop": 234.56000494003297
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2011-07-05",
+    "event_index": 378,
+    "score": 5.257658104069604,
+    "residual": 0.08157040674632088,
+    "stop": 275.69998191833497
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2012-01-04",
+    "event_index": 505,
+    "score": 3.6202284851371784,
+    "residual": 0.1120807106901609,
+    "stop": 71.79998802185058
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2012-01-06",
+    "event_index": 507,
+    "score": 2.392227999756792,
+    "residual": 0.09072352324291222,
+    "stop": 78.69002388954162
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2012-01-09",
+    "event_index": 508,
+    "score": 3.2890469277385024,
+    "residual": 0.13536358752691324,
+    "stop": 87.12998675346374
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2012-07-05",
+    "event_index": 631,
+    "score": 6.215825357332177,
+    "residual": 0.1388821710113043,
+    "stop": 74.24999402999877
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2012-10-03",
+    "event_index": 694,
+    "score": 4.401609505267422,
+    "residual": 0.10431287643404907,
+    "stop": 58.24001060962677
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2012-10-04",
+    "event_index": 695,
+    "score": 1.7621949103172525,
+    "residual": 0.05818880302228058,
+    "stop": 62.600031962394716
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2012-10-08",
+    "event_index": 697,
+    "score": 3.0819871676740456,
+    "residual": 0.10798922731325644,
+    "stop": 70.10997938156127
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2012-10-26",
+    "event_index": 711,
+    "score": 2.4724628320616615,
+    "residual": 0.13176409077448747,
+    "stop": 60.480010976791384
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2012-12-04",
+    "event_index": 735,
+    "score": 5.966293219335132,
+    "residual": 0.14154565672316066,
+    "stop": 74.49001955032348
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2013-01-23",
+    "event_index": 768,
+    "score": 2.2686911001053525,
+    "residual": 0.05411081669647899,
+    "stop": 97.01000260353088
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2013-01-24",
+    "event_index": 769,
+    "score": 16.008943310634606,
+    "residual": 0.42196722452435864,
+    "stop": 139.6099679374695
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2013-01-25",
+    "event_index": 770,
+    "score": 1.5376492422926642,
+    "residual": 0.14894701318145898,
+    "stop": 145.6000082397461
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2013-04-22",
+    "event_index": 829,
+    "score": 2.40613831017915,
+    "residual": 0.06289394898312128,
+    "stop": 165.7100312614441
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2013-04-23",
+    "event_index": 830,
+    "score": 7.751075494696193,
+    "residual": 0.2341135077571619,
+    "stop": 209.50000213623048
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2013-10-14",
+    "event_index": 951,
+    "score": 3.0261105679329505,
+    "residual": 0.07415138059731485,
+    "stop": 305.9900276565552
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2013-10-21",
+    "event_index": 956,
+    "score": 2.2650298253439933,
+    "residual": 0.06438049907744237,
+    "stop": 340.0899736785889
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2014-07-01",
+    "event_index": 1130,
+    "score": 5.957438510899935,
+    "residual": 0.06706977285279758,
+    "stop": 455.2900068664551
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2015-01-20",
+    "event_index": 1269,
+    "score": 1.9661083696215416,
+    "residual": 0.03183910369112142,
+    "stop": 333.9900343322754
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2015-04-16",
+    "event_index": 1329,
+    "score": 9.666792283169546,
+    "residual": 0.1824035514579474,
+    "stop": 529.9900143051148
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2015-10-08",
+    "event_index": 1451,
+    "score": 2.2383837272870757,
+    "residual": 0.05415555652856052,
+    "stop": 102.59000228881835
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2015-11-17",
+    "event_index": 1479,
+    "score": 2.0187957510447765,
+    "residual": 0.05236842936556163,
+    "stop": 111.69000076293945
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2016-01-06",
+    "event_index": 1512,
+    "score": 6.615178949712113,
+    "residual": 0.10568495659353194,
+    "stop": 104.95000289916992
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2017-04-25",
+    "event_index": 1839,
+    "score": 4.592438537739008,
+    "residual": 0.0520969079635496,
+    "stop": 146.20999740600587
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2017-07-18",
+    "event_index": 1897,
+    "score": 9.225487151200001,
+    "residual": 0.1349065382104604,
+    "stop": 174.22999786376954
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2017-10-05",
+    "event_index": 1953,
+    "score": 2.841026835107328,
+    "residual": 0.04796480927261215,
+    "stop": 184.47999404907227
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2018-04-17",
+    "event_index": 2085,
+    "score": 3.8298286598420987,
+    "residual": 0.08118533706363151,
+    "stop": 323.7599890136719
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2018-06-13",
+    "event_index": 2125,
+    "score": 4.27192986263907,
+    "residual": 0.04744238506116083,
+    "stop": 364.09999298095704
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2020-01-23",
+    "event_index": 2530,
+    "score": 4.803206327038287,
+    "residual": 0.07124578718632235,
+    "stop": 324.99999450683595
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2020-07-10",
+    "event_index": 2647,
+    "score": 3.3106779810502216,
+    "residual": 0.07047718148434123,
+    "stop": 511.2699835205078
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2020-08-26",
+    "event_index": 2680,
+    "score": 6.400636935640411,
+    "residual": 0.10606146946504147,
+    "stop": 492.0700018310547
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2021-01-20",
+    "event_index": 2780,
+    "score": 9.11801043719864,
+    "residual": 0.15470468507553203,
+    "stop": 556.8500082397461
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2021-08-19",
+    "event_index": 2927,
+    "score": 4.098366123305759,
+    "residual": 0.04030114283637731,
+    "stop": 521.860002746582
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2021-10-05",
+    "event_index": 2959,
+    "score": 2.9140876150701587,
+    "residual": 0.041737223714386484,
+    "stop": 606.8799917602539
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2022-07-20",
+    "event_index": 3157,
+    "score": 2.3810192219498894,
+    "residual": 0.0670781594662282,
+    "stop": 200.09000228881837
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2023-01-20",
+    "event_index": 3284,
+    "score": 3.3262428850361014,
+    "residual": 0.06598686257790498,
+    "stop": 332.6200048828125
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2023-03-23",
+    "event_index": 3327,
+    "score": 5.388418999606914,
+    "residual": 0.08736123315322297,
+    "stop": 304.1299955749512
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2023-05-18",
+    "event_index": 3366,
+    "score": 6.556226205158573,
+    "residual": 0.08252478539679942,
+    "stop": 346.3600103759766
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2023-07-18",
+    "event_index": 3406,
+    "score": 3.3518896823562976,
+    "residual": 0.04756326671996436,
+    "stop": 448.7699835205078
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2024-10-18",
+    "event_index": 3723,
+    "score": 8.864049987104773,
+    "residual": 0.10702379225772929,
+    "stop": 736.2200109863281
+  },
+  {
+    "symbol": "NFLX",
+    "group": "communication",
+    "event_date": "2026-02-27",
+    "event_index": 4062,
+    "score": 6.604821141068597,
+    "residual": 0.1425251286825353,
+    "stop": 90.57000183105468
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2010-11-12",
+    "event_index": 218,
+    "score": 7.027712817268393,
+    "residual": 0.06249227186183437,
+    "stop": 36.589998474121096
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2011-01-04",
+    "event_index": 253,
+    "score": 4.983319108083577,
+    "residual": 0.031487027162971803,
+    "stop": 37.839998474121096
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2015-02-04",
+    "event_index": 1280,
+    "score": 10.879684443614456,
+    "residual": 0.08010965520717539,
+    "stop": 98.80999969482421
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2017-12-14",
+    "event_index": 2002,
+    "score": 2.032994835393132,
+    "residual": 0.0315929379549057,
+    "stop": 107.18999694824218
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2019-04-12",
+    "event_index": 2334,
+    "score": 8.575651530571724,
+    "residual": 0.10867144403476181,
+    "stop": 126.35000061035156
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2019-06-13",
+    "event_index": 2376,
+    "score": 6.186616696199582,
+    "residual": 0.04022979909033708,
+    "stop": 137.60000061035157
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2019-11-13",
+    "event_index": 2483,
+    "score": 5.959100582298754,
+    "residual": 0.0728470819882403,
+    "stop": 136.82999633789063
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2020-03-13",
+    "event_index": 2565,
+    "score": 2.056064114748576,
+    "residual": 0.03116764929558924,
+    "stop": 92.24
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2021-07-12",
+    "event_index": 2899,
+    "score": 4.114907999801535,
+    "residual": 0.03787770469791685,
+    "stop": 177.3599951171875
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2023-08-10",
+    "event_index": 3423,
+    "score": 3.2489303802147296,
+    "residual": 0.04844667399278291,
+    "stop": 87.74
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2023-11-09",
+    "event_index": 3487,
+    "score": 9.180324520768322,
+    "residual": 0.07691113321061682,
+    "stop": 87.58999847412109
+  },
+  {
+    "symbol": "DIS",
+    "group": "communication",
+    "event_date": "2024-11-15",
+    "event_index": 3743,
+    "score": 3.717436382368194,
+    "residual": 0.06742734691555885,
+    "stop": 110.24
+  }
+]

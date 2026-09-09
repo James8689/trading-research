@@ -1,0 +1,25 @@
+{
+  "stage": "Paused: Alpaca internal error also affects six-bar MSFT request",
+  "new_batches_completed": 0,
+  "failed": [
+    {
+      "year": 2020,
+      "month": 1,
+      "group": "software",
+      "error": "SyntaxError: Unexpected token 'o', \"tool call e\"... is not valid JSON"
+    },
+    {
+      "year": 2020,
+      "month": 1,
+      "group": "finance",
+      "error": "SyntaxError: Unexpected token 'o', \"tool call e\"... is not valid JSON"
+    },
+    {
+      "year": 2020,
+      "month": 1,
+      "group": "energy",
+      "error": "SyntaxError: Unexpected token 'o', \"tool call e\"... is not valid JSON"
+    }
+  ],
+  "next": "Preserve successful batches. In a later session, try one small Alpaca bars request; resume missing batches only if it succeeds. No extended backtest results yet."
+}
