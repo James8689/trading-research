@@ -1,0 +1,8 @@
+{
+  "status": "Declared after inspecting initial closing and opening results; follow-up diagnostics and exploratory tests, not an untouched holdout",
+  "opening_ambiguity": "Recalculate same signals allowing an entry-bar low to occur before a high-triggered entry. Stop in entry bar if close <= stop, or entry at bar open, otherwise ignore ambiguous low. This is favorable within-bar chronology, not an executable performance estimate.",
+  "closing_audit": "Compare signed underlying last-30-minute returns and actual leveraged ETF returns without stop to stopped version. Check overlapping hourly and five-minute prices and early-close sessions. No direction reversal or parameter search.",
+  "index_opening": "Additional exploratory literature-inspired test: buy TQQQ when QQQ first five-minute close exceeds open, else SQQQ; buy at 09:35 open; initial stop at purchased ETF first-five-minute low; skip nonpositive stop distance; exit at 15:55 open; no target. Risk 0.5% equity including cost, cap 50% ETF notional, whole shares. Variants all and QQQ first-five-minute relative volume >=1.5 vs lagged 14 sessions, with first 20 sessions for warmup. Costs 0,5,10,20 bps round trip. Report all, do not select by best outcome.",
+  "rebound": "Finish original predeclared event study using vectorized arrays without changing thresholds or dates.",
+  "math": "Illustrative net expectancy and geometric growth at 40% win probability, 2.0 R winners and -1 R losers, then subtract costs expressed in R. These are hypothetical, not estimated alpha. Loss-streak and fixed data cost arithmetic only, no forecast."
+}

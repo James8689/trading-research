@@ -1,0 +1,46 @@
+{
+  "purpose": "Exploratory feasibility research, not a trading system or a claim of live profitability",
+  "cutoff_exclusive": "2026-09-08",
+  "capital_usd": 2500,
+  "user_drawdown_tolerance": 0.25,
+  "chosen_before_viewing_strategy_results": true,
+  "closing_momentum": {
+    "signal_assets": ["QQQ", "SPY"],
+    "execution_pairs": [["TQQQ", "SQQQ"], ["UPRO", "SPXU"]],
+    "observation": "Last completed hourly bar, ending 15:30 America/New_York, relative to previous regular-session close",
+    "entry": "Next bar open at 15:30; acknowledge boundary execution and closing auction assumptions",
+    "exit": "16:00 close or 1% adverse move in the purchased leveraged ETF, whichever first",
+    "capital_fraction": 0.5,
+    "round_trip_cost_bps": [0, 5, 10, 20],
+    "variants": ["all", "abs_move_at_least_0.75_prior_20day_vol", "same_filter_plus_intraday_direction_agreement"],
+    "chronological_splits": ["through_2024", "2025", "2026"]
+  },
+  "opening_breakout": {
+    "universe": "Fixed contemporary sample in groups.json, selection and survivorship limitations disclosed",
+    "warmup_sessions": 20,
+    "opening_window_minutes": 5,
+    "long_only": true,
+    "selection_variants": ["top3_rvol_at_least_1.5", "top3_rvol_at_least_1.0", "all_positive_opening_bars"],
+    "entry": "Stop entry at opening high plus $0.01, only before 11:00; gap-aware fill",
+    "exit": "Entry minus 0.1 prior-14-day ATR, or 15:55 open; no profit target",
+    "risk_fraction_per_trade": 0.0025,
+    "notional_cap_per_trade": 0.3333333333,
+    "round_trip_cost_bps": [0, 5, 10, 20],
+    "same_bar_entry_stop": "Pessimistically stopped whenever both touched, unless invalid/incomplete data"
+  },
+  "original_peer_rebound": {
+    "status": "Coarse five-minute event study; cannot reproduce three-minute stabilization or news exclusions",
+    "formation": "At least 70% peers down 0.3% or more collectively over 15 minutes; next 10 minutes peer median recovers at least half loss and stock remains behind",
+    "entry": "After stock posts a positive five-minute bar, next bar open",
+    "holding_minutes": 30,
+    "minimum_residual_gap": 0.003,
+    "round_trip_cost_bps": [0, 5, 10, 20]
+  },
+  "general": {
+    "signal_inputs": "Only completed bars; rolling estimates exclude current day",
+    "universe_changes": "No changes based on return results",
+    "no_optimization": "All listed variants reported, including failures",
+    "statistics": "Day-level block bootstrap and chronological splits; never treat all same-day stock trades as independent",
+    "data_limits": "Public OHLCV bars are not historical NBBO quotes or executable broker fills"
+  }
+}

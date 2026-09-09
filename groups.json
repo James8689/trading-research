@@ -1,0 +1,53 @@
+{
+  "software": [
+    "MSFT",
+    "AAPL",
+    "ORCL",
+    "CRM"
+  ],
+  "semiconductors": [
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "QCOM",
+    "MU",
+    "INTC"
+  ],
+  "finance": [
+    "JPM",
+    "BAC",
+    "C",
+    "WFC",
+    "GS",
+    "MS"
+  ],
+  "energy": [
+    "XOM",
+    "CVX",
+    "COP",
+    "EOG",
+    "SLB"
+  ],
+  "retail": [
+    "AMZN",
+    "WMT",
+    "TGT",
+    "COST",
+    "HD",
+    "LOW"
+  ],
+  "industrial": [
+    "CAT",
+    "DE",
+    "HON",
+    "GE",
+    "RTX",
+    "BA"
+  ],
+  "communication": [
+    "META",
+    "GOOGL",
+    "NFLX",
+    "DIS"
+  ]
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "title": "Yahoo Finance chart service",
+    "scope": "Primary input data for our calculations: 43 symbols at five-minute resolution and six ETFs at hourly resolution; retrieved September 8, 2026. The saved manifest contains every query URL and SHA-256 hash. This is vendor OHLCV data, not verified executable quotes.",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?range=730d&interval=1h",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 2,
+    "title": "Zarattini, Barbon and Aziz, A Profitable Day Trading Strategy for the U.S. Equity Market",
+    "scope": "2024 paper, Tables 1-3; long and short stock opening breakouts, volume selection and sensitivity.",
+    "url": "https://concretumgroup.com/wp-content/uploads/2026/02/A-Profitable-Day-Trading-Strategy-For-The-U.S.-Equity-Market.pdf",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 3,
+    "title": "Zarattini and Aziz, Can Day Trading Really Be Profitable?",
+    "scope": "2023 paper; QQQ/TQQQ opening-direction strategy and explicit no-slippage assumption.",
+    "url": "https://concretumgroup.com/wp-content/uploads/2026/02/Can-Day-Trading-Really-Be-Profitable.pdf",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 4,
+    "title": "QuantConnect, Opening Range Breakout for Stocks in Play",
+    "scope": "Independent implementation published December 2024; the displayed research test covers 2016.",
+    "url": "https://www.quantconnect.com/research/18444/opening-range-breakout-for-stocks-in-play/",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 5,
+    "title": "Baltussen, Da, Lammers and Martens, Hedging Demand and Market Intraday Momentum",
+    "scope": "Journal of Financial Economics 142(1), 2021, 377-403; author institution record.",
+    "url": "https://pure.eur.nl/en/publications/hedging-demand-and-market-intraday-momentum/",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 6,
+    "title": "Robinhood Crypto fee schedule",
+    "scope": "Schedule dated June 22, 2026; entry-tier maker/taker rates.",
+    "url": "https://cdn.robinhood.com/assets/robinhood/legal/rhc-fee-schedule.pdf",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 7,
+    "title": "Robinhood, Crypto fee tiers",
+    "scope": "API v2 taker-fee treatment during maker/taker rollout; account pricing needs verification.",
+    "url": "https://robinhood.com/us/en/support/articles/crypto-fee-tiers/",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 8,
+    "title": "Robinhood, Trading with your agent",
+    "scope": "Supported instruments, equity tools, limited margin and settlement.",
+    "url": "https://robinhood.com/us/en/support/articles/trading-with-your-agent/",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 9,
+    "title": "Robinhood, Day trading",
+    "scope": "June 4, 2026 transition from PDT restrictions to intraday margin standards.",
+    "url": "https://robinhood.com/us/en/support/articles/pattern-day-trading/",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 10,
+    "title": "Robinhood, Trading fees",
+    "scope": "Equity commissions and regulatory charges.",
+    "url": "https://robinhood.com/us/en/support/articles/trading-fees-on-robinhood/",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 11,
+    "title": "Alpaca, About Market Data API",
+    "scope": "Basic versus Algo Trader Plus retail data plans and authentication.",
+    "url": "https://docs.alpaca.markets/us/docs/about-market-data-api",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 12,
+    "title": "CME, Micro E-mini S&P 500 contract specifications",
+    "scope": "MES multiplier and minimum tick.",
+    "url": "https://www.cmegroup.com/markets/equities/sp/micro-e-mini-sandp-500.contractSpecs.html",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 13,
+    "title": "Model Context Protocol, Build an MCP client",
+    "scope": "Deterministic programmatic tool calls are a protocol capability; broker access is a separate question.",
+    "url": "https://modelcontextprotocol.io/docs/develop/build-client",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 14,
+    "title": "ProShares, TQQQ",
+    "scope": "Daily leveraged investment objective; actual fund prices used in the tests.",
+    "url": "https://www.proshares.com/our-etfs/leveraged-and-inverse/tqqq",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 15,
+    "title": "ProShares, SQQQ",
+    "scope": "Daily inverse leveraged investment objective.",
+    "url": "https://www.proshares.com/our-etfs/leveraged-and-inverse/sqqq",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 16,
+    "title": "Concretum, Backtesting Data Quality: Can Your Data Provider Be Trusted?",
+    "scope": "Provider comparison and sensitivity to stale bars, extrema and bar boundaries.",
+    "url": "https://concretumgroup.com/backtesting-data-quality-can-your-data-provider-be-trusted/",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 17,
+    "title": "NYSE, Hours and calendars",
+    "scope": "Regular session hours and shortened sessions.",
+    "url": "https://www.nyse.com/markets/hours-calendars",
+    "checked": "2026-09-08"
+  },
+  {
+    "id": 18,
+    "title": "Concretum, ORB Strategy Backtest in Python Using Alpaca",
+    "scope": "Historical SIP data access using a free account and paper API keys.",
+    "url": "https://concretumgroup.com/orb-strategy-backtest-in-python-using-alpaca-10-years-of-free-data/",
+    "checked": "2026-09-08"
+  }
+]

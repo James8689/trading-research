@@ -1,0 +1,6 @@
+{
+  "status": "Post-result exploratory feasibility replay of rebound events; separate from the predeclared event study; not a holdout",
+  "rules": "One open position per peer group, at most two total; if simultaneous signals rank residual gap descending then ticker; no other signal changes. Each position capped at 25% current realized account equity and 0.25% planned account loss including round-trip cost. Whole shares, no borrowing. Entry is the next five-minute open from the event study. Stop is the minimum low of the five completed bars before entry minus $0.01. Exit at that stop or 30-minute time exit, whichever comes first. Gap-through stops use worse bar open. Position exit timestamps for stop scheduling conservatively assigned to end of stop bar. Reuse funds only after scheduled exit. All costs charged at exit based on entry notional. Costs 0,5,10,20 bps.",
+  "drawdown": "Report realized end-of-day drawdown only, not intraday risk or guaranteed maximum. No daily loss cap required in replay because at most two 0.25% planned-risk positions and no inferred guarantee; future live policy separate.",
+  "scope": "Diagnostic for whether average event gains survive finite capital, overlap and a stop; cannot estimate sustainable annual returns from 39 sessions."
+}
