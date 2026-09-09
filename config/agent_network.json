@@ -1,5 +1,7 @@
 {
   "backend": "manual",
+  "specification_status": "design-only; untested runner; do not execute",
+  "design_reference": "design/README.md",
   "models": {"worker": "gpt-5.6-luna", "frontier": "gpt-6-astra"},
   "max_cycles": 2,
   "max_calls": 12,

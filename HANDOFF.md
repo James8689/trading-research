@@ -1,5 +1,11 @@
 # Trading research handoff
 
+## September 9: design expansion checkpoint 2 — complete
+
+Expanded design/ with NETWORK, CONTEXT_AND_RECOVERY, RESEARCH_LIFECYCLE, COST_AND_SCHEDULING and IMPLEMENTATION_HANDOFF. Added five packet/registry/gate/resume templates. The system design uses an interchangeable frontier director, calibrated economical workers, optional specialist tier, centrally bounded delegation, per-worker memory and immutable evidence. It specifies persistent budget reservations, no blind retry after uncertain provider failure, clean resume, global trial accounting and distinct reject/blocked/inconclusive states. No expectation that more agents guarantees profitable discovery.
+
+Latest user scope remains instructions/scaffold only. No runtime code was changed or executed; no background loop/model calls, data acquisition, backtests or orders were launched. Existing runner remains unverified and future build acceptance is documented. Model/billing budget still unknown; automatic calls remain disabled. Next agent starts at design/STATUS.md and must not mistake the scaffold for working software. Final checks cover repository hashes and Python parsing only; original 153 data files and frozen research plans are preserved. Commit/push this completed batch after checkpoint and inventory refresh; confirm remote before claiming backup.
+
 ## September 9: design expansion checkpoint 1
 
 Latest user instruction is design/scaffold only; do not build out or activate the runner. Added design/README.md, NETWORK.md and STATUS.md. Corrected START_HERE and AGENT_NETWORK to distinguish intended behavior from the untested draft. AGENTS now points to the active design scope and incremental GitHub saves. Next: context/recovery, lifecycle, budget policy and acceptance/templates. Spending preference still unanswered. Frozen research plans and raw data unchanged.

@@ -2,6 +2,8 @@
 
 Start with [START_HERE.md](START_HERE.md). This private repository preserves the complete imported research history, cached backtesting data, scripts, rejected strategies, new hypotheses and agent-network design.
 
+**Latest scope: design and scaffold only.** The expanded [design specification](design/README.md) covers agent tiers, worker-owned context, interruption recovery, evidence gates, budget control, templates and later implementation acceptance. [Design status](design/STATUS.md) tells a fresh coding agent exactly where to resume. Do not build or launch the runner under this scope.
+
 **Current build status:** research documents and two feasibility plans are frozen. The agent-loop implementation is a draft: its worker was interrupted by a usage limit before testing was completed. It is not ready for unattended use. Automatic model calls remain disabled. No strategy is validated and no live trading is authorized.
 
 - [Agent network](docs/AGENT_NETWORK.md): replaceable frontier director, cheaper workers, isolated context and bounded work.
