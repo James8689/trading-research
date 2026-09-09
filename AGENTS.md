@@ -16,6 +16,7 @@ Build an autonomous opportunity research and refinement engine whose terminal pr
 - Preserve failed ideas. Never select a historical winner and call it validated.
 - Score workers on correct scientific work, including rejection and falsification. Preserve mechanism-family lineage, blockers and evidence-based reopening reasons.
 - Separate memory/context, prompt and routing improvement. Require recurring evidence before automatic prompt rewrites; keep independent evaluation/versioning gates. Do not conflate the coding maintainer with the internal portfolio director.
+- Apply `design/EVIDENCE_LED_DEVELOPMENT.md`: complete a real bounded research cycle before expanding architecture, measure adaptation independently, and require builder feasibility review before marking a blueprint implementation-ready. These new gates are design contracts pending runtime enforcement.
 - Run data-heavy work in Python and save compact JSON summaries. Do not paste raw data into the agent conversation.
 - Update `HANDOFF.md` after each material batch and run `checkpoint.py --save` after updating it.
 - After checkpointing, refresh `data_inventory.json`, verify it, commit and push the completed documentation batch to the authorized private GitHub repo. A local commit is not a remote backup. Report any push failure and the exact remaining commit. Never include credentials or raw model transcripts.

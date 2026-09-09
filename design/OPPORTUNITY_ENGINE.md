@@ -12,7 +12,7 @@ Existing $2,500 capital, cash/whole-share and drawdown assumptions remain bindin
 
 ## Continuing research loop
 
-Generate ideas -> sanity check -> deduplicate -> categorize -> rank -> research -> test -> reject or advance -> validate -> blueprint -> repeat.
+Generate ideas -> sanity check -> deduplicate -> categorize -> rank -> research -> test -> reject or advance -> validate -> blueprint draft -> independent builder feasibility review -> resolve or revalidate -> implementation-ready blueprint -> repeat.
 
 Creative generation receives the mission, useful lessons and enough context to avoid known repetitions. It is not burdened with every downstream implementation constraint. A separate sanity check filters incoherent mechanisms, impossible dependencies and absent paths to action before expensive work. Unusual is not a rejection reason. Missing evidence can mean blocked or inconclusive rather than false.
 
@@ -60,11 +60,13 @@ The builder can submit a structured clarification referencing blueprint ID/versi
 
 ## Next implementation sequence
 
-1. Persist a canonical mission/portfolio record, domain-neutral opportunity/family registry and blueprint/clarification schemas. Preserve existing B3 IDs and frozen files.
-2. Add creative generation, independent sanity check, reviewed semantic family linking and ranking packets around the current bounded evidence workflow. Test diverse synthetic domain cases and cheap rejection paths.
-3. Add source-linked recurring-pattern/lesson records and separate evaluated routing versions. Require pattern evidence before automatic prompt-change proposals.
-4. Implement one bounded provider adapter and real usage/identity controls; expand to the preferred diverse stack after verifying access and calibration.
-5. Connect ready-work events and capacity refill under finite budgets. Test restart, duplicate generation, starvation, failure accounting and escalation before unattended operation.
-6. Export reviewed blueprints and exercise the builder clarification/feedback protocol. Production deployment remains a separate system.
+1. Add only the minimal mission/opportunity/family record needed to run one real B3-H1-v1 document-feasibility cycle through the existing manual workflow. Preserve frozen sources/sample rules and record failures; ordinary search and reviewed family links suffice initially.
+2. Complete that cycle and its director retrospective. Choose the next engineering change from demonstrated bottlenecks, not the desired final agent count. Rejection or a well-supported block is a useful completed cycle.
+3. Introduce creative intake, similarity retrieval, additional roles or provider adapters incrementally when measured work justifies them. Preserve separate sanity filtering and independent review. Verify access and budgets before paid dispatch.
+4. Implement recurring-pattern admission and substantive independent evaluation/probation before automatic prompt or routing adaptation. Keep memory, prompt and routing comparisons separate.
+5. For a validated survivor, exercise blueprint draft, independent builder feasibility review, clarification and revalidation before the implementation-ready label. Do not force a blueprint from the first cycle.
+6. Add bounded capacity refill and continuing orchestration after the smaller workflow proves useful and survives recovery/cost tests. Production deployment remains a separate system.
+
+Apply [EVIDENCE_LED_DEVELOPMENT.md](EVIDENCE_LED_DEVELOPMENT.md) for mandatory architectural-growth evidence, improvement metrics and builder-readiness criteria. These are design requirements; current runtime support is listed separately in STATUS.md.
 
 Current manual CEF workflow stays usable throughout this evolution. No automatic generation, semantic deduplication, multi-provider runtime, blueprint qualification or production deployment is established merely by adding this direction document.

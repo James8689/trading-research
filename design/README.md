@@ -7,6 +7,7 @@ The system should optimize **reliable new evidence per unit of research cost**. 
 ## Specification map
 
 - `OPPORTUNITY_ENGINE.md`: authoritative mission, creative discovery loop, family memory, distinct learning mechanisms and separate-builder blueprint boundary.
+- `EVIDENCE_LED_DEVELOPMENT.md`: real-cycle-first build order, measured adaptation gates and independent builder feasibility review before readiness.
 
 - `NETWORK.md`: roles, model tiers, decision rights and delegation.
 - `CONTEXT_AND_RECOVERY.md`: worker-owned memory, small director context and interruption recovery.
