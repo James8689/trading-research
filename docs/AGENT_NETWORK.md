@@ -1,5 +1,7 @@
 # Research network and operating loop
 
+Current implementation: use [ORCHESTRATION.md](ORCHESTRATION.md) and `python go.py`. The historical proposal below predates the supported SQLite manual network; the old runner/provider adapter is superseded. The internal director now owns worker-prompt proposals and is distinct from the coding maintainer. Broader provider and unattended behavior below remains a design target.
+
 The director should spend its context and budget on disputed mechanisms, experiment design and evidence decisions. Narrow workers handle source inspection, structured extraction and falsification. More workers are useful only when their independent information exceeds their coordination and review cost. Start small and measure it.
 
 ## Proposed orchestration — not operational

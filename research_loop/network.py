@@ -62,7 +62,9 @@ class Network:
                 'CREATE TABLE IF NOT EXISTS cycles (cycle_id TEXT PRIMARY KEY, candidate_id TEXT, question TEXT, evidence_ids TEXT, plan_hash TEXT, created_at TEXT)',
                 'CREATE TABLE IF NOT EXISTS tasks (task_id TEXT PRIMARY KEY, cycle_id TEXT REFERENCES cycles, role TEXT, state TEXT, worker_id TEXT, packet TEXT, packet_hash TEXT, result TEXT, reason TEXT, result_hash TEXT, UNIQUE(cycle_id, role))',
                 'CREATE TABLE IF NOT EXISTS attempts (attempt_id TEXT PRIMARY KEY, task_id TEXT REFERENCES tasks, worker_id TEXT, started_at TEXT, ended_at TEXT, outcome TEXT, reason TEXT)',
-                'CREATE TABLE IF NOT EXISTS memories (role TEXT PRIMARY KEY, memory TEXT, task_id TEXT REFERENCES tasks, updated_at TEXT)',
+                'CREATE TABLE IF NOT EXISTS memory_history (candidate_id TEXT, role TEXT, version INTEGER, memory TEXT, memory_hash TEXT, task_id TEXT REFERENCES tasks, updated_at TEXT, PRIMARY KEY(candidate_id,role,version))',
+                'CREATE TABLE IF NOT EXISTS memory_current (candidate_id TEXT, role TEXT, version INTEGER, PRIMARY KEY(candidate_id,role), FOREIGN KEY(candidate_id,role,version) REFERENCES memory_history(candidate_id,role,version))',
+                'CREATE TABLE IF NOT EXISTS submission_errors (error_id TEXT PRIMARY KEY, task_id TEXT REFERENCES tasks, worker_id TEXT, code TEXT, payload_hash TEXT, created_at TEXT)',
                 'CREATE TABLE IF NOT EXISTS decisions (task_id TEXT PRIMARY KEY REFERENCES tasks, decision TEXT, created_at TEXT)',
             ]
             for statement in statements:
@@ -116,7 +118,15 @@ class Network:
                 task_id = 'task_' + uuid.uuid4().hex
                 tasks[role] = task_id
                 db.execute('INSERT INTO tasks VALUES (?,?,?,?,NULL,NULL,NULL,NULL,NULL,NULL)', (task_id, cycle_id, role, 'pending'))
-            self._packet(db, db.execute('SELECT * FROM tasks WHERE task_id=?', (tasks['director_plan'],)).fetchone(), 'size_check')
+            for task_id in tasks.values():
+                preview = self._packet(db, db.execute('SELECT * FROM tasks WHERE task_id=?', (task_id,)).fetchone(), 'x' * 200)
+                preview['memory'] = ''
+                preview['dependencies'] = []
+                # Reserve worst-case admitted prompt plus downstream excerpts.
+                preview['prompt'] = 'x' * 6000
+                preview['prompt_version'] = 'x' * 64
+                if len(_json(preview)) > 14500:
+                    raise ValueError('cycle source/context exceeds reserved downstream packet capacity; split the cycle')
             return {'cycle_id': cycle_id, 'tasks': tasks}
 
     def _dependencies(self, role):
@@ -126,16 +136,27 @@ class Network:
         cycle = dict(db.execute('SELECT * FROM cycles WHERE cycle_id=?', (task['cycle_id'],)).fetchone())
         sources = [dict(db.execute('SELECT * FROM sources WHERE event_id=?', (i,)).fetchone()) for i in json.loads(cycle.pop('evidence_ids'))]
         deps = []
-        for role in self._dependencies(task['role']):
-            row = db.execute('SELECT role, result FROM tasks WHERE cycle_id=? AND role=?', (task['cycle_id'], role)).fetchone()
+        for role in (ROLES[:-1] if task['role'] == 'improvement_proposal' else self._dependencies(task['role'])):
+            row = db.execute('SELECT task_id, role, result, result_hash FROM tasks WHERE cycle_id=? AND role=?', (task['cycle_id'], role)).fetchone()
             # Reviewer receives original sources and evidence references, not other agents' interpretations.
             if row and row['result']:
-                result = json.loads(row['result'])
-                if task['role'] == 'reviewer':
-                    result = {'evidence': result['evidence']}
-                deps.append({'role': role, 'result': result})
-        memory = db.execute('SELECT memory FROM memories WHERE role=?', (task['role'],)).fetchone()
-        packet = {'task_id': task['task_id'], 'worker_id': worker_id, 'role': task['role'], 'cycle': cycle, 'sources': sources, 'dependencies': deps, 'memory': memory[0] if memory else '', 'constraints': ['Research only. No broker or provider execution.', 'Return exact result schema. Quote original source text.', 'Do not change frozen plans or controller policy.', 'Improvement proposals require separate held-out evaluation before adoption.', 'Continue means ready for human feasibility review; it does not establish scientific validation.']}
+                full = json.loads(row['result'])
+                citations = [{'source_id': e['source_id'], 'quote': e['quote'][:100]} for e in full['evidence'][:3]]
+                result = {'evidence': citations}
+                excerpts = {'evidence_omitted': max(0, len(full['evidence']) - 3),
+                            'quote_excerpts': any(len(e['quote']) > 100 for e in full['evidence'][:3])}
+                if task['role'] != 'reviewer':
+                    result['decision'] = full['decision']
+                    for field, cap in [('summary', 300), ('uncertainty', 150), ('next_action', 150)]:
+                        result[field] = full[field][:cap]
+                        excerpts[field + '_truncated'] = len(full[field]) > cap
+                deps.append({'role': role, 'task_id': row['task_id'], 'result_hash': row['result_hash'],
+                             'result': result, 'excerpts': excerpts,
+                             'full_result_ref': row['task_id']})
+        memory = None
+        if task['role'] != 'reviewer':
+            memory = db.execute('SELECT h.* FROM memory_history h JOIN memory_current c USING(candidate_id,role,version) WHERE h.candidate_id=? AND h.role=?', (cycle['candidate_id'], task['role'])).fetchone()
+        packet = {'task_id': task['task_id'], 'worker_id': worker_id, 'role': task['role'], 'cycle': cycle, 'sources': sources, 'dependencies': deps, 'memory': memory['memory'] if memory else '', 'memory_provenance': {k: memory[k] for k in ('candidate_id', 'role', 'version', 'memory_hash', 'task_id')} if memory else None, 'constraints': ['Research only. No broker or provider execution.', 'Return exact result schema. Quote original source text.', 'Do not change frozen plans or controller policy.', 'Improvement proposals require separate held-out evaluation before adoption.', 'Continue means ready for human feasibility review; it does not establish scientific validation.']}
         prompt_path = self.root / 'agents' / 'network' / (task['role'] + '.md')
         defaults = {'director_plan': 'Define a bounded document feasibility task and explicit evidence requirements without altering the frozen plan.', 'researcher': 'Extract source evidence addressing the question, separating observations from interpretation.', 'data_auditor': 'Independently audit document availability, timestamps, contractual terms and missing data.', 'reviewer': 'Independently falsify the evidence using original sources. Identify unsupported assertions and contradictions.', 'director_decision': 'Synthesize the research, audit and review. Continue means ready for human feasibility review, never scientific validation.', 'improvement_proposal': 'Propose a versioned prompt or tool improvement from errors, with held-out evaluation criteria. Do not adopt your own proposal.'}
         prompt = prompt_path.read_text(encoding='utf-8') if prompt_path.exists() else defaults[task['role']]
@@ -145,11 +166,22 @@ class Network:
             if active:
                 prompt = active['prompt']
                 packet['prompt_version'] = active['id']
+        if len(prompt) > 6000:
+            raise ValueError('role prompt exceeds 6000 characters; rules cannot be truncated')
         packet['prompt'] = prompt
         packet['prompt_hash'] = _hash(prompt)
         packet['result_schema'] = {'required_fields': sorted(FIELDS), 'decisions': sorted(DECISIONS), 'evidence': [{'source_id': 'source event_id from this packet', 'quote': 'exact nonempty substring of source content'}]}
+        packet['memory_truncated'] = False
+        # Only interpretive context may be excerpted; sources and rules stay exact.
+        if len(_json(packet)) > 19900 and packet['memory']:
+            packet['memory'] = packet['memory'][:500]
+            packet['memory_truncated'] = len(memory['memory']) > 500
+        if len(_json(packet)) > 19900:
+            for dep in deps:
+                dep['result'] = {'evidence': []} if task['role'] == 'reviewer' else {'decision': dep['result']['decision']}
+                dep['excerpts']['details_omitted_for_packet_limit'] = True
         encoded = _json(packet)
-        if len(encoded) > 20000:
+        if len(encoded) > 19900:
             raise ValueError('packet exceeds 20000 characters; create a smaller bounded cycle')
         packet['packet_hash'] = _hash(encoded)
         return packet
@@ -173,6 +205,8 @@ class Network:
                     continue
                 if any(r['state'] != 'completed' for r in deps):
                     continue
+                if task['role'] == 'improvement_proposal' and related['director_decision']['worker_id'] != worker_id:
+                    continue
                 forbidden = []
                 if task['role'] in ('researcher', 'data_auditor'):
                     forbidden = ['data_auditor' if task['role'] == 'researcher' else 'researcher']
@@ -195,6 +229,24 @@ class Network:
         return task
 
     def submit(self, task_id, worker_id, result):
+        """Reject invalid results without losing the lease or failure lineage."""
+        try:
+            return self._submit(task_id, worker_id, result)
+        except ValueError as error:
+            # Hash only: malformed output may contain sensitive or very large text.
+            # The error code is generated here, never copied from worker content.
+            try:
+                payload_hash = _hash(_json(result))
+            except (TypeError, ValueError, RecursionError):
+                payload_hash = _hash(type(result).__name__)
+            code = 'evidence_rejected' if str(error).startswith(('evidence must', 'this decision requires')) else 'result_rejected'
+            with self._db() as db:
+                owned = db.execute("SELECT 1 FROM tasks WHERE task_id=? AND worker_id=? AND state='leased'", (task_id, worker_id)).fetchone()
+                if owned:
+                    db.execute('INSERT INTO submission_errors VALUES (?,?,?,?,?,?)', ('error_' + uuid.uuid4().hex, task_id, worker_id, code, payload_hash, _now()))
+            raise
+
+    def _submit(self, task_id, worker_id, result):
         if not isinstance(result, dict) or set(result) != FIELDS:
             raise ValueError('result requires exactly: ' + ', '.join(sorted(FIELDS)))
         for key in FIELDS - {'evidence'}:
@@ -224,7 +276,10 @@ class Network:
             db.execute("UPDATE tasks SET state='completed', result=?, result_hash=? WHERE task_id=?", (_json(result), _hash(_json(result)), task_id))
             db.execute("UPDATE attempts SET ended_at=?, outcome='completed' WHERE task_id=? AND ended_at IS NULL", (_now(), task_id))
             db.execute('INSERT INTO decisions VALUES (?,?,?)', (task_id, result['decision'], _now()))
-            db.execute('INSERT OR REPLACE INTO memories VALUES (?,?,?,?)', (task['role'], result['memory'], task_id, _now()))
+            candidate_id = packet['cycle']['candidate_id']
+            version = db.execute('SELECT COALESCE(MAX(version),0)+1 FROM memory_history WHERE candidate_id=? AND role=?', (candidate_id, task['role'])).fetchone()[0]
+            db.execute('INSERT INTO memory_history VALUES (?,?,?,?,?,?,?)', (candidate_id, task['role'], version, result['memory'], _hash(result['memory']), task_id, _now()))
+            db.execute('INSERT OR REPLACE INTO memory_current VALUES (?,?,?)', (candidate_id, task['role'], version))
             return {'task_id': task_id, 'state': 'completed', 'decision': result['decision']}
 
     def _failure(self, db, task, reason):
@@ -275,5 +330,50 @@ class Network:
             task = dict(row)
             for field in ('packet', 'result'):
                 task[field] = json.loads(task[field]) if task[field] else None
+            task['submission_errors'] = [dict(r) for r in db.execute('SELECT * FROM submission_errors WHERE task_id=? ORDER BY rowid', (task_id,))]
             task['attempts'] = [dict(r) for r in db.execute('SELECT * FROM attempts WHERE task_id=? ORDER BY rowid', (task_id,))]
             return task
+
+    def director_brief(self, max_chars=6000):
+        """Bounded routing context with final decision excerpts, never raw sources.
+
+        This is distinct from coding-maintainer context and worker packets.
+        Counts expose omitted entries; get_task is the explicit drill-down path.
+        """
+        if type(max_chars) is not int or max_chars < 1200 or max_chars > 20000:
+            raise ValueError('max_chars must be an integer between 1200 and 20000')
+        with self._db() as db:
+            counts = {row['state']: row['n'] for row in db.execute('SELECT state,COUNT(*) AS n FROM tasks GROUP BY state')}
+            pending_count = counts.get('pending', 0) + counts.get('leased', 0)
+            total_decisions = db.execute("SELECT COUNT(*) FROM decisions d JOIN tasks t USING(task_id) WHERE t.role='director_decision'").fetchone()[0]
+            tasks = [dict(r) for r in db.execute("SELECT t.task_id,t.cycle_id,t.role,t.state,t.worker_id FROM tasks t WHERE state IN ('pending','leased') ORDER BY CASE state WHEN 'leased' THEN 0 ELSE 1 END,t.rowid LIMIT 8")]
+            decisions = [dict(r) for r in db.execute("SELECT d.task_id,t.cycle_id,t.role,d.decision,t.result_hash,t.result FROM decisions d JOIN tasks t USING(task_id) WHERE t.role='director_decision' ORDER BY d.rowid DESC LIMIT 8")]
+            for decision in decisions:
+                result = json.loads(decision.pop('result'))
+                for field in ('summary', 'next_action'):
+                    decision[field] = result[field][:300]
+                    decision[field + '_truncated'] = len(result[field]) > 300
+            policy = dict(db.execute('SELECT max_tasks,max_concurrent,stopped FROM policy WHERE id=1').fetchone())
+        prompts = []
+        if (self.root / 'research_state' / 'improvement.sqlite3').exists():
+            from .improvement import ImprovementRegistry
+            registry = ImprovementRegistry(self.root)
+            for role in ROLES:
+                active = registry.active(role)
+                if active:
+                    prompts.append({'role': role, 'id': active['id']})
+        brief = {'context_owner': 'internal_research_director',
+                 'objective': 'Establish document feasibility for frozen candidates; preserve failures and propose evaluated prompt improvements. No strategy validation or trading.',
+                 'policy': policy, 'task_counts': counts, 'pending_and_leased': tasks,
+                 'latest_decisions': decisions, 'active_prompt_ids': prompts,
+                 'counts': {'pending_and_leased_total': pending_count, 'decisions_total': total_decisions, 'active_prompts_total': len(prompts)},
+                 'limits': {'max_tasks_shown': 8, 'max_decisions_shown': 8, 'max_prompts_shown': len(ROLES), 'max_chars': max_chars}}
+        for key, total in [('pending_and_leased', pending_count), ('latest_decisions', total_decisions), ('active_prompt_ids', len(prompts))]:
+            brief['counts'][key + '_omitted'] = total - len(brief[key])
+        while len(_json(brief)) > max_chars:
+            key = next((k for k in ('latest_decisions', 'pending_and_leased', 'active_prompt_ids') if brief[k]), None)
+            if key is None:
+                raise ValueError('brief metadata exceeds max_chars')
+            brief[key].pop()
+            brief['counts'][key + '_omitted'] += 1
+        return brief

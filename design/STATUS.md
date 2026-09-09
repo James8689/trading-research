@@ -1,32 +1,31 @@
-# Design checkpoint
+# Implementation checkpoint
 
-Updated: September 9, 2026. Scope: implementation of the bounded research network, now explicitly requested by James. Earlier design-only paragraphs below describe the prior checkpoint. See latest HANDOFF entry for active work.
+Updated September 9, 2026. James explicitly authorized building the research network and clarified internal-director prompt ownership, context separation and repeatable startup.
 
-Implementation checkpoint 1: SQLite network, manual CLI, prompt-improvement gate and simulated budget ledger implemented; initial 30 synthetic tests passed. Director-owned prompt proposals, isolated context history and portable startup are in progress. No automatic provider calls or live trading. Do not run the legacy runner; its provider path is disabled.
+## Implemented
 
-## Established
+- `python go.py`: repeatable offline six-stage network demonstration with scripted workers.
+- `python go.py --mode start`: idempotent manual CEF feasibility queue and initial versioned prompts.
+- SQLite source revisions, deduplication, transactional task leases, independent-role checks, frozen packets/results, rejected-submission audit and failure recovery.
+- Candidate-and-role memory history, blinded reviewer packets and bounded actionable director brief.
+- Director-owned worker-prompt proposals linked to completed work; frozen baseline/challenger comparisons, fresh-suite checks, independent evaluation/review, promotion and rollback.
+- Separate budget reservation/reconciliation component with no approved paid allowance, and private idle-runtime export/restore.
+- Supported CLI, portable operating guide and synthetic tests. Legacy provider path disabled.
 
-- Private GitHub repo: https://github.com/James8689/trading-research . Original research and data are pushed.
-- No validated strategy; B3-H1-v1 and B3-M2A-v1 are frozen feasibility candidates only.
-- Four initial research reviews and disagreement preserved. No candidate return test run.
-- Architecture index, role authority and delegation design written.
-- Context ownership/recovery, scientific lifecycle, project-wide trial accounting, cost/scheduling policy and later implementation acceptance scenarios completed.
-- Five copyable templates added for tasks, results, candidate registry, gate decisions and director resume. They are scaffolds, not runtime state.
-- Reviewed the ten-agent memecoin claim as an external anecdote. Exact repost located; no independent trade/account evidence found in the bounded search. Added a future shadow-stage role network and performance-evidence standard. This did not add a memecoin strategy or authorize trading.
-- Draft runner exists but is unverified; automatic calls remain disabled. Do not build or launch it under current scope.
+The main coding agent and internal research director are different roles. Director runtime context comes from saved artifacts, not a coding chat. Worker identities are operator labels in manual mode, not authenticated OS principals.
 
-## Current design batch
+## Verification and current state
 
-September 9 follow-up: reviewed Roan and sopersone articles supplied by James through a public mirror after X returned 403. See POST_INTEGRATION.md for provenance and concrete integration requirements. Added deterministic evidence intake, external budget admission and all-attempt lineage acceptance criteria. These remain design requirements; no implementation or candidate return test was run. Robinhood read-only connection succeeded in the separate conversation, but no repository broker adapter is verified.
+Fifty-three synthetic tests passed at the current implementation checkpoint; see latest HANDOFF for clean-checkout checks. The offline demo completed with zero model/broker calls and rolled back its synthetic prompt promotion. All 153 archived data files and the B3 plan hash verified. No strategy return test ran and no real prompt-quality improvement has been measured.
 
-Design expansion is complete for this batch. All specification files linked from design/README.md exist. Existing entry instructions now consistently identify the runner as untested and current scope as design only. No runner code, research dataset or frozen experiment plan was changed in this batch. Repository hashes/parsing are checked before the final push; this is not a runtime test.
+The local manual CEF queue is initialized with six pending tasks, no task claimed, no source evidence and six baseline prompts. This runtime state is local; a fresh checkout recreates it with `go.py --mode start`. No background process is running.
 
-## Unresolved external decisions
+## Preserved research
 
-- No answer yet to the earlier spending question. No API-dollar budget or subscription-only preference is recorded. Do not assume an allowance.
-- Provider/model cost and access remain unverified for an unattended runtime; example tier assignments are not measured savings.
-- Timing for future execution/validation cannot be promised before document/data feasibility passes.
+B3-H1-v1 and B3-M2A-v1 remain frozen source-feasibility candidates only. Previous research failures, agent disagreement and external-claim reviews remain recorded. Read research_batch3/SYNTHESIS.md. Nothing in the controller promotes a strategy to live use.
 
-## Resume after interruption
+## Remaining boundary
 
-Read this file, `AGENTS.md`, `design/README.md`, latest HANDOFF entry and `git status`. Check actual files before recreating anything. Inspect remote commit before claiming backup. The next design refinement is to resolve the spending/billing preference and review the specification with a fresh director. Implementation remains deferred until James requests it; follow IMPLEMENTATION_HANDOFF then. Do not run research_loop/runner.py. This state is repository-based and does not require the previous chat context.
+Automatic provider execution is not implemented. Before unattended research, select billing/access mode, implement one bounded provider adapter with real telemetry and role isolation, and test it. Evaluation labels are withheld from packets but readable to a same-user process; do not claim technically sealed holdouts. Broad design documents describe further requirements, not all implemented capabilities.
+
+Resume from START_HERE.md and docs/ORCHESTRATION.md. Use the manual queue or implement the next explicitly scoped provider component; do not resume the obsolete runner or silently spend money. Save and push completed batches to the private GitHub repo.

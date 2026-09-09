@@ -1,24 +1,26 @@
-# Start here: frontier coordinator handoff
+# Start here: maintainer and internal director handoff
 
-This is James's private automated-trading **research** repository. No strategy is validated. No live orders or trading bot are authorized. The intended system is a replaceable frontier coordinator directing inexpensive workers, with persistent file-based context and evidence gates.
+James authorized implementation of the research orchestration network, director-managed worker prompts, separated durable context and repeatable startup. This supersedes the older design-only restriction. No paid provider allowance or live trading is implied.
 
-Read in this order:
+Read:
 
-1. `AGENTS.md` and `design/STATUS.md` — current scope, constraints, completed design and next action.
-2. `research_state/state.json` if present — current task state; `research_batch3/SYNTHESIS.md` — latest scientific decision.
-3. `config/agent_network.json`, `docs/AGENT_NETWORK.md` — model tiers, budgets and loop contract.
-4. `research_batch3/frozen_experiment_plans.json` and its hash receipt — two feasibility plans, zero return tests.
-5. `HANDOFF.md` latest appended sections; use historical sections only when needed.
-6. `docs/DATA_CATALOG.md` and `docs/REPRODUCIBILITY.md` for exact existing artifacts and commands.
+1. `AGENTS.md` and `design/STATUS.md` for scope and verified state.
+2. `docs/ORCHESTRATION.md` for the supported entry points and authority boundaries.
+3. Latest `HANDOFF.md` entry; older entries are historical.
+4. `research_batch3/SYNTHESIS.md` and frozen plan/receipt before research.
 
-Do not load raw datasets or all agent conversations into your context. Each role writes compact memory and a result. Read cited evidence only when making a consequential decision. Verify file hashes and JSON before relying on result summaries. Another frontier model should be able to replace you from these files alone.
+Run `python go.py` for the offline demonstration, `python go.py --mode check` for tests, or `python go.py --mode start` to prepare the first manual CEF cycle. This does not dispatch a model. Python 3.11+ and its standard library suffice.
 
-## First useful next action
+## Context and ownership
 
-Current authorization is design/scaffold only. Read `design/README.md`, complete any listed design gaps and preserve progress. Do not run research probes or build the runner during this design task. When research resumes, the next scientific work is the frozen document feasibility probes for B3-H1-v1 and B3-M2A-v1. Both may fail; do not loosen their gates.
+The coding agent maintains software. The internal director owns research planning, evidence decisions and proposed worker-prompt changes. The controller enforces dependencies, source citations, immutable task inputs, prompt comparison gates and task limits. The director cannot change its own evaluator or controller policy through a worker result.
 
-## Research loop
+Runtime state is in ignored `research_state/network.sqlite3`, `improvement.sqlite3` and `budget.sqlite3`, not the old state.json. Use `python -m research_loop brief` for bounded director context and `task TASK_ID` for exact saved packets/results. Worker memory is separated by candidate and role; old versions remain available. Reviewers do not inherit prior interpretations. Existing leases survive restart without redispatch. Do not replace them or reset budgets to make progress.
 
-The draft in `research_loop/` is unverified and retained as historical work in progress. Do not execute it. The intended commands and behavior in older docs are design targets, not established capabilities. `design/` is the current implementation specification; any later build must pass its acceptance checklist first.
+Use the private export/restore commands to move idle runtime state. GitHub carries code and research artifacts, not raw runtime/evaluator databases. A downloaded repo can initialize from scratch without this chat. An interrupted research run resumes from its private snapshot.
 
-For deeper work: freeze source sample -> two-reader data audit -> reviewed Python extraction -> frozen experiment -> offline development -> untouched future evaluation -> concentration/cost checks -> 60-session live-quote/local-shadow evidence. The frontier agent owns the gate transitions with concrete artifacts. A worker saying "pass" is not a gate.
+## Next work
+
+The manual network and synthetic gates are implemented. A future unattended provider adapter still needs bounded calls, real usage reconciliation, authenticated role separation and independently protected evaluation data. No API budget has been chosen. The first scientific task remains original-document feasibility for B3-H1-v1; sources have not been acquired by the implementation work. Keep both B3 plans frozen and preserve every missing/excluded observation.
+
+Do not execute the superseded `research_loop/runner.py` provider path. Do not read raw market archives into model context. Update handoff/checkpoint/inventory, verify, commit and push after meaningful work so replacement agents can resume.

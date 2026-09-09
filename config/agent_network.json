@@ -1,6 +1,6 @@
 {
   "backend": "manual",
-  "specification_status": "design-only; untested runner; do not execute",
+  "specification_status": "legacy runner configuration; superseded by python -m research_loop manual network; provider disabled",
   "design_reference": "design/README.md",
   "models": {"worker": "gpt-5.6-luna", "frontier": "gpt-6-astra"},
   "max_cycles": 2,

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "mode": "synthetic_offline_demo",
+  "model_calls": 0,
+  "broker_calls": 0,
+  "real_money_spent": 0,
+  "research_tasks_completed": 6,
+  "director_decision": "reject",
+  "director_owned_prompt_proposal": true,
+  "synthetic_gate_promoted": true,
+  "rollback_restored_baseline": true,
+  "unknown_provider_outcome_blocked": true,
+  "restart_preserves_attempts": true,
+  "meaning": "Verifies controller plumbing with scripted answers, not agent improvement or trading alpha."
+}

@@ -6,9 +6,13 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import sqlite3
+from contextlib import closing
 
 from .network import Network
 from .improvement import ImprovementRegistry
+from .director import propose_prompt
+from .budget import BudgetLedger
 
 
 def read_json(path):
@@ -20,9 +24,14 @@ def parser():
     p.add_argument("--root", default=".", help="Project root with research_state storage")
     sub = p.add_subparsers(dest="command", required=True)
     init = sub.add_parser("init", help="Initialize once; existing caps cannot be reset")
-    init.add_argument("--max-tasks", type=int, default=12)
-    init.add_argument("--max-concurrent", type=int, default=3)
+    init.add_argument("--max-tasks", type=int)
+    init.add_argument("--max-concurrent", type=int)
     sub.add_parser("status")
+    sub.add_parser("brief", help="Bounded internal-director resume context")
+    export = sub.add_parser("export", help="Private operator runtime backup; requires an idle network")
+    export.add_argument("archive")
+    restore = sub.add_parser("restore", help="Restore a verified private backup into empty state")
+    restore.add_argument("archive")
     ingest = sub.add_parser("ingest", help="Import a UTF-8 source file; never downloads URLs")
     ingest.add_argument("source_id", help="Original source URL or stable identifier")
     ingest.add_argument("file")
@@ -50,6 +59,13 @@ def parser():
     recover.add_argument("reason")
     improve = sub.add_parser("improve", help="Version, evaluate and promote role prompts only")
     actions = improve.add_subparsers(dest="action", required=True)
+    actions.add_parser("status")
+    propose = actions.add_parser("propose", help="Internal director proposes a worker prompt from completed work")
+    propose.add_argument("task_id")
+    propose.add_argument("director")
+    propose.add_argument("role")
+    propose.add_argument("prompt_file")
+    propose.add_argument("--rationale", required=True)
     reg = actions.add_parser("register")
     reg.add_argument("role")
     reg.add_argument("prompt_file")
@@ -61,6 +77,10 @@ def parser():
     suite.add_argument("file", help="Evaluator-owned JSON list of labelled cases")
     packet = actions.add_parser("packet")
     packet.add_argument("suite")
+    compare = actions.add_parser("compare", help="Freeze a baseline/candidate pair before evaluations")
+    compare.add_argument("candidate")
+    compare.add_argument("baseline")
+    compare.add_argument("suite")
     evaluate = actions.add_parser("evaluate")
     evaluate.add_argument("version")
     evaluate.add_argument("suite")
@@ -100,16 +120,50 @@ def seed_cef(root, network, evidence):
     return network.create_cycle("B3-H1-v1", question, evidence, digest)
 
 
+def initialize_runtime(root, max_tasks=None, max_concurrent=None):
+    root = Path(root)
+    network = Network(root)
+    policy = {'max_tasks': 12, 'max_concurrent': 3}
+    if network.path.exists():
+        with closing(sqlite3.connect(network.path)) as db:
+            if db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='policy'").fetchone():
+                row = db.execute('SELECT max_tasks,max_concurrent FROM policy WHERE id=1').fetchone()
+                if row:
+                    policy = dict(zip(('max_tasks', 'max_concurrent'), row))
+    value = network.initialize(policy['max_tasks'] if max_tasks is None else max_tasks,
+                               policy['max_concurrent'] if max_concurrent is None else max_concurrent)
+    registry = ImprovementRegistry(root)
+    registry.initialize()
+    budget = BudgetLedger(root)
+    if not budget.path.exists():
+        budget.initialize('manual-no-spend', 0)
+    from .network import ROLES
+    for role in ROLES:
+        path = root / 'agents' / 'network' / (role + '.md')
+        if path.exists() and registry.active(role) is None:
+            version = registry.register(role, path.read_text(encoding='utf-8'), rationale='Maintainer-shipped initial baseline')
+            registry.bootstrap(version['id'])
+    value['prompts'] = registry.status()['active']
+    return value
+
+
 def main(argv=None):
     args = parser().parse_args(argv)
     root = Path(args.root).resolve()
     try:
         network = Network(root)
         if args.command == "init":
-            value = network.initialize(args.max_tasks, args.max_concurrent)
-            ImprovementRegistry(root).initialize()
+            value = initialize_runtime(root, args.max_tasks, args.max_concurrent)
         elif args.command == "status":
             value = network.status()
+        elif args.command == "brief":
+            value = network.director_brief()
+        elif args.command == "export":
+            from .snapshot import export_snapshot
+            value = export_snapshot(root, args.archive)
+        elif args.command == "restore":
+            from .snapshot import restore_snapshot
+            value = restore_snapshot(root, args.archive)
         elif args.command == "ingest":
             value = network.ingest(args.source_id, Path(args.file).read_text(encoding="utf-8-sig"), args.published_at)
         elif args.command == "seed-cef":
@@ -130,7 +184,14 @@ def main(argv=None):
             value = network.recover(args.task_id, reason=args.reason)
         else:
             registry = ImprovementRegistry(root)
-            if args.action == "register":
+            if args.action == "status":
+                value = registry.status()
+            elif args.action == "propose":
+                value = propose_prompt(root, args.task_id, args.director, args.role,
+                    Path(args.prompt_file).read_text(encoding='utf-8-sig'), args.rationale)
+            elif args.action == "compare":
+                value = registry.begin_comparison(args.candidate, args.baseline, args.suite)
+            elif args.action == "register":
                 value = registry.register(args.role, Path(args.prompt_file).read_text(encoding="utf-8-sig"), args.parent, args.rationale)
             elif args.action == "bootstrap":
                 value = registry.bootstrap(args.version)
@@ -146,7 +207,7 @@ def main(argv=None):
                 value = registry.rollback(args.role, args.reason)
         print(json.dumps(value, indent=2, ensure_ascii=False))
         return 0
-    except (ValueError, RuntimeError, OSError, KeyError) as exc:
+    except (ValueError, RuntimeError, OSError, KeyError, sqlite3.DatabaseError) as exc:
         print(f"research_loop: {exc}", file=sys.stderr)
         return 2
 

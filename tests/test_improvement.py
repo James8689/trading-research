@@ -16,6 +16,7 @@ class ImprovementTests(unittest.TestCase):
             dict(id='a', prompt='Unsupported claim', expected_decision='reject', critical=True),
             dict(id='b', prompt='Supported claim', expected_decision='accept', critical=False)])['id']
         self.good = [dict(case_id='a', decision='reject'), dict(case_id='b', decision='accept')]
+        self.r.begin_comparison(self.candidate, self.base, self.suite)
 
     def evaluate_pair(self, candidate_answers=None, candidate_cost=9):
         self.r.evaluate(self.base, self.suite, self.good, 10, 'baseline-evaluator')
@@ -109,6 +110,46 @@ class ImprovementTests(unittest.TestCase):
             self.r.promote(self.candidate, self.base, self.suite, 'independent')
         self.evaluate_pair()
         self.assertTrue(self.r.promote(self.candidate, self.base, self.suite, 'independent')['promoted'])
+
+    def test_only_frozen_pair_can_be_evaluated(self):
+        third = self.r.register('researcher', 'A third prompt', self.base)['id']
+        with self.assertRaisesRegex(ValueError, 'frozen comparison'):
+            self.r.evaluate(third, self.suite, self.good, 0, 'third')
+        with self.assertRaises(ValueError):
+            self.r.begin_comparison(third, self.base, self.suite)
+        suite = self.r.build_suite([dict(id='new', prompt='New evidence', expected_decision='accept', critical=True)])['id']
+        with self.assertRaisesRegex(ValueError, 'frozen comparison'):
+            self.r.evaluate(self.base, suite, [dict(case_id='new', decision='accept')], 0, 'base')
+
+    def test_semantic_reuse_cannot_be_hidden_by_renaming_cases(self):
+        suite = self.r.build_suite([
+            dict(id='renamed-a', prompt='Unsupported claim', expected_decision='reject', critical=True),
+            dict(id='renamed-b', prompt='Supported claim', expected_decision='accept', critical=False)])['id']
+        self.assertNotEqual(suite, self.suite)
+        with self.assertRaisesRegex(ValueError, 'semantic'):
+            self.r.begin_comparison(self.candidate, self.base, suite)
+
+    def test_lineage_changed_prompt_and_size_required(self):
+        suite = self.r.build_suite([dict(id='new', prompt='Fresh evidence', expected_decision='accept', critical=True)])['id']
+        for candidate in (self.r.register('researcher', 'No parent')['id'],
+                          self.r.register('researcher', 'Source every statement', self.base)['id']):
+            with self.assertRaises(ValueError):
+                self.r.begin_comparison(candidate, self.base, suite)
+        with self.assertRaises(ValueError):
+            self.r.register('researcher', 'x' * 6001)
+
+    def test_proposer_cannot_evaluate_or_approve_own_change(self):
+        candidate = self.r.register('researcher', 'Proposed new prompt', self.base,
+                                    proposer_id='director', provenance={'task_id': 'task-1'})['id']
+        suite = self.r.build_suite([dict(id='new', prompt='Fresh evidence', expected_decision='accept', critical=True)])['id']
+        self.r.begin_comparison(candidate, self.base, suite)
+        answers = [dict(case_id='new', decision='accept')]
+        with self.assertRaisesRegex(ValueError, 'independent of proposer'):
+            self.r.evaluate(candidate, suite, answers, 0, 'director')
+        self.r.evaluate(candidate, suite, answers, 0, 'candidate-evaluator')
+        self.r.evaluate(self.base, suite, answers, 1, 'baseline-evaluator')
+        with self.assertRaisesRegex(ValueError, 'independent'):
+            self.r.promote(candidate, self.base, suite, 'director')
 
 
 if __name__ == '__main__':

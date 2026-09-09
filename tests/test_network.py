@@ -41,7 +41,7 @@ class NetworkTests(unittest.TestCase):
         self.assertTrue(packet['sources'])
         self.assertTrue(all(set(d['result']) == {'evidence'} for d in packet['dependencies']))
         self.complete('director_decision', 'director')
-        self.complete('improvement_proposal', 'improver', 'propose_improvement')
+        self.complete('improvement_proposal', 'director', 'propose_improvement')
         self.assertEqual(self.net.status()['attempts_used'], 6)
         self.assertTrue(all(t['state'] == 'completed' for t in self.net.status()['tasks']))
         self.assertIsNone(self.net.claim('another-worker'))
@@ -100,7 +100,7 @@ class NetworkTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.net.submit(packet['task_id'], 'director', result(self.source))
         self.net.submit(packet['task_id'], 'director', result(self.source, 'reject'))
-        self.complete('improvement_proposal', 'improver', 'propose_improvement')
+        self.complete('improvement_proposal', 'director', 'propose_improvement')
 
     def test_failure_propagates_and_preserves_attempt(self):
         packet = self.net.claim('director', 'director_plan')

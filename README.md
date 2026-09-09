@@ -1,20 +1,26 @@
-# Trading research
+# Trading research and orchestration
 
-Start with [START_HERE.md](START_HERE.md). This private repository preserves the complete imported research history, cached backtesting data, scripts, rejected strategies, new hypotheses and agent-network design.
+This private repository preserves the research archive and a runnable, bounded research-agent network. No strategy is validated.
 
-**Latest scope: design and scaffold only.** The expanded [design specification](design/README.md) covers agent tiers, worker-owned context, interruption recovery, evidence gates, budget control, templates and later implementation acceptance. [Design status](design/STATUS.md) tells a fresh coding agent exactly where to resume. Do not build or launch the runner under this scope.
+## Run from a fresh checkout
 
-**Current build status:** research documents and two feasibility plans are frozen. The agent-loop implementation is a draft: its worker was interrupted by a usage limit before testing was completed. It is not ready for unattended use. Automatic model calls remain disabled. No strategy is validated and no live trading is authorized.
+With Python 3.11 or newer, no extra packages needed for the network:
 
-- [Agent network](docs/AGENT_NETWORK.md): replaceable frontier director, cheaper workers, isolated context and bounded work.
-- [Reproduction](docs/REPRODUCIBILITY.md) and [data catalog](docs/DATA_CATALOG.md).
-- [Latest research synthesis](research_batch3/SYNTHESIS.md) and [frozen plans](research_batch3/frozen_experiment_plans.json).
-- [Model evaluation](docs/MODEL_EVALUATION.md): calibration fixtures, not measured model performance.
+```sh
+python go.py
+python go.py --mode check
+python go.py --mode start
+```
 
-The `research_loop/` commands described in the design are provisional until tests and runtime review pass. Do not launch paid/background runs from this draft.
+The default runs a complete **synthetic offline demonstration**. `check` runs tests and archive verification. `start` prepares the real CEF document-feasibility queue with durable state; it does not start a model process. On Windows you can use `py -3` instead of `python`.
 
-This repository contains the preserved research for James's automated trading project. It is an offline research archive and does not submit brokerage orders.
+The network has an internal director, independent researcher/data auditor/reviewer roles, candidate-scoped memory, immutable packets, prompt-improvement evaluations and rollback. The internal director owns worker-prompt proposals; the coding maintainer owns controller and evaluator code. Automatic provider dispatch, paid inference and brokerage execution are not implemented in the supported runtime.
 
-Start with [`HANDOFF.md`](HANDOFF.md), then read [`NEXT_AGENT_DIRECTION.md`](NEXT_AGENT_DIRECTION.md). Existing experiments and results are retained in `analysis/`, `daily_results/`, and `volume_results/`. Cached histories and their manifests are in `daily_raw/`. Use the installed Python runtime to run scripts only when a reproducible rerun is needed.
+Read [the operating guide](docs/ORCHESTRATION.md) for commands, context ownership, prompt promotion, interruption recovery and private runtime backups. Read [START_HERE.md](START_HERE.md) to resume as a new coding agent.
 
-The current decision is that no tested rule is ready for live money. The next pass should use creative, first-principles hypothesis generation and rigorous falsification rather than repeatedly optimizing known strategies.
+- [Current status](design/STATUS.md) and [handoff](HANDOFF.md).
+- [Design specification](design/README.md): broader intended architecture and future acceptance criteria.
+- [Research synthesis](research_batch3/SYNTHESIS.md) and [frozen plans](research_batch3/frozen_experiment_plans.json).
+- [Historical reproduction](docs/REPRODUCIBILITY.md) and [data catalog](docs/DATA_CATALOG.md).
+
+The archived runner at `research_loop/runner.py` is superseded; its provider path is explicitly disabled. Use `python -m research_loop` for supported operations. Synthetic tests establish controller behavior, not trading returns or measured model improvement.

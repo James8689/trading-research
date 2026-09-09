@@ -20,7 +20,8 @@ with zipfile.ZipFile(dest,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) 
     for p in sorted(ROOT.rglob('*')):
         if not p.is_file():continue
         rel=p.relative_to(ROOT)
-        if rel.parts[0] in ['.git','.venv','venv','.research_runtime','raw','figures','sources','__pycache__']:continue
+        if rel.parts[0] in ['.git','.venv','venv','.research_runtime','research_state','raw','figures','sources','__pycache__']:continue
+        if '__pycache__' in rel.parts:continue
         if rel.parts[0]=='deliverables' and p.suffix!='.md':continue
         if p.suffix=='.zip' or p.name=='checkpoint_receipt.json':continue
         z.write(p,Path('trading_research')/rel)

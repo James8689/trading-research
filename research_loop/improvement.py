@@ -70,16 +70,28 @@ class ImprovementRegistry:
         db.execute('INSERT INTO records VALUES(?,?,?)', (kind, record['id'], _json(record)))
         return record
 
-    def register(self, role, prompt, parent_id=None, rationale=''):
+    def register(self, role, prompt, parent_id=None, rationale='', *, proposer_id=None, provenance=None):
         if not isinstance(role, str) or role not in ROLES:
             raise ValueError('Only permitted role prompts may be registered')
         _text(prompt, 'prompt', 6000)
         if not isinstance(rationale, str) or len(rationale) > 10000:
             raise ValueError('Invalid rationale')
+        if proposer_id is not None:
+            _text(proposer_id, 'proposer_id', 200)
+        if provenance is not None:
+            if not isinstance(provenance, (str, dict)):
+                raise ValueError('provenance must be a string or object')
+            try:
+                encoded = _json(provenance)
+            except (TypeError, ValueError) as exc:
+                raise ValueError('provenance must be finite JSON') from exc
+            if len(encoded) > 10000:
+                raise ValueError('provenance too large')
         with self._db() as db:
             if parent_id is not None and self._get(db, 'version', parent_id)['role'] != role:
                 raise ValueError('Parent must have same role')
-            payload = dict(role=role, prompt=prompt, parent_id=parent_id, rationale=rationale)
+            payload = dict(role=role, prompt=prompt, parent_id=parent_id, rationale=rationale,
+                           proposer_id=proposer_id, provenance=provenance)
             identifier = _hash(payload)
             existing = db.execute('SELECT body FROM records WHERE kind=? AND id=?', ('version', identifier)).fetchone()
             if existing:
@@ -172,7 +184,9 @@ class ImprovementRegistry:
                 raise ValueError('Duplicate answer')
             mapped[answer['case_id']] = answer['decision']
         with self._db() as db:
-            self._get(db, 'version', version_id)
+            version = self._get(db, 'version', version_id)
+            if version.get('proposer_id') == evaluator_id:
+                raise ValueError('Evaluator must be independent of proposer')
             suite = self._get(db, 'suite', suite_id)
             pair = db.execute('SELECT candidate,baseline FROM pairings WHERE suite=?', (suite_id,)).fetchone()
             if not pair or version_id not in pair:
@@ -212,8 +226,8 @@ class ImprovementRegistry:
             c = self._get(db, 'evaluation', _hash([candidate_id, suite_id]))
             b = self._get(db, 'evaluation', _hash([baseline_id, suite_id]))
             db.execute('INSERT INTO consumed VALUES(?)', (suite_id,))
-            if reviewer_id in {c['evaluator_id'], b['evaluator_id']}:
-                failure = 'Reviewer must be independent of evaluators'
+            if reviewer_id in {c['evaluator_id'], b['evaluator_id'], candidate.get('proposer_id')}:
+                failure = 'Reviewer must be independent of evaluators and proposer'
             elif c['critical_misses'] or c['correct'] < b['correct'] or not (
                     c['correct'] > b['correct'] or c['cost_units'] < b['cost_units']):
                 failure = 'Candidate failed accuracy, critical-error, or improvement gate'
