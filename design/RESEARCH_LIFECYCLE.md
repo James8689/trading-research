@@ -37,3 +37,5 @@ A worker's JSON decision is advisory. A gate record identifies the candidate/ver
 ## When the loop stops
 
 Stop on exhausted budget, unknown usage, no authorized ready tasks, source access failure, information-barrier breach, repeated malformed output, or candidate escalation requiring review. Reject weak ideas promptly. Continue promising ones only with a concrete next falsifier. If nothing survives, save "no candidate" and stop; do not relax standards to produce a winner. Future validation may require months of elapsed market time, which extra agents cannot accelerate.
+
+External profit stories enter the registry as unverified claims, not candidate returns. Their architecture may inform role design only after separating it from performance marketing. Apply `PERFORMANCE_CLAIM_STANDARD.md`; do not use the story's selected outcome to set strategy thresholds or target returns.

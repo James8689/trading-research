@@ -1,5 +1,11 @@
 # Trading research handoff
 
+## September 9: external ten-agent trading claim review
+
+James supplied a viral-style claim that ten ASTRA agents changed roughly $45–$50 into $10,847 trading memecoins in 13 hours. Exact repost found at https://zamantika.com/en/Sevenup27/status/2097294732275618073, but no independent broker statement, full order/fill ledger, token/transaction identifiers, cost record, failed-run denominator, code or replication was found in a bounded exact-phrase search. Starting capital is internally inconsistent ($45 vs $50). Preserve as unverified architecture anecdote, not alpha evidence.
+
+Added design/EXTERNAL_CLAIM_REVIEW.md, SHADOW_STAGE_NETWORK.md and PERFORMANCE_CLAIM_STANDARD.md. Retained useful concepts: narrow roles, binding risk/liquidity veto, data freshness checks, explicit reopening conditions, separate execution and accounting. Rejected subscription-or-shutdown P&L incentives because they reward tail risk and selective reporting. The future shadow network has no broker-order capability and is not authorized to run. No research plan, data, runner or strategy code changed. Checkpoint, verify, commit and push this documentation batch.
+
 ## September 9: design expansion checkpoint 2 — complete
 
 Expanded design/ with NETWORK, CONTEXT_AND_RECOVERY, RESEARCH_LIFECYCLE, COST_AND_SCHEDULING and IMPLEMENTATION_HANDOFF. Added five packet/registry/gate/resume templates. The system design uses an interchangeable frontier director, calibrated economical workers, optional specialist tier, centrally bounded delegation, per-worker memory and immutable evidence. It specifies persistent budget reservations, no blind retry after uncertain provider failure, clean resume, global trial accounting and distinct reject/blocked/inconclusive states. No expectation that more agents guarantees profitable discovery.

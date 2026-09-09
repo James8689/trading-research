@@ -2,6 +2,8 @@
 
 No spending limit has been chosen by James. Keep automatic model calls disabled. Existing configuration call/token/time values are draft engineering bounds, not permission to spend or proof of a dollar cap. No recurring automation is requested or installed as part of this scaffold.
 
+Never make a worker's survival, model access or future subscription conditional on trading P&L. This is an unsafe objective function for research: a short-horizon agent can maximize its chance of survival through excessive tail risk, hidden exposure or selective accounting. Research funding is an exogenous budget; net strategy economics are a separate validation metric.
+
 ## Allocate work by information value
 
 For each task record decision it could change, cheapest decisive check, expected source accessibility, maximum effort and stop condition. Prefer checking whether a required field exists before discussing an elaborate simulator. Do not ask multiple workers the same broad question unless a blinded independent judgment is worth its incremental cost.

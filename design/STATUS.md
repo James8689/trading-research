@@ -10,6 +10,7 @@ Updated: September 9, 2026. Scope: design and instruction scaffold only, per Jam
 - Architecture index, role authority and delegation design written.
 - Context ownership/recovery, scientific lifecycle, project-wide trial accounting, cost/scheduling policy and later implementation acceptance scenarios completed.
 - Five copyable templates added for tasks, results, candidate registry, gate decisions and director resume. They are scaffolds, not runtime state.
+- Reviewed the ten-agent memecoin claim as an external anecdote. Exact repost located; no independent trade/account evidence found in the bounded search. Added a future shadow-stage role network and performance-evidence standard. This did not add a memecoin strategy or authorize trading.
 - Draft runner exists but is unverified; automatic calls remain disabled. Do not build or launch it under current scope.
 
 ## Current design batch

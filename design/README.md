@@ -11,6 +11,9 @@ The system should optimize **reliable new evidence per unit of research cost**. 
 - `RESEARCH_LIFECYCLE.md`: gates, failed ideas, holdout isolation and stopping.
 - `COST_AND_SCHEDULING.md`: task economics, budgets, escalation and bounded cycles.
 - `IMPLEMENTATION_HANDOFF.md`: later build sequence and acceptance scenarios.
+- `EXTERNAL_CLAIM_REVIEW.md`: evidence review of the ten-agent memecoin story and reusable lessons.
+- `SHADOW_STAGE_NETWORK.md`: future no-order signal/risk/liquidity/execution/accounting roles.
+- `PERFORMANCE_CLAIM_STANDARD.md`: required proof before calling any result profitable or validated.
 - `templates/`: copyable task, result, gate, candidate and resume documents. Samples describe fields; they are not live queue entries or evidence.
 
 Original role prompts remain under `agents/prompts/`. The design extends these roles with later data extraction, offline engineering and independent validation functions. Model names live in configuration; portable role contracts do not depend on a provider or this conversation.
