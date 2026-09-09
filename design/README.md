@@ -6,6 +6,8 @@ The system should optimize **reliable new evidence per unit of research cost**. 
 
 ## Specification map
 
+- `OPPORTUNITY_ENGINE.md`: authoritative mission, creative discovery loop, family memory, distinct learning mechanisms and separate-builder blueprint boundary.
+
 - `NETWORK.md`: roles, model tiers, decision rights and delegation.
 - `CONTEXT_AND_RECOVERY.md`: worker-owned memory, small director context and interruption recovery.
 - `RESEARCH_LIFECYCLE.md`: gates, failed ideas, holdout isolation and stopping.

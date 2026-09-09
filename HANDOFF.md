@@ -1,5 +1,9 @@
 # Trading research handoff
 
+## September 9: opportunity blueprint factory mission adopted
+
+James supplied a high-level handoff broadening the mission to autonomous opportunity research/refinement, with trading initially primary and separate production builders consuming implementation-ready blueprints. Added design/OPPORTUNITY_ENGINE.md as authoritative direction and linked it from entry docs. Preserve scientific gates, frozen B3 experiments, context separation and improvement controls. Target additions: creativity then independent sanity filtering, semantic mechanism-family memory, portfolio ranking/capacity refill, recurring-pattern lessons, separately evaluated prompt/routing improvement, blueprint exports and structured builder clarification/feedback. Model preferences: Sol orchestration, Astra escalation, Muse Spark creative/research, Grok checking, Sonnet-class falsification; these are unverified routing intent, not activated provider IDs. No runtime code, current prompts, provider configuration, database or experiment rules changed. Next: domain-neutral mission/portfolio and opportunity-family/blueprint contracts. Save/verify/push this documentation batch.
+
 ## September 9: shared-memory explanation and clean-checkout verification
 
 Final remote verification completed at code commit 2660d08c2faa80cba34c2c4e6006d4298ce4db79: the fresh GitHub checkout passed all 54 tests, parsed 37 Python files, verified all 153 archived files and started/resumed the same manual queue with 6 pending tasks and 6 active baseline prompts. No model calls or orders. This final documentation/checkpoint update records the result; no source behavior changed afterward.

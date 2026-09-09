@@ -5,6 +5,7 @@ James authorized implementation of the research orchestration network, director-
 Read:
 
 1. `AGENTS.md` and `design/STATUS.md` for scope and verified state.
+   Read `design/OPPORTUNITY_ENGINE.md` for the updated domain-general mission and implementation order; the existing CEF runtime is a first workflow, not the whole engine.
 2. `docs/ORCHESTRATION.md` for the supported entry points and authority boundaries.
 3. Latest `HANDOFF.md` entry; older entries are historical.
 4. `research_batch3/SYNTHESIS.md` and frozen plan/receipt before research.

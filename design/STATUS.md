@@ -26,6 +26,8 @@ B3-H1-v1 and B3-M2A-v1 remain frozen source-feasibility candidates only. Previou
 
 ## Remaining boundary
 
+Latest mission direction: read OPPORTUNITY_ENGINE.md. The engine should explore broadly, preserve semantic idea-family history, learn through memory/prompts/routing, and deliver validated blueprints to a separate production builder. The preferred diverse model stack is recorded as configuration intent, not verified adapters. Next build priority is the canonical mission/portfolio and opportunity-family/blueprint contracts around existing gates. Automatic provider execution remains necessary later; the broader loop is not implemented yet.
+
 Automatic provider execution is not implemented. Before unattended research, select billing/access mode, implement one bounded provider adapter with real telemetry and role isolation, and test it. Evaluation labels are withheld from packets but readable to a same-user process; do not claim technically sealed holdouts. Broad design documents describe further requirements, not all implemented capabilities.
 
 Resume from START_HERE.md and docs/ORCHESTRATION.md. Use the manual queue or implement the next explicitly scoped provider component; do not resume the obsolete runner or silently spend money. Save and push completed batches to the private GitHub repo.

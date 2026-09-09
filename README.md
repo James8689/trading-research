@@ -2,6 +2,8 @@
 
 This private repository preserves the research archive and a runnable, bounded research-agent network. No strategy is validated.
 
+The long-term mission is a domain-general **opportunity blueprint factory**: discover, reject, refine and validate opportunities for automated online systems, then hand implementation-ready blueprints to a separate builder. Trading is the initial focus. Read [the authoritative direction](design/OPPORTUNITY_ENGINE.md); the autonomous discovery and multi-provider layers are still future work.
+
 ## Run from a fresh checkout
 
 With Python 3.11 or newer, no extra packages needed for the network:
