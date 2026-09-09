@@ -62,6 +62,8 @@ Evidence entries use `source_id` equal to an ingested event ID and `quote` equal
 
 ## Context separation and refresh
 
+The shared database is already implemented: `network.sqlite3` is the research record, `improvement.sqlite3` holds version/evaluation records, and `budget.sqlite3` holds accounting. Logical separation makes ownership explicit; it does not hide data from a process with the same filesystem permissions. Agents submit through the controller's API/CLI. They should not issue arbitrary SQL or update another worker's memory directly.
+
 - Canonical records: immutable source events, frozen packets/results, decisions, prompt versions and attempts in SQLite.
 - Working memory: separate candidate-and-role history with a current pointer, source task ID and hash. Each accepted result advances only that context. Old versions remain available.
 - Reviewer: no prior interpretive working memory; original sources and bounded citations only.
@@ -71,6 +73,14 @@ Evidence entries use `source_id` equal to an ingested event ID and `quote` equal
 Packets are capped at 20,000 characters and stored memory at 4,000. Cycle admission reserves downstream capacity and never truncates source text or hard constraints. Dependency reports and working memory can be explicitly labelled excerpts with hashes and references to full saved artifacts; nothing is silently dropped. Already leased packets keep their exact prompt and memory even after a new version is promoted. The next claim picks up the newly active prompt. Replacing the coding session or director process does not erase state.
 
 Manual worker names are accountability labels, not authentication. A same-user process can read or edit local databases; prompt boundaries are not OS isolation. A future provider deployment needs separate worker/evaluator identities, filesystem capabilities and secret-free packet delivery. This v1 does not claim sealed holdouts or adversarial containment.
+
+## When the director acts and how work stays aligned
+
+The dependency graph is the readiness signal. A task claim transaction checks whether all required predecessors completed and whether identity/capacity rules permit dispatch. Researcher and data auditor work independently after planning; their completion unlocks review; review unlocks a director decision; that decision unlocks the same director's improvement task. Rejection and missing-evidence results still reach the director. Runtime failures remain visible as failed/blocked tasks rather than being retried silently.
+
+In manual mode, `next director --role director_decision` claims the ready decision packet. Nothing continuously polls or wakes a model. A future provider adapter will consume those ready packets and return results; the graph and durable record already define when it should act. The controller, not the worker, determines readiness.
+
+Every task in a cycle inherits the same candidate ID, bounded question, frozen-plan hash, original source IDs and research constraints. Role prompts define complementary responsibilities against that shared question. The shipped first question is CEF document feasibility, and seed-cef verifies the experiment receipt before creating it. Workers cannot replace the cycle question or plan through a result. Changing the mission or scientific rules is an explicit new version, not a memory rewrite. This aligns work toward trustworthy evidence and a reproducible decision, including a useful rejection, rather than rewarding agreeable answers or short-term P&L.
 
 ## Director-managed prompt improvement
 

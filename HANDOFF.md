@@ -1,5 +1,11 @@
 # Trading research handoff
 
+## September 9: shared-memory explanation and clean-checkout verification
+
+Clarified in docs/ORCHESTRATION.md how the three SQLite stores separate research, improvement and budget responsibilities; dependency completion makes the director ready, while actual model wake-up remains an unimplemented provider adapter. Every cycle packet inherits its candidate/question/frozen-plan hash and constraints. James requested all recent updates be pushed at completion.
+
+Fresh private GitHub clone of f551246 ran the offline demo, 53 tests, start and restart; the same cycle and six baseline prompts were preserved. Clone testing exposed the archive verifier's use of absolute path components: a checkout nested under .research_runtime skipped Python parsing. Fixed it to inspect paths relative to the checkout and added regression coverage. Current suite is 54 passing tests; 37 Python files parse and 153 data hashes verify. Final remote checkout verification follows this fix.
+
 ## September 9: implementation checkpoint 2 — supported manual network
 
 Implemented the internal-director workflow and repeatable entry point. `python go.py` runs the six-stage synthetic demo; `--mode check` runs 53 passing tests and archive verification; `--mode start` idempotently prepares the manual CEF queue. See docs/ORCHESTRATION.md. No provider processes or broker actions are launched. The coding maintainer is separate from the internal director, who owns worker-prompt proposals linked to completed evidence/review tasks. Independent, prebound fresh-suite evaluations gate promotion and rollback. Candidate-and-role context histories, blinded reviewer packets, actionable bounded director brief, hashed submission errors, leases and private SQLite backup/restore are implemented. All 153 archived data files and frozen plan hashes verified unchanged apart from routine checkpoint manifest metadata.

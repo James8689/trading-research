@@ -16,7 +16,7 @@ The main coding agent and internal research director are different roles. Direct
 
 ## Verification and current state
 
-Fifty-three synthetic tests passed at the current implementation checkpoint; see latest HANDOFF for clean-checkout checks. The offline demo completed with zero model/broker calls and rolled back its synthetic prompt promotion. All 153 archived data files and the B3 plan hash verified. No strategy return test ran and no real prompt-quality improvement has been measured.
+Fifty-four synthetic tests passed at the current implementation checkpoint; see latest HANDOFF for clean-checkout checks. The offline demo completed with zero model/broker calls and rolled back its synthetic prompt promotion. All 153 archived data files and the B3 plan hash verified. No strategy return test ran and no real prompt-quality improvement has been measured.
 
 The local manual CEF queue is initialized with six pending tasks, no task claimed, no source evidence and six baseline prompts. This runtime state is local; a fresh checkout recreates it with `go.py --mode start`. No background process is running.
 

@@ -504,7 +504,7 @@
     {
       "path": "alpaca_batches/manifest.json",
       "bytes": 1593,
-      "sha256": "a962f7a7fac81e829d7e121151543cf52c606c85d84f276c89bf53c03255fde9"
+      "sha256": "a4e11a56f7003439eb9a2ae4972e77ab323e2b464619a6affbb18125688c8109"
     },
     {
       "path": "analysis/closing_audit.json",

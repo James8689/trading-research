@@ -7,7 +7,7 @@ def check():
     errors = []
     source_count = 0
     for p in ROOT.rglob('*.py'):
-        if any(x in p.parts for x in ('.git','.venv','venv','.research_runtime')): continue
+        if any(x in p.relative_to(ROOT).parts for x in ('.git','.venv','venv','.research_runtime')): continue
         source_count += 1
         try: ast.parse(p.read_text(encoding='utf-8-sig'), filename=str(p))
         except Exception as exc: errors.append(f'{p.relative_to(ROOT)}: {type(exc).__name__}')
