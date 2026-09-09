@@ -5,3 +5,8 @@ __pycache__/
 *.pem
 *.secret
 credentials.json
+*.zip
+raw/
+figures/
+checkpoint_receipt.json
+*_receipt.json
