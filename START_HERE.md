@@ -4,7 +4,7 @@ This is James's private automated-trading **research** repository. No strategy i
 
 Read in this order:
 
-1. `AGENTS.md` — constraints and edit ownership.
+1. `AGENTS.md` and `design/STATUS.md` — current scope, constraints, completed design and next action.
 2. `research_state/state.json` if present — current task state; `research_batch3/SYNTHESIS.md` — latest scientific decision.
 3. `config/agent_network.json`, `docs/AGENT_NETWORK.md` — model tiers, budgets and loop contract.
 4. `research_batch3/frozen_experiment_plans.json` and its hash receipt — two feasibility plans, zero return tests.
@@ -15,10 +15,10 @@ Do not load raw datasets or all agent conversations into your context. Each role
 
 ## First useful next action
 
-Complete the frozen document feasibility probes for B3-H1-v1 and B3-M2A-v1. Both may fail their strict data gates. Do not relax gates to keep the project busy. No bulk prices or simulator until these gates pass. Other proposals and independent disagreement are retained in the batch ledger.
+Current authorization is design/scaffold only. Read `design/README.md`, complete any listed design gaps and preserve progress. Do not run research probes or build the runner during this design task. When research resumes, the next scientific work is the frozen document feasibility probes for B3-H1-v1 and B3-M2A-v1. Both may fail; do not loosen their gates.
 
 ## Research loop
 
-`python -m research_loop.runner --root . init` creates durable local state. `status` shows progress; `next` produces a bounded task packet. Use manual packet mode from any coding agent, or a configured CLI model runner after budget/access setup. The loop stops for blocked data, frontier review, STOP file, exhausted calls/tokens/cycles or uncertain failures. It is a resumable work queue, not a promise of eventual profitable discovery.
+The draft in `research_loop/` is unverified and retained as historical work in progress. Do not execute it. The intended commands and behavior in older docs are design targets, not established capabilities. `design/` is the current implementation specification; any later build must pass its acceptance checklist first.
 
 For deeper work: freeze source sample -> two-reader data audit -> reviewed Python extraction -> frozen experiment -> offline development -> untouched future evaluation -> concentration/cost checks -> 60-session live-quote/local-shadow evidence. The frontier agent owns the gate transitions with concrete artifacts. A worker saying "pass" is not a gate.

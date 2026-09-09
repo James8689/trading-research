@@ -2,9 +2,9 @@
 
 The director should spend its context and budget on disputed mechanisms, experiment design and evidence decisions. Narrow workers handle source inspection, structured extraction and falsification. More workers are useful only when their independent information exceeds their coordination and review cost. Start small and measure it.
 
-## Implemented orchestration
+## Proposed orchestration — not operational
 
-Python owns durable task state, bounded dispatch, schema checks and result/memory files. A cycle is scout -> mechanism/data -> adversary -> frontier coordinator. Worker tasks use fresh contexts with only their role prompt, own compact memory and direct dependency summaries. Files, not old chat transcripts, are the durable interface. Manual mode lets any coding agent consume packets and submit results. Optional Codex CLI mode selects worker/frontier models from `config/agent_network.json`; its default is disabled pending spending setup.
+Design target: Python owns durable task state, bounded dispatch, schema checks and result/memory files. A cycle is scout -> mechanism/data -> adversary -> frontier coordinator. Each worker receives a fresh bounded context. The existing implementation is an untested draft, interrupted by a usage limit. Manual packet and CLI behavior below are intended contracts, not verified functionality. Current user scope is instructions and scaffolding only; `design/README.md` is the expanded specification.
 
 Each result contains summary, decision, evidence, uncertainty, next_action and memory. Individual results are retained; memory is a lossy index, never a substitute for source evidence. A model swap changes configuration, not research rules. Model names in the initial config match this session's exposed model options; availability and actual billing must be reverified on another host. No price savings have been measured yet.
 
@@ -12,7 +12,7 @@ The initial worker is gpt-5.6-luna and director gpt-6-astra. These are interchan
 
 ## Scientific lifecycle beyond ideation
 
-The runnable v1 loop automates bounded research reasoning and review handoff. It does not yet autonomously acquire sources, implement simulators, evaluate holdouts or promote strategies. Those are frontier coding-agent stages with separate artifact checks:
+The intended v1 loop covers bounded research reasoning and review handoff. There is no verified runnable loop. Source acquisition, simulators, holdout evaluation and strategy promotion require separate frontier coding-agent stages and artifact checks:
 
 - Proposal -> source feasibility: mechanism, timestamps, cheap expression and smallest falsifier.
 - Feasibility -> frozen experiment: original documents, two independent extractions, exclusion ledger and exact fields; then hash the rule specification.
@@ -27,7 +27,7 @@ Every stage can reject, become inconclusive, or block. Reopening requires new ev
 
 Defaults bound a run to two cycles, 12 calls and 120,000 reported tokens, with 300 seconds per call. Automatic calls are initially disabled. CLI token usage is post-call telemetry; a call/time/token gate cannot guarantee an exact dollar ceiling inside a running model request. Unknown usage halts further paid dispatch. Use provider-side spending controls for actual billing caps; subscription usage is not necessarily API dollars. No current API tariff is assumed or hardcoded.
 
-Timeouts and malformed output are preserved for review, never silently rerun. Atomic state plus a single-runner lock prevents duplicate concurrent dispatch. A stale lock must be inspected, not deleted automatically. Place `research_state/STOP` to stop further dispatch; an in-flight request may still finish or incur usage. No background service, scheduled job or unattended paid run is started merely by cloning the repo.
+Required future behavior: preserve timeouts and malformed output without silent retries; prevent duplicate dispatch with atomic state and a single-runner lock; inspect stale locks instead of deleting them automatically. A STOP file must prevent new dispatch; in-flight work can still incur usage. These controls require testing before any run. No background service or unattended paid run has been started.
 
 ## Runtime boundary
 

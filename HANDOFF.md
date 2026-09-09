@@ -1,5 +1,9 @@
 # Trading research handoff
 
+## September 9: design expansion checkpoint 1
+
+Latest user instruction is design/scaffold only; do not build out or activate the runner. Added design/README.md, NETWORK.md and STATUS.md. Corrected START_HERE and AGENT_NETWORK to distinguish intended behavior from the untested draft. AGENTS now points to the active design scope and incremental GitHub saves. Next: context/recovery, lifecycle, budget policy and acceptance/templates. Spending preference still unanswered. Frozen research plans and raw data unchanged.
+
 ## September 9, 2026: imported repo, batch 3, agent network
 
 The full user-provided ZIP was extracted on Windows. Original git history and all cached data are preserved. Start with START_HERE.md and README.md for current status; older Linux Library upload instructions below are historical. checkpoint.py now supports a clearly labeled local-only save when that helper is absent.

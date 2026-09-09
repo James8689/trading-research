@@ -2,6 +2,8 @@
 
 ## Mission
 
+**Current scope (September 9, 2026): design and scaffold only.** James explicitly asked to expand the agent-network instructions without building it out. Do not implement, repair or launch the draft runner unless subsequently requested. Read `design/STATUS.md` first. Keep design intent separate from tested functionality. Existing research plans remain frozen.
+
 Develop and test a low-cost, deterministic trading strategy for a modeled $2,500 account. The target is frequent opportunities and attractive risk-adjusted returns with an approximately 25% drawdown ceiling. No live trading or broker order submission is authorized by this repository.
 
 ## Research standards
@@ -14,6 +16,7 @@ Develop and test a low-cost, deterministic trading strategy for a modeled $2,500
 - Preserve failed ideas. Never select a historical winner and call it validated.
 - Run data-heavy work in Python and save compact JSON summaries. Do not paste raw data into the agent conversation.
 - Update `HANDOFF.md` after each material batch and run `checkpoint.py --save` after updating it.
+- After checkpointing, refresh `data_inventory.json`, verify it, commit and push the completed documentation batch to the authorized private GitHub repo. A local commit is not a remote backup. Report any push failure and the exact remaining commit. Never include credentials or raw model transcripts.
 
 ## Agent roles
 
