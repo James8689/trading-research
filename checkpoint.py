@@ -20,7 +20,7 @@ with zipfile.ZipFile(dest,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) 
     for p in sorted(ROOT.rglob('*')):
         if not p.is_file():continue
         rel=p.relative_to(ROOT)
-        if rel.parts[0] in ['raw','figures','sources','__pycache__']:continue
+        if rel.parts[0] in ['.git','.venv','venv','.research_runtime','raw','figures','sources','__pycache__']:continue
         if rel.parts[0]=='deliverables' and p.suffix!='.md':continue
         if p.suffix=='.zip' or p.name=='checkpoint_receipt.json':continue
         z.write(p,Path('trading_research')/rel)
@@ -30,6 +30,14 @@ if receipt.exists():
     prev=json.loads(receipt.read_text())
     up.update(purpose='replace_library_file',library_file_id=prev['library_file_id'],expected_current_version=prev['current_version_number'],version_reason='Completed historical data batches and updated research handoff')
 helper='/root/.codex/plugins/cache/openai-curated-remote/openai-library/0.1.54/skills/library/scripts/library_upload.py'
+if not Path(helper).is_file() or not Path('/usr/bin/python3').is_file():
+    local_status={'status':'saved_local_only','local_path':str(dest),
+        'sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),
+        'bytes':dest.stat().st_size,'completed_files':len(entries),
+        'updated_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        'cloud_upload':'not_attempted; original Library helper unavailable on this host'}
+    (ROOT/'checkpoint_local_receipt.json').write_text(json.dumps(local_status,indent=2))
+    print(json.dumps(local_status));sys.exit(0)
 r=subprocess.run(['/usr/bin/python3',helper],input=json.dumps({'uploads':[up]}),text=True,capture_output=True)
 if r.returncode:
     print('Checkpoint upload failed or uncertain; do not automatically retry.',r.stderr);sys.exit(1)

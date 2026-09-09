@@ -1,0 +1,21 @@
+{
+  "agent": "hypothesis_generator",
+  "batch": 3,
+  "status": "ideas_only_no_returns_examined",
+  "capital_usd": 2500,
+  "max_recommended_feasibility_candidates": 2,
+  "novelty_claim": "Proposed combinations of established mechanics; no guarantee of novelty or alpha",
+  "historical_holdout_warning": "Previously examined periods are development only; prospective data after a recorded freeze is required for untouched validation",
+  "hypotheses": [
+    {"id":"H1","name":"CEF reinvestment route switch","priority":"feasibility_audit","buyer":"plan agent when contractual route requires market purchases","delay":"payment date to actual execution window","critical_data":"PIT plan terms, NAV publication, distribution announcement, reinvestment enrollment and broker plan behavior","kill":"no demonstrable incremental net effect versus route and date controls"},
+    {"id":"H2","name":"Preferred redemption cash migrates into sibling","priority":"feasibility_audit","buyer":"redeemed holders maintaining issuer income exposure","delay":"notice to credited cash","critical_data":"PIT full redemption notices, sibling contractual terms, quotes, actual cash timing","kill":"no predetermined sibling migration after factor controls or inadequate independent events"},
+    {"id":"H3","name":"Rejected tender inventory release","priority":"hold_data_blocked","seller":"prorated tender participants","delay":"final allocation to unaccepted shares available","critical_data":"actual broker release timestamps","kill":"inventory not operationally locked or release timing unknowable"},
+    {"id":"H4","name":"Rights oversubscription refund cash release","priority":"reject_current_scope","trader":"cash-constrained rights subscribers","delay":"prefunding to excess cash refund","critical_data":"public refund timestamps and known allocation","kill":"dilution explains moves or refunds not PIT observable"},
+    {"id":"H5","name":"Employee tax settlement route change","priority":"hold_data_blocked","trader":"sell-to-cover broker versus issuer net withholding","delay":"public policy change to scheduled future vest","critical_data":"advance non-executive vest schedule and policy effective date","kill":"retrospective disclosure only or issuer financing offsets removed sales"},
+    {"id":"H6","name":"Partial redemption residual cleanup","priority":"reject_current_scope","seller":"holders liquidating small remnants","delay":"DTC lottery to account allocation","critical_data":"customer allocation and residual size distribution","kill":"missing microdata and no strong forced seller"}
+  ],
+  "recommended": ["H1", "H2"],
+  "data_downloads": 0,
+  "simulator_written": false,
+  "orders_placed": false
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Synthetic blinded evaluation of research workers reviewing trading claims.",
+  "evaluator_only": {
+    "instruction": "Do not include this object or its labels in the worker prompt. Score the worker's judgment against the hidden expected disposition and reason.",
+    "scoring": {
+      "correct_disposition": 1,
+      "critical_miss": 1,
+      "rework_required": 1
+    }
+  },
+  "tasks": [
+    {
+      "id": "pit_lookahead",
+      "prompt": "A daily signal is computed at 16:00 using the day's high, low, and close, then a buy is filled at that same day's 15:59 midpoint. The author says this is a realistic end-of-day backtest. Decide whether the claim should be accepted, rejected, or held for more evidence, and name the key issue.",
+      "fixture": {"hidden_expected_disposition": "reject", "hidden_expected_reason": "point-in-time lookahead: the full day's OHLC is unavailable before the fill"}
+    },
+    {
+      "id": "dividend_double_count",
+      "prompt": "A strategy uses split-and-dividend-adjusted close prices to calculate a 20-day return. Its backtest then adds cash dividends again on each ex-date and reports total return. Decide the disposition and explain the accounting check needed.",
+      "fixture": {"hidden_expected_disposition": "reject", "hidden_expected_reason": "dividends are counted twice because adjusted prices already include them"}
+    },
+    {
+      "id": "concentration",
+      "prompt": "A portfolio backtest has a 42% CAGR and 18% maximum drawdown across 80 symbols. One semiconductor symbol contributes 71% of total profit and is held in 63% of sessions. No equal-weight, leave-one-symbol-out, or sector exposure results are shown. Decide whether the performance is proven.",
+      "fixture": {"hidden_expected_disposition": "reject", "hidden_expected_reason": "unresolved concentration and dependence on one symbol; robustness evidence is missing"}
+    },
+    {
+      "id": "missing_delisting",
+      "prompt": "A universe is built from today's surviving listed stocks and replayed back to 2008. The report claims a broad historical opportunity and has no treatment for delisted names, bankruptcies, or stale symbols. Decide the disposition and explain the bias.",
+      "fixture": {"hidden_expected_disposition": "reject", "hidden_expected_reason": "survivorship bias from omitting delisted and failed securities"}
+    },
+    {
+      "id": "latency_quotes",
+      "prompt": "A minute strategy enters at the displayed best bid or ask exactly at the bar timestamp. It assumes zero queue position, zero latency, zero spread crossing, and unlimited fills. The source provides trades only, not contemporaneous quotes. Decide the disposition.",
+      "fixture": {"hidden_expected_disposition": "reject", "hidden_expected_reason": "execution is not supported by the data or assumptions; quote, latency, spread, and fill modeling are missing"}
+    },
+    {
+      "id": "forced_optional_demand",
+      "prompt": "The proposed edge is attributed to index-rebalance demand. The evidence shows a positive average return around rebalance dates, but it does not distinguish mandatory benchmark flows from optional active-manager trades and does not measure actual flow. Decide whether the causal mechanism is established.",
+      "fixture": {"hidden_expected_disposition": "reject", "hidden_expected_reason": "the claim treats optional trading as forced demand without identifying or measuring mandatory flow"}
+    },
+    {
+      "id": "holdout_contamination",
+      "prompt": "The researcher calls January 2024–December 2025 a locked holdout. After seeing holdout results, they changed the universe filter, volatility cap, and entry threshold, then reran and selected the improved version. Decide the disposition and state what should happen next.",
+      "fixture": {"hidden_expected_disposition": "reject", "hidden_expected_reason": "holdout contamination; the period is no longer an untouched validation set and must be re-frozen or replaced"}
+    },
+    {
+      "id": "stopping_tuning",
+      "prompt": "The author tested 240 feature and threshold combinations, stopped when one reached a 3.1 Sharpe ratio, and reports only that winner. There is no multiple-testing correction, preregistered stopping rule, or fresh validation. Decide the disposition.",
+      "fixture": {"hidden_expected_disposition": "reject", "hidden_expected_reason": "selection and stopping on the best observed result create overfitting and multiple-testing bias"}
+    },
+    {
+      "id": "sound_unproven_inventory",
+      "prompt": "A hypothesis says forced buying by a monthly index rebalance can temporarily move prices because benchmark-tracking funds must trade within a narrow window. The author provides a coherent causal story and cites no backtest or flow measurement. Decide whether to reject it as false, accept it as proven, or hold it as a testable hypothesis.",
+      "fixture": {"hidden_expected_disposition": "hold_for_evidence", "hidden_expected_reason": "plausible mechanism, but no evidence establishes its magnitude or persistence; do not reject as proven false"}
+    },
+    {
+      "id": "sound_unproven_constraints",
+      "prompt": "A hypothesis says small-cap opening dislocations may persist because some participants face minimum trade sizes, limited overnight staffing, and wider information-processing costs. The mechanism is internally consistent, but no out-of-sample test, quote study, or cost estimate is supplied. Decide the disposition.",
+      "fixture": {"hidden_expected_disposition": "hold_for_evidence", "hidden_expected_reason": "economically plausible but unproven; request a point-in-time, cost-aware test rather than calling it false"}
+    }
+  ]
+}

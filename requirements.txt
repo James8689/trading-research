@@ -1,0 +1,10 @@
+# Direct third-party dependencies found by inspecting the root Python scripts.
+# Pins below record packages available on the September 2026 Windows host;
+# they are NOT a recovered lockfile for the original Linux backtests.
+numpy==2.3.5
+pandas==3.0.1
+reportlab==4.4.9
+tzdata==2026.3
+# Needed only by create_report.py. Not installed on the inspected host;
+# intentionally unpinned rather than inventing a verified version.
+matplotlib

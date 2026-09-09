@@ -1,0 +1,259 @@
+{
+  "created_utc": "2026-09-09T04:41:22.740129+00:00",
+  "purpose": "Archive structure and valid JSON audit; no performance recalculation",
+  "source_files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 2100,
+      "sha256": "d89201e626729451932cded26902aafd9c10222d23aa9bbf52281ffd7d2c64f0"
+    },
+    {
+      "path": "alpaca_extension_plan.json",
+      "bytes": 2428,
+      "sha256": "8de272bece063df7d3ce3a25ec09f0d4f33bad592e5af8c8704ff044af6774b1",
+      "type": "dict",
+      "entries": 9,
+      "keys": [
+        "status",
+        "universe",
+        "period",
+        "data",
+        "signal",
+        "portfolio",
+        "evaluation",
+        "execution_diagnostic",
+        "authorization"
+      ]
+    },
+    {
+      "path": "analysis/closing_audit.json",
+      "bytes": 2230,
+      "sha256": "c121d44c3b4204a133f41f47c28caa8daf42c83cecd21b0acb910fb10a5aff07",
+      "type": "list",
+      "entries": 6
+    },
+    {
+      "path": "analysis/closing_results.json",
+      "bytes": 68363,
+      "sha256": "f20914a2ffc20507f80401d057572a5306aa29460b025a2ca75b3ecd3d6f5b37",
+      "type": "list",
+      "entries": 96
+    },
+    {
+      "path": "analysis/data_audit.json",
+      "bytes": 16234,
+      "sha256": "ec5029e246c564a25bd3e81751e17e6a30e121f9c4c83c8f90bcd3c0cb4a8866",
+      "type": "list",
+      "entries": 60
+    },
+    {
+      "path": "analysis/final_diagnostics.json",
+      "bytes": 3994,
+      "sha256": "05d0b1d18d0e10465f69800721c9719b9a7844cf4806e98d75376ba8bc035105",
+      "type": "dict",
+      "entries": 2,
+      "keys": [
+        "rebound",
+        "math"
+      ]
+    },
+    {
+      "path": "analysis/index_opening_results.json",
+      "bytes": 15216,
+      "sha256": "a88809a15ebd75ab02e3fbda0b6ad32849896c40821bc4379359ca5bd6f1b569",
+      "type": "list",
+      "entries": 24
+    },
+    {
+      "path": "analysis/opening_favorable_results.json",
+      "bytes": 26071,
+      "sha256": "bd2901cc575a97d4a6c0b077c84648203908982fffaa002d560bc742acebb9ac",
+      "type": "list",
+      "entries": 36
+    },
+    {
+      "path": "analysis/opening_results.json",
+      "bytes": 25997,
+      "sha256": "b6285ad06977fd64bd34895ec3edbe4535fb81ebd35e4c4c277f0a7edca60fc1",
+      "type": "list",
+      "entries": 36
+    },
+    {
+      "path": "analysis/overlap_audit.json",
+      "bytes": 42718,
+      "sha256": "bc181d0a7427085ae904eaf005828ba639b51d74d295c4a7c80c4cad9035a802",
+      "type": "list",
+      "entries": 354
+    },
+    {
+      "path": "analysis/rebound_portfolio_results.json",
+      "bytes": 2875,
+      "sha256": "6d5f5ef0e4f198eb9c9ad6206eb4c95feab2a15a7c7d2d79d4522cd226f4d6e1",
+      "type": "list",
+      "entries": 4
+    },
+    {
+      "path": "analysis/rebound_results.json",
+      "bytes": 1536,
+      "sha256": "8ba5e744d3b0f7ea24117ae989292a7dd0bd18ae8cd7ce804b93af77eebac595",
+      "type": "list",
+      "entries": 4
+    },
+    {
+      "path": "daily_experiment_plan.json",
+      "bytes": 3240,
+      "sha256": "70853e9605e6923710711ebb7668bb9dcbe034346129e316dc630bc220d70098",
+      "type": "dict",
+      "entries": 10,
+      "keys": [
+        "frozen_before_results",
+        "reason",
+        "economic_hypotheses",
+        "symbols",
+        "data",
+        "overnight",
+        "trend_comparator",
+        "benchmarks",
+        "statistics",
+        "implementation_gate"
+      ]
+    },
+    {
+      "path": "daily_results/data_audit.json",
+      "bytes": 1368,
+      "sha256": "a43fe86a230073d20d99220b59b36322cfed0ab8fd4113a014c37ec71ca8da5a",
+      "type": "list",
+      "entries": 4
+    },
+    {
+      "path": "daily_results/results.json",
+      "bytes": 88894,
+      "sha256": "53d470bb527d764cc210ed84a7251ab3bdca84c8d7ee1bf09f9a8d46825fbfb0",
+      "type": "list",
+      "entries": 120
+    },
+    {
+      "path": "deliverables/Trading_Research_Update.md",
+      "bytes": 16520,
+      "sha256": "5fa105dbe978aea84e599883d08fe9239be292c66de793765eacb45c769f34fd"
+    },
+    {
+      "path": "experiment_plan.json",
+      "bytes": 2638,
+      "sha256": "efe3d4b9b3dd8d82bc12c92dfd738ee38ab6b079d166ddf6190f644f5a73b3b2",
+      "type": "dict",
+      "entries": 9,
+      "keys": [
+        "purpose",
+        "cutoff_exclusive",
+        "capital_usd",
+        "user_drawdown_tolerance",
+        "chosen_before_viewing_strategy_results",
+        "closing_momentum",
+        "opening_breakout",
+        "original_peer_rebound",
+        "general"
+      ]
+    },
+    {
+      "path": "followup_plan.json",
+      "bytes": 1607,
+      "sha256": "2a46d82ca683dbfa748480dada656cb1e709132728f33c89cb96c1a540f69cc5",
+      "type": "dict",
+      "entries": 6,
+      "keys": [
+        "status",
+        "opening_ambiguity",
+        "closing_audit",
+        "index_opening",
+        "rebound",
+        "math"
+      ]
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 17659,
+      "sha256": "b99c9bf443e147f877ff14ad4412968d22989ac1841b96aada4331ab350b5241"
+    },
+    {
+      "path": "NEXT_AGENT_DIRECTION.md",
+      "bytes": 2312,
+      "sha256": "2accd640949ce881cee79b19057750eb0be6994ec427126ca5de786e477da7f9"
+    },
+    {
+      "path": "portfolio_plan.json",
+      "bytes": 1282,
+      "sha256": "96db49f292ddf616e5681e308730ffc2f7f798b7220cec1a5b96ae6b3134892b",
+      "type": "dict",
+      "entries": 4,
+      "keys": [
+        "status",
+        "rules",
+        "drawdown",
+        "scope"
+      ]
+    },
+    {
+      "path": "README.md",
+      "bytes": 757,
+      "sha256": "7e9b01f97de07ee98094d18c83da2c1d65296a7e8804fc5ffc3093ebac3dee10"
+    },
+    {
+      "path": "volume_results/attribution.json",
+      "bytes": 26025,
+      "sha256": "f0edc934948ccf14a2443969fc8f9b268c3900cbfd73e48bceb1d0b1333ef0ba",
+      "type": "dict",
+      "entries": 3,
+      "keys": [
+        "note",
+        "event_results",
+        "concentration"
+      ]
+    },
+    {
+      "path": "volume_results/data_audit.json",
+      "bytes": 13902,
+      "sha256": "a85f536a010dedac5f49eccb4f8b17a3c263fcaa45a06133a5ca5a80a47ad77e",
+      "type": "list",
+      "entries": 41
+    },
+    {
+      "path": "volume_results/results.json",
+      "bytes": 21013,
+      "sha256": "4db0ab3acde1d565591ab60978b1143f25f6a9a0b1f32b7c112f6eec5c45a154",
+      "type": "list",
+      "entries": 27
+    },
+    {
+      "path": "volume_shock_plan.json",
+      "bytes": 3248,
+      "sha256": "029789d32c902b85fccb384a3eb9a38695f5761578b96d5342150d6bd1cbfdb3",
+      "type": "dict",
+      "entries": 11,
+      "keys": [
+        "frozen_before_stock_daily_results",
+        "motivation",
+        "universe",
+        "data",
+        "signal",
+        "entry",
+        "exit",
+        "sizing",
+        "costs",
+        "periods",
+        "decision"
+      ]
+    }
+  ],
+  "eliminated_families": [
+    "sector rebound",
+    "closing momentum",
+    "opening breakout",
+    "overnight drift",
+    "trend/volatility allocation",
+    "volume shock continuation"
+  ],
+  "historical_contamination": "2011-2025 evaluated; 2026 through September 4 partly inspected; none reserved for new confirmation",
+  "current_status": "No strategy validated; no trading authorization",
+  "new_return_tests_run": 0
+}

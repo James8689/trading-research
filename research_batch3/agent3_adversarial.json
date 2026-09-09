@@ -1,0 +1,14 @@
+{
+  "agent": 3,
+  "status": "document_review_complete",
+  "ready_for_backtest": [],
+  "selected_for_document_feasibility_only": ["M2-A", "M2-B"],
+  "selection_is_alpha_claim": false,
+  "prices_downloaded": false,
+  "orders_placed": false,
+  "capital_usd": 2500,
+  "reserve": "H1 conditional on fixed contemporaneously observable routing",
+  "critical_falsifiers": ["allocation does not force selling", "scheduled payment is not actual delivery", "expected cash transition is not confirmed cash", "CEF routing can switch endogenously", "unobserved enrollment may eliminate market demand", "executable ask and full corporate-action costs erase discounts"],
+  "next_gate": "document feasibility before any return simulator",
+  "report": "research_batch3/agent3_adversarial.md"
+}

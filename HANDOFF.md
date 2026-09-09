@@ -1,5 +1,15 @@
 # Trading research handoff
 
+## September 9, 2026: imported repo, batch 3, agent network
+
+The full user-provided ZIP was extracted on Windows. Original git history and all cached data are preserved. Start with START_HERE.md and README.md for current status; older Linux Library upload instructions below are historical. checkpoint.py now supports a clearly labeled local-only save when that helper is absent.
+
+Batch 3 has four independent agent reports, adversarial plan review and two hashed feasibility-only plans: B3-H1-v1 CEF reinvestment routing and B3-M2A-v1 capped cash-election allocations. Read research_batch3/SYNTHESIS.md. No new return test, large download, simulator or order was run. Other hypotheses and failures remain recorded.
+
+James requested a private GitHub repo and an interchangeable frontier director/cheap-worker network with durable individual context. Configuration, role prompts, context/budget design, reproducibility docs and calibration fixtures are present. research_loop/runner.py was written by a worker that hit a usage limit before finishing tests. Treat it as an unverified draft, not operational unattended automation. Automatic calls are disabled and spending preference remains unresolved. Review and test runner before use; no background loop was launched.
+
+The private GitHub publication is the immediate priority. Preserve original commits; include cached data, source reports and figures. Future coding agents should finish runner verification, then perform frozen document probes. Research gates and no-live-trading constraints remain in force.
+
 ## Direction for the next research agent: create, do not copy
 
 James wants the next pass to use this archive as a starting point, not as a menu of published strategies to retest. His working theory is that widely published rules are competed away or too well known to provide much edge by themselves. Generate genuinely original hypotheses from first principles, using broad pretrained financial knowledge and careful reasoning to identify mechanisms that could still be underexploited. This is an instruction to be creatively ambitious, not permission to invent unsupported performance claims.

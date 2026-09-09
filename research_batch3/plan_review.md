@@ -1,0 +1,31 @@
+# Pre-freeze adversarial review
+
+Read `freeze_plans.py` without executing it. No changes to its rules, prices, simulator or orders. H1/M2-A feasibility selection is reasonable under the strict gates; my earlier preference for M2-B remains in the independent report.
+
+## Fix before serializing
+
+1. **H1 clock conflicts with shared clock.** Shared inputs must be observed by previous 16:00 and historical acceptance waits one complete session. H1 instead permits payment-close NAV arriving before next-day 09:00. Payment-close NAV is unlikely to be available at that same 16:00. Explicitly separate document knowledge latency from valuation publication latency, with one authoritative decision cutoff; preserve the no-retrospective-NAV requirement. Do not accidentally make H1 impossible or grant it a hindsight exception.
+
+2. **Cost sizing uses an undefined variable.** Define `cost_reserve_rate`, how fixed/minimum fees affect share count, whether stress runs independently resize, and whether slippage reserves are included in entry cost for the 5% stop. Fee lookup failure should block, as already stated. A rate alone cannot reserve fixed per-action charges.
+
+3. **Marking and stop monitoring are undefined.** Specify bid-marked held positions, last valid quote treatment, monitoring frequency, opening gaps, event ordering at coincident stop/timed exit/portfolio halt, and treatment outside regular hours. Specify which preceding equity mark sizes 10:00 orders. The 20% halt cannot be exact without a mark clock. Stale/missing quotes cannot silently suppress a stop.
+
+4. **Entry snapshot missing rule.** Define the maximum age and validity conditions for the 10:00 quote used to set the limit and size, including bid/ask nonzero, locked/crossed filtering and quote-unit normalization. Choose what happens if no valid snapshot exists. Exit rule needs an explicit retry/expiry policy across sessions and halts; “next feasible bids” can otherwise leave unlimited implementation choices.
+
+5. **Quote capacity is not a verified fill.** Serial top-of-book updates cannot prove replenished inventory rather than the same resting shares, and quotes do not prove our order was executed. Current exit language “without reusing same displayed inventory” is not generally implementable from NBBO alone. Simplest conservative rule: require one contemporaneous displayed bid size covering the entire residual order; otherwise mark unresolved execution pending a frozen model. Keep all historical/shadow fills labeled hypothetical. Change “measured adverse slippage” to modeled post-latency quote movement unless actual broker execution is eventually authorized.
+
+6. **H1 market-buy horizon is one session short for the proposed exit.** Entry P+1 with exit fifth session after entry is P+6, but the universe only requires five sessions after P of permitted purchases. This may intentionally include one recovery day; state that rationale or extend the contractual-window requirement to P+6. “Permits purchases” also does not guarantee demand continues through that date.
+
+7. **Control selection has future information and terminology ambiguity.** M2A excludes control ex/pay/election events in +/-10 sessions: use only events announced by the treated decision cutoff, and retain controls if a new action is announced afterward. H1's “all nonmarket-issuance-route funds” and then “select three” conflicts; name the issuance-route class and select exactly three unique sponsors by a declared representative-fund/tie-break rule. H1 nearest prior-close discount requires that NAV was already published by cutoff. M2A exposure category needs a finite taxonomy and explicit deterministic assignment/adjudication before returns.
+
+8. **Event estimand must specify eligibility and missing fills.** Say whether the primary event metric covers all eligible signals or only realistically fillable trades, whether matching precedes execution, how a missing control quote is treated, and whether stops apply to controls. Define the treatment return denominator and cost convention. Otherwise choosing a convenient matched sample or horizon can manufacture significance. Report no-fill events separately and include their cash outcome in the portfolio.
+
+9. **Bootstrap is not yet algorithmically frozen.** Specify event assignment to blocks (entry date), overlapping-block versus nonoverlapping-block scheme, wrap/truncate boundary treatment, unequal cluster weighting, and whether sample mean weights each event equally. A calendar block containing inactive days is not enough to determine the resampling algorithm. The strict multiple-comparison requirement is welcome but not a substitute for these choices.
+
+10. **Document sample order is potentially adaptive.** H1 first three “qualifying” documents from 30 candidates can hide 27 failures behind the 90% gate. Declare first 30 search hits, deterministic deduplication to events/funds, chronological acceptance sorting (accession order is not a universal chronological order across CIKs), and separately report search precision versus critical-field completeness. Freeze exact filing forms, text normalization and document/amendment linkage before collection. Missing matches and amendments belong in the ledger.
+
+## Matched-control causal caveat
+
+These controls estimate conditional predictive excess, not causally identified forced-flow alpha. H1 issuance routing is associated with premium/discount and underlying fund conditions; funds on opposite routing regimes are not exchangeable merely because three observable fields match. M2A distressed cash-conserving issuers differ from peers in unobserved risk, and final allocation may coincide with other information. Write “mechanism-consistent predictive evidence” rather than a causal pass. Predeclared negative controls, timestamps, accounting reconciliation and cross-issuer persistence can falsify the mechanism but cannot prove actual participant orders caused returns. Do not fix this by adding post-result control variables.
+
+No objection to freezing this as a **feasibility-only** plan once contradictions are resolved. Any simulator-level fields intentionally deferred must be labeled unfinalized and resolved in a separately hashed execution specification before price acquisition; otherwise the file overstates how exact its predeclaration is.

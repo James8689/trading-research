@@ -6,7 +6,15 @@ __pycache__/
 *.secret
 credentials.json
 *.zip
-raw/
-figures/
+# Historical research data and report figures are intentionally versioned.
 checkpoint_receipt.json
 *_receipt.json
+!research_batch3/freeze_receipt.json
+.venv/
+venv/
+.pytest_cache/
+.research_runtime/
+research_state/*.lock
+research_state/STOP
+research_state/**/events.jsonl
+research_state/**/stderr.txt

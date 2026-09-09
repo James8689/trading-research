@@ -1,0 +1,61 @@
+{
+  "agent": 4,
+  "status": "data_feasibility_only_no_alpha_claim",
+  "local_daily_fields": [
+    "meta",
+    "timestamp",
+    "events",
+    "indicators"
+  ],
+  "local_daily_indicator_fields": [
+    "quote",
+    "adjclose"
+  ],
+  "local_daily_event_fields": [
+    "dividends",
+    "splits"
+  ],
+  "local_intraday_columns": [
+    "timestamp",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "local_intraday_counts": {
+    "per_symbol": {
+      "AMD": 3759,
+      "AVGO": 2128,
+      "INTC": 2825,
+      "MU": 3317,
+      "NVDA": 3067,
+      "QCOM": 2547
+    },
+    "records": 17643,
+    "symbols": 6
+  },
+  "quote_named_files_found": 0,
+  "alpaca_tools_discovered": 26,
+  "alpaca_access_probed_this_session": false,
+  "historical_periods_contaminated": "2011-2025 and observations through 2026-09-04",
+  "prospective_start_candidate": "2026-10-01 conditional on prior rule/parser freeze",
+  "hypothesis_feasibility": {
+    "sec_constraint_release": "conditional: binding clause and delayed actor required",
+    "tender_completion": "conditional: identify buyer versus returned-share seller",
+    "distribution_reinvestment": "weak: historical routing/participation unavailable",
+    "other_constraint_release": "conditional and likely sparse"
+  },
+  "missing": [
+    "historical tradable universe and delistings",
+    "announcement and ingestion timestamps",
+    "event ledger and amendments",
+    "saved historical executable quote windows",
+    "dated DRIP rules and actual reinvestment capital",
+    "settled-cash model"
+  ],
+  "next_probe": "10 consecutive document-only equity tender events; no return inspection",
+  "probe_status": "proposed_not_run",
+  "downloads": 0,
+  "orders": 0
+}

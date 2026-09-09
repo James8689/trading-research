@@ -1,0 +1,9 @@
+{
+  "sha256": "7236bf799c63f8d9902617323bd501bdbbed6966d5829c0effcc79f1f7e807f5",
+  "file": "frozen_experiment_plans.json",
+  "experiment_ids": [
+    "B3-H1-v1",
+    "B3-M2A-v1"
+  ],
+  "state": "feasibility pending; no return data loaded"
+}

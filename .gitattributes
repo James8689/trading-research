@@ -1,0 +1,2 @@
+# Preserve source snapshots and frozen-plan hashes byte-for-byte across hosts.
+* -text
