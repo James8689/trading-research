@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "mode": "assisted_manual",
+  "entrypoint": "python -m research_loop",
+  "first_candidate": "B3-H1-v1",
+  "purpose": "Frozen document feasibility and evaluated role-prompt improvement",
+  "graph": {
+    "director_plan": [],
+    "researcher": ["director_plan"],
+    "data_auditor": ["director_plan"],
+    "reviewer": ["researcher", "data_auditor"],
+    "director_decision": ["reviewer"],
+    "improvement_proposal": ["director_decision"]
+  },
+  "automatic_provider_dispatch": false,
+  "broker_capabilities": [],
+  "note": "Documented graph. Runtime graph and admission rules are enforced in network.py; this file does not grant permissions."
+}

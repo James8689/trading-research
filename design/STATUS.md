@@ -1,6 +1,8 @@
 # Design checkpoint
 
-Updated: September 9, 2026. Scope: design and instruction scaffold only, per James's latest request.
+Updated: September 9, 2026. Scope: implementation of the bounded research network, now explicitly requested by James. Earlier design-only paragraphs below describe the prior checkpoint. See latest HANDOFF entry for active work.
+
+Implementation checkpoint 1: SQLite network, manual CLI, prompt-improvement gate and simulated budget ledger implemented; initial 30 synthetic tests passed. Director-owned prompt proposals, isolated context history and portable startup are in progress. No automatic provider calls or live trading. Do not run the legacy runner; its provider path is disabled.
 
 ## Established
 

@@ -2,7 +2,7 @@
 
 ## Mission
 
-**Current scope (September 9, 2026): design and scaffold only.** James explicitly asked to expand the agent-network instructions without building it out. Do not implement, repair or launch the draft runner unless subsequently requested. Read `design/STATUS.md` first. Keep design intent separate from tested functionality. Existing research plans remain frozen.
+**Current scope (September 9, 2026): implement the bounded research orchestration network.** James subsequently requested code, director-managed prompt improvement, separated durable contexts and a repeatable GitHub checkout/start workflow. This supersedes the earlier design-only scope. Read `design/STATUS.md` first. Offline/manual implementation and synthetic tests are authorized; no paid provider allowance or live trading is implied. Existing research plans remain frozen.
 
 Develop and test a low-cost, deterministic trading strategy for a modeled $2,500 account. The target is frequent opportunities and attractive risk-adjusted returns with an approximately 25% drawdown ceiling. No live trading or broker order submission is authorized by this repository.
 
@@ -24,4 +24,4 @@ When delegation is available, use bounded roles: hypothesis generator, data-avai
 
 ## Deployment gate
 
-No bot is built and no order is placed until a candidate passes reserved validation, cost stress tests, concentration checks, and 30–60 sessions of live quote or shadow-order testing. Alpaca is the preferred API-native execution path. Robinhood integration remains untested in this project.
+Research orchestration may now be built. No trading bot or order execution is authorized by this implementation task. Strategy implementation still requires reserved validation, cost stress tests, concentration checks, and 30–60 sessions of live quote or shadow-order testing. Robinhood read-only access succeeded in the conversation; no repository broker adapter has been tested.

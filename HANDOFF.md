@@ -1,5 +1,9 @@
 # Trading research handoff
 
+## September 9: implementation checkpoint 1
+
+James authorized implementation and clarified that the internal director should own worker prompt improvement, separate from the coding maintainer. Added deterministic SQLite network, source provenance, leased tasks, role separation, prompt evaluation/rollback registry, isolated budget accounting and manual CLI. Initial 30 synthetic tests passed. The old provider path now refuses execution. Active follow-up work: candidate-scoped context history, director-owned prompt proposals, frozen evaluation comparisons and portable one-command smoke/start. Treat this checkpoint as work in progress, not finished unattended operation. No provider/model or broker adapter runs, new strategy tests or frozen-plan changes. Runtime SQLite files are ignored; source/tests are backed up to GitHub incrementally.
+
 ## September 9: two additional external architecture posts
 
 Read both user-supplied X articles through FxTwitter after direct X retrieval returned 403. Added design/POST_INTEGRATION.md: source provenance, bounded summaries, and project-specific requirements for deterministic document intake, controller-owned budget reservations, persistent attempt ancestry and downstream status delivery. Preserve existing frozen candidates and scientific gates. External performance/model/pricing claims remain unverified. The service-agent article explicitly excludes trading. No runtime, model configuration or experiment was changed. Next implementation work can use the documented synthetic acceptance cases; current work remains design. A read-only Robinhood connection succeeded in this conversation, which does not validate repo execution code. Save/checkpoint, verify and push this documentation batch.

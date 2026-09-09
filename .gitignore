@@ -18,3 +18,4 @@ research_state/*.lock
 research_state/STOP
 research_state/**/events.jsonl
 research_state/**/stderr.txt
+research_state/*.sqlite3*

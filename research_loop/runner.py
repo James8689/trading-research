@@ -511,6 +511,7 @@ class ResearchLoop:
         return usage
 
     def _dispatch_codex(self, task: dict[str, Any], packet: str, state: dict[str, Any]) -> dict[str, Any]:
+        raise ResearchLoopError("Legacy provider adapter disabled. Use python -m research_loop for the tested manual network.")
         config = self.config
         task_dir = self.task_dir(task["id"])
         schema_path = task_dir / "output_schema.json"
@@ -578,6 +579,8 @@ class ResearchLoop:
         backend = backend or self.config["backend"]
         if backend not in {"manual", "codex"}:
             raise ResearchLoopError(f"Unsupported backend: {backend}")
+        if backend == "codex":
+            raise ResearchLoopError("Automatic provider dispatch is not implemented in the supported network; use python -m research_loop.")
         if backend == "manual":
             return self.next_packet()
         while True:
