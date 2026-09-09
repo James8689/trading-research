@@ -2,6 +2,8 @@
 
 ## September 9: shared-memory explanation and clean-checkout verification
 
+Final remote verification completed at code commit 2660d08c2faa80cba34c2c4e6006d4298ce4db79: the fresh GitHub checkout passed all 54 tests, parsed 37 Python files, verified all 153 archived files and started/resumed the same manual queue with 6 pending tasks and 6 active baseline prompts. No model calls or orders. This final documentation/checkpoint update records the result; no source behavior changed afterward.
+
 Clarified in docs/ORCHESTRATION.md how the three SQLite stores separate research, improvement and budget responsibilities; dependency completion makes the director ready, while actual model wake-up remains an unimplemented provider adapter. Every cycle packet inherits its candidate/question/frozen-plan hash and constraints. James requested all recent updates be pushed at completion.
 
 Fresh private GitHub clone of f551246 ran the offline demo, 53 tests, start and restart; the same cycle and six baseline prompts were preserved. Clone testing exposed the archive verifier's use of absolute path components: a checkout nested under .research_runtime skipped Python parsing. Fixed it to inspect paths relative to the checkout and added regression coverage. Current suite is 54 passing tests; 37 Python files parse and 153 data hashes verify. Final remote checkout verification follows this fix.
