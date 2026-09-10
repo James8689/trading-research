@@ -1,5 +1,9 @@
 # Trading research handoff
 
+## September 10: live director and bounded cycle
+
+James wanted the Director tab to be the internal director from the design: a model he can talk to, with the system prompt/brief, able to operate the graph and answer status. Wired Sol on `ROLE_DIRECTOR_PLAN` into Director free-text (slash commands still hit the controller). The model gets NETWORK/ORCHESTRATION identity rules, the 6k brief, and tools that only call existing Network methods. Added operator-triggered `run_cycle` (`/cycle`, Run this cycle) that walks at most six ready packets and stops on budget, STOP, or error. Missing sources should finish blocked. No unattended loop, no spend raise, no broker. 87 tests pass.
+
 ## September 10: one key per vendor
 
 Budget no longer asks for a model id before a key. Each vendor is a paste-key row. Saving an OpenAI key catalogs Sol (`gpt-5.6-sol`) and Astra (`gpt-6-astra`) and maps leftover director routes. Muse defaults to `https://api.meta.ai/v1` / `muse-spark-1.3`. Pipeline dropdowns list those labels and save on change, reusing the same vendor key.

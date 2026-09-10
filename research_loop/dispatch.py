@@ -118,6 +118,60 @@ def dispatch_next(root, role=None, env=None, transport=None, timeout=60):
     raise RuntimeError(last_error or 'no pending or leased task to dispatch')
 
 
+def _compact_step(value):
+    result = value.get('result') or {}
+    return {
+        'ok': True,
+        'role': value.get('role'),
+        'provider': value.get('provider'),
+        'model': value.get('model'),
+        'task_id': value.get('task_id'),
+        'decision': result.get('decision'),
+        'summary': (result.get('summary') or '')[:240],
+    }
+
+
+def _task_counts(tasks):
+    counts = {}
+    for task in tasks:
+        counts[task['state']] = counts.get(task['state'], 0) + 1
+    return counts
+
+
+def run_cycle(root, env=None, transport=None, timeout=60, max_packets=6):
+    """Operator-triggered walk of ready packets. Finite bound. No background loop."""
+    if type(max_packets) is not int or not 1 <= max_packets <= 6:
+        raise ValueError('max_packets must be 1..6')
+    env = merged_env(root, env)
+    network = Network(root)
+    apply_env_budget(BudgetLedger(root), env)
+    steps = []
+    stopped = None
+    for _ in range(max_packets):
+        policy = (network.status().get('policy') or {})
+        if policy.get('stopped'):
+            stopped = 'claims_stopped'
+            break
+        try:
+            value = dispatch_next(root, env=env, transport=transport, timeout=timeout)
+        except RuntimeError as exc:
+            stopped = str(exc)
+            break
+        steps.append(_compact_step(value))
+    tasks = network.status().get('tasks') or []
+    counts = _task_counts(tasks)
+    remaining = counts.get('pending', 0) + counts.get('leased', 0)
+    return {
+        'ok': True,
+        'steps': steps,
+        'packets': len(steps),
+        'stopped': stopped,
+        'counts': counts,
+        'cycle_finished': bool(tasks) and remaining == 0,
+        'note': 'Bounded operator run. Missing sources should finish as blocked, not as a validated strategy.',
+    }
+
+
 def _candidate_roles(network, role):
     if role:
         if role not in ROLES:

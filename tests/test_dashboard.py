@@ -94,6 +94,7 @@ class DashboardTests(unittest.TestCase):
         overview = self.call('/api/overview')
         self.assertEqual(overview['mode'], 'assisted_manual')
         self.assertFalse(overview['provider_dispatch'])
+        self.assertFalse(overview['director_live'])
         self.assertFalse(overview['broker_execution'])
         self.assertTrue(overview['budget']['blocked'])
         self.assertTrue(overview['freeze']['ok'])
@@ -103,6 +104,8 @@ class DashboardTests(unittest.TestCase):
         sent = self.call('/api/messages', {'body': 'Investigate B3-H1-v1 filings first.'}, csrf=csrf)
         self.assertEqual(sent['message']['author'], 'james')
         self.assertEqual(sent['reply']['author'], 'director')
+        self.assertFalse(sent.get('live'))
+        self.assertIn('not live', sent['reply']['body'])
         seeded = self.call('/api/control/seed-cef', {}, csrf=csrf)
         self.assertIn('cycle_id', seeded)
         families = self.call('/api/families')
@@ -126,6 +129,7 @@ class DashboardTests(unittest.TestCase):
         csrf = self.login()
         help_reply = self.call('/api/messages', {'body': '/help'}, csrf=csrf)['reply']['body']
         self.assertIn('/dispatch', help_reply)
+        self.assertIn('/cycle', help_reply)
         status = self.call('/api/messages', {'body': '/status'}, csrf=csrf)['reply']['body']
         self.assertIn('Waiting 0', status)
         self.assertIn('no paid step can run', status)

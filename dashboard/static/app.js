@@ -79,6 +79,15 @@ const AUDIT = {
     const value = detailJson(d) || {};
     return `Sent one ${value.role || ''} packet to ${value.model || 'a model'}.`.replace('  ', ' ');
   }],
+  cycle: ['Cycles', (d) => {
+    const value = detailJson(d) || {};
+    return `Ran a bounded cycle (${value.packets || 0} packet${value.packets === 1 ? '' : 's'}).`;
+  }],
+  director_tools: ['Messages', (d) => {
+    const rows = detailJson(d) || [];
+    const names = rows.map((row) => row.name).filter(Boolean);
+    return names.length ? `Director used ${names.join(', ')}.` : 'Director used a controller tool.';
+  }],
   idea: ['Ideas', () => 'Parked an idea.'],
   retrospective: ['Ideas', () => 'Recorded a retrospective.'],
   env_update: ['Keys', (d) => {
@@ -280,7 +289,9 @@ function renderDirector(inbox) {
 
   const problem = el('p', { class: 'muted' });
   const box = el('textarea', {
-    placeholder: 'Tell the director what to work on. Plain English, or a / command.',
+    placeholder: overview.director_live
+      ? 'Talk to the director. Ask for status, seed a cycle, or tell it to run the next packets.'
+      : 'Director model is not live yet. Use / commands, or map ROLE_DIRECTOR_PLAN and open a budget.',
     maxlength: '8000',
   });
   box.value = state.draft;
@@ -294,6 +305,9 @@ function renderDirector(inbox) {
     if (!body) return;
     problem.textContent = '';
     try {
+      problem.textContent = overview.director_live && !body.startsWith('/')
+        ? 'Director is working…'
+        : '';
       await post('/api/messages', { body });
       state.draft = '';
       await refresh();
@@ -301,7 +315,7 @@ function renderDirector(inbox) {
   }
 
   const commands = ['/brief', '/status', '/seed-cef', '/stop ', '/resume', '/idea ', '/help'];
-  if (overview.provider_dispatch) commands.splice(3, 0, '/dispatch ');
+  if (overview.provider_dispatch) commands.splice(3, 0, '/cycle', '/dispatch ');
   const chips = el('div', { class: 'chips' }, commands.map((cmd) => el('button', {
     class: 'chip', type: 'button', text: cmd.trim(),
     onclick: () => { box.value = cmd; state.draft = cmd; box.focus(); },
@@ -311,7 +325,9 @@ function renderDirector(inbox) {
     box,
     chips,
     el('div', { class: 'foot' }, [
-      el('p', { class: 'hint', text: 'Saved for the director. Free text starts nothing; slash commands act on the controller.' }),
+      el('p', { class: 'hint', text: overview.director_live
+        ? 'You are talking to the internal director (Sol). Slash commands still hit the controller directly.'
+        : 'Free text is saved until the director model is live. Slash commands already act on the controller.' }),
       btn('Send', send),
     ]),
     problem,
@@ -324,7 +340,7 @@ function renderDirector(inbox) {
       return el('div', { class: mine ? 'msg mine' : 'msg' }, [
         el('div', { class: 'head' }, [
           el('span', { class: 'who', text: mine ? state.operator : message.author === 'director' ? 'Director' : 'System' }),
-          el('span', { class: 'tag', text: mine ? 'instruction' : 'recorded locally' }),
+          el('span', { class: 'tag', text: mine ? 'you' : (message.author === 'director' ? (overview.director_live ? 'live director' : 'controller') : 'system') }),
           el('span', { class: 'time', text: stamp(message.created_at) }),
         ]),
         el('div', { class: 'body', text: message.body }),
@@ -345,6 +361,13 @@ function renderDirector(inbox) {
       el('span', { class: 't', text: 'Seed a research cycle' }),
       el('span', { class: 'd', text: 'Registers the CEF feasibility idea and fills the queue.' }),
     ]),
+    overview.provider_dispatch ? el('button', {
+      class: 'option', type: 'button',
+      onclick: () => runCycle(),
+    }, [
+      el('span', { class: 't', text: 'Run this cycle' }),
+      el('span', { class: 'd', text: 'Walks at most six ready packets, then stops. Missing sources finish blocked.' }),
+    ]) : null,
     el('button', {
       class: 'option', type: 'button',
       onclick: () => { state.showIngest = true; go('status'); },
@@ -354,7 +377,7 @@ function renderDirector(inbox) {
     ]),
     el('div', { class: 'rail-hint' }, [
       txt(overview.provider_dispatch
-        ? 'A spending period is open, so /dispatch can send one packet at a time. '
+        ? 'A spending period is open. Run this cycle, or /dispatch one packet. '
         : 'Paid steps stay blocked until an allowance is set through the controller. This console cannot raise it. '),
       el('button', { class: 'btn link', type: 'button', text: 'See the ledger', onclick: () => go('budget') }),
     ]),
@@ -390,7 +413,7 @@ function renderDirector(inbox) {
     el('div', { class: 'page-head' }, [
       el('h1', { text: `Good ${partOfDay}, ${state.operator}.` }),
       el('p', { class: 'sub', text: headline }),
-      el('p', { class: 'sub-2', text: 'A research controller. It discovers, rejects, and refines opportunities under frozen rules. It places no orders, and a rejection is a result.' }),
+      el('p', { class: 'sub-2', text: 'A research controller. The director operates the graph; workers run as leased packets. It places no orders, and a rejection is a result.' }),
     ]),
     el('div', { class: 'split' }, [
       el('div', { class: 'col' }, [composer, transcript]),
@@ -489,6 +512,9 @@ function renderStatus() {
     eyebrow('Controls'),
     el('div', { class: 'actions' }, [
       btn('Seed a research cycle', seedCycle),
+      (state.overview && state.overview.provider_dispatch)
+        ? btn('Run this cycle', runCycle, 'secondary')
+        : null,
       btn(stopped ? 'Already stopped' : 'Stop new claims', () => {
         if (stopped) { flash('New claims are already stopped.'); return; }
         state.showStop = !state.showStop;
@@ -966,6 +992,24 @@ async function dispatchOne() {
   try {
     const result = await post('/api/control/dispatch', {});
     flash(`Sent one ${result.role} packet to ${result.provider}:${result.model}. Decision: ${result.decision || 'none'}.`);
+  } catch (err) {
+    flash(err.message || String(err));
+  }
+  await refresh();
+}
+
+async function runCycle() {
+  try {
+    flash('Running the ready packets. This can take a few minutes…');
+    const result = await post('/api/control/cycle', {});
+    const n = result.packets || 0;
+    if (result.cycle_finished) {
+      flash(`Cycle finished after ${n} packet${n === 1 ? '' : 's'}. A blocked or rejected finish is a completed learning cycle.`);
+    } else if (result.stopped) {
+      flash(`Stopped after ${n} packet${n === 1 ? '' : 's'}: ${result.stopped}`);
+    } else {
+      flash(`Ran ${n} packet${n === 1 ? '' : 's'}. More work remains.`);
+    }
   } catch (err) {
     flash(err.message || String(err));
   }

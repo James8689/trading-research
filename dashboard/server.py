@@ -23,12 +23,13 @@ HELP = '''Commands I understand:
 /brief — the context I am holding
 /status — queue, claims, and spend
 /seed-cef — register the CEF cycle and fill the queue
+/cycle — walk at most six ready packets, then stop
 /stop <reason> — hold back new task claims
 /resume — admit task claims again
 /idea <text> — park an idea without opening a cycle
 /claim <worker> [role] — lease the next packet to a worker id
 /dispatch [role] — send one leased packet to its mapped model
-Free text is saved as a standing instruction. Nothing starts on its own.'''
+Plain English talks to the live director when Sol is mapped and a budget is open. Slash commands hit the controller directly.'''
 
 
 def _json(value):
@@ -247,6 +248,11 @@ class DashboardHandler(BaseHTTPRequestHandler):
                 value = self._dash().dispatch(body.get('role') or None)
                 self._store().audit('james', 'dispatch', json.dumps({'role': body.get('role'), 'task': value.get('task_id'), 'model': value.get('model')}))
                 return self._send(200, _json({k: v for k, v in value.items() if k != 'result'} | {'decision': (value.get('result') or {}).get('decision')}))
+            if path == '/api/control/cycle':
+                value = self._dash().run_cycle()
+                self._store().audit('james', 'cycle', json.dumps(
+                    {'packets': value.get('packets'), 'finished': value.get('cycle_finished'), 'stopped': value.get('stopped')}))
+                return self._send(200, _json(value))
             if path == '/api/families/retrospective':
                 value = self._dash().families.record_retrospective(
                     body.get('family_id', ''), body.get('bottleneck', ''),
@@ -288,7 +294,13 @@ class DashboardHandler(BaseHTTPRequestHandler):
         self._store().finish_job(job['job_id'], status, result, error)
         director = self._store().add_message('director', reply, brief, job['job_id'])
         self._store().audit('james', 'orchestrator_message', stored['message_id'])
-        return {'message': stored, 'reply': director, 'job': job | {'status': status, 'error': error}, 'brief': brief}
+        return {
+            'message': stored,
+            'reply': director,
+            'job': job | {'status': status, 'error': error},
+            'brief': brief,
+            'live': bool((result or {}).get('live')),
+        }
 
     def _dispatch_instruction(self, text, brief):
         """Plain-language replies. Mutating commands also append to the log."""
@@ -297,12 +309,27 @@ class DashboardHandler(BaseHTTPRequestHandler):
         queued = brief.get('pending_and_leased') or []
         next_id = queued[0]['task_id'] if queued else 'none'
         if not text.startswith('/'):
+            overview = self._dash().overview()
+            if overview.get('director_live'):
+                history = self._store().list_messages(limit=24)
+                value = self._dash().talk(text, history=history[:-1] if history else [], store=self._store())
+                tools = value.get('tools') or []
+                if tools:
+                    self._store().audit('james', 'director_tools', json.dumps(
+                        [{'name': row['name'], 'error': row.get('error')} for row in tools]))
+                return value['reply'], {
+                    'live': True,
+                    'model': value.get('model'),
+                    'provider': value.get('provider'),
+                    'tools': tools,
+                }, 'completed', None
             reply = (
-                'Saved as a standing instruction. I will fold it into the next plan I write. '
+                'Saved as a standing instruction. The director model is not live yet '
+                '(needs ROLE_DIRECTOR_PLAN, that vendor key, and an open budget period). '
                 'Nothing has started.\n'
                 f'Waiting {pending} · working {leased} · next {next_id}.'
             )
-            return reply, {'recorded': True}, 'queued', None
+            return reply, {'recorded': True, 'live': False}, 'queued', None
         parts = text.split(maxsplit=1)
         command = parts[0].lower()
         arg = parts[1] if len(parts) > 1 else ''
@@ -354,6 +381,8 @@ class DashboardHandler(BaseHTTPRequestHandler):
                 return self._claim_reply(arg)
             if command == '/dispatch':
                 return self._dispatch_reply(arg)
+            if command == '/cycle':
+                return self._cycle_reply()
             return (f'I do not know {command}. Try /help.', None, 'completed', None)
         except (ValueError, RuntimeError) as exc:
             return f'That did not work: {exc}', None, 'failed', str(exc)
@@ -406,6 +435,21 @@ class DashboardHandler(BaseHTTPRequestHandler):
         )
         return reply, value, 'completed', None
 
+    def _cycle_reply(self):
+        value = self._dash().run_cycle()
+        self._store().audit('james', 'cycle', json.dumps(
+            {'packets': value.get('packets'), 'finished': value.get('cycle_finished'), 'stopped': value.get('stopped')}))
+        lines = [f"Ran {value['packets']} packet(s)."]
+        for step in value.get('steps') or []:
+            lines.append(f"- {step['role']}: {step.get('decision') or 'no decision'} ({step.get('task_id')})")
+        if value.get('cycle_finished'):
+            lines.append('The queue for this cycle is empty. A blocked or rejected finish is a completed learning cycle.')
+        elif value.get('stopped'):
+            lines.append(f"Stopped: {value['stopped']}")
+        else:
+            lines.append('More work remains. Run /cycle again after fixing the stop reason.')
+        return '\n'.join(lines), value, 'completed', None
+
 
 def make_server(root, host='127.0.0.1', port=8787, password=None, secure=False):
     root = Path(root).resolve()
@@ -436,8 +480,10 @@ def serve(root, host=None, port=None, password=None):
     print('Single-operator access. Persistence is research_state/*.sqlite3 (gitignored).', flush=True)
     print('No broker. Model dispatch uses gitignored .env keys and a fail-closed ledger.', flush=True)
     overview = httpd.dashboard.overview()
+    if overview.get('director_live'):
+        print('Internal director is live on ROLE_DIRECTOR_PLAN. Plain English in Director talks to that model.', flush=True)
     if overview['provider_dispatch']:
-        print('Provider dispatch is available. /dispatch sends one packet per request.', flush=True)
+        print('Provider dispatch is available. /cycle walks at most six ready packets; /dispatch sends one.', flush=True)
     else:
         print('Provider dispatch is idle until .env has keys and a budget period.', flush=True)
     if httpd.generated_password:

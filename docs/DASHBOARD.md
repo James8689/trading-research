@@ -34,7 +34,7 @@ The server rejects any other variable name, refuses values containing quotes, ne
 
 **A key is not an allowance.** Budget variables stay out of the UI because the dashboard must not raise its own spend, so edit `RESEARCH_BUDGET_PERIOD` and `RESEARCH_BUDGET_LIMIT_USD` in `.env` yourself and restart. They replace the placeholder $0 ledger only and cannot raise an existing period.
 
-Once a key and a period both exist, Budget's **Dispatch one packet** or Director `/dispatch [role]` sends **one** leased packet. There is no background loop.
+Once a key and a period both exist, **Run this cycle** / Director `/cycle` walks at most six ready packets in graph order and then stops. **Dispatch one packet** or `/dispatch [role]` still sends one. There is no background loop.
 
 The UI shows provider, model id, and key last-four. `GET /api/env` never returns a secret. Brokers remain disabled.
 
@@ -46,7 +46,7 @@ Signing in lands on **Director**. Tab state lives in the URL (`#status`, `#pipel
 
 | Tab | What it does |
 |---|---|
-| Director | Persistent channel to the internal director. Free text is a standing instruction. Slash commands (`/help`, `/brief`, `/status`, `/seed-cef`, `/stop <reason>`, `/resume`, `/idea`, `/claim`, `/dispatch`) run controller actions and are recorded. The right rail is do-next, the bounded brief, and the idea inbox. |
+| Director | Talks to the internal director (Sol on `ROLE_DIRECTOR_PLAN`) when a key and budget period exist. The model reads the bounded brief and may call controller tools (`get_status`, `seed_cef`, `run_cycle`, …). Slash commands (`/help`, `/brief`, `/status`, `/seed-cef`, `/cycle`, `/stop <reason>`, `/resume`, `/idea`, `/claim`, `/dispatch`) still hit the controller directly. The right rail is do-next, the brief, and the idea inbox. |
 | Status | Plan integrity, queue, recent director decisions, seed / stop / resume, and document ingest. Stop requires a reason. A URL is stored as a label; nothing is downloaded. |
 | Pipeline | The six roles in order, with lease/attempt/rejection state. Opening a reviewer packet is an operator audit and is never fed back to that role. |
 | Ideas | One card per family: mechanism, frozen-plan hash, linked cycles, retrospectives. Empty state points at Status to seed. |

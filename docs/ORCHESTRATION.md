@@ -24,7 +24,7 @@ python -m research_loop next director --role director_plan
 
 `check` runs unit tests and verifies archived data/frozen-plan hashes. `start` initializes persistent state, bootstraps the six shipped role prompts and seeds the frozen CEF document-feasibility question. Repeating it does not reset budgets, prompts or create duplicate cycles. It leaves packets unclaimed until `next`. With no original documents ingested, this is a source-planning queue, not evidence of feasibility. Runtime defaults allow 12 lifetime task claims and 3 concurrent leases; raising limits requires an explicit controller change, not restarting.
 
-`dashboard` serves the single-operator UI on port 8787 (see [docs/DASHBOARD.md](docs/DASHBOARD.md)). Copy `.env.example` to `.env` for local keys and a test budget. `/dispatch` sends one packet. It is not an unattended model loop.
+`dashboard` serves the single-operator UI on port 8787 (see [docs/DASHBOARD.md](docs/DASHBOARD.md)). Copy `.env.example` to `.env` for local keys and a test budget. Plain English on the Director tab talks to the mapped director model. `/cycle` walks at most six ready packets. `/dispatch` sends one. It is not an unattended model loop.
 
 ## Three distinct actors
 
@@ -128,4 +128,4 @@ GitHub stores code, prompts, tests, design and research artifacts. Runtime datab
 
 ## Next engineering boundary
 
-The supported runtime can dispatch **one** mapped role per operator request using gitignored `.env` keys. It is not an unattended loop. Evaluator isolation is still same-user. No background scheduler, source download or trading integration is activated by putting keys in `.env`.
+The supported runtime can dispatch mapped roles using gitignored `.env` keys. `/cycle` walks at most six ready packets on an operator request. It is not an unattended loop. Evaluator isolation is still same-user. No background scheduler, source download or trading integration is activated by putting keys in `.env`.

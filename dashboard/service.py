@@ -7,7 +7,8 @@ import json
 import sqlite3
 
 from research_loop.budget import BudgetLedger
-from research_loop.dispatch import apply_env_budget, dispatch_next
+from research_loop.director_chat import director_ready, talk as director_talk
+from research_loop.dispatch import apply_env_budget, dispatch_next, run_cycle
 from research_loop.envfile import is_writable_key, env_state, merged_env, write_env_values
 from research_loop.families import FamilyRegistry
 from research_loop.improvement import ImprovementRegistry
@@ -66,6 +67,7 @@ class Dashboard:
         return {
             'mode': 'assisted_manual',
             'provider_dispatch': self._dispatch_ready(budget, routes),
+            'director_live': director_ready(self.env, budget),
             'routes': routes,
             'broker_execution': False,
             'spend_approved': budget['limit_microusd'] > 0,
@@ -206,6 +208,12 @@ class Dashboard:
 
     def dispatch(self, role=None):
         return dispatch_next(self.root, role=role or None, env=self.env)
+
+    def run_cycle(self, transport=None):
+        return run_cycle(self.root, env=self.env, transport=transport)
+
+    def talk(self, text, history=None, store=None, transport=None):
+        return director_talk(self.root, text, history=history, env=self.env, store=store, transport=transport)
 
     def seed_cef(self, evidence=None):
         return seed_cef(self.root, self.network, evidence or [])
