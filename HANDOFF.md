@@ -1,5 +1,25 @@
 # Trading research handoff
 
+## September 10: one key per vendor
+
+Budget no longer asks for a model id before a key. Each vendor is a paste-key row. Saving an OpenAI key catalogs Sol (`gpt-5.6-sol`) and Astra (`gpt-6-astra`) and maps leftover director routes. Muse defaults to `https://api.meta.ai/v1` / `muse-spark-1.3`. Pipeline dropdowns list those labels and save on change, reusing the same vendor key.
+
+## September 10: one vendor, several models
+
+The Budget add-model form only listed openai / anthropic / xai, and `.env.example` treated each vendor as a single default model (researcher was mapped to Grok). That contradicted `design/OPPORTUNITY_ENGINE.md`: Sol and Astra are two different OpenAI models; Muse Spark is the researcher host. Routing is now per pipeline step. The plan table, `.env.example`, intended-stack list, and catalog all allow the same vendor twice. Adding a second OpenAI model no longer overwrites `OPENAI_MODEL`. Custom named hosts remain available via New provider.
+
+## September 10: operator console redesign
+
+Implemented the six-tab design from the Opportunity Engine handoff against the live API. Tabs renamed Mission/Roles/Families/Spend/Orchestrator/Audit → **Director, Status, Pipeline, Ideas, Budget, History**. Sign-in lands on Director. Every control maps to an existing write (`seed-cef`, `ingest`, `stop` with a required reason, `resume`, idea inbox, retrospective, `/api/env`); nothing on screen offers to raise an allowance or skip a gate. Dispatch is shown only when a period, a mapping, and a key all exist. `/stop`, `/resume`, `/seed-cef`, `/claim`, and `/dispatch` now reply in plain language and append a History entry. The rail collapses to a wrapping top bar under 860px so all six destinations stay visible on a phone. 75 tests pass.
+
+## September 10: paste API keys into .env from the console
+
+James asked to paste provider keys into the dashboard and have them stored in the local env file. Added `write_env_values` / `env_state` in `research_loop/envfile.py` (atomic 0600 rewrite that preserves comments, rewrites every duplicate line so a stale one cannot shadow the new value, and applies the change to `os.environ` so no restart is needed), `Dashboard.env_view` / `save_env`, and `GET`/`POST /api/env`. Writes are allowlisted to the nine provider variables plus the six `ROLE_*` routes; `DASHBOARD_PASSWORD` and every `RESEARCH_BUDGET_*` knob are explicitly locked, so the console still cannot raise its own spend. Values containing quotes, newlines, or non-printable characters are refused, plain `http` base URLs are allowed only on loopback, and route specs are validated before the file is touched. `GET /api/env` returns last-four only; the audit log records the variable name and set/cleared, never the value. A key alone does not enable dispatch — the budget period is still a manual `.env` edit plus a restart. 74 tests pass.
+
+## September 10: local .env model dispatch
+
+James asked to connect models for local tests via an env file (not cloud secret management yet). Added gitignored `.env` / `.env.example`, stdlib OpenAI-compatible and Anthropic adapters, role→provider:model routing, one-packet `dispatch_next`, `/dispatch` in the dashboard, and `BudgetLedger.open_period` so a `manual-no-spend` $0 placeholder can be replaced by `RESEARCH_BUDGET_PERIOD` + `RESEARCH_BUDGET_LIMIT_USD`. Secrets never enter Git, packets, or API JSON. Each call reserves `RESEARCH_MAX_CALL_USD` and settles usage or that reservation. No unattended loop, no broker, legacy runner still disabled. Copy `.env.example` to `.env`, fill keys, restart the dashboard, Seed CEF, then Dispatch next.
+
 ## September 10: operator dashboard and minimal family registry
 
 James asked for a persistent, internet-reachable, single-user control plane rather than handing the repo to an external agent team. Added `python go.py --mode dashboard`: stdlib HTTP UI with password sessions, CSRF, orchestrator transcript, idea inbox, spend ledger view, role/task audit, ingest/seed/stop/claim/submit through existing controller methods, and a minimal `FamilyRegistry` that `seed-cef` records for B3-H1-v1. UI/research SQLite files stay in gitignored `research_state/` so a cloud volume remount continues the same console. No provider adapter, no allowance change, no live trading. Free-text director messages persist; they do not start a model under manual-no-spend. See docs/DASHBOARD.md. Next scientific work remains the real B3-H1-v1 document cycle, now operable from the UI.

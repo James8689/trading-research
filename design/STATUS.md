@@ -4,7 +4,7 @@ Updated September 10, 2026. James authorized an operator dashboard with durable 
 
 ## Implemented
 
-- `python go.py --mode dashboard`: password-protected operator UI over the same runtime, with a persistent director console, spend ledger, role audit and minimal family registry. No model/broker dispatch. See `docs/DASHBOARD.md`.
+- `python go.py --mode dashboard`: password-protected operator UI. Gitignored `.env` can map roles to OpenAI/Anthropic/xAI models and open a local test budget from the $0 placeholder. Dispatch is one packet per request. No broker. See `docs/DASHBOARD.md`.
 - `python go.py`: repeatable offline six-stage network demonstration with scripted workers.
 - `python go.py --mode start`: idempotent manual CEF feasibility queue and initial versioned prompts.
 - SQLite source revisions, deduplication, transactional task leases, independent-role checks, frozen packets/results, rejected-submission audit and failure recovery.
@@ -29,8 +29,8 @@ B3-H1-v1 and B3-M2A-v1 remain frozen source-feasibility candidates only. Previou
 
 Latest design correction: EVIDENCE_LED_DEVELOPMENT.md prioritizes a minimal family registry and one real manual document-feasibility cycle before architectural expansion. It specifies recurring-pattern evidence, substantive evaluation and probation for adaptation, plus independent builder feasibility review before blueprint readiness. These additional gates are not yet runtime-enforced. The earlier broad roadmap is now sequenced around observed bottlenecks.
 
-Latest mission direction: read OPPORTUNITY_ENGINE.md. The engine should explore broadly, preserve semantic idea-family history, learn through memory/prompts/routing, and deliver validated blueprints to a separate production builder. The preferred diverse model stack is recorded as configuration intent, not verified adapters. Next build priority is the canonical mission/portfolio and opportunity-family/blueprint contracts around existing gates. Automatic provider execution remains necessary later; the broader loop is not implemented yet.
+Latest mission direction: read OPPORTUNITY_ENGINE.md. The engine should explore broadly, preserve semantic idea-family history, learn through memory/prompts/routing, and deliver validated blueprints to a separate production builder. The preferred diverse model stack is recorded as configuration intent, not verified adapters. Routing is per pipeline step: Sol and Astra are two OpenAI models; Muse Spark is the researcher host, not Grok. `.env.example` and the Budget catalog follow that table. Next build priority is the canonical mission/portfolio and opportunity-family/blueprint contracts around existing gates. Automatic provider execution remains necessary later; the broader loop is not implemented yet.
 
-Automatic provider execution is not implemented. Before unattended research, select billing/access mode, implement one bounded provider adapter with real telemetry and role isolation, and test it. Evaluation labels are withheld from packets but readable to a same-user process; do not claim technically sealed holdouts. Broad design documents describe further requirements, not all implemented capabilities.
+Automatic provider execution is a bounded, operator-triggered adapter (`/dispatch` or Budget → Dispatch one packet). It is not an unattended loop. The legacy `research_loop/runner.py` path stays disabled. Evaluation labels are withheld from packets but readable to a same-user process; do not claim technically sealed holdouts.
 
 Resume from START_HERE.md and docs/ORCHESTRATION.md. Use the manual queue or implement the next explicitly scoped provider component; do not resume the obsolete runner or silently spend money. Save and push completed batches to the private GitHub repo.

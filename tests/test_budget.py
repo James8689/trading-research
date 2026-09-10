@@ -22,6 +22,22 @@ class BudgetTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.ledger.initialize(period, limit)
 
+    def test_open_period_replaces_placeholder_and_refuses_raise(self):
+        self.ledger.initialize("manual-no-spend", 0)
+        opened = self.ledger.open_period("local-test", 10_000_000)
+        self.assertEqual(opened["period_id"], "local-test")
+        self.assertEqual(opened["limit_microusd"], 10_000_000)
+        self.ledger.reserve("a", 1)
+        self.ledger.record_dispatch("a", "r")
+        self.ledger.settle("a", 1)
+        again = self.ledger.open_period("local-test", 10_000_000)
+        self.assertEqual(again["period_id"], "local-test")
+        with self.assertRaises(ValueError):
+            self.ledger.open_period("local-test", 20_000_000)
+        newer = self.ledger.open_period("local-test-2", 5_000_000)
+        self.assertEqual(newer["spent_microusd"], 0)
+        self.assertEqual(newer["limit_microusd"], 5_000_000)
+
     def test_concurrent_final_budget_contention(self):
         self.ledger.initialize("simulation", 10)
         gate = Barrier(2)

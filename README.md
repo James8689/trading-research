@@ -17,7 +17,7 @@ python go.py --mode dashboard
 
 The default runs a complete **synthetic offline demonstration**. `check` runs tests and archive verification. `start` prepares the real CEF document-feasibility queue with durable state; it does not start a model process. `dashboard` is the password-protected operator UI over the same state; see [docs/DASHBOARD.md](docs/DASHBOARD.md). On Windows you can use `py -3` instead of `python`.
 
-The network has an internal director, independent researcher/data auditor/reviewer roles, candidate-scoped memory, immutable packets, prompt-improvement evaluations and rollback. The internal director owns worker-prompt proposals; the coding maintainer owns controller and evaluator code. Automatic provider dispatch, paid inference and brokerage execution are not implemented in the supported runtime.
+The network has an internal director, independent researcher/data auditor/reviewer roles, candidate-scoped memory, immutable packets, prompt-improvement evaluations and rollback. Local model tests use a gitignored `.env` and one-packet dispatch; brokerage execution is not implemented. The legacy runner provider path stays disabled.
 
 Read [the operating guide](docs/ORCHESTRATION.md) for commands, context ownership, prompt promotion, interruption recovery and private runtime backups. Read [START_HERE.md](START_HERE.md) to resume as a new coding agent.
 
