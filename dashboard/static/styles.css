@@ -44,8 +44,8 @@ input, textarea { background: var(--bg); border: 1px solid var(--line); border-r
 textarea { min-height: 90px; width: 100%; }
 .error { color: var(--bad); min-height: 1.2em; }
 .hidden { display: none !important; }
-.chat { display: grid; grid-template-rows: 1fr auto; min-height: 62vh; gap: 0.8rem; }
-.transcript { overflow: auto; display: flex; flex-direction: column; gap: 0.6rem; max-height: 52vh; padding-right: 0.3rem; }
+.composer { margin: 0.4rem 0 0.8rem; }
+.transcript { overflow: auto; display: flex; flex-direction: column; gap: 0.6rem; max-height: 42vh; padding-right: 0.3rem; min-height: 8rem; }
 .bubble { border: 1px solid var(--line); border-radius: 8px; padding: 0.7rem 0.8rem; background: var(--panel-2); white-space: pre-wrap; }
 .bubble.james { border-color: #2d4c66; }
 .bubble.director { border-color: #4c3d78; }

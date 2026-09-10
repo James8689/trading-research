@@ -301,6 +301,17 @@ function renderFamilies(data) {
   );
 }
 
+function briefSummary(brief) {
+  const next = (brief?.pending_and_leased || [])[0];
+  return [
+    row('Owner', brief?.context_owner || '—'),
+    row('Objective', (brief?.objective || '').slice(0, 180)),
+    row('Pending / leased', String(brief?.counts?.pending_and_leased_total ?? 0)),
+    row('Next task', next ? `${next.role} · ${next.state}` : 'none'),
+    row('Stopped', brief?.policy?.stopped ? 'yes' : 'no'),
+  ];
+}
+
 function renderOrchestrator(data, brief) {
   const main = $('main');
   const transcript = el('div', { class: 'transcript' });
@@ -310,9 +321,16 @@ function renderOrchestrator(data, brief) {
       el('div', { text: m.body }),
     ]));
   });
+  if (!(data.messages || []).length) {
+    transcript.append(el('p', { class: 'muted', text: 'No messages yet. Send an instruction or /help.' }));
+  }
   const composer = el('form', { class: 'composer' });
-  const box = el('textarea', { placeholder: 'Talk to the internal director. Free text is persisted. /help for commands.', maxlength: '8000' });
-  composer.append(box, el('button', { type: 'submit', text: 'Send' }));
+  const box = el('textarea', {
+    id: 'director-input',
+    placeholder: 'Talk to the internal director. Free text is persisted. /help for commands.',
+    maxlength: '8000',
+  });
+  composer.append(box, el('button', { id: 'director-send', type: 'submit', text: 'Send' }));
   composer.addEventListener('submit', async (ev) => {
     ev.preventDefault();
     if (!box.value.trim()) return;
@@ -321,8 +339,8 @@ function renderOrchestrator(data, brief) {
     setView('orchestrator');
   });
   const ideas = el('form');
-  const ideaBox = el('textarea', { placeholder: 'Capture an idea without running a cycle.', maxlength: '4000' });
-  ideas.append(ideaBox, el('div', { class: 'actions' }, [el('button', { type: 'submit', text: 'Save idea' })]));
+  const ideaBox = el('textarea', { id: 'idea-input', placeholder: 'Capture an idea without running a cycle.', maxlength: '4000' });
+  ideas.append(ideaBox, el('div', { class: 'actions' }, [el('button', { id: 'idea-save', type: 'submit', text: 'Save idea' })]));
   ideas.addEventListener('submit', async (ev) => {
     ev.preventDefault();
     if (!ideaBox.value.trim()) return;
@@ -331,20 +349,21 @@ function renderOrchestrator(data, brief) {
     setView('orchestrator');
   });
   main.replaceChildren(
-    el('div', { class: 'grid wide' }, [
-      el('section', { class: 'card chat' }, [
-        el('h2', { text: 'Director console' }),
-        el('p', { class: 'muted', text: 'Persistent. The director owns planning and prompt proposals, not the controller or the budget.' }),
-        transcript,
-        composer,
-      ]),
-      el('div', { class: 'grid' }, [
-        card('Live brief', [el('pre', { class: 'mono', text: JSON.stringify(brief, null, 2) })]),
-        card('Standing jobs', [(data.jobs || []).map((j) => row(j.kind, `${j.status} · ${j.job_id.slice(0, 10)}`))]),
-        card('Idea inbox', [
-          ...(data.ideas || []).map((i) => el('p', { text: i.body })),
-          ideas,
-        ]),
+    el('section', { class: 'card' }, [
+      el('h2', { text: 'Director console' }),
+      el('p', { class: 'muted', text: 'Persistent. The director owns planning and prompt proposals, not the controller or the budget. No model is started until you approve spend.' }),
+      composer,
+      transcript,
+    ]),
+    el('div', { class: 'grid wide', style: 'margin-top:0.9rem' }, [
+      card('Live brief', briefSummary(brief)),
+      card('Standing jobs', [(data.jobs || []).length
+        ? (data.jobs || []).map((j) => row(j.kind, `${j.status} · ${j.job_id.slice(0, 10)}`))
+        : [el('p', { class: 'muted', text: 'None yet.' })]],
+      ),
+      card('Idea inbox', [
+        ...(data.ideas || []).map((i) => el('p', { text: i.body })),
+        ideas,
       ]),
     ]),
   );
