@@ -31,6 +31,6 @@ Latest design correction: EVIDENCE_LED_DEVELOPMENT.md prioritizes a minimal fami
 
 Latest mission direction: read OPPORTUNITY_ENGINE.md. The engine should explore broadly, preserve semantic idea-family history, learn through memory/prompts/routing, and deliver validated blueprints to a separate production builder. The preferred diverse model stack is recorded as configuration intent, not verified adapters. Next build priority is the canonical mission/portfolio and opportunity-family/blueprint contracts around existing gates. Automatic provider execution remains necessary later; the broader loop is not implemented yet.
 
-Automatic provider execution is a bounded, operator-triggered adapter (`/dispatch` or Mission/Spend). It is not an unattended loop. The legacy `research_loop/runner.py` path stays disabled. Evaluation labels are withheld from packets but readable to a same-user process; do not claim technically sealed holdouts.
+Automatic provider execution is a bounded, operator-triggered adapter (`/dispatch` or Budget → Dispatch one packet). It is not an unattended loop. The legacy `research_loop/runner.py` path stays disabled. Evaluation labels are withheld from packets but readable to a same-user process; do not claim technically sealed holdouts.
 
 Resume from START_HERE.md and docs/ORCHESTRATION.md. Use the manual queue or implement the next explicitly scoped provider component; do not resume the obsolete runner or silently spend money. Save and push completed batches to the private GitHub repo.

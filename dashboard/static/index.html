@@ -3,38 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
   <title>Opportunity Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
   <div id="login" class="login hidden">
     <form id="login-form" class="login-card">
-      <p class="eyebrow">James only</p>
+      <p class="eyebrow">Single operator</p>
       <h1>Opportunity Engine</h1>
-      <p class="muted">Research control plane. No broker. No paid dispatch until you set an allowance.</p>
-      <label>Password <input id="password" type="password" autocomplete="current-password" required></label>
-      <button type="submit">Enter</button>
+      <p class="lede">A research controller. It places no orders, and nothing paid can run until an allowance is opened through the controller.</p>
+      <label class="field">
+        <span class="lbl">Password</span>
+        <input id="password" type="password" autocomplete="current-password" required>
+      </label>
+      <button type="submit" class="btn">Sign in</button>
       <p id="login-error" class="error"></p>
     </form>
   </div>
 
-  <div id="app" class="hidden">
-    <header>
-      <div class="brand">
-        <strong>Opportunity Engine</strong>
-        <span class="pill" id="mode-pill">manual</span>
-        <span class="pill warn" id="spend-pill">spend</span>
+  <div id="app" class="shell hidden">
+    <aside class="rail">
+      <div class="rail-top">
+        <div class="wordmark">Opportunity Engine</div>
+        <div class="rail-note">Manual mode — nothing<br>runs on its own.</div>
       </div>
-      <nav>
-        <button data-view="home" class="active">Mission</button>
-        <button data-view="roles">Roles</button>
-        <button data-view="families">Families</button>
-        <button data-view="spend">Spend</button>
-        <button data-view="orchestrator">Orchestrator</button>
-        <button data-view="audit">Audit</button>
-      </nav>
-      <button id="logout" class="ghost">Sign out</button>
-    </header>
+      <nav class="nav" id="nav"></nav>
+      <div class="rail-foot">
+        <div class="rail-card" id="rail-state"></div>
+        <div class="rail-user">
+          <span class="who" id="operator">james</span>
+          <button id="logout" class="btn link">Sign out</button>
+        </div>
+      </div>
+    </aside>
     <main id="main"></main>
   </div>
   <script src="/static/app.js"></script>

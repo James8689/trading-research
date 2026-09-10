@@ -19,7 +19,7 @@ Keys live in a gitignored `.env` at the repository root. Process environment var
 
 Two ways to fill it:
 
-1. **From the console.** Spend → *Provider keys · .env*. Pick a vendor, paste the key, optionally set a default model and base URL, and save. Role routing (`provider:model`) is edited in the same card. The value is written straight into `.env` and applied to the running process, so a paste takes effect without a restart.
+1. **From the console.** Budget → *Provider keys · .env*. Pick a vendor, paste the key, optionally set a default model and base URL, and save. Role routing (`provider:model`) is edited in the same card. The value is written straight into `.env` and applied to the running process, so a paste takes effect without a restart.
 2. **By hand.** Copy `.env.example` to `.env` and edit it, then restart.
 
 The console can only write these variables:
@@ -33,13 +33,26 @@ The server rejects any other variable name, refuses values containing quotes, ne
 
 **A key is not an allowance.** Budget variables stay out of the UI because the dashboard must not raise its own spend, so edit `RESEARCH_BUDGET_PERIOD` and `RESEARCH_BUDGET_LIMIT_USD` in `.env` yourself and restart. They replace the placeholder $0 ledger only and cannot raise an existing period.
 
-Once a key and a period both exist, **Dispatch next model call** (Mission or Spend) or Orchestrator `/dispatch [role]` sends **one** leased packet. There is no background loop.
+Once a key and a period both exist, Budget's **Dispatch one packet** or Director `/dispatch [role]` sends **one** leased packet. There is no background loop.
 
 The UI shows provider, model id, and key last-four. `GET /api/env` never returns a secret. Brokers remain disabled.
 
-Equivalent: `python -m dashboard`. The process listens on `0.0.0.0:8787` by default (`DASHBOARD_HOST`, `DASHBOARD_PORT`). If `DASHBOARD_PASSWORD` is unset on a fresh `research_state/`, a password is generated and printed once.
+Open the printed URL, sign in, and keep the process running. Sign-in cookies last 30 days and are stored in `research_state/ui.sqlite3`. The **messages, ideas, jobs, families and research queues** survive a restart of the same volume.
 
-Open the printed URL, sign in, and keep the process running. Sign-in cookies last 30 days and are stored in `research_state/ui.sqlite3`, so a restart of the same volume keeps you logged in only after you sign in again on that browser; the **messages, ideas, jobs, families and research queues** survive the restart.
+## Tabs
+
+Signing in lands on **Director**. Tab state lives in the URL (`#status`, `#pipeline/researcher`, `#task/<id>`).
+
+| Tab | What it does |
+|---|---|
+| Director | Persistent channel to the internal director. Free text is a standing instruction. Slash commands (`/help`, `/brief`, `/status`, `/seed-cef`, `/stop <reason>`, `/resume`, `/idea`, `/claim`, `/dispatch`) run controller actions and are recorded. The right rail is do-next, the bounded brief, and the idea inbox. |
+| Status | Plan integrity, queue, recent director decisions, seed / stop / resume, and document ingest. Stop requires a reason. A URL is stored as a label; nothing is downloaded. |
+| Pipeline | The six roles in order, with lease/attempt/rejection state. Opening a reviewer packet is an operator audit and is never fed back to that role. |
+| Ideas | One card per family: mechanism, frozen-plan hash, linked cycles, retrospectives. Empty state points at Status to seed. |
+| Budget | Fail-closed ledger, attempts, and the `.env` key form. There is no control that opens or raises a period. Dispatch appears only when a period, a mapping, and a key all exist. |
+| History | Append-only operator log plus ingested-source metadata. Filters are client-side. |
+
+The left rail is a 244px column on a desktop and a wrapping top bar under ~860px. Status chips on the rail (claims admitted/stopped, spend blocked/open) are the same numbers as Status and Budget.
 
 ## What persists
 
@@ -72,6 +85,6 @@ The dashboard is not a multi-tenant product. Do not publish it without TLS and a
 
 ## Authority
 
-Writes go through `Network`, `FamilyRegistry` and `BudgetLedger`. The UI cannot raise the allowance, reset leases, or promote prompts. The orchestrator box talks to the **internal director console**: standing instructions and slash-commands (`/help`, `/seed-cef`, `/stop`, `/resume`, `/claim`, `/idea`, `/brief`, `/status`). Free-text messages are stored; they do not start a model while `manual-no-spend` remains in force.
+Writes go through `Network`, `FamilyRegistry` and `BudgetLedger`. The UI cannot raise the allowance, reset leases, or promote prompts. Director is the persistent console: standing instructions and slash commands. Free-text messages are stored; they do not start a model while spend is blocked.
 
 The director still cannot approve its own prompt changes or waive scientific gates. Reviewer packets stay blinded in the worker path; opening a packet in the UI is an audit action, not a way to feed extra context into that role.

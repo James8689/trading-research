@@ -115,6 +115,31 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(overview['cycles'][0]['cycle_id'], seeded['cycle_id'])
         self.assertEqual(overview['families']['families'][0]['candidate_id'], 'B3-H1-v1')
 
+    def test_slash_commands_reply_in_plain_language_and_log(self):
+        csrf = self.login()
+        help_reply = self.call('/api/messages', {'body': '/help'}, csrf=csrf)['reply']['body']
+        self.assertIn('/dispatch', help_reply)
+        status = self.call('/api/messages', {'body': '/status'}, csrf=csrf)['reply']['body']
+        self.assertIn('Waiting 0', status)
+        self.assertIn('no paid step can run', status)
+        self.assertIn('Frozen plan verified', status)
+        unknown = self.call('/api/messages', {'body': '/nope'}, csrf=csrf)['reply']['body']
+        self.assertEqual(unknown, 'I do not know /nope. Try /help.')
+        stop = self.call('/api/messages', {'body': '/stop backlog is too deep'}, csrf=csrf)['reply']['body']
+        self.assertIn('nothing is wiped', stop)
+        self.assertTrue(self.call('/api/overview')['policy']['stopped'])
+        resume = self.call('/api/messages', {'body': '/resume'}, csrf=csrf)['reply']['body']
+        self.assertIn('never dropped', resume)
+        self.assertFalse(self.call('/api/overview')['policy']['stopped'])
+        seeded = self.call('/api/messages', {'body': '/seed-cef'}, csrf=csrf)['reply']['body']
+        self.assertIn('No model was called', seeded)
+        again = self.call('/api/messages', {'body': '/seed-cef'}, csrf=csrf)['reply']['body']
+        self.assertIn('Seeding again is refused', again)
+        missing = self.call('/api/messages', {'body': '/stop'}, csrf=csrf)['reply']['body']
+        self.assertIn('usage: /stop <reason>', missing)
+        commands = [a['detail'] for a in self.call('/api/audit')['audit'] if a['action'] == 'command']
+        self.assertEqual(sorted(set(commands)), ['/resume', '/seed-cef', '/stop'])
+
     def test_env_key_saved_to_file_and_never_returned(self):
         csrf = self.login()
         for name in ('OPENAI_API_KEY', 'OPENAI_MODEL', 'ROLE_RESEARCHER'):

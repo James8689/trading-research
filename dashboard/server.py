@@ -19,6 +19,16 @@ COOKIE = 'dashboard_session'
 MAX_BODY = 120_000
 LOGIN_WINDOW = 600
 LOGIN_LIMIT = 8
+HELP = '''Commands I understand:
+/brief — the context I am holding
+/status — queue, claims, and spend
+/seed-cef — register the CEF cycle and fill the queue
+/stop <reason> — hold back new task claims
+/resume — admit task claims again
+/idea <text> — park an idea without opening a cycle
+/claim <worker> [role] — lease the next packet to a worker id
+/dispatch [role] — send one leased packet to its mapped model
+Free text is saved as a standing instruction. Nothing starts on its own.'''
 
 
 def _json(value):
@@ -281,17 +291,16 @@ class DashboardHandler(BaseHTTPRequestHandler):
         return {'message': stored, 'reply': director, 'job': job | {'status': status, 'error': error}, 'brief': brief}
 
     def _dispatch_instruction(self, text, brief):
+        """Plain-language replies. Mutating commands also append to the log."""
+        counts = brief.get('task_counts') or {}
+        pending, leased = counts.get('pending', 0), counts.get('leased', 0)
+        queued = brief.get('pending_and_leased') or []
+        next_id = queued[0]['task_id'] if queued else 'none'
         if not text.startswith('/'):
-            pending = brief.get('pending_and_leased') or []
-            nxt = pending[0] if pending else None
             reply = (
-                'Instruction recorded and persisted. '
-                f"Stopped={brief.get('policy', {}).get('stopped')}. "
-                f"Next visible work: {nxt['role'] if nxt else 'none'} "
-                f"({nxt['task_id'] if nxt else 'n/a'}).\n"
-                'I am the internal director console. Use /dispatch [role] to send one leased packet '
-                'to the mapped model. I cannot raise the budget, approve my own prompt changes, or trade. '
-                'Prefix a message with /help for controller commands.'
+                'Saved as a standing instruction. I will fold it into the next plan I write. '
+                'Nothing has started.\n'
+                f'Waiting {pending} · working {leased} · next {next_id}.'
             )
             return reply, {'recorded': True}, 'queued', None
         parts = text.split(maxsplit=1)
@@ -299,58 +308,103 @@ class DashboardHandler(BaseHTTPRequestHandler):
         arg = parts[1] if len(parts) > 1 else ''
         try:
             if command == '/help':
-                return (
-                    'Commands: /brief /status /seed-cef /stop <reason> /resume /idea <text> '
-                    '/claim <worker> [role] /dispatch [role] /help. Free text is stored as a standing instruction.',
-                    {'ok': True}, 'completed', None,
-                )
+                return (HELP, {'ok': True}, 'completed', None)
             if command == '/brief':
-                return json.dumps(brief, indent=2, ensure_ascii=False)[:4000], brief, 'completed', None
+                reply = (
+                    f"Owner: {brief.get('context_owner')}\n"
+                    f"Objective: {brief.get('objective')}\n"
+                    f'Waiting {pending} · working {leased} · next {next_id}'
+                )
+                return reply, brief, 'completed', None
             if command == '/status':
-                overview = self._dash().overview()
-                summary = {
-                    'task_counts': overview['task_counts'],
-                    'budget_blocked': overview['budget']['blocked'],
-                    'freeze_ok': overview['freeze']['ok'],
-                    'next_claimable': overview['next_claimable'],
-                }
-                return json.dumps(summary, indent=2), summary, 'completed', None
+                return self._status_reply()
             if command == '/seed-cef':
                 value = self._dash().seed_cef()
-                return f"CEF cycle ready: {value['cycle_id']}", value, 'completed', None
+                self._store().audit('james', 'command', '/seed-cef')
+                if value.get('duplicate'):
+                    return (
+                        'A cycle is already registered against the frozen B3 plan. '
+                        'Seeding again is refused.', value, 'completed', None,
+                    )
+                return (
+                    'Seeded the CEF document-feasibility cycle. B3-H1-v1 is registered against '
+                    'the frozen B3 plan and the queue is filled. No model was called.',
+                    value, 'completed', None,
+                )
             if command == '/stop':
                 if not arg:
-                    raise ValueError('stop requires a reason')
+                    raise ValueError('usage: /stop <reason>. The reason is stored with the stop.')
                 value = self._dash().stop(arg)
-                return 'Network stopped.', value, 'completed', None
+                self._store().audit('james', 'command', '/stop')
+                return (
+                    'New task claims stopped. Open leases and the ledger are untouched — nothing is wiped.',
+                    value, 'completed', None,
+                )
             if command == '/resume':
                 value = self._dash().resume()
-                return 'Network resumed.', value, 'completed', None
+                self._store().audit('james', 'command', '/resume')
+                return ('Task claims admitted again. Existing leases were never dropped.', value, 'completed', None)
             if command == '/idea':
                 if not arg:
-                    raise ValueError('idea text required')
+                    raise ValueError('usage: /idea <text>')
                 value = self._store().add_idea(arg)
-                return f"Idea stored as {value['idea_id']}", value, 'completed', None
+                self._store().audit('james', 'idea', value['idea_id'])
+                return ('Saved to the idea inbox. No cycle opens.', value, 'completed', None)
             if command == '/claim':
-                bits = arg.split()
-                if not bits:
-                    raise ValueError('usage: /claim <worker> [role]')
-                worker, role = bits[0], bits[1] if len(bits) > 1 else None
-                value = self._dash().claim(worker, role)
-                return json.dumps(value, indent=2, ensure_ascii=False)[:4000], value, 'completed', None
+                return self._claim_reply(arg)
             if command == '/dispatch':
-                value = self._dash().dispatch(arg.strip() or None)
-                summary = {
-                    'role': value.get('role'),
-                    'model': value.get('model'),
-                    'provider': value.get('provider'),
-                    'task_id': value.get('task_id'),
-                    'decision': (value.get('result') or {}).get('decision'),
-                }
-                return json.dumps(summary, indent=2, ensure_ascii=False), value, 'completed', None
-            raise ValueError('unknown command; try /help')
+                return self._dispatch_reply(arg)
+            return (f'I do not know {command}. Try /help.', None, 'completed', None)
         except (ValueError, RuntimeError) as exc:
-            return f'Command failed: {exc}', None, 'failed', str(exc)
+            return f'That did not work: {exc}', None, 'failed', str(exc)
+
+    def _status_reply(self):
+        overview = self._dash().overview()
+        counts = overview['task_counts']
+        budget = overview['budget']
+        done = counts.get('completed', 0)
+        stuck = counts.get('failed', 0) + counts.get('blocked', 0)
+        spend = (
+            f"Spending blocked at ${budget['spent_microusd'] / 1e6:.2f}, so no paid step can run."
+            if budget['blocked'] else
+            f"Spending open: ${budget['spent_microusd'] / 1e6:.2f} of ${budget['limit_microusd'] / 1e6:.2f} used."
+        )
+        reply = (
+            f"Waiting {counts.get('pending', 0)} · working {counts.get('leased', 0)} · "
+            f'done {done} · failed or blocked {stuck}\n'
+            f"Task claims {'stopped' if overview['policy']['stopped'] else 'admitted'}. {spend}\n"
+            f"Frozen plan {'verified' if overview['freeze']['ok'] else 'does NOT match its receipt'}."
+        )
+        return reply, {'task_counts': counts, 'blocked': budget['blocked']}, 'completed', None
+
+    def _claim_reply(self, arg):
+        bits = arg.split()
+        if not bits:
+            raise ValueError('usage: /claim <worker-id> [role]')
+        worker, role = bits[0], bits[1] if len(bits) > 1 else None
+        value = self._dash().claim(worker, role)
+        self._store().audit('james', 'claim', json.dumps({'worker': worker, 'role': role}))
+        if not value.get('claimed'):
+            return (f"Nothing claimable for {worker}: {value.get('reason')}", value, 'completed', None)
+        packet = value['packet']
+        return (
+            f"Leased {packet['task_id']} ({packet['role']}) to {worker}. The packet is frozen; "
+            'submit or fail it to release the lease.',
+            value, 'completed', None,
+        )
+
+    def _dispatch_reply(self, arg):
+        value = self._dash().dispatch(arg.strip() or None)
+        self._store().audit('james', 'dispatch', json.dumps(
+            {'role': value.get('role'), 'task': value.get('task_id'), 'model': value.get('model')}))
+        usage = value.get('usage') or {}
+        decision = (value.get('result') or {}).get('decision')
+        reply = (
+            f"Sent one {value['role']} packet to {value['provider']}:{value['model']}.\n"
+            f"Decision: {decision}. Task {value['task_id']}.\n"
+            f"Tokens in/out: {usage.get('prompt_tokens', '?')}/{usage.get('completion_tokens', '?')}."
+        )
+        return reply, value, 'completed', None
 
 
 def make_server(root, host='127.0.0.1', port=8787, password=None, secure=False):
