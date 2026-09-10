@@ -1,4 +1,4 @@
-"""Portable offline entry point: python go.py [--mode demo|start|check]."""
+"""Portable offline entry point: python go.py [--mode demo|start|check|dashboard]."""
 from __future__ import annotations
 import argparse
 import json
@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent
 
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--mode', choices=['demo', 'start', 'check'], default='demo')
+    p.add_argument('--mode', choices=['demo', 'start', 'check', 'dashboard'], default='demo')
     p.add_argument('--report', help='Optional new JSON report path (will not overwrite)')
     args = p.parse_args(argv)
     if sys.version_info < (3, 11):
@@ -19,6 +19,9 @@ def main(argv=None):
     if args.report and Path(args.report).exists():
         p.error('Report already exists; choose a new path')
     try:
+        if args.mode == 'dashboard':
+            from dashboard.server import serve
+            return serve(ROOT)
         if args.mode == 'check':
             subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-v'], cwd=ROOT, check=True)
             subprocess.run([sys.executable, 'scripts/verify_repository.py'], cwd=ROOT, check=True)

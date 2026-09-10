@@ -1,9 +1,10 @@
 # Implementation checkpoint
 
-Updated September 9, 2026. James explicitly authorized building the research network and clarified internal-director prompt ownership, context separation and repeatable startup.
+Updated September 10, 2026. James authorized an operator dashboard with durable UI state and a minimal family registry around the existing manual network.
 
 ## Implemented
 
+- `python go.py --mode dashboard`: password-protected operator UI over the same runtime, with a persistent director console, spend ledger, role audit and minimal family registry. No model/broker dispatch. See `docs/DASHBOARD.md`.
 - `python go.py`: repeatable offline six-stage network demonstration with scripted workers.
 - `python go.py --mode start`: idempotent manual CEF feasibility queue and initial versioned prompts.
 - SQLite source revisions, deduplication, transactional task leases, independent-role checks, frozen packets/results, rejected-submission audit and failure recovery.

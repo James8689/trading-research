@@ -10,13 +10,13 @@ Read:
 3. Latest `HANDOFF.md` entry; older entries are historical.
 4. `research_batch3/SYNTHESIS.md` and frozen plan/receipt before research.
 
-Run `python go.py` for the offline demonstration, `python go.py --mode check` for tests, or `python go.py --mode start` to prepare the first manual CEF cycle. This does not dispatch a model. Python 3.11+ and its standard library suffice.
+Run `python go.py` for the offline demonstration, `python go.py --mode check` for tests, `python go.py --mode start` to prepare the first manual CEF cycle, or `python go.py --mode dashboard` for the operator UI. The dashboard does not dispatch a model. Python 3.11+ and its standard library suffice.
 
 ## Context and ownership
 
 The coding agent maintains software. The internal director owns research planning, evidence decisions and proposed worker-prompt changes. The controller enforces dependencies, source citations, immutable task inputs, prompt comparison gates and task limits. The director cannot change its own evaluator or controller policy through a worker result.
 
-Runtime state is in ignored `research_state/network.sqlite3`, `improvement.sqlite3` and `budget.sqlite3`, not the old state.json. Use `python -m research_loop brief` for bounded director context and `task TASK_ID` for exact saved packets/results. Worker memory is separated by candidate and role; old versions remain available. Reviewers do not inherit prior interpretations. Existing leases survive restart without redispatch. Do not replace them or reset budgets to make progress.
+Runtime state is in ignored `research_state/network.sqlite3`, `improvement.sqlite3`, `budget.sqlite3`, `families.sqlite3` and `ui.sqlite3`, not the old state.json. Use `python -m research_loop brief` for bounded director context and `task TASK_ID` for exact saved packets/results. The operator dashboard (`docs/DASHBOARD.md`) is the persistent console for the same records. Worker memory is separated by candidate and role; old versions remain available. Reviewers do not inherit prior interpretations. Existing leases survive restart without redispatch. Do not replace them or reset budgets to make progress.
 
 Use the private export/restore commands to move idle runtime state. GitHub carries code and research artifacts, not raw runtime/evaluator databases. A downloaded repo can initialize from scratch without this chat. An interrupted research run resumes from its private snapshot.
 

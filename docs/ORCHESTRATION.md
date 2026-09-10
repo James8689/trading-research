@@ -17,11 +17,14 @@ The default is a repeatable synthetic demonstration in temporary storage: six ta
 ```sh
 python go.py --mode check
 python go.py --mode start
+python go.py --mode dashboard
 python -m research_loop brief
 python -m research_loop next director --role director_plan
 ```
 
 `check` runs unit tests and verifies archived data/frozen-plan hashes. `start` initializes persistent state, bootstraps the six shipped role prompts and seeds the frozen CEF document-feasibility question. Repeating it does not reset budgets, prompts or create duplicate cycles. It leaves packets unclaimed until `next`. With no original documents ingested, this is a source-planning queue, not evidence of feasibility. Runtime defaults allow 12 lifetime task claims and 3 concurrent leases; raising limits requires an explicit controller change, not restarting.
+
+`dashboard` serves the single-operator UI on port 8787 (see `docs/DASHBOARD.md`). It is a browser for the same SQLite records plus a persistent director console. It is not an unattended model loop. Set `DASHBOARD_PASSWORD` and keep `research_state/` on durable storage if the process should survive a host restart.
 
 ## Three distinct actors
 

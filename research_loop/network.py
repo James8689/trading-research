@@ -377,3 +377,43 @@ class Network:
             brief[key].pop()
             brief['counts'][key + '_omitted'] += 1
         return brief
+
+    def list_sources(self):
+        """Source metadata only. Full text stays behind get_task / ingest."""
+        with self._db() as db:
+            return [dict(r) for r in db.execute(
+                'SELECT event_id, source_id, content_hash, published_at, received_at, revision, length(content) AS chars FROM sources ORDER BY rowid')]
+
+    def role_report(self, role):
+        """Audit slice for one role. Packets and results remain on get_task."""
+        if role not in ROLES:
+            raise ValueError('unknown role')
+        with self._db() as db:
+            tasks = [dict(r) for r in db.execute(
+                'SELECT task_id, cycle_id, role, state, worker_id, packet_hash, result_hash, reason FROM tasks WHERE role=? ORDER BY rowid',
+                (role,))]
+            attempts = [dict(r) for r in db.execute(
+                'SELECT a.* FROM attempts a JOIN tasks t ON t.task_id=a.task_id WHERE t.role=? ORDER BY a.rowid',
+                (role,))]
+            errors = [dict(r) for r in db.execute(
+                'SELECT e.* FROM submission_errors e JOIN tasks t ON t.task_id=e.task_id WHERE t.role=? ORDER BY e.rowid',
+                (role,))]
+            memory = [dict(r) for r in db.execute(
+                'SELECT candidate_id, role, version, memory, memory_hash, task_id, updated_at FROM memory_history WHERE role=? ORDER BY candidate_id, version',
+                (role,))]
+            current = [dict(r) for r in db.execute(
+                'SELECT * FROM memory_current WHERE role=?', (role,))]
+        open_task = next((t for t in tasks if t['state'] in ('pending', 'leased')), None)
+        return {
+            'role': role,
+            'reviewer_blinded': role == 'reviewer',
+            'open_task': open_task,
+            'task_count': len(tasks),
+            'attempt_count': len(attempts),
+            'error_count': len(errors),
+            'tasks': tasks,
+            'attempts': attempts,
+            'submission_errors': errors,
+            'memory_history': memory,
+            'memory_current': current,
+        }
