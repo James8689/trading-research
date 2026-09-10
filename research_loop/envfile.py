@@ -7,6 +7,8 @@ import re
 
 _LINE = re.compile(r'^(?:export\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)$')
 _PRINTABLE = re.compile(r'[\x20-\x7e]*')
+_SECRET_MAX = 8192
+_VALUE_MAX = 400
 
 # Only these may be written from the operator console. The login password and
 # every budget knob stay out: the dashboard must never raise its own spend.
@@ -17,11 +19,23 @@ WRITABLE = (
     'XAI_API_KEY', 'XAI_BASE_URL', 'XAI_MODEL',
     'ROLE_DIRECTOR_PLAN', 'ROLE_RESEARCHER', 'ROLE_DATA_AUDITOR',
     'ROLE_REVIEWER', 'ROLE_DIRECTOR_DECISION', 'ROLE_IMPROVEMENT_PROPOSAL',
+    'RESEARCH_MODELS', 'RESEARCH_PROVIDERS',
 )
 LOCKED = (
     'DASHBOARD_PASSWORD', 'RESEARCH_BUDGET_PERIOD', 'RESEARCH_BUDGET_LIMIT_USD',
     'RESEARCH_MAX_CALL_USD', 'RESEARCH_USD_PER_MTOK_INPUT', 'RESEARCH_USD_PER_MTOK_OUTPUT',
 )
+_CUSTOM_PROVIDER = re.compile(r'^PROVIDER_([A-Z][A-Z0-9]{0,20})_(API_KEY|BASE_URL|MODEL|KIND)$')
+
+
+def is_secret_key(key):
+    return key in SECRET_KEYS or bool(_CUSTOM_PROVIDER.fullmatch(key) and key.endswith('_API_KEY'))
+
+
+def is_writable_key(key):
+    if key in LOCKED:
+        return False
+    return key in WRITABLE or bool(_CUSTOM_PROVIDER.fullmatch(key))
 
 
 def parse_env_text(text):
@@ -94,8 +108,13 @@ def check_env_value(key, value):
     if not isinstance(value, str):
         raise ValueError(f'{key} must be a string')
     cleaned = value.strip()
-    if len(cleaned) > 400:
-        raise ValueError(f'{key} is longer than 400 characters')
+    if is_secret_key(key):
+        cleaned = re.sub(r'\s+', '', cleaned)
+        limit = _SECRET_MAX
+    else:
+        limit = _VALUE_MAX
+    if len(cleaned) > limit:
+        raise ValueError(f'{key} is longer than {limit} characters')
     if not _PRINTABLE.fullmatch(cleaned):
         raise ValueError(f'{key} must be printable ASCII on a single line')
     if '"' in cleaned or "'" in cleaned:
@@ -106,7 +125,7 @@ def check_env_value(key, value):
 def env_key_state(key, value):
     """Console-safe description of one variable. Secrets show last four only."""
     cleaned = (value or '').strip()
-    secret = key in SECRET_KEYS
+    secret = is_secret_key(key)
     return {
         'key': key,
         'secret': secret,
@@ -118,10 +137,14 @@ def env_key_state(key, value):
 
 def env_state(env, root=None, filename='.env'):
     path = None if root is None else Path(root) / filename
+    keys = list(WRITABLE)
+    for key in env:
+        if is_writable_key(key) and key not in keys:
+            keys.append(key)
     return {
         'file': filename,
         'exists': bool(path and path.is_file()),
-        'writable': [env_key_state(key, env.get(key)) for key in WRITABLE],
+        'writable': [env_key_state(key, env.get(key)) for key in keys],
         'locked': list(LOCKED),
         'note': (
             'Keys are stored in the gitignored .env file and are never returned to the '
@@ -154,7 +177,7 @@ def write_env_values(root, updates, filename='.env'):
         raise ValueError('no values to write')
     cleaned = {}
     for key, value in updates.items():
-        if key not in WRITABLE:
+        if not is_writable_key(key):
             raise ValueError(f'{key} cannot be set from the console')
         cleaned[key] = check_env_value(key, value)
     path = Path(root) / filename
@@ -168,7 +191,7 @@ def write_env_values(root, updates, filename='.env'):
             seen.add(key)
         else:
             out.append(raw)
-    missing = [key for key in WRITABLE if key in cleaned and key not in seen]
+    missing = [key for key in cleaned if key not in seen]
     if missing:
         if out and out[-1].strip():
             out.append('')

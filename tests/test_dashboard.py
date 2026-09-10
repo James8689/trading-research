@@ -26,6 +26,13 @@ class DashboardTests(unittest.TestCase):
         shutil.copy(ROOT / 'research_batch3' / 'frozen_experiment_plans.json', batch)
         shutil.copy(ROOT / 'research_batch3' / 'freeze_receipt.json', batch)
         initialize_runtime(self.root)
+        for name in (
+            'OPENAI_API_KEY', 'ANTHROPIC_API_KEY', 'XAI_API_KEY',
+            'PROVIDER_MUSE_API_KEY', 'PROVIDER_MUSE_BASE_URL', 'PROVIDER_MUSE_KIND',
+            'RESEARCH_PROVIDERS', 'RESEARCH_MODELS',
+        ):
+            os.environ.pop(name, None)
+            self.addCleanup(os.environ.pop, name, None)
         self.httpd = make_server(self.root, '127.0.0.1', 0, PASSWORD)
         self.port = self.httpd.server_address[1]
         self.thread = threading.Thread(target=self.httpd.serve_forever, daemon=True)
@@ -162,6 +169,39 @@ class DashboardTests(unittest.TestCase):
         self.assertFalse(self.call('/api/overview')['provider_dispatch'])
         detail = next(a['detail'] for a in self.call('/api/audit')['audit'] if a['action'] == 'env_update')
         self.assertNotIn('sk-live-9999', detail)
+        added = self.call('/api/env', {'values': {
+            'RESEARCH_MODELS': 'openai:gpt-5.4,openai:gpt-4o-mini',
+            'ROLE_DIRECTOR_PLAN': 'openai:gpt-5.4',
+            'ROLE_DATA_AUDITOR': 'openai:gpt-4o-mini',
+        }}, csrf=csrf)
+        openai_specs = [m['spec'] for m in added['models'] if m['provider'] == 'openai']
+        self.assertIn('openai:gpt-5.4', openai_specs)
+        self.assertIn('openai:gpt-4o-mini', openai_specs)
+        by_id = {row['id']: row for row in added['stack']}
+        self.assertTrue(by_id['sol']['in_catalog'])
+        self.assertTrue(by_id['astra']['in_catalog'])
+
+    def test_openai_key_seeds_sol_and_astra(self):
+        csrf = self.login()
+        self.addCleanup(os.environ.pop, 'OPENAI_API_KEY', None)
+        saved = self.call('/api/env', {'values': {'OPENAI_API_KEY': 'sk-live-1111'}}, csrf=csrf)
+        specs = [item['spec'] for item in saved['models']]
+        self.assertIn('openai:gpt-5.6-sol', specs)
+        self.assertIn('openai:gpt-6-astra', specs)
+        plan = next(row for row in saved['routes'] if row['role'] == 'director_plan')
+        self.assertEqual((plan['provider'], plan['model'], plan['key_hint']), ('openai', 'gpt-5.6-sol', '1111'))
+        sol = next(row for row in saved['stack'] if row['id'] == 'sol')
+        self.assertTrue(sol['has_key'])
+
+    def test_muse_key_seeds_default_host_and_researcher(self):
+        csrf = self.login()
+        for name in ('PROVIDER_MUSE_API_KEY', 'PROVIDER_MUSE_BASE_URL', 'ROLE_RESEARCHER'):
+            self.addCleanup(os.environ.pop, name, None)
+        saved = self.call('/api/env', {'values': {'PROVIDER_MUSE_API_KEY': 'sk-muse-2222'}}, csrf=csrf)
+        self.assertIn('muse:muse-spark-1.3', [item['spec'] for item in saved['models']])
+        route = next(row for row in saved['routes'] if row['role'] == 'researcher')
+        self.assertEqual((route['provider'], route['model']), ('muse', 'muse-spark-1.3'))
+        self.assertIn('PROVIDER_MUSE_BASE_URL=https://api.meta.ai/v1', (self.root / '.env').read_text(encoding='utf-8'))
 
     def test_env_refuses_locked_keys_and_bad_routes(self):
         csrf = self.login()
@@ -169,7 +209,34 @@ class DashboardTests(unittest.TestCase):
         self.call('/api/env', {'values': {'RESEARCH_BUDGET_LIMIT_USD': '9999'}}, csrf=csrf, status=400)
         self.call('/api/env', {'values': {'ROLE_REVIEWER': 'notaprovider:x'}}, csrf=csrf, status=400)
         self.call('/api/env', {'values': {'OPENAI_BASE_URL': 'http://evil.example'}}, csrf=csrf, status=400)
+        self.call('/api/env', {'values': {
+            'RESEARCH_PROVIDERS': 'groq',
+            'PROVIDER_GROQ_KIND': 'openai',
+            'PROVIDER_GROQ_MODEL': 'llama',
+        }}, csrf=csrf, status=400)
         self.assertFalse((self.root / '.env').exists())
+
+    def test_custom_provider_saved_and_secret_stays_out_of_json(self):
+        csrf = self.login()
+        for name in ('PROVIDER_MUSE_API_KEY', 'PROVIDER_MUSE_BASE_URL', 'PROVIDER_MUSE_KIND', 'PROVIDER_MUSE_MODEL', 'RESEARCH_PROVIDERS', 'ROLE_RESEARCHER'):
+            self.addCleanup(os.environ.pop, name, None)
+        added = self.call('/api/env', {'values': {
+            'RESEARCH_PROVIDERS': 'muse',
+            'PROVIDER_MUSE_KIND': 'openai',
+            'PROVIDER_MUSE_BASE_URL': 'https://api.together.xyz/v1',
+            'PROVIDER_MUSE_API_KEY': 'sk-muse-7777',
+            'PROVIDER_MUSE_MODEL': 'muse-spark',
+            'RESEARCH_MODELS': 'muse:muse-spark',
+            'ROLE_RESEARCHER': 'muse:muse-spark',
+        }}, csrf=csrf)
+        self.assertIn('muse', added['providers'])
+        self.assertTrue(added['providers']['muse']['custom'])
+        self.assertNotIn('sk-muse-7777', json.dumps(added))
+        self.assertIn('PROVIDER_MUSE_API_KEY=sk-muse-7777', (self.root / '.env').read_text(encoding='utf-8'))
+        muse_key = next(row for row in added['writable'] if row['key'] == 'PROVIDER_MUSE_API_KEY')
+        self.assertTrue(muse_key['set'])
+        self.assertEqual(muse_key['hint'], '7777')
+        self.assertIsNone(muse_key['value'])
 
     def test_write_without_csrf_rejected(self):
         self.login()

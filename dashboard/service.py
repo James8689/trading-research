@@ -8,13 +8,15 @@ import sqlite3
 
 from research_loop.budget import BudgetLedger
 from research_loop.dispatch import apply_env_budget, dispatch_next
-from research_loop.envfile import WRITABLE, env_state, merged_env, write_env_values
+from research_loop.envfile import is_writable_key, env_state, merged_env, write_env_values
 from research_loop.families import FamilyRegistry
 from research_loop.improvement import ImprovementRegistry
 from research_loop.network import ROLES, Network
 from research_loop.routing import (
-    PROVIDERS, ROLE_ENV, provider_env_keys, public_route, public_routes,
-    validate_base_url, validate_route_spec,
+    KINDS, MODELS_KEY, MUSE_DEFAULT_BASE, PROVIDERS_KEY, ROLE_ENV, catalog_models,
+    check_alias, parse_model_list, planned_seed_updates, provider_aliases,
+    provider_env_keys, public_route, public_routes, resolved_providers,
+    suggested_stack, validate_base_url, validate_route_spec, vendor_for_key,
 )
 from research_loop.__main__ import initialize_runtime, seed_cef
 
@@ -93,7 +95,12 @@ class Dashboard:
         return {
             **env_state(self.env, self.root),
             'roles': dict(ROLE_ENV),
-            'providers': {name: provider_env_keys(name) for name in PROVIDERS},
+            'providers': {
+                name: provider_env_keys(name, self.env)
+                for name in resolved_providers(self.env)[0]
+            },
+            'models': catalog_models(self.env),
+            'stack': suggested_stack(self.env),
             'routes': public_routes(self.env),
             'budget_period': budget['period_id'],
             'budget_configured': budget['limit_microusd'] > 0,
@@ -104,13 +111,25 @@ class Dashboard:
         """Persist allowlisted provider settings to the gitignored .env file."""
         if not isinstance(updates, dict) or not updates:
             raise ValueError('values object required')
-        unknown = [key for key in updates if key not in WRITABLE]
+        unknown = [key for key in updates if not is_writable_key(key)]
         if unknown:
             raise ValueError(f"cannot set {', '.join(sorted(unknown))} from the console")
         pending = dict(self.env)
         for key, value in updates.items():
             if isinstance(value, str):
                 pending[key] = value.strip()
+        seeded = {}
+        for key, value in list(updates.items()):
+            text = value.strip() if isinstance(value, str) else ''
+            if not key.endswith('_API_KEY') or not text:
+                continue
+            vendor = vendor_for_key(key, pending)
+            if vendor:
+                seeded.update(planned_seed_updates(pending, vendor))
+        if seeded:
+            updates = dict(updates)
+            updates.update(seeded)
+            pending.update(seeded)
         role_vars = set(ROLE_ENV.values())
         for key, value in updates.items():
             text = value.strip() if isinstance(value, str) else value
@@ -118,8 +137,26 @@ class Dashboard:
                 continue
             if key in role_vars:
                 validate_route_spec(text, pending)
+            elif key == MODELS_KEY:
+                parse_model_list(text, pending)
+            elif key == PROVIDERS_KEY:
+                for alias in text.split(','):
+                    if alias.strip():
+                        check_alias(alias)
+            elif key.endswith('_KIND'):
+                if text not in KINDS:
+                    raise ValueError('API style must be openai or anthropic')
             elif key.endswith('_BASE_URL'):
                 validate_base_url(text)
+        for alias in provider_aliases(pending):
+            prefix = f'PROVIDER_{alias.upper()}_'
+            base = (pending.get(prefix + 'BASE_URL') or '').strip()
+            if alias == 'muse' and not base:
+                base = MUSE_DEFAULT_BASE
+                pending[prefix + 'BASE_URL'] = base
+                updates[prefix + 'BASE_URL'] = base
+            if (pending.get(prefix + 'KIND') or pending.get(prefix + 'API_KEY') or pending.get(prefix + 'MODEL')) and not base:
+                raise ValueError(f'{alias} needs a base URL (https, or http on localhost)')
         saved = write_env_values(self.root, updates)
         self.env = merged_env(self.root)
         return {'saved': saved, **self.env_view()}

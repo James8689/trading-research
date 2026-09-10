@@ -1,5 +1,13 @@
 # Trading research handoff
 
+## September 10: one key per vendor
+
+Budget no longer asks for a model id before a key. Each vendor is a paste-key row. Saving an OpenAI key catalogs Sol (`gpt-5.6-sol`) and Astra (`gpt-6-astra`) and maps leftover director routes. Muse defaults to `https://api.meta.ai/v1` / `muse-spark-1.3`. Pipeline dropdowns list those labels and save on change, reusing the same vendor key.
+
+## September 10: one vendor, several models
+
+The Budget add-model form only listed openai / anthropic / xai, and `.env.example` treated each vendor as a single default model (researcher was mapped to Grok). That contradicted `design/OPPORTUNITY_ENGINE.md`: Sol and Astra are two different OpenAI models; Muse Spark is the researcher host. Routing is now per pipeline step. The plan table, `.env.example`, intended-stack list, and catalog all allow the same vendor twice. Adding a second OpenAI model no longer overwrites `OPENAI_MODEL`. Custom named hosts remain available via New provider.
+
 ## September 10: operator console redesign
 
 Implemented the six-tab design from the Opportunity Engine handoff against the live API. Tabs renamed Mission/Roles/Families/Spend/Orchestrator/Audit → **Director, Status, Pipeline, Ideas, Budget, History**. Sign-in lands on Director. Every control maps to an existing write (`seed-cef`, `ingest`, `stop` with a required reason, `resume`, idea inbox, retrospective, `/api/env`); nothing on screen offers to raise an allowance or skip a gate. Dispatch is shown only when a period, a mapping, and a key all exist. `/stop`, `/resume`, `/seed-cef`, `/claim`, and `/dispatch` now reply in plain language and append a History entry. The rail collapses to a wrapping top bar under 860px so all six destinations stay visible on a phone. 75 tests pass.

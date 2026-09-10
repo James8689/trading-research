@@ -42,13 +42,17 @@ The current gate tests are synthetic software tests, not evidence that any model
 
 ## Intended configurable model stack
 
-User preferences, not verified provider model IDs, availability or prices:
+User preferences, not verified provider model IDs, availability or prices. Routing is per pipeline step, not per vendor: the same vendor can supply two different models for two different jobs.
 
-- Normal orchestration: GPT-5.6 Sol.
-- Difficult/high-value escalation: GPT-6 Astra.
-- Inexpensive high-volume creativity/research: Meta Muse Spark.
-- Independent checking/auditing: Grok.
-- Adversarial/falsification work: Claude Sonnet-class models.
+| Label | Preference | Callable id | Vendor | Pipeline roles |
+|---|---|---|---|---|
+| Sol | GPT-5.6 Sol | `gpt-5.6-sol` | openai | `director_plan`, `director_decision`, `improvement_proposal` |
+| Astra | GPT-6 Astra | `gpt-6-astra` | openai | none yet (difficult / high-value escalation; keep in the catalog) |
+| Muse Spark | Meta Muse Spark | `muse-spark-1.3` | muse (`https://api.meta.ai/v1`) | `researcher` |
+| Grok | Grok 4.6 | `grok-4.6` | xai | `data_auditor` |
+| Sonnet | Claude Sonnet 5 | `claude-sonnet-5` | anthropic | `reviewer` |
+
+`.env.example` and the Budget console stack list follow this table. Fill the callable id each API actually accepts; do not invent one. `RESEARCH_MODELS` is a list of `provider:model` pairs, so `openai` may appear twice. Do not map `researcher` to Grok.
 
 Resolve exact callable IDs and measure quality/cost when adapters are built. Keep capabilities and routing configurable; fail visibly when a configured provider is unavailable. Do not silently substitute providers, buy subscriptions or change spending limits. Diversity supplies different perspectives, not proof of independent errors or higher accuracy.
 

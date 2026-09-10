@@ -150,7 +150,7 @@ class DashboardHandler(BaseHTTPRequestHandler):
             '/api/me': lambda: {'operator': 'james', 'csrf': session['csrf'], 'mode': 'assisted_manual'},
             '/api/overview': self._dash().overview,
             '/api/brief': self._dash().brief,
-            '/api/spend': lambda: {**self._dash().spend(), 'accounts': self._store().list_accounts()},
+            '/api/spend': lambda: {**self._dash().spend(), 'accounts': self._store().list_accounts(), 'env': self._dash().env_view()},
             '/api/env': self._dash().env_view,
             '/api/families': self._dash().families.status,
             '/api/messages': lambda: {'messages': self._store().list_messages(), 'jobs': self._store().list_jobs(), 'ideas': self._store().list_ideas()},

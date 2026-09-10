@@ -108,6 +108,8 @@ const state = {
   filter: 'All',
   showIngest: false,
   showStop: false,
+  showHost: false,
+  focusVendor: null,
   flash: '',
 };
 
@@ -171,8 +173,11 @@ function pageHead(title, sub, sub2) {
 }
 
 function page(children) {
+  const y = state.restoreScroll;
+  state.restoreScroll = null;
   $('main').replaceChildren(el('div', { class: 'page' }, children));
-  window.scrollTo(0, 0);
+  if (typeof y === 'number') requestAnimationFrame(() => window.scrollTo(0, y));
+  else window.scrollTo(0, 0);
 }
 
 /* ---------- formatting ---------- */
@@ -950,7 +955,10 @@ function renderBudget(spend, env) {
     notice,
     ledgerCard,
     attemptsCard,
-    envCard(env),
+    env.writable ? envCard(env) : card([
+      el('h2', { class: 'card-title', text: 'Provider keys · .env' }),
+      el('p', { class: 'card-lede', text: 'This process was started before the console could write .env. Restart it with py -3 go.py --mode dashboard, then come back here to paste a key.' }),
+    ]),
   ]);
 }
 
@@ -964,74 +972,226 @@ async function dispatchOne() {
   await refresh();
 }
 
-/* Writes provider secrets straight into the gitignored .env. The server
- * allowlists the variable names, so nothing here can touch the login password
- * or the budget. */
-function envCard(env) {
-  const problem = el('p', { class: 'muted' });
-  const provider = el('select', {}, Object.keys(env.providers || {}).map((name) => el('option', { value: name, text: name })));
-  const key = el('input', { type: 'password', autocomplete: 'off', spellcheck: 'false', placeholder: 'paste the key — blank keeps the current one' });
-  const model = el('input', { class: 'mono', placeholder: 'gpt-5.4' });
-  const base = el('input', { class: 'mono', placeholder: 'https://…' });
+/* One key per vendor. Saving a key seeds that vendor’s planned model ids
+ * (Sol + Astra share the OpenAI key). Role dropdowns write provider:model
+ * and reuse the same key. The console cannot raise spend. */
+const VENDOR_TITLE = { openai: 'OpenAI', anthropic: 'Anthropic', xai: 'xAI', muse: 'Muse (Meta)' };
+const VENDOR_ORDER = ['openai', 'anthropic', 'xai', 'muse'];
 
-  const keyForm = el('div', { class: 'disclosure' }, [
+function envCard(env) {
+  const models = env.models || [];
+  const stack = env.stack || [];
+  const routeProblem = el('p', { class: 'muted' });
+
+  function specLabel(spec) {
+    const hit = stack.find((item) => item.spec === spec || `${item.provider}:${item.model}` === spec);
+    return hit ? `${hit.label} · ${spec}` : spec;
+  }
+
+  function plannedOptions() {
+    const seen = new Set();
+    const options = [];
+    stack.forEach((item) => {
+      const spec = item.model ? `${item.provider}:${item.model}` : item.spec;
+      if (!spec || seen.has(spec)) return;
+      seen.add(spec);
+      options.push({ spec, label: `${item.label} · ${spec}` });
+    });
+    models.forEach((item) => {
+      if (seen.has(item.spec)) return;
+      seen.add(item.spec);
+      options.push({ spec: item.spec, label: specLabel(item.spec) });
+    });
+    return options;
+  }
+
+  async function saveVendor(name, keyInput, baseInput, problem) {
+    problem.textContent = '';
+    const meta = env.providers[name];
+    if (!meta) { problem.textContent = 'Unknown vendor.'; return; }
+    const secret = (env.writable || []).find((row) => row.key === meta.key);
+    const values = {};
+    const pasted = (keyInput.value || '').replace(/\s+/g, '');
+    if (pasted) values[meta.key] = pasted;
+    else if (!(secret && secret.set)) { problem.textContent = 'Paste that vendor’s key.'; return; }
+    if (baseInput && baseInput.value.trim()) values[meta.base] = baseInput.value.trim();
+    try {
+      await post('/api/env', { values });
+      state.focusVendor = name;
+      const hint = pasted ? ` …${pasted.slice(-4)}` : '';
+      flash(`Saved ${VENDOR_TITLE[name] || name} key${hint}. The password box stays blank on purpose — look for the green last-four.`);
+      await refresh();
+      const row = document.getElementById(`vendor-${name}`);
+      if (row) row.scrollIntoView({ block: 'center' });
+    } catch (err) { reportInto(problem)(err); }
+  }
+
+  function bindSecretField(input) {
+    input.addEventListener('paste', (ev) => {
+      const text = ev.clipboardData ? ev.clipboardData.getData('text') : '';
+      if (!text) return;
+      ev.preventDefault();
+      input.value = text.replace(/\s+/g, '');
+    });
+  }
+
+  const vendorRows = VENDOR_ORDER.map((name) => {
+    const meta = env.providers[name];
+    if (!meta) return null;
+    const jobs = stack.filter((item) => item.provider === name);
+    const secret = (env.writable || []).find((row) => row.key === meta.key);
+    const hasKey = Boolean(secret && secret.set);
+    const keyInput = el('input', {
+      type: 'password', autocomplete: 'off', spellcheck: 'false',
+      placeholder: hasKey ? `key …${secret.hint} — paste to replace` : 'paste the API key, then Save key',
+    });
+    bindSecretField(keyInput);
+    const needBase = name === 'muse' || meta.custom;
+    const baseInput = needBase
+      ? el('input', {
+        class: 'mono',
+        placeholder: 'https://api.meta.ai/v1',
+        value: name === 'muse' ? 'https://api.meta.ai/v1' : '',
+      })
+      : null;
+    const problem = el('p', { class: 'muted' });
+    keyInput.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Enter') {
+        ev.preventDefault();
+        saveVendor(name, keyInput, baseInput, problem);
+      }
+    });
+    const focused = state.focusVendor === name;
+    if (focused) setTimeout(() => keyInput.focus(), 0);
+    return el('div', {
+      id: `vendor-${name}`,
+      class: 'disclosure',
+      style: focused ? 'border-color: var(--amber)' : null,
+    }, [
+      el('div', { class: 'head-row' }, [
+        el('div', { class: 'stack' }, [
+          el('span', { class: 'lbl', text: VENDOR_TITLE[name] || name }),
+          el('span', { class: 'meta', style: 'font-family:var(--mono);font-size:11px;color:var(--dim-3)', text: jobs.map((job) => `${job.label} (${job.model})`).join(' · ') }),
+        ]),
+        el('span', { class: 'note', style: hasKey ? `color:${C.green}` : `color:${C.amber}`, text: hasKey ? `key …${secret.hint}` : 'no key' }),
+      ]),
+      el('div', { class: 'fields' }, [
+        field('API key', keyInput, 'Paste, then click Save key. The box clears after a save; a green last-four means it stuck.', true),
+        baseInput ? field('Base URL', baseInput, 'Muse defaults to Meta Model API.', name === 'muse') : null,
+      ]),
+      el('div', { class: 'actions' }, [
+        btn(hasKey ? 'Update key' : 'Save key', () => saveVendor(name, keyInput, baseInput, problem)),
+      ]),
+      problem,
+    ]);
+  });
+
+  const hostProblem = el('p', { class: 'muted' });
+  const alias = el('input', { class: 'mono', placeholder: 'groq, local…' });
+  const kind = el('select', {}, [
+    el('option', { value: 'openai', text: 'OpenAI-compatible' }),
+    el('option', { value: 'anthropic', text: 'Anthropic' }),
+  ]);
+  const hostModel = el('input', { class: 'mono', placeholder: 'callable model id' });
+  const hostKey = el('input', { type: 'password', autocomplete: 'off', spellcheck: 'false', placeholder: 'paste the key' });
+  bindSecretField(hostKey);
+  const hostBase = el('input', { class: 'mono', placeholder: 'https://api.example.com/v1' });
+  const hostForm = el('div', { class: 'disclosure' }, [
+    el('p', { class: 'card-lede', text: 'Only for a host that is not OpenAI, Anthropic, xAI, or Muse.' }),
     el('div', { class: 'fields' }, [
-      field('Provider', provider),
-      field('API key', key, 'Stored in .env and applied to the running process. Never returned to the browser.'),
-      field('Default model', model, null, true),
-      field('Base URL', base, 'https anywhere, or http on localhost.', true),
+      field('Name', alias, 'Letters and digits only.'),
+      field('API style', kind),
+      field('Model id', hostModel),
+      field('API key', hostKey, null, true),
+      field('Base URL', hostBase, 'https, or http on localhost.'),
     ]),
-    el('div', {}, [btn('Save to .env', async () => {
-      problem.textContent = '';
-      const names = env.providers[provider.value];
-      const values = {};
-      if (key.value.trim()) values[names.key] = key.value.trim();
-      if (model.value.trim()) values[names.model] = model.value.trim();
-      if (base.value.trim()) values[names.base] = base.value.trim();
-      if (!Object.keys(values).length) { problem.textContent = 'Nothing to save.'; return; }
-      try {
-        await post('/api/env', { values });
-        flash(`Saved ${provider.value} settings to .env. No restart needed.`);
-        await refresh();
-      } catch (err) { reportInto(problem)(err); }
-    }, 'secondary')]),
-    problem,
+    el('div', { class: 'actions' }, [
+      btn('Save host', async () => {
+        hostProblem.textContent = '';
+        const vendor = alias.value.trim().toLowerCase();
+        const id = hostModel.value.trim();
+        if (!/^[a-z][a-z0-9]{0,20}$/.test(vendor)) {
+          hostProblem.textContent = 'Name must start with a letter and be at most 21 letters or digits.';
+          return;
+        }
+        if (!id || !hostBase.value.trim()) { hostProblem.textContent = 'Model id and base URL are required.'; return; }
+        const prefix = `PROVIDER_${vendor.toUpperCase()}_`;
+        const listed = (env.writable || []).find((row) => row.key === 'RESEARCH_PROVIDERS');
+        const aliases = (listed && listed.value ? listed.value.split(',') : []).map((part) => part.trim()).filter(Boolean);
+        if (!aliases.includes(vendor)) aliases.push(vendor);
+        const catalog = models.map((item) => item.spec);
+        const spec = `${vendor}:${id}`;
+        if (!catalog.includes(spec)) catalog.push(spec);
+        const values = {
+          RESEARCH_PROVIDERS: aliases.join(','),
+          [prefix + 'KIND']: kind.value,
+          [prefix + 'BASE_URL']: hostBase.value.trim(),
+          RESEARCH_MODELS: catalog.join(','),
+        };
+        if (hostKey.value.trim()) values[prefix + 'API_KEY'] = hostKey.value.replace(/\s+/g, '');
+        try {
+          await post('/api/env', { values });
+          state.showHost = false;
+          flash(`Added ${spec}.`);
+          await refresh();
+        } catch (err) { reportInto(hostProblem)(err); }
+      }),
+      btn('Cancel', () => { state.showHost = false; refresh(); }, 'secondary'),
+    ]),
+    hostProblem,
   ]);
 
-  const routeInputs = {};
-  const routeProblem = el('p', { class: 'muted' });
+  const options = plannedOptions();
   const routeRows = (env.routes || []).map((route) => {
-    const input = el('input', { class: 'mono', placeholder: 'openai:gpt-5.4', value: route.configured ? `${route.provider}:${route.model}` : '' });
-    routeInputs[env.roles[route.role]] = input;
-    return field(route.role, input, route.configured && !route.has_key ? `no ${route.provider} key yet` : null);
+    const current = route.configured ? `${route.provider}:${route.model}` : '';
+    const select = el('select', { class: 'mono' }, [
+      el('option', { value: '', text: 'unmapped' }),
+      ...options.map((item) => el('option', {
+        value: item.spec, text: item.label, selected: item.spec === current,
+      })),
+      current && !options.some((item) => item.spec === current)
+        ? el('option', { value: current, text: specLabel(current), selected: true })
+        : null,
+    ]);
+    select.addEventListener('change', async () => {
+      routeProblem.textContent = '';
+      const spec = select.value;
+      const values = { [env.roles[route.role]]: spec };
+      if (spec && !models.some((item) => item.spec === spec)) {
+        values.RESEARCH_MODELS = [...models.map((item) => item.spec), spec].join(',');
+      }
+      try {
+        await post('/api/env', { values });
+        flash(spec ? `${route.role} → ${specLabel(spec)}` : `${route.role} unmapped`);
+        await refresh();
+      } catch (err) { reportInto(routeProblem)(err); }
+    });
+    return field(
+      route.role,
+      select,
+      route.configured && !route.has_key
+        ? `Needs the ${VENDOR_TITLE[route.provider] || route.provider} key above`
+        : null,
+    );
   });
 
   return card([
     el('div', { class: 'head-row' }, [
       el('div', { class: 'stack' }, [
-        el('h2', { class: 'card-title', text: 'Provider keys · .env' }),
-        el('p', { class: 'card-lede', text: env.note }),
+        el('h2', { class: 'card-title', text: 'Models · .env' }),
+        el('p', { class: 'card-lede', text: 'Paste one key per vendor. Sol and Astra both use the OpenAI key — pick which model each step uses. The console cannot raise spend or silently swap a missing provider.' }),
       ]),
+      btn(state.showHost ? 'Close' : 'Another host', () => {
+        state.showHost = !state.showHost;
+        refresh();
+      }, 'secondary small'),
     ]),
-    rows((env.writable || []).filter((entry) => entry.secret).map((entry) => drow(
-      entry.key.replace('_API_KEY', '').toLowerCase(),
-      entry.set ? `key …${entry.hint}` : 'not set',
-      entry.set ? C.green : C.dim,
-    ))),
-    keyForm,
+    el('p', { class: 'muted', text: 'Green means that vendor’s key is stored. “No key” is a paste field, not a dead label.' }),
+    ...vendorRows,
+    state.showHost ? hostForm : null,
     el('div', { class: 'disclosure' }, [
-      el('p', { class: 'card-lede', text: 'Role routing is provider:model. Blank unmaps the role.' }),
+      el('p', { class: 'card-lede', text: 'Each pipeline step picks one model. Changing the dropdown saves immediately and keeps the same vendor key.' }),
       el('div', { class: 'fields' }, routeRows),
-      el('div', {}, [btn('Save routing', async () => {
-        routeProblem.textContent = '';
-        const values = {};
-        Object.entries(routeInputs).forEach(([name, input]) => { values[name] = input.value.trim(); });
-        try {
-          await post('/api/env', { values });
-          flash('Saved role routing to .env.');
-          await refresh();
-        } catch (err) { reportInto(routeProblem)(err); }
-      }, 'secondary')]),
       routeProblem,
     ]),
     env.budget_configured
@@ -1129,8 +1289,8 @@ async function show(tab, extra, keepFlash) {
     } else if (tab === 'ideas') {
       renderIdeas(await api('/api/families'));
     } else if (tab === 'budget') {
-      const [spend, env] = await Promise.all([api('/api/spend'), api('/api/env')]);
-      renderBudget(spend, env);
+      const spend = await api('/api/spend');
+      renderBudget(spend, spend.env || {});
     } else if (tab === 'history') {
       renderHistory(await api('/api/audit'));
     } else if (tab === 'task') {
@@ -1145,7 +1305,10 @@ async function show(tab, extra, keepFlash) {
   }
 }
 
-const refresh = () => show(state.tab, state.extra, true);
+const refresh = () => {
+  state.restoreScroll = window.scrollY;
+  return show(state.tab, state.extra, true);
+};
 
 function route() {
   const hash = location.hash.replace(/^#/, '');

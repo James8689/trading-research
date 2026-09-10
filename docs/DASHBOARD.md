@@ -19,7 +19,7 @@ Keys live in a gitignored `.env` at the repository root. Process environment var
 
 Two ways to fill it:
 
-1. **From the console.** Budget → *Provider keys · .env*. Pick a vendor, paste the key, optionally set a default model and base URL, and save. Role routing (`provider:model`) is edited in the same card. The value is written straight into `.env` and applied to the running process, so a paste takes effect without a restart.
+1. **From the console.** Budget → *Models · .env*. Paste one key per vendor. Saving an OpenAI key catalogs Sol (`gpt-5.6-sol`) and Astra (`gpt-6-astra`); Muse, Grok and Sonnet seed the same way. Pipeline dropdowns pick among those ids and save immediately. The same vendor key is reused. **Another host** is only for a name that is not openai / anthropic / xai / muse.
 2. **By hand.** Copy `.env.example` to `.env` and edit it, then restart.
 
 The console can only write these variables:
@@ -27,7 +27,8 @@ The console can only write these variables:
 | Writable from the UI | Not writable |
 |---|---|
 | `OPENAI_/ANTHROPIC_/XAI_` `API_KEY`, `BASE_URL`, `MODEL` | `DASHBOARD_PASSWORD` |
-| `ROLE_DIRECTOR_PLAN`, `ROLE_RESEARCHER`, `ROLE_DATA_AUDITOR`, `ROLE_REVIEWER`, `ROLE_DIRECTOR_DECISION`, `ROLE_IMPROVEMENT_PROPOSAL` | `RESEARCH_BUDGET_PERIOD`, `RESEARCH_BUDGET_LIMIT_USD`, `RESEARCH_MAX_CALL_USD`, `RESEARCH_USD_PER_MTOK_*` |
+| `RESEARCH_PROVIDERS` and `PROVIDER_<name>_` `KIND`, `BASE_URL`, `API_KEY`, `MODEL` | `RESEARCH_BUDGET_PERIOD`, `RESEARCH_BUDGET_LIMIT_USD`, `RESEARCH_MAX_CALL_USD`, `RESEARCH_USD_PER_MTOK_*` |
+| `ROLE_*` routes and `RESEARCH_MODELS` | *(none)* |
 
 The server rejects any other variable name, refuses values containing quotes, newlines, or non-printable characters, and allows plain `http` base URLs only on loopback. `POST /api/env` requires the session cookie and the CSRF header. The audit log records which variable changed and whether it was set or cleared, never the value.
 
