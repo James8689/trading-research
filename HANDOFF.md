@@ -1,5 +1,9 @@
 # Trading research handoff
 
+## September 10: operator dashboard and minimal family registry
+
+James asked for a persistent, internet-reachable, single-user control plane rather than handing the repo to an external agent team. Added `python go.py --mode dashboard`: stdlib HTTP UI with password sessions, CSRF, orchestrator transcript, idea inbox, spend ledger view, role/task audit, ingest/seed/stop/claim/submit through existing controller methods, and a minimal `FamilyRegistry` that `seed-cef` records for B3-H1-v1. UI/research SQLite files stay in gitignored `research_state/` so a cloud volume remount continues the same console. No provider adapter, no allowance change, no live trading. Free-text director messages persist; they do not start a model under manual-no-spend. See docs/DASHBOARD.md. Next scientific work remains the real B3-H1-v1 document cycle, now operable from the UI.
+
 ## September 9: three design weaknesses corrected
 
 James authorized design fixes and push. Added design/EVIDENCE_LED_DEVELOPMENT.md and revised the authoritative loop/roadmap: minimal registry plus one real CEF document-feasibility cycle before architectural growth; measurable memory/prompt/routing adaptation with recurring-case evidence, independent substantive evaluation, cost/regression limits and probation; blueprint draft plus independent builder feasibility review, structured clarification and affected-gate revalidation before implementation-ready status. A rejected or blocked first cycle is valid; neither a prompt change nor a blueprint is required. Existing synthetic promotion code does not yet enforce the added design gates, explicitly documented. No runtime, active prompts, databases or frozen experiment rules changed. Next work is the minimal registry and real cycle, not a large new scaffold. Verify/checkpoint/push this documentation batch.

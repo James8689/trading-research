@@ -117,7 +117,19 @@ def seed_cef(root, network, evidence):
         "The current packet is a bounded source-planning task when no original "
         "documents have been ingested. Missing sources mean blocked, not feasible."
     )
-    return network.create_cycle("B3-H1-v1", question, evidence, digest)
+    cycle = network.create_cycle("B3-H1-v1", question, evidence, digest)
+    from .families import FamilyRegistry
+    families = FamilyRegistry(root)
+    families.initialize()
+    family = families.register(
+        "B3-H1-v1",
+        "CEF contractual reinvestment route switch: transfer-agent open-market buying around payment, not dividend capture.",
+        digest,
+        "feasibility_pending",
+    )
+    families.link_cycle(family["family_id"], cycle["cycle_id"])
+    cycle["family_id"] = family["family_id"]
+    return cycle
 
 
 def initialize_runtime(root, max_tasks=None, max_concurrent=None):
@@ -137,6 +149,8 @@ def initialize_runtime(root, max_tasks=None, max_concurrent=None):
     budget = BudgetLedger(root)
     if not budget.path.exists():
         budget.initialize('manual-no-spend', 0)
+    from .families import FamilyRegistry
+    FamilyRegistry(root).initialize()
     from .network import ROLES
     for role in ROLES:
         path = root / 'agents' / 'network' / (role + '.md')

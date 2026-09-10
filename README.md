@@ -12,9 +12,10 @@ With Python 3.11 or newer, no extra packages needed for the network:
 python go.py
 python go.py --mode check
 python go.py --mode start
+python go.py --mode dashboard
 ```
 
-The default runs a complete **synthetic offline demonstration**. `check` runs tests and archive verification. `start` prepares the real CEF document-feasibility queue with durable state; it does not start a model process. On Windows you can use `py -3` instead of `python`.
+The default runs a complete **synthetic offline demonstration**. `check` runs tests and archive verification. `start` prepares the real CEF document-feasibility queue with durable state; it does not start a model process. `dashboard` is the password-protected operator UI over the same state; see [docs/DASHBOARD.md](docs/DASHBOARD.md). On Windows you can use `py -3` instead of `python`.
 
 The network has an internal director, independent researcher/data auditor/reviewer roles, candidate-scoped memory, immutable packets, prompt-improvement evaluations and rollback. The internal director owns worker-prompt proposals; the coding maintainer owns controller and evaluator code. Automatic provider dispatch, paid inference and brokerage execution are not implemented in the supported runtime.
 
