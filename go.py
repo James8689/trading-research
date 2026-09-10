@@ -20,6 +20,8 @@ def main(argv=None):
         p.error('Report already exists; choose a new path')
     try:
         if args.mode == 'dashboard':
+            from research_loop.envfile import apply_file_to_os
+            apply_file_to_os(ROOT)
             from dashboard.server import serve
             return serve(ROOT)
         if args.mode == 'check':

@@ -1,5 +1,6 @@
 import http.cookiejar
 import json
+import os
 import shutil
 import tempfile
 import threading
@@ -113,6 +114,37 @@ class DashboardTests(unittest.TestCase):
         overview = self.call('/api/overview')
         self.assertEqual(overview['cycles'][0]['cycle_id'], seeded['cycle_id'])
         self.assertEqual(overview['families']['families'][0]['candidate_id'], 'B3-H1-v1')
+
+    def test_env_key_saved_to_file_and_never_returned(self):
+        csrf = self.login()
+        for name in ('OPENAI_API_KEY', 'OPENAI_MODEL', 'ROLE_RESEARCHER'):
+            self.addCleanup(os.environ.pop, name, None)
+        saved = self.call('/api/env', {'values': {
+            'OPENAI_API_KEY': 'sk-live-9999', 'OPENAI_MODEL': 'gpt-5.4',
+            'ROLE_RESEARCHER': 'openai:gpt-5.4',
+        }}, csrf=csrf)
+        body = json.dumps(saved)
+        self.assertNotIn('sk-live-9999', body)
+        self.assertIn('9999', body)
+        text = (self.root / '.env').read_text(encoding='utf-8')
+        self.assertIn('OPENAI_API_KEY=sk-live-9999', text)
+        view = self.call('/api/env')
+        self.assertNotIn('sk-live-9999', json.dumps(view))
+        route = next(r for r in view['routes'] if r['role'] == 'researcher')
+        self.assertEqual((route['provider'], route['model'], route['key_hint']), ('openai', 'gpt-5.4', '9999'))
+        # A key is not an allowance: dispatch stays closed until a period exists.
+        self.assertFalse(view['dispatch_ready'])
+        self.assertFalse(self.call('/api/overview')['provider_dispatch'])
+        detail = next(a['detail'] for a in self.call('/api/audit')['audit'] if a['action'] == 'env_update')
+        self.assertNotIn('sk-live-9999', detail)
+
+    def test_env_refuses_locked_keys_and_bad_routes(self):
+        csrf = self.login()
+        self.call('/api/env', {'values': {'DASHBOARD_PASSWORD': 'hunter2'}}, csrf=csrf, status=400)
+        self.call('/api/env', {'values': {'RESEARCH_BUDGET_LIMIT_USD': '9999'}}, csrf=csrf, status=400)
+        self.call('/api/env', {'values': {'ROLE_REVIEWER': 'notaprovider:x'}}, csrf=csrf, status=400)
+        self.call('/api/env', {'values': {'OPENAI_BASE_URL': 'http://evil.example'}}, csrf=csrf, status=400)
+        self.assertFalse((self.root / '.env').exists())
 
     def test_write_without_csrf_rejected(self):
         self.login()

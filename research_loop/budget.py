@@ -31,6 +31,8 @@ class BudgetLedger:
             db.execute("CREATE TABLE IF NOT EXISTS control (id INTEGER PRIMARY KEY CHECK(id=1), stopped INTEGER NOT NULL, reason TEXT)")
             db.execute("INSERT OR IGNORE INTO control VALUES (1,0,NULL)")
             db.execute("CREATE TABLE IF NOT EXISTS attempts (attempt_id TEXT PRIMARY KEY, maximum_microusd INTEGER NOT NULL, state TEXT NOT NULL, provider_request_id TEXT, actual_microusd INTEGER)")
+            db.execute("CREATE TABLE IF NOT EXISTS closed_periods (period_id TEXT PRIMARY KEY, limit_microusd INTEGER NOT NULL, closed_at TEXT NOT NULL)")
+            db.execute("CREATE TABLE IF NOT EXISTS closed_attempts (period_id TEXT NOT NULL, attempt_id TEXT NOT NULL, maximum_microusd INTEGER NOT NULL, state TEXT NOT NULL, provider_request_id TEXT, actual_microusd INTEGER, PRIMARY KEY(period_id, attempt_id))")
 
     @contextmanager
     def _transaction(self):
@@ -127,6 +129,38 @@ class BudgetLedger:
             db.execute("UPDATE attempts SET state=?, actual_microusd=? WHERE attempt_id=?",
                        ("unknown" if actual_microusd is None else "settled", actual_microusd, attempt_id))
             return self._attempt(db, attempt_id)
+
+    def open_period(self, period_id, limit_microusd):
+        """Start a new accounting period. Does not raise an existing period's cap.
+
+        A zero-limit placeholder period may be replaced. In-flight or unknown
+        charges must be settled first so a new period cannot hide unresolved cost.
+        """
+        import datetime as dt
+        _identifier(period_id)
+        _amount(limit_microusd)
+        with self._transaction() as db:
+            policy = db.execute("SELECT * FROM policy").fetchone()
+            status = self._status(db)
+            if policy is None:
+                db.execute("INSERT INTO policy VALUES (1,?,?)", (period_id, limit_microusd))
+                return self._status(db)
+            if policy["period_id"] == period_id:
+                if policy["limit_microusd"] != limit_microusd:
+                    raise ValueError("cannot change limit on an existing period")
+                return status
+            if status["unknown_count"] or any(row["state"] in ("reserved", "dispatched") for row in status["attempts"]):
+                raise RuntimeError("cannot open a new period while charges are in flight or unknown")
+            closed_at = dt.datetime.now(dt.timezone.utc).isoformat()
+            db.execute("INSERT INTO closed_periods VALUES (?,?,?)", (policy["period_id"], policy["limit_microusd"], closed_at))
+            for row in status["attempts"]:
+                db.execute(
+                    "INSERT INTO closed_attempts VALUES (?,?,?,?,?,?)",
+                    (policy["period_id"], row["attempt_id"], row["maximum_microusd"], row["state"], row["provider_request_id"], row["actual_microusd"]),
+                )
+            db.execute("DELETE FROM attempts")
+            db.execute("UPDATE policy SET period_id=?, limit_microusd=?", (period_id, limit_microusd))
+            return self._status(db)
 
     def stop(self, reason):
         _identifier(reason)

@@ -9,6 +9,34 @@ export DASHBOARD_PASSWORD='choose-a-long-password'
 python go.py --mode dashboard
 ```
 
+On Windows PowerShell: `$env:DASHBOARD_PASSWORD='...'; py -3 go.py --mode dashboard`. You can also put `DASHBOARD_PASSWORD` in a gitignored `.env` at the repo root.
+
+Equivalent: `python -m dashboard`. The process listens on `0.0.0.0:8787` by default (`DASHBOARD_HOST`, `DASHBOARD_PORT`). If `DASHBOARD_PASSWORD` is unset on a fresh `research_state/`, a password is generated and printed once.
+
+## Local model keys
+
+Keys live in a gitignored `.env` at the repository root. Process environment variables override the file.
+
+Two ways to fill it:
+
+1. **From the console.** Spend → *Provider keys · .env*. Pick a vendor, paste the key, optionally set a default model and base URL, and save. Role routing (`provider:model`) is edited in the same card. The value is written straight into `.env` and applied to the running process, so a paste takes effect without a restart.
+2. **By hand.** Copy `.env.example` to `.env` and edit it, then restart.
+
+The console can only write these variables:
+
+| Writable from the UI | Not writable |
+|---|---|
+| `OPENAI_/ANTHROPIC_/XAI_` `API_KEY`, `BASE_URL`, `MODEL` | `DASHBOARD_PASSWORD` |
+| `ROLE_DIRECTOR_PLAN`, `ROLE_RESEARCHER`, `ROLE_DATA_AUDITOR`, `ROLE_REVIEWER`, `ROLE_DIRECTOR_DECISION`, `ROLE_IMPROVEMENT_PROPOSAL` | `RESEARCH_BUDGET_PERIOD`, `RESEARCH_BUDGET_LIMIT_USD`, `RESEARCH_MAX_CALL_USD`, `RESEARCH_USD_PER_MTOK_*` |
+
+The server rejects any other variable name, refuses values containing quotes, newlines, or non-printable characters, and allows plain `http` base URLs only on loopback. `POST /api/env` requires the session cookie and the CSRF header. The audit log records which variable changed and whether it was set or cleared, never the value.
+
+**A key is not an allowance.** Budget variables stay out of the UI because the dashboard must not raise its own spend, so edit `RESEARCH_BUDGET_PERIOD` and `RESEARCH_BUDGET_LIMIT_USD` in `.env` yourself and restart. They replace the placeholder $0 ledger only and cannot raise an existing period.
+
+Once a key and a period both exist, **Dispatch next model call** (Mission or Spend) or Orchestrator `/dispatch [role]` sends **one** leased packet. There is no background loop.
+
+The UI shows provider, model id, and key last-four. `GET /api/env` never returns a secret. Brokers remain disabled.
+
 Equivalent: `python -m dashboard`. The process listens on `0.0.0.0:8787` by default (`DASHBOARD_HOST`, `DASHBOARD_PORT`). If `DASHBOARD_PASSWORD` is unset on a fresh `research_state/`, a password is generated and printed once.
 
 Open the printed URL, sign in, and keep the process running. Sign-in cookies last 30 days and are stored in `research_state/ui.sqlite3`, so a restart of the same volume keeps you logged in only after you sign in again on that browser; the **messages, ideas, jobs, families and research queues** survive the restart.

@@ -7,9 +7,15 @@ import json
 import sqlite3
 
 from research_loop.budget import BudgetLedger
+from research_loop.dispatch import apply_env_budget, dispatch_next
+from research_loop.envfile import WRITABLE, env_state, merged_env, write_env_values
 from research_loop.families import FamilyRegistry
 from research_loop.improvement import ImprovementRegistry
 from research_loop.network import ROLES, Network
+from research_loop.routing import (
+    PROVIDERS, ROLE_ENV, provider_env_keys, public_route, public_routes,
+    validate_base_url, validate_route_spec,
+)
 from research_loop.__main__ import initialize_runtime, seed_cef
 
 
@@ -26,6 +32,9 @@ class Dashboard:
         self.improvement = ImprovementRegistry(self.root)
         self.families = FamilyRegistry(self.root)
         self.families.initialize()
+        self.env = merged_env(self.root)
+        if (self.root / '.env').is_file():
+            apply_env_budget(self.budget, self.env)
 
     def freeze_status(self):
         plan = self.root / 'research_batch3' / 'frozen_experiment_plans.json'
@@ -51,9 +60,11 @@ class Dashboard:
         for task in tasks:
             by_state[task['state']] = by_state.get(task['state'], 0) + 1
         next_claim = next((t for t in tasks if t['state'] == 'pending'), None)
+        routes = public_routes(self.env)
         return {
             'mode': 'assisted_manual',
-            'provider_dispatch': False,
+            'provider_dispatch': self._dispatch_ready(budget, routes),
+            'routes': routes,
             'broker_execution': False,
             'spend_approved': budget['limit_microusd'] > 0,
             'freeze': freeze,
@@ -71,6 +82,48 @@ class Dashboard:
             'roles': list(ROLES),
         }
 
+    def _dispatch_ready(self, budget=None, routes=None):
+        budget = self._budget() if budget is None else budget
+        routes = public_routes(self.env) if routes is None else routes
+        return budget['limit_microusd'] > 0 and not budget['blocked'] and any(r['has_key'] for r in routes)
+
+    def env_view(self):
+        """Which provider variables are set, without ever returning a secret."""
+        budget = self._budget()
+        return {
+            **env_state(self.env, self.root),
+            'roles': dict(ROLE_ENV),
+            'providers': {name: provider_env_keys(name) for name in PROVIDERS},
+            'routes': public_routes(self.env),
+            'budget_period': budget['period_id'],
+            'budget_configured': budget['limit_microusd'] > 0,
+            'dispatch_ready': self._dispatch_ready(budget),
+        }
+
+    def save_env(self, updates):
+        """Persist allowlisted provider settings to the gitignored .env file."""
+        if not isinstance(updates, dict) or not updates:
+            raise ValueError('values object required')
+        unknown = [key for key in updates if key not in WRITABLE]
+        if unknown:
+            raise ValueError(f"cannot set {', '.join(sorted(unknown))} from the console")
+        pending = dict(self.env)
+        for key, value in updates.items():
+            if isinstance(value, str):
+                pending[key] = value.strip()
+        role_vars = set(ROLE_ENV.values())
+        for key, value in updates.items():
+            text = value.strip() if isinstance(value, str) else value
+            if not text:
+                continue
+            if key in role_vars:
+                validate_route_spec(text, pending)
+            elif key.endswith('_BASE_URL'):
+                validate_base_url(text)
+        saved = write_env_values(self.root, updates)
+        self.env = merged_env(self.root)
+        return {'saved': saved, **self.env_view()}
+
     def _budget(self):
         status = self.budget.status()
         status['spent'] = _money(status['spent_microusd'])
@@ -78,9 +131,9 @@ class Dashboard:
         status['limit'] = _money(status['limit_microusd'])
         status['available'] = _money(status['available_microusd'])
         status['note'] = (
-            'Paid provider dispatch is not enabled. The ledger is fail-closed. '
-            'Unknown-cost attempts block new admissions until reconciled. '
-            'The period allowance cannot be raised in place; a new period is required.'
+            'Ledger is fail-closed. Unknown-cost attempts block new admissions. '
+            'A period cap cannot be raised in place; change RESEARCH_BUDGET_PERIOD to open a new period '
+            'only from the placeholder $0 ledger. Keys live in gitignored .env, never in this UI.'
         )
         return status
 
@@ -94,6 +147,7 @@ class Dashboard:
         report['prompt_history'] = [
             row for row in self.improvement.status()['history'] if row['role'] == name
         ]
+        report['route'] = public_route(name, self.env)
         return report
 
     def task(self, task_id):
@@ -107,7 +161,14 @@ class Dashboard:
         return task
 
     def spend(self):
-        return {'ledger': self._budget(), 'attribution': 'provider/model/key columns are not on the ledger yet; register aliases below for later dispatch.'}
+        return {
+            'ledger': self._budget(),
+            'routes': public_routes(self.env),
+            'attribution': 'Role→model maps come from .env. Secrets are never returned. Each dispatch settles usage or the per-call reservation.',
+        }
+
+    def dispatch(self, role=None):
+        return dispatch_next(self.root, role=role or None, env=self.env)
 
     def seed_cef(self, evidence=None):
         return seed_cef(self.root, self.network, evidence or [])

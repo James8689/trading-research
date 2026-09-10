@@ -24,7 +24,7 @@ python -m research_loop next director --role director_plan
 
 `check` runs unit tests and verifies archived data/frozen-plan hashes. `start` initializes persistent state, bootstraps the six shipped role prompts and seeds the frozen CEF document-feasibility question. Repeating it does not reset budgets, prompts or create duplicate cycles. It leaves packets unclaimed until `next`. With no original documents ingested, this is a source-planning queue, not evidence of feasibility. Runtime defaults allow 12 lifetime task claims and 3 concurrent leases; raising limits requires an explicit controller change, not restarting.
 
-`dashboard` serves the single-operator UI on port 8787 (see `docs/DASHBOARD.md`). It is a browser for the same SQLite records plus a persistent director console. It is not an unattended model loop. Set `DASHBOARD_PASSWORD` and keep `research_state/` on durable storage if the process should survive a host restart.
+`dashboard` serves the single-operator UI on port 8787 (see [docs/DASHBOARD.md](docs/DASHBOARD.md)). Copy `.env.example` to `.env` for local keys and a test budget. `/dispatch` sends one packet. It is not an unattended model loop.
 
 ## Three distinct actors
 
@@ -128,4 +128,4 @@ GitHub stores code, prompts, tests, design and research artifacts. Runtime datab
 
 ## Next engineering boundary
 
-Before real unattended research: implement and test a single provider adapter with authenticated role identity, bounded packet delivery, real usage reconciliation and evaluator isolation. Choose spending mode and a finite allowance, then run one real CEF document cycle and independently assess its evidence. No background scheduler, provider subscription, source download or trading integration was activated by this implementation.
+The supported runtime can dispatch **one** mapped role per operator request using gitignored `.env` keys. It is not an unattended loop. Evaluator isolation is still same-user. No background scheduler, source download or trading integration is activated by putting keys in `.env`.

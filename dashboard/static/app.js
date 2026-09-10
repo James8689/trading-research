@@ -99,12 +99,13 @@ function renderHome(o) {
 function controlPanel() {
   const box = card('Control', []);
   const seed = el('button', { text: 'Seed CEF cycle', onclick: () => command('seed-cef') });
+  const dispatch = el('button', { text: 'Dispatch next model call', onclick: () => command('dispatch', {}) });
   const stop = el('button', { class: 'ghost', text: 'Stop network', onclick: () => {
     const reason = prompt('Stop reason (required)');
     if (reason) command('stop', { reason });
   }});
   const resume = el('button', { class: 'ghost', text: 'Resume', onclick: () => command('resume') });
-  box.append(el('div', { class: 'actions' }, [seed, stop, resume]));
+  box.append(el('div', { class: 'actions' }, [seed, dispatch, stop, resume]));
   const ingest = el('form');
   ingest.append(
     el('p', { class: 'muted', text: 'Ingest never downloads a URL. Paste original text and a stable source id.' }),
@@ -141,8 +142,12 @@ function row(k, v) {
 }
 
 async function command(name, payload = {}) {
-  await api(`/api/control/${name}`, { method: 'POST', body: JSON.stringify(payload) });
-  await loadOverview();
+  try {
+    await api(`/api/control/${name}`, { method: 'POST', body: JSON.stringify(payload) });
+    await loadOverview();
+  } catch (err) {
+    window.alert(err.message || String(err));
+  }
 }
 
 function renderRoles(roles) {
@@ -155,6 +160,8 @@ function renderRoles(roles) {
       row('Attempts', String(r.attempt_count)),
       row('Rejected submissions', String(r.error_count)),
       row('Prompt', r.active_prompt ? r.active_prompt.id.slice(0, 12) + '…' : 'none'),
+      row('Model', r.route && r.route.model ? `${r.route.provider}:${r.route.model}` : 'unset'),
+      row('Key', r.route && r.route.has_key ? `…${r.route.key_hint}` : 'missing'),
     );
     if (r.reviewer_blinded) node.append(el('p', { class: 'muted', text: 'Blinded to upstream interpretations.' }));
     return node;
@@ -217,12 +224,91 @@ function renderTask(t) {
   );
 }
 
-function renderSpend(data) {
+// Self-contained: writes provider secrets straight into the gitignored .env.
+// The server allowlists the variable names, so nothing here can touch the
+// login password or the budget.
+function envCard(env) {
+  const box = card('Provider keys · .env', []);
+  box.append(el('p', { class: 'muted', text: env.note }));
+  (env.writable || []).filter((k) => k.secret).forEach((k) => {
+    const name = k.key.replace('_API_KEY', '').toLowerCase();
+    box.append(row(name, k.set ? `key …${k.hint}` : 'not set'));
+  });
+
+  const form = el('form');
+  const provider = el('select', { name: 'provider' });
+  Object.keys(env.providers || {}).forEach((p) => provider.append(el('option', { value: p, text: p })));
+  const key = el('input', {
+    name: 'key', type: 'password', autocomplete: 'off', spellcheck: 'false',
+    placeholder: 'paste the key — blank keeps the current one',
+  });
+  const model = el('input', { name: 'model', placeholder: 'default model id (optional)' });
+  const base = el('input', { name: 'base', placeholder: 'base URL (optional)' });
+  const note = el('p', { class: 'muted' });
+  form.append(
+    el('label', {}, [el('span', { text: 'Provider' }), provider]),
+    el('label', {}, [el('span', { text: 'API key' }), key]),
+    el('label', {}, [el('span', { text: 'Default model' }), model]),
+    el('label', {}, [el('span', { text: 'Base URL' }), base]),
+    el('div', { class: 'actions' }, [el('button', { type: 'submit', text: 'Save to .env' })]),
+    note,
+  );
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const names = env.providers[provider.value];
+    const values = {};
+    if (key.value.trim()) values[names.key] = key.value.trim();
+    if (model.value.trim()) values[names.model] = model.value.trim();
+    if (base.value.trim()) values[names.base] = base.value.trim();
+    if (!Object.keys(values).length) {
+      note.textContent = 'Nothing to save.';
+      return;
+    }
+    try {
+      await api('/api/env', { method: 'POST', body: JSON.stringify({ values }) });
+      key.value = '';
+      setView('spend');
+    } catch (err) {
+      note.textContent = err.message || String(err);
+    }
+  });
+  box.append(form);
+
+  const routes = el('form');
+  const inputs = {};
+  routes.append(el('p', { class: 'muted', text: 'Role routing is provider:model. Blank unmaps the role.' }));
+  (env.routes || []).forEach((r) => {
+    const value = r.configured ? `${r.provider}:${r.model}` : '';
+    inputs[env.roles[r.role]] = el('input', { name: r.role, value, placeholder: 'openai:gpt-5.4' });
+    routes.append(el('label', {}, [el('span', { text: r.role }), inputs[env.roles[r.role]]]));
+  });
+  const routeNote = el('p', { class: 'muted' });
+  routes.append(el('div', { class: 'actions' }, [el('button', { type: 'submit', text: 'Save routing' })]), routeNote);
+  routes.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const values = {};
+    Object.entries(inputs).forEach(([name, input]) => { values[name] = input.value.trim(); });
+    try {
+      await api('/api/env', { method: 'POST', body: JSON.stringify({ values }) });
+      setView('spend');
+    } catch (err) {
+      routeNote.textContent = err.message || String(err);
+    }
+  });
+  box.append(routes);
+
+  if (!env.budget_configured) {
+    box.append(el('p', { class: 'muted', text: 'A key alone does not enable dispatch. Set RESEARCH_BUDGET_PERIOD and RESEARCH_BUDGET_LIMIT_USD in .env yourself, then restart, because the console cannot open or raise a spending period.' }));
+  }
+  return box;
+}
+
+function renderSpend(data, env) {
   const b = data.ledger || {};
   const main = $('main');
   const form = el('form');
   form.append(
-    el('p', { class: 'muted', text: 'Register API-key aliases only. Never paste the secret. Attribution lands here when a provider adapter exists.' }),
+    el('p', { class: 'muted', text: 'Keys live in gitignored .env. This page shows aliases and last-four only. Dispatch sends one packet.' }),
     field('Alias', 'alias'),
     field('Provider', 'provider'),
     field('Model (optional)', 'model'),
@@ -260,7 +346,15 @@ function renderSpend(data) {
       ]),
     ]),
     card('Attempts (fail-closed)', [attempts]),
-    card('Provider aliases', [
+    card('Env role routing', [
+      ...(data.routes || []).map((a) => row(
+        a.role,
+        a.configured ? `${a.provider}:${a.model} · ${a.has_key ? 'key …' + a.key_hint : 'no key'}` : 'unmapped',
+      )),
+      el('div', { class: 'actions' }, [el('button', { text: 'Dispatch next model call', onclick: () => command('dispatch', {}) })]),
+    ]),
+    envCard(env),
+    card('Optional UI aliases', [
       ...(data.accounts || []).map((a) => row(`${a.alias} · ${a.provider}`, a.model || a.key_hint || '')),
       form,
     ]),
@@ -397,7 +491,8 @@ async function setView(name, extra) {
   } else if (name === 'task') {
     renderTask(await api(`/api/tasks/${extra}`));
   } else if (name === 'spend') {
-    renderSpend(await api('/api/spend'));
+    const [spend, env] = await Promise.all([api('/api/spend'), api('/api/env')]);
+    renderSpend(spend, env);
   } else if (name === 'families') {
     renderFamilies(await api('/api/families'));
   } else if (name === 'orchestrator') {

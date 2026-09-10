@@ -1,4 +1,4 @@
-"""Single-operator dashboard. Stdlib only. No provider or broker dispatch."""
+"""Single-operator dashboard. Stdlib only. Secrets stay in gitignored .env."""
 from __future__ import annotations
 
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -12,6 +12,7 @@ import time
 
 from .service import Dashboard
 from .store import UIStore, bootstrap_password
+from research_loop.envfile import apply_file_to_os
 
 STATIC = Path(__file__).resolve().parent / 'static'
 COOKIE = 'dashboard_session'
@@ -140,6 +141,7 @@ class DashboardHandler(BaseHTTPRequestHandler):
             '/api/overview': self._dash().overview,
             '/api/brief': self._dash().brief,
             '/api/spend': lambda: {**self._dash().spend(), 'accounts': self._store().list_accounts()},
+            '/api/env': self._dash().env_view,
             '/api/families': self._dash().families.status,
             '/api/messages': lambda: {'messages': self._store().list_messages(), 'jobs': self._store().list_jobs(), 'ideas': self._store().list_ideas()},
             '/api/ideas': lambda: {'ideas': self._store().list_ideas()},
@@ -190,6 +192,12 @@ class DashboardHandler(BaseHTTPRequestHandler):
                 idea = self._store().add_idea(body.get('body', ''))
                 self._store().audit('james', 'idea', idea['idea_id'])
                 return self._send(200, _json(idea))
+            if path == '/api/env':
+                value = self._dash().save_env(body.get('values') or {})
+                # Log variable names and whether they were set. Never the value.
+                self._store().audit('james', 'env_update', json.dumps(
+                    [{'key': s['key'], 'set': s['set']} for s in value['saved']]))
+                return self._send(200, _json(value))
             if path == '/api/accounts':
                 account = self._store().upsert_account(
                     body.get('alias', ''), body.get('provider', ''),
@@ -225,6 +233,10 @@ class DashboardHandler(BaseHTTPRequestHandler):
                 value = self._dash().resume()
                 self._store().audit('james', 'resume', '')
                 return self._send(200, _json(value))
+            if path == '/api/control/dispatch':
+                value = self._dash().dispatch(body.get('role') or None)
+                self._store().audit('james', 'dispatch', json.dumps({'role': body.get('role'), 'task': value.get('task_id'), 'model': value.get('model')}))
+                return self._send(200, _json({k: v for k, v in value.items() if k != 'result'} | {'decision': (value.get('result') or {}).get('decision')}))
             if path == '/api/families/retrospective':
                 value = self._dash().families.record_retrospective(
                     body.get('family_id', ''), body.get('bottleneck', ''),
@@ -273,13 +285,12 @@ class DashboardHandler(BaseHTTPRequestHandler):
             pending = brief.get('pending_and_leased') or []
             nxt = pending[0] if pending else None
             reply = (
-                'Instruction recorded and persisted. No language-model process was started '
-                '(manual-no-spend; provider dispatch is not enabled).\n'
+                'Instruction recorded and persisted. '
                 f"Stopped={brief.get('policy', {}).get('stopped')}. "
                 f"Next visible work: {nxt['role'] if nxt else 'none'} "
                 f"({nxt['task_id'] if nxt else 'n/a'}).\n"
-                'I am the internal director console. I own research planning and worker-prompt '
-                'proposals; I cannot raise the budget, approve my own prompt changes, or trade. '
+                'I am the internal director console. Use /dispatch [role] to send one leased packet '
+                'to the mapped model. I cannot raise the budget, approve my own prompt changes, or trade. '
                 'Prefix a message with /help for controller commands.'
             )
             return reply, {'recorded': True}, 'queued', None
@@ -290,7 +301,7 @@ class DashboardHandler(BaseHTTPRequestHandler):
             if command == '/help':
                 return (
                     'Commands: /brief /status /seed-cef /stop <reason> /resume /idea <text> '
-                    '/claim <worker> [role] /help. Free text is stored as a standing instruction.',
+                    '/claim <worker> [role] /dispatch [role] /help. Free text is stored as a standing instruction.',
                     {'ok': True}, 'completed', None,
                 )
             if command == '/brief':
@@ -327,6 +338,16 @@ class DashboardHandler(BaseHTTPRequestHandler):
                 worker, role = bits[0], bits[1] if len(bits) > 1 else None
                 value = self._dash().claim(worker, role)
                 return json.dumps(value, indent=2, ensure_ascii=False)[:4000], value, 'completed', None
+            if command == '/dispatch':
+                value = self._dash().dispatch(arg.strip() or None)
+                summary = {
+                    'role': value.get('role'),
+                    'model': value.get('model'),
+                    'provider': value.get('provider'),
+                    'task_id': value.get('task_id'),
+                    'decision': (value.get('result') or {}).get('decision'),
+                }
+                return json.dumps(summary, indent=2, ensure_ascii=False), value, 'completed', None
             raise ValueError('unknown command; try /help')
         except (ValueError, RuntimeError) as exc:
             return f'Command failed: {exc}', None, 'failed', str(exc)
@@ -334,6 +355,7 @@ class DashboardHandler(BaseHTTPRequestHandler):
 
 def make_server(root, host='127.0.0.1', port=8787, password=None, secure=False):
     root = Path(root).resolve()
+    apply_file_to_os(root)
     store = UIStore(root)
     generated = None
     if password:
@@ -358,7 +380,12 @@ def serve(root, host=None, port=None, password=None):
     bound = httpd.server_address
     print(f'Dashboard listening on http://{bound[0]}:{bound[1]}', flush=True)
     print('Single-operator access. Persistence is research_state/*.sqlite3 (gitignored).', flush=True)
-    print('No model dispatch. No broker. Allowance remains manual-no-spend until you choose one.', flush=True)
+    print('No broker. Model dispatch uses gitignored .env keys and a fail-closed ledger.', flush=True)
+    overview = httpd.dashboard.overview()
+    if overview['provider_dispatch']:
+        print('Provider dispatch is available. /dispatch sends one packet per request.', flush=True)
+    else:
+        print('Provider dispatch is idle until .env has keys and a budget period.', flush=True)
     if httpd.generated_password:
         print(f'Generated login password (shown once): {httpd.generated_password}', flush=True)
     elif os.environ.get('DASHBOARD_PASSWORD'):

@@ -10,7 +10,7 @@ Read:
 3. Latest `HANDOFF.md` entry; older entries are historical.
 4. `research_batch3/SYNTHESIS.md` and frozen plan/receipt before research.
 
-Run `python go.py` for the offline demonstration, `python go.py --mode check` for tests, `python go.py --mode start` to prepare the first manual CEF cycle, or `python go.py --mode dashboard` for the operator UI. The dashboard does not dispatch a model. Python 3.11+ and its standard library suffice.
+Run `python go.py` for the offline demonstration, `python go.py --mode check` for tests, `python go.py --mode start` to prepare the first manual CEF cycle, or `python go.py --mode dashboard` for the operator UI. Local model keys go in gitignored `.env`. Python 3.11+ and its standard library suffice.
 
 ## Context and ownership
 
